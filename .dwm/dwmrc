@@ -1,0 +1,6 @@
+feh --no-xinerama --bg-scale /home/foster/.dwm/background.png
+/home/foster/.screenlayout/monitor.sh
+xbindkeys
+setxkbmap -variant altgr-intl -option compose:rctrl -option lv3:ralt_switch -option terminate:ctrl_alt_bkspc -option nbsp:level3n
+xrdb -merge /home/foster/.Xresources
+exec dwmstatus
