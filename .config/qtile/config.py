@@ -1,0 +1,1 @@
+/home/foster/.config/qtile/config.py

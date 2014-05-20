@@ -1,6 +1,0 @@
-"amixer set Master toggle"
-    Mod2 + XF86AudioMute
-"amixer set Master 2%- unmute"
-    Mod2 + XF86AudioLowerVolume
-"amixer set Master 2%+ unmute"
-    Mod2 + XF86AudioRaiseVolume
