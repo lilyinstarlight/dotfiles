@@ -1,1 +1,1 @@
-/home/foster/.xinitrc
+exec qtile

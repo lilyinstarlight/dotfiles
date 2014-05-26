@@ -1,1 +1,49 @@
-/etc/portage/package.use
+#Chromium
+dev-libs/libxml2 icu
+sys-libs/zlib minizip
+media-libs/harfbuzz icu
+
+#Pipelight
+app-emulation/wine compholio
+dev-libs/elfutils static-libs
+
+#OpenVPN
+net-misc/openvpn iproute2 passwordsave
+
+#Layman
+app-portage/layman git hg
+
+#TLP
+app-laptop/tlp tlp_suggests
+
+#Firefox
+dev-lang/python sqlite
+
+#Wireshark
+net-analyzer/wireshark -qt4
+
+#Inkscape
+media-libs/lcms python
+
+#Pulseaudio
+media-plugins/alsa-plugins pulseaudio
+
+#Openshot
+virtual/ffmpeg theora
+media-video/ffmpeg theora
+media-sound/sox ffmpeg
+media-libs/mlt python frei0r ffmpeg melt
+
+#Openshot 2.0
+dev-libs/libpcre pcre16
+
+#XBMC
+media-tv/xbmc airplay avahi css joystick webserver
+net-libs/libmicrohttpd messages
+
+#Virt-manager
+net-libs/gtk-vnc python
+app-emulation/libvirt-glib python
+net-misc/spice-gtk python gtk3
+app-emulation/qemu spice
+app-emulation/libvirt virt-network

@@ -1,1 +1,8 @@
-/etc/portage/package.license
+#Chromium
+www-plugins/chrome-binary-plugins google-chrome
+
+#Flash
+www-plugins/adobe-flash AdobeFlash-11.x
+
+#VirtualBox
+app-emulation/virtualbox-extpack-oracle PUEL

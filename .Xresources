@@ -1,1 +1,6 @@
-/home/foster/.Xresources
+URxvt.transparent: true
+URxvt.background: black
+URxvt.foreground: white
+URxvt.shading: 70
+URxvt.scrollBar: false
+URxvt.boldFont: fixed
