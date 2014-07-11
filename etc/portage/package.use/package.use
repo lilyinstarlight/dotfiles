@@ -4,7 +4,7 @@ sys-libs/zlib minizip
 media-libs/harfbuzz icu
 
 #Pipelight
-app-emulation/wine compholio
+app-emulation/wine pipelight
 dev-libs/elfutils static-libs
 
 #OpenVPN
@@ -47,3 +47,28 @@ app-emulation/libvirt-glib python
 net-misc/spice-gtk python gtk3
 app-emulation/qemu spice
 app-emulation/libvirt virt-network
+
+#PHP
+dev-lang/php gd
+
+#WKHTMLToPDF
+dev-qt/qtwebkit icu
+
+#Plex Home Theater
+media-tv/plex-home-theater cec
+
+#iOS
+gnome-base/gvfs ios mtp
+
+#Clang
+sys-devel/llvm clang
+
+#Profanity
+net-im/profanity otr
+
+#Gajim
+net-libs/farstream python
+net-im/gajim jingle
+
+#WPA Supplicant
+net-wireless/wpa_supplicant wps

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Plex
+Comment=This session will start Plex Home Theater
+Exec=plexhometheater-standalone
+TryExec=plexhometheater-standalone
+Type=Application
