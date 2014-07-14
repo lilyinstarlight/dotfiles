@@ -1,3 +1,4 @@
+#Completion
 zstyle ':completion:*' completer _expand _complete _ignored
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
 zstyle :compinstall filename '/home/foster/.zshrc'
@@ -6,47 +7,26 @@ autoload -Uz compinit promptinit
 compinit
 promptinit
 
+#Theme
 prompt gentoo
 
+#History
 HISTFILE=~/.histfile
 HISTSIZE=100
 SAVEHIST=10000
-setopt appendhistory beep extendedglob
+setopt appendhistory
 
+#Options
+setopt beep extendedglob
+
+#Vim compatibility
 bindkey -v
+bindkey "^?" vi-backward-delete-char
 
-# create a zkbd compatible hash;
-# to add other keys to this hash, see: man 5 terminfo
-typeset -A key
-
-key[Home]=${terminfo[khome]}
-key[End]=${terminfo[kend]}
-key[Insert]=${terminfo[kich1]}
-key[Delete]=${terminfo[kdch1]}
-key[Up]=${terminfo[kcuu1]}
-key[Down]=${terminfo[kcud1]}
-key[Left]=${terminfo[kcub1]}
-key[Right]=${terminfo[kcuf1]}
-key[PageUp]=${terminfo[kpp]}
-key[PageDown]=${terminfo[knp]}
-
-# setup key accordingly
-[[ -n "${key[Home]}"    ]]  && bindkey  "${key[Home]}"    beginning-of-line
-[[ -n "${key[End]}"     ]]  && bindkey  "${key[End]}"     end-of-line
-[[ -n "${key[Insert]}"  ]]  && bindkey  "${key[Insert]}"  overwrite-mode
-[[ -n "${key[Delete]}"  ]]  && bindkey  "${key[Delete]}"  delete-char
-[[ -n "${key[Up]}"      ]]  && bindkey  "${key[Up]}"      up-line-or-history
-[[ -n "${key[Down]}"    ]]  && bindkey  "${key[Down]}"    down-line-or-history
-[[ -n "${key[Left]}"    ]]  && bindkey  "${key[Left]}"    backward-char
-[[ -n "${key[Right]}"   ]]  && bindkey  "${key[Right]}"   forward-char
-
-# Finally, make sure the terminal is in application mode, when zle is
-# active. Only then are the values from $terminfo valid.
-function zle-line-init () {
-    echoti smkx
-}
-function zle-line-finish () {
-    echoti rmkx
-}
-zle -N zle-line-init
-zle -N zle-line-finish
+#Special keys (Home, End, Insert, Delete, PageUp, PageDown)
+[[ -n "${terminfo[khome]}" ]]  && bindkey  "${terminfo[khome]}" vi-beginning-of-line
+[[ -n "${terminfo[kend]}"  ]]  && bindkey  "${terminfo[kend]}"  vi-end-of-line
+[[ -n "${terminfo[kich1]}" ]]  && bindkey  "${terminfo[kich1]}" vi-insert
+[[ -n "${terminfo[kdch1]}" ]]  && bindkey  "${terminfo[kdch1]}" vi-delete-char
+[[ -n "${terminfo[kpp]}"   ]]  && bindkey  "${terminfo[kpp]}"   up-history
+[[ -n "${terminfo[knp]}"   ]]  && bindkey  "${terminfo[knp]}"   down-history
