@@ -23,13 +23,13 @@ keys = [
 	#Key([mod, "shift"], "space", lazy.layout.flip()),
 
 	Key([mod, "shift"], "Return", lazy.spawn("urxvt")),
-	Key([mod, "shift"], "j", lazy.spawn("chromium-browser --ignore-gpu-blacklist")),
+	Key([mod, "shift"], "j", lazy.spawn("chromium-browser")),
 	Key([mod, "shift"], "h", lazy.spawn("thunar")),
 	Key([mod, "shift"], "l", lazy.spawn("slock")),
 
 	# Toggle between different layouts as defined below
-	Key([mod], "Tab",    lazy.nextlayout()),
-	Key([mod], "w",      lazy.window.kill()),
+	Key([mod], "Tab", lazy.nextlayout()),
+	Key([mod], "w", lazy.window.kill()),
 
 	Key([mod, "control"], "r", lazy.restart()),
 	Key([mod, "control"], "q", lazy.shutdown()),
