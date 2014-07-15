@@ -1,68 +1,98 @@
-from libqtile.config import Key, Screen, Group
+from libqtile.config import Key, Group, Drag, Click, Screen
 from libqtile.command import lazy
-from libqtile import layout, bar, widget, hook
+from libqtile import hook, layout, bar, widget
 
-mod = "mod1"
+#Mod key for key commands
+mod = 'mod1'
 
+#Keys
 keys = [
-	# Switch between windows in current stack pane
-	Key([mod], "k", lazy.layout.down()),
-	Key([mod], "j", lazy.layout.up()),
+	#Toggle layouts
+	Key([mod], 'Tab', lazy.nextlayout()),
 
-	# Move windows up or down in current stack
-	Key([mod, "control"], "k", lazy.layout.shuffle_down()),
-	Key([mod, "control"], "j", lazy.layout.shuffle_up()),
+	#Switch window on stack
+	Key([mod], 'k', lazy.layout.down()),
+	Key([mod], 'j', lazy.layout.up()),
 
-	# Switch window focus to other pane(s) of stack
-	Key([mod], "space", lazy.layout.next()),
+	#Shuffle window in stack
+	Key([mod, 'control'], 'k', lazy.layout.shuffle_down()),
+	Key([mod, 'control'], 'j', lazy.layout.shuffle_up()),
 
-	#Key([mod, "shift"], "i", lazy.layout.grow()),
-	#Key([mod, "shift"], "m", lazy.layout.shrink()),
-	#Key([mod, "shift"], "n", lazy.layout.normalize()),
-	#Key([mod, "shift"], "o", lazy.layout.maximize()),
-	#Key([mod, "shift"], "space", lazy.layout.flip()),
+	#Other layout bindings
+	Key([mod, 'shift'], 'i', lazy.layout.grow()),
+	Key([mod, 'shift'], 'm', lazy.layout.shrink()),
+	Key([mod, 'shift'], 'n', lazy.layout.normalize()),
+	Key([mod, 'shift'], 'o', lazy.layout.maximize()),
+	Key([mod, 'shift'], 'space', lazy.layout.flip()),
 
-	Key([mod, "shift"], "Return", lazy.spawn("urxvt")),
-	Key([mod, "shift"], "j", lazy.spawn("chromium-browser")),
-	Key([mod, "shift"], "h", lazy.spawn("thunar")),
-	Key([mod, "shift"], "l", lazy.spawn("slock")),
+	#Shuffle window focus
+	Key([mod], 'space', lazy.layout.next()),
 
-	# Toggle between different layouts as defined below
-	Key([mod], "Tab", lazy.nextlayout()),
-	Key([mod], "w", lazy.window.kill()),
+	#Send window close signal
+	Key([mod], 'w', lazy.window.kill()),
 
-	Key([mod, "control"], "r", lazy.restart()),
-	Key([mod, "control"], "q", lazy.shutdown()),
-	Key([mod], "r", lazy.spawncmd()),
+	#Special keyboard keys
+	Key([], 'XF86AudioRaiseVolume', lazy.spawn('amixer set Master 3%+')),
+	Key([], 'XF86AudioLowerVolume', lazy.spawn('amixer set Master 3%-')),
+	Key([], 'XF86AudioMute', lazy.spawn('amixer set Master toggle')),
+
+	#Command
+	Key([mod], 'r', lazy.spawncmd()),
+
+	#Common shortcuts
+	Key([mod, 'shift'], 'Return', lazy.spawn('urxvt')),
+	Key([mod, 'shift'], 'j', lazy.spawn('chromium-browser')),
+	Key([mod, 'shift'], 'h', lazy.spawn('thunar')),
+	Key([mod, 'shift'], 'l', lazy.spawn('slock')),
+
+	#Qtile bindings
+	Key([mod, 'control'], 'r', lazy.restart()),
+	Key([mod, 'control'], 'q', lazy.shutdown()),
 ]
 
+#Groups
 groups = [
-	Group("term"),
-	Group("web"),
-	Group("chat"),
-	Group("files"),
-	Group("work"),
-	Group("games"),
+	Group('term'),
+	Group('web'),
+	Group('chat'),
+	Group('files'),
+	Group('work'),
+	Group('games'),
 ]
 
-for index, group in enumerate(groups):
+#Group key bindings
+for index, group in enumerate(groups, start=1):
 	keys.extend([
-		Key([mod], str(index + 1), lazy.group[group.name].toscreen()),
-		Key([mod, "shift"], str(index + 1), lazy.window.togroup(group.name)),
+		Key([mod], str(index), lazy.group[group.name].toscreen()),
+		Key([mod, 'shift'], str(index), lazy.window.togroup(group.name)),
 	])
 
-dgroups_key_binder = None
-dgroups_app_rules = []
-
-@hook.subscribe.client_new
-def dialogs(window):
-	if(window.window.get_wm_type() == 'dialog' or window.window.get_wm_transient_for()):
-		window.floating = True
-
-layouts = [
-	layout.Tile(),
+#Floating windows
+floating = [
+	'org-spoutcraft-launcher-entrypoint-Start',
 ]
 
+#Set necessary windows as floating
+@hook.subscribe.client_new
+def set_floating(client):
+	if client.window.get_wm_class() in floating or client.window.get_wm_type() == 'dialog' or client.window.get_wm_transient_for():
+		client.floating = True
+
+#Mouse
+mouse = [
+	Drag([mod], 'Button1', lazy.window.set_position_floating(), start=lazy.window.get_position()),
+	Drag([mod], 'Button3', lazy.window.set_size_floating(), start=lazy.window.get_size()),
+	Click([mod], 'Button2', lazy.window.bring_to_front()),
+]
+
+#Layouts
+layouts = [
+	layout.Tile(),
+	layout.Max(),
+	layout.MonadTall(),
+]
+
+#Screens
 screens = [
 	Screen(
 		top=bar.Bar(
@@ -72,7 +102,7 @@ screens = [
 				widget.WindowName(),
 				widget.CPUGraph(),
 				widget.MemoryGraph(),
-				widget.Battery(battery_name="BAT1"),
+				widget.Battery(battery_name='BAT1'),
 				widget.Systray(),
 				widget.Clock(),
 			],
@@ -81,14 +111,6 @@ screens = [
 	),
 ]
 
-main = None
-follow_mouse_focus = True
-bring_front_click = False
-cursor_warp = False
-floating_layout = layout.Floating()
-mouse = ()
-auto_fullscreen = True
-widget_defaults = {}
-
+#Run a setup script that should start before qtile configures anything
 import os
 os.system('~/.config/qtile/setup.sh')
