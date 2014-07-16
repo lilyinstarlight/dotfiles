@@ -1,9 +1,10 @@
 #Qtile
 =x11-wm/qtile-0.7.0 ~amd64
 
-#Chromium
+#Chrome
 =www-client/chromium-36.0.1985.103 ~amd64
 =www-plugins/chrome-binary-plugins-36.0.1985.103_beta1 ~amd64
+=www-client/google-chrome-beta-36.0.1985.103_p1 ~amd64
 =www-plugins/google-talkplugin-5.4.2.0 ~amd64
 
 #Firefox
@@ -112,3 +113,6 @@ virtual/jdk:1.7 ~amd64
 #Gource
 =media-libs/glm-0.9.5.1 ~amd64
 =dev-util/gource-0.40 ~amd64
+
+#Cloudprint
+=net-print/cupscloudprint-20140702 ~amd64

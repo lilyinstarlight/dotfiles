@@ -72,3 +72,12 @@ net-im/gajim jingle
 
 #WPA Supplicant
 net-wireless/wpa_supplicant wps
+
+#Vim
+app-editors/vim python
+
+#Xorg
+x11-base/xorg-server kdrive
+
+#Cloudprint
+media-gfx/imagemagick postscript

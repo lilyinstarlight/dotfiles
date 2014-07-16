@@ -1,5 +1,7 @@
-#Chromium
+#Chrome
 www-plugins/chrome-binary-plugins google-chrome
+www-client/google-chrome google-chrome
+www-client/google-chrome-beta google-chrome
 
 #Flash
 www-plugins/adobe-flash AdobeFlash-11.x
