@@ -12,3 +12,5 @@ set hidden
 set mouse=a
 
 cmap w!! w !sudo tee > /dev/null %
+
+set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab

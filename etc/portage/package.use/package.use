@@ -77,7 +77,7 @@ net-wireless/wpa_supplicant wps
 app-editors/vim python
 
 #Xorg
-x11-base/xorg-server kdrive
+x11-base/xorg-server kdrive xvfb
 
 #Cloudprint
 media-gfx/imagemagick postscript

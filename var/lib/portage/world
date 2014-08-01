@@ -55,7 +55,6 @@ media-gfx/scrot
 media-gfx/viewnior
 media-gfx/wkhtmltopdf
 media-libs/glfw
-media-libs/libopenshot
 media-libs/libtxc_dxtn
 media-plugins/alsa-plugins
 media-sound/alsa-utils
@@ -79,6 +78,7 @@ net-libs/nodejs
 net-misc/bridge-utils
 net-misc/connman
 net-misc/dhcpcd
+net-misc/httpie
 net-misc/mosh
 net-misc/ntp
 net-misc/openvpn
