@@ -2,10 +2,14 @@
 =x11-wm/qtile-0.7.0 ~amd64
 
 #Chrome
-=www-client/chromium-38.0.2107.2 ~amd64
-=www-plugins/chrome-binary-plugins-38.0.2107.2_alpha1 ~amd64
-=www-client/google-chrome-beta-37.0.2062.58_p1 ~amd64
+=www-client/chromium-38.0.2107.3 ~amd64
+=www-plugins/chrome-binary-plugins-38.0.2107.3_alpha1 ~amd64
+=www-client/google-chrome-unstable-38.0.2107.3_p1 ~amd64
 =www-plugins/google-talkplugin-5.4.2.0 ~amd64
+=net-misc/chrome-remote-desktop-36.0.1985.102 ~amd64
+
+#GCC
+=sys-devel/gcc-4.8.3 ~amd64
 
 #Firefox
 =www-client/firefox-29.0.1 ~amd64
@@ -31,11 +35,6 @@
 #LibAV
 =media-video/libav-9.13 ~amd64
 
-#Openshot
-=media-video/openshot-1.4.3 ~amd64
-=dev-python/httplib2-0.8 ~amd64
-=virtual/ffmpeg-9 ~amd64
-
 #Openshot 2.0
 =x11-libs/libxkbcommon-0.4.1 ~amd64
 =dev-qt/qtgui-5.3.0 ~amd64
@@ -59,7 +58,7 @@ virtual/jdk:1.7 ~amd64
 =dev-java/icedtea-web-1.4.2 ~amd64
 
 #Blueman
-=net-wireless/blueman-9999 **
+=net-wireless/blueman-1.23_p20140717-r1 ~amd64
 
 #Viewnior
 =media-gfx/viewnior-1.4 ~amd64
@@ -83,7 +82,7 @@ virtual/jdk:1.7 ~amd64
 =media-gfx/wkhtmltopdf-0.11.0_rc1 ~amd64
 
 #Plex Home Theater
-=media-tv/plex-home-theater-1.1.4 ~amd64
+=media-tv/plex-home-theater-1.2.1 ~amd64
 
 #Mutt
 =mail-client/mutt-1.5.23-r2 ~amd64

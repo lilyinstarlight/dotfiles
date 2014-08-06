@@ -65,7 +65,7 @@ media-sound/pulseaudio
 media-tv/plex-home-theater
 media-tv/xbmc
 media-video/ffmpeg
-media-video/openshot
+media-video/mpv
 media-video/pitivi
 media-video/vlc
 net-analyzer/tcpdump
@@ -76,10 +76,12 @@ net-im/profanity
 net-irc/irssi
 net-libs/nodejs
 net-misc/bridge-utils
+net-misc/chrome-remote-desktop
 net-misc/connman
 net-misc/dhcpcd
 net-misc/httpie
 net-misc/mosh
+net-misc/netkit-fingerd
 net-misc/ntp
 net-misc/openvpn
 net-misc/telnet-bsd
@@ -113,7 +115,7 @@ sys-process/lsof
 virtual/commonlisp
 www-client/chromium
 www-client/firefox
-www-client/google-chrome-beta
+www-client/google-chrome-unstable
 www-plugins/adobe-flash
 www-plugins/chrome-binary-plugins
 www-plugins/pipelight
@@ -132,6 +134,7 @@ x11-misc/dunst
 x11-misc/primus
 x11-misc/slim
 x11-misc/slock
+x11-misc/vdpauinfo
 x11-misc/wmname
 x11-terms/rxvt-unicode
 x11-themes/clearlooks-phenix
@@ -140,3 +143,4 @@ x11-themes/tango-icon-theme
 x11-themes/tango-icon-theme-extras
 x11-wm/qtile
 xfce-base/thunar
+xfce-base/xfwm4
