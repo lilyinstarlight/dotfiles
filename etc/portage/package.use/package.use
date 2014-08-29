@@ -1,4 +1,5 @@
 #Chromium
+www-plugins/chrome-binary-plugins -pdf
 dev-libs/libxml2 icu
 sys-libs/zlib minizip
 media-libs/harfbuzz icu
@@ -36,6 +37,10 @@ media-libs/mlt python frei0r ffmpeg melt
 
 #Openshot 2.0
 dev-libs/libpcre pcre16
+dev-qt/qtcore:5 icu
+dev-qt/qtmultimedia:5 -alsa widgets
+dev-qt/qtwebkit:5 widgets
+dev-python/PyQt5 print webkit widgets
 
 #XBMC
 media-tv/xbmc airplay avahi css joystick webserver
@@ -81,3 +86,6 @@ x11-base/xorg-server kdrive xvfb
 
 #Cloudprint
 media-gfx/imagemagick postscript
+
+#Python
+dev-lang/python wininst

@@ -111,6 +111,8 @@ screens = [
 	),
 ]
 
-#Run a setup script that should start before qtile configures anything
-import os
-os.system('~/.config/qtile/setup.sh')
+@hook.subscribe.startup
+def startup():
+	#Run a setup script that should start before qtile configures anything
+	import os
+	os.system('~/.config/qtile/setup.sh')

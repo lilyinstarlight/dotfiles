@@ -20,6 +20,7 @@ app-portage/layman
 app-shells/zsh
 app-shells/zsh-completion
 app-text/mupdf
+app-text/pandoc
 cross-avr/avr-libc
 cross-avr/binutils
 cross-avr/gcc
@@ -27,12 +28,18 @@ dev-embedded/arduino
 dev-java/icedtea
 dev-java/icedtea-web
 dev-lang/php
+dev-lang/python
+dev-python/PyQt5
 dev-python/pip
 dev-python/pypy-bin
+dev-python/runsnakerun
+dev-ruby/bundler
 dev-texlive/texlive-latex
 dev-texlive/texlive-latexextra
 dev-texlive/texlive-latexrecommended
+dev-util/android-tools
 dev-util/cloc
+dev-util/flawfinder
 dev-util/gource
 dev-vcs/git
 games-action/armagetronad
@@ -55,6 +62,7 @@ media-gfx/scrot
 media-gfx/viewnior
 media-gfx/wkhtmltopdf
 media-libs/glfw
+media-libs/libopenshot
 media-libs/libtxc_dxtn
 media-plugins/alsa-plugins
 media-sound/alsa-utils
@@ -71,6 +79,7 @@ media-video/vlc
 net-analyzer/tcpdump
 net-analyzer/traceroute
 net-analyzer/wireshark
+net-dns/namecoind
 net-im/gajim
 net-im/profanity
 net-irc/irssi
@@ -115,7 +124,8 @@ sys-process/lsof
 virtual/commonlisp
 www-client/chromium
 www-client/firefox
-www-client/google-chrome-unstable
+www-client/google-chrome
+www-client/w3m
 www-plugins/adobe-flash
 www-plugins/chrome-binary-plugins
 www-plugins/pipelight
@@ -129,9 +139,11 @@ x11-apps/xsetroot
 x11-base/xorg-server
 x11-drivers/nvidia-drivers
 x11-misc/arandr
+x11-misc/awf
 x11-misc/bumblebee
 x11-misc/dunst
 x11-misc/primus
+x11-misc/read-edid
 x11-misc/slim
 x11-misc/slock
 x11-misc/vdpauinfo
