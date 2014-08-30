@@ -18,12 +18,19 @@ keys = [
 	Key([mod, 'control'], 'k', lazy.layout.shuffle_down()),
 	Key([mod, 'control'], 'j', lazy.layout.shuffle_up()),
 
+	#Toggle window floating
+	Key([mod, 'control'], 'space', lazy.window.toggle_floating()),
+
 	#Other layout bindings
 	Key([mod, 'shift'], 'i', lazy.layout.grow()),
 	Key([mod, 'shift'], 'm', lazy.layout.shrink()),
 	Key([mod, 'shift'], 'n', lazy.layout.normalize()),
 	Key([mod, 'shift'], 'o', lazy.layout.maximize()),
 	Key([mod, 'shift'], 'space', lazy.layout.flip()),
+
+	#Screen bindings
+	Key([mod], 'Left', lazy.screen.prevgroup()),
+	Key([mod], 'Right', lazy.screen.nextgroup()),
 
 	#Shuffle window focus
 	Key([mod], 'space', lazy.layout.next()),
@@ -67,6 +74,9 @@ for index, group in enumerate(groups, start=1):
 		Key([mod, 'shift'], str(index), lazy.window.togroup(group.name)),
 	])
 
+dgroups_key_binder = None
+dgroups_app_rules = []
+
 #Floating windows
 floating = [
 	'org-spoutcraft-launcher-entrypoint-Start',
@@ -92,12 +102,14 @@ layouts = [
 	layout.MonadTall(),
 ]
 
+floating_layout = layout.Floating()
+
 #Screens
 screens = [
 	Screen(
 		top=bar.Bar(
-			[
-				widget.GroupBox(),
+			widgets=[
+				widget.GroupBox(disable_drag=True),
 				widget.Prompt(),
 				widget.WindowName(),
 				widget.CPUGraph(),
@@ -106,13 +118,20 @@ screens = [
 				widget.Systray(),
 				widget.Clock(),
 			],
-			30,
+			size=30,
 		),
 	),
 ]
 
-@hook.subscribe.startup
-def startup():
+#Defaults
+widget_defaults = {
+	'font': 'Droid Sans',
+	'fontsize': 16,
+}
+
+auto_fullscreen = True
+
+def main(qtile):
 	#Run a setup script that should start before qtile configures anything
 	import os
 	os.system('~/.config/qtile/setup.sh')
