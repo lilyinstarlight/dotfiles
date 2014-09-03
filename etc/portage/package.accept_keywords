@@ -1,10 +1,11 @@
 #Qtile
-=x11-wm/qtile-0.7.0 ~amd64
+=x11-wm/qtile-0.8.0 ~amd64
 
 #Chrome
 =www-client/chromium-37.0.2062.94 ~amd64
 =www-plugins/chrome-binary-plugins-37.0.2062.94_p1 ~amd64
 =www-client/google-chrome-37.0.2062.94_p1 ~amd64
+=www-client/google-chrome-unstable-39.0.2138.3_p1 ~amd64
 =www-plugins/google-talkplugin-5.4.2.0 ~amd64
 =net-misc/chrome-remote-desktop-37.0.2062.28 ~amd64
 
@@ -85,7 +86,7 @@ virtual/jdk:1.7 ~amd64
 =media-gfx/wkhtmltopdf-0.11.0_rc1 ~amd64
 
 #Plex Home Theater
-=media-tv/plex-home-theater-1.2.1 ~amd64
+=media-tv/plex-home-theater-1.2.2 ~amd64
 
 #Mutt
 =mail-client/mutt-1.5.23-r2 ~amd64

@@ -2,6 +2,8 @@ from libqtile.config import Key, Group, Drag, Click, Screen
 from libqtile.command import lazy
 from libqtile import hook, layout, bar, widget
 
+wmname = 'qtile'
+
 #Mod key for key commands
 mod = 'mod1'
 
@@ -50,7 +52,7 @@ keys = [
 	Key([mod, 'shift'], 'Return', lazy.spawn('urxvt')),
 	Key([mod, 'shift'], 'j', lazy.spawn('chromium-browser')),
 	Key([mod, 'shift'], 'h', lazy.spawn('thunar')),
-	Key([mod, 'shift'], 'l', lazy.spawn('slock')),
+	Key([mod, 'shift'], 'l', lazy.spawn('slimlock')),
 
 	#Qtile bindings
 	Key([mod, 'control'], 'r', lazy.restart()),

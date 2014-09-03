@@ -1,5 +1,4 @@
 #Chromium
-www-plugins/chrome-binary-plugins -pdf
 dev-libs/libxml2 icu
 sys-libs/zlib minizip
 media-libs/harfbuzz icu
