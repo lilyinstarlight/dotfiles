@@ -2,7 +2,8 @@ from libqtile.config import Key, Group, Drag, Click, Screen
 from libqtile.command import lazy
 from libqtile import hook, layout, bar, widget
 
-wmname = 'qtile'
+#Fix for Java programs
+wmname = 'CWM'
 
 #Mod key for key commands
 mod = 'mod1'
