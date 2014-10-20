@@ -42,16 +42,16 @@ keys = [
 	Key([mod], 'w', lazy.window.kill()),
 
 	#Special keyboard keys
-	Key([], 'XF86AudioRaiseVolume', lazy.spawn('amixer set Master 3%+')),
-	Key([], 'XF86AudioLowerVolume', lazy.spawn('amixer set Master 3%-')),
-	Key([], 'XF86AudioMute', lazy.spawn('amixer set Master toggle')),
+	Key([], 'XF86AudioRaiseVolume', lazy.spawn('amixer -q -c 1 sset Master 2dB+')),
+	Key([], 'XF86AudioLowerVolume', lazy.spawn('amixer -q -c 1 sset Master 2dB-')),
+	Key([], 'XF86AudioMute', lazy.spawn('amixer -q -c 1 sset Master toggle')),
 
 	#Command
 	Key([mod], 'r', lazy.spawncmd()),
 
 	#Common shortcuts
 	Key([mod, 'shift'], 'Return', lazy.spawn('urxvt')),
-	Key([mod, 'shift'], 'j', lazy.spawn('chromium-browser')),
+	Key([mod, 'shift'], 'j', lazy.spawn('google-chrome-stable')),
 	Key([mod, 'shift'], 'h', lazy.spawn('thunar')),
 	Key([mod, 'shift'], 'l', lazy.spawn('slimlock')),
 
@@ -83,6 +83,7 @@ dgroups_app_rules = []
 #Floating windows
 floating = [
 	'org-spoutcraft-launcher-entrypoint-Start',
+	'Steam',
 ]
 
 #Set necessary windows as floating
@@ -112,11 +113,13 @@ screens = [
 	Screen(
 		top=bar.Bar(
 			widgets=[
-				widget.GroupBox(disable_drag=True),
+				widget.GroupBox(disable_drag=True, invert_mouse_wheel=True),
 				widget.Prompt(),
 				widget.WindowName(),
 				widget.CPUGraph(),
 				widget.MemoryGraph(),
+				widget.Volume(cardid=1),
+				widget.Wlan(interface='wlp8s0'),
 				widget.Battery(battery_name='BAT1'),
 				widget.Systray(),
 				widget.Clock(),

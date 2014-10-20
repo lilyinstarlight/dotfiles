@@ -1,3 +1,6 @@
+#Valgrind
+sys-libs/glibc debug
+
 #Chromium
 dev-libs/libxml2 icu
 sys-libs/zlib minizip
@@ -38,18 +41,18 @@ media-libs/mlt python frei0r ffmpeg melt
 dev-libs/libpcre pcre16
 dev-qt/qtcore:5 icu
 dev-qt/qtmultimedia:5 -alsa widgets
-dev-qt/qtwebkit:5 widgets
-dev-python/PyQt5 print webkit widgets
+dev-qt/qtwebkit:5 printsupport widgets
+dev-python/PyQt5 network printsupport webkit widgets
 
 #XBMC
 media-tv/xbmc airplay avahi css joystick webserver
 net-libs/libmicrohttpd messages
 
-#Virt-manager
+#virt-manager
 net-libs/gtk-vnc python
 app-emulation/libvirt-glib python
-net-misc/spice-gtk python gtk3
-app-emulation/qemu spice
+net-misc/spice-gtk python gtk3 usbredir
+app-emulation/qemu spice usbredir
 app-emulation/libvirt virt-network
 
 #PHP
@@ -88,3 +91,19 @@ media-gfx/imagemagick postscript
 
 #Python
 dev-lang/python wininst
+
+#LilyPond
+media-sound/lilypond vim-syntax
+
+#GTK+
+dev-qt/qtgui:4 gtkstyle
+
+#HPLIP
+net-print/hplip scanner
+
+#Java
+dev-java/icedtea -nsplugin
+dev-java/icedtea-web -nsplugin
+
+#AVR-GCC
+cross-avr/gcc -sanitize

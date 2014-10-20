@@ -1,0 +1,7 @@
+[user]
+	email = fkmclane@gmail.com
+	name = Foster McLane
+[push]
+	default = simple
+[color]
+	ui = auto
