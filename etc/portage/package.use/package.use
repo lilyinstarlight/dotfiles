@@ -107,3 +107,9 @@ dev-java/icedtea-web -nsplugin
 
 #AVR-GCC
 cross-avr/gcc -sanitize
+
+#Nitrogen
+x11-misc/nitrogen xinerama
+
+#OpenSSH
+net-misc/openssh libedit

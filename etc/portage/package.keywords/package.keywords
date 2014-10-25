@@ -25,7 +25,7 @@
 =games-action/armagetronad-0.4 ~amd64
 
 #Pipelight
-=app-emulation/wine-1.7.20 ~amd64
+=app-emulation/wine-1.7.28 ~amd64
 
 #Primus
 =x11-misc/primus-9999 ~amd64
@@ -99,9 +99,6 @@ virtual/jdk:1.7 ~amd64
 =sys-devel/llvm-3.4.1-r2 ~amd64
 =sys-devel/clang-3.4.1-r100 ~amd64
 
-#Swift
-=net-im/swift-2.0 ~amd64
-
 #CLisp
 =dev-lisp/clisp-2.48-r2 ~amd64
 
@@ -157,7 +154,7 @@ virtual/jdk:1.7 ~amd64
 =media-sound/lilypond-2.18.2 ~amd64
 
 #Clearlooks-Phenix
-=x11-themes/clearlooks-phenix-5.0.3 ~amd64
+=x11-themes/clearlooks-phenix-5.0.7 ~amd64
 
 #Xarchiver
 =app-arch/xarchiver-0.5.3-r1 ~amd64
@@ -176,3 +173,12 @@ virtual/jdk:1.7 ~amd64
 
 #BitMessage
 =net-p2p/pybitmessage-0.4.3 ~amd64
+
+#NeoVim
+=dev-lua/cmsgpack-0.3.0 ~amd64
+=dev-libs/msgpack-0.5.9 ~amd64
+=dev-lua/luarocks-2.0.12 ~amd64
+=app-editors/neovim-9999 **
+
+#StarDict
+=app-dicts/stardict-dictd-devils-2.4.2 ~amd64

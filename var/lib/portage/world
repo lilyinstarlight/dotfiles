@@ -1,10 +1,11 @@
+app-admin/apg
 app-admin/keepassx
 app-admin/sudo
 app-arch/p7zip
 app-arch/xarchiver
 app-benchmarks/siege
 app-cdr/cdrtools
-app-editors/emacs
+app-editors/bvi
 app-editors/gvim
 app-editors/vim
 app-emulation/qemu
@@ -14,9 +15,11 @@ app-laptop/tlp
 app-misc/cmatrix
 app-misc/gtypist
 app-misc/reptyr
+app-misc/rlwrap
 app-misc/screen
 app-misc/sl
 app-misc/tmux
+app-misc/utimer
 app-pda/ifuse
 app-portage/eix
 app-portage/gentoolkit
@@ -25,6 +28,7 @@ app-shells/zsh
 app-shells/zsh-completion
 app-text/mupdf
 app-text/pandoc
+app-text/sdcv
 app-text/zathura
 app-text/zathura-pdf-poppler
 cross-avr/avr-libc
@@ -32,8 +36,10 @@ cross-avr/binutils
 cross-avr/gcc
 dev-embedded/arduino
 dev-java/icedtea
+dev-lang/ghc
 dev-lang/php
 dev-lang/python
+dev-lua/luarocks
 dev-python/PyQt5
 dev-python/pip
 dev-python/pypy-bin
@@ -66,7 +72,6 @@ lxde-base/lxappearance
 mail-client/mutt
 media-fonts/corefonts
 media-fonts/dejavu
-media-gfx/feh
 media-gfx/gimp
 media-gfx/inkscape
 media-gfx/scrot
@@ -159,12 +164,14 @@ x11-misc/arandr
 x11-misc/awf
 x11-misc/bumblebee
 x11-misc/dunst
+x11-misc/nitrogen
 x11-misc/primus
 x11-misc/read-edid
 x11-misc/slim
 x11-misc/slock
 x11-misc/vdpauinfo
 x11-misc/wmname
+x11-misc/xdotool
 x11-misc/xlockmore
 x11-terms/rxvt-unicode
 x11-themes/clearlooks-phenix
