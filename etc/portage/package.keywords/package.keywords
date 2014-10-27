@@ -92,9 +92,9 @@ virtual/jdk:1.7 ~amd64
 =app-pda/libplist-1.11 ~amd64
 =app-pda/libusbmuxd-1.0.9 ~amd64
 
-#Clang
-=sys-devel/llvm-3.4.1-r2 ~amd64
-=sys-devel/clang-3.4.1-r100 ~amd64
+#LLVM
+=sys-devel/llvm-3.5.0 ~amd64
+=sys-devel/clang-3.5.0-r100 ~amd64
 
 #CLisp
 =dev-lisp/clisp-2.48-r2 ~amd64

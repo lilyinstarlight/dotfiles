@@ -67,7 +67,7 @@ media-tv/plex-home-theater cec
 #iOS
 gnome-base/gvfs ios mtp
 
-#Clang
+#LLVM
 sys-devel/llvm clang
 
 #Profanity
