@@ -9,9 +9,6 @@
 =www-plugins/google-talkplugin-5.4.2.0 ~amd64
 =net-misc/chrome-remote-desktop-38.0.2125.9 ~amd64
 
-#GCC
-=sys-devel/gcc-4.8.3 ~amd64
-
 #Firefox
 =www-client/firefox-29.0.1 ~amd64
 

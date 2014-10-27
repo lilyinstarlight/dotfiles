@@ -148,7 +148,6 @@ virtual/commonlisp
 www-client/firefox
 www-client/google-chrome
 www-client/w3m
-www-plugins/adobe-flash
 www-plugins/pipelight
 x11-apps/mesa-progs
 x11-apps/setxkbmap
