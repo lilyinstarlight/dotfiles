@@ -58,7 +58,10 @@ games-action/armagetronad
 games-action/moon-buggy
 games-action/supertuxkart
 games-action/wordwarvi
+games-arcade/ninvaders
+games-arcade/nsnake
 games-engines/frotz
+games-misc/bsd-games
 games-misc/bsod
 games-misc/nyancat
 games-simulation/openttd
@@ -116,6 +119,7 @@ net-misc/ntp
 net-misc/openvpn
 net-misc/telnet-bsd
 net-misc/youtube-viewer
+net-misc/ytalk
 net-p2p/pybitmessage
 net-print/cupscloudprint
 net-print/hplip

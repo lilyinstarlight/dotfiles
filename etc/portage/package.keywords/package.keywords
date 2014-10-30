@@ -41,7 +41,6 @@
 
 #Pitivi
 =media-video/pitivi-0.93 ~amd64
-=media-video/ffmpeg-1.2.6 ~amd64
 =media-plugins/gst-plugins-libav-1.2.0 ~amd64
 =media-libs/gnonlin-1.2.0 ~amd64
 =dev-python/gst-python-1.2.0 ~amd64
@@ -179,3 +178,8 @@ virtual/jdk:1.7 ~amd64
 
 #StarDict
 =app-dicts/stardict-dictd-devils-2.4.2 ~amd64
+
+#MPV
+=media-video/ffmpeg-2.4.2 ~amd64
+=media-video/mpv-0.6.1 ~amd64
+=media-video/vlc-2.1.5 ~amd64

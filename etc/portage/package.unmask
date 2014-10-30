@@ -12,3 +12,7 @@ dev-qt/qtprintsupport
 dev-qt/qtwebkit
 dev-qt/qtsvg
 dev-qt/qtmultimedia
+
+#MPV
+media-video/ffmpeg
+media-video/mpv
