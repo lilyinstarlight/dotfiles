@@ -1,7 +1,7 @@
 URxvt.background: black
 URxvt.foreground: white
 URxvt.transparent: true
-URxvt.shading: 55
+URxvt.shading: 35
 URxvt.scrollBar: false
 URxvt.boldFont: fixed
 URxvt.perl-ext-common: selection-to-clipboard

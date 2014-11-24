@@ -1,6 +1,9 @@
 #Valgrind
 sys-libs/glibc debug
 
+#ArmagetronAd
+games-action/armagetronad glew
+
 #Chromium
 dev-libs/libxml2 icu
 sys-libs/zlib minizip
@@ -54,6 +57,7 @@ app-emulation/libvirt-glib python
 net-misc/spice-gtk python gtk3 usbredir
 app-emulation/qemu spice usbredir
 app-emulation/libvirt virt-network
+net-dns/dnsmasq script
 
 #PHP
 dev-lang/php gd
@@ -113,3 +117,13 @@ x11-misc/nitrogen xinerama
 
 #OpenSSH
 net-misc/openssh libedit
+
+#MPV
+media-video/mpv dvdnav lua vaapi
+media-video/ffmpeg vaapi
+
+#URXVT
+x11-terms/rxvt-unicode 256-color
+
+#ELinks
+www-client/elinks javascript

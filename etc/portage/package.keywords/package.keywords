@@ -5,12 +5,15 @@
 =x11-wm/qtile-0.8.0 ~amd64
 
 #Chrome
-=www-client/google-chrome-38.0.2125.104_p1 ~amd64
-=www-plugins/google-talkplugin-5.4.2.0 ~amd64
-=net-misc/chrome-remote-desktop-38.0.2125.9 ~amd64
+=www-client/google-chrome-39.0.2171.65_p1 ~amd64
+=www-plugins/google-talkplugin-5.38.5.0 ~amd64
+=net-misc/chrome-remote-desktop-39.0.2171.46 ~amd64
 
 #Firefox
-=www-client/firefox-29.0.1 ~amd64
+=www-client/firefox-33.0-r1 ~amd64
+=media-libs/mesa-10.3.4 ~amd64
+=dev-libs/nss-3.17.2 ~amd64
+=x11-libs/libdrm-2.4.58 ~amd64
 
 #Steam
 =games-util/steam-launcher-1.0.0.47-r1 ~amd64
@@ -71,13 +74,14 @@ virtual/jdk:1.7 ~amd64
 =sys-power/upower-0.99.0-r1 ~amd64
 
 #PyPy
-=dev-python/pypy-bin-2.2.1-r1 ~amd64
+=dev-python/pypy-2.4.0 ~amd64
+=dev-python/pypy3-2.4.0 ~amd64
 
 #WKHTMLToPDF
 =media-gfx/wkhtmltopdf-0.11.0_rc1 ~amd64
 
 #Plex Home Theater
-=media-tv/plex-home-theater-1.2.2 ~amd64
+=media-tv/plex-home-theater-1.3.0 ~amd64
 
 #Mutt
 =mail-client/mutt-1.5.23-r2 ~amd64
@@ -108,8 +112,25 @@ virtual/jdk:1.7 ~amd64
 #Cloudprint
 =net-print/cupscloudprint-20140814 ~amd64
 
+#PyQt4
+=dev-python/PyQt4-4.11.3 ~amd64
+=dev-qt/qtsvg-4.8.6-r1 ~amd64
+=dev-qt/qtdbus-4.8.6-r1 ~amd64
+=dev-qt/qtwebkit-4.8.6-r1 ~amd64
+=dev-qt/qtxmlpatterns-4.8.6-r1 ~amd64
+=dev-qt/qttest-4.8.6-r1 ~amd64
+=dev-qt/qtscript-4.8.6-r1 ~amd64
+=dev-qt/qt3support-4.8.6-r1 ~amd64
+=dev-qt/qtopengl-4.8.6-r1 ~amd64
+=dev-qt/qtcore-4.8.6-r1 ~amd64
+=dev-qt/qtsql-4.8.6-r1 ~amd64
+=dev-qt/qtgui-4.8.6-r1 ~amd64
+=dev-qt/qttranslations-4.8.6-r1 ~amd64
+
 #PyQt5
 =dev-python/PyQt5-5.3.2 ~amd64
+=dev-python/sip-4.16.4 ~amd64
+=dev-qt/qtchooser-0_p20140613 ~amd64
 =dev-qt/qtsvg-5.3.2 ~amd64
 =dev-qt/qtdbus-5.3.2 ~amd64
 =dev-qt/qtxml-5.3.2 ~amd64
@@ -119,7 +140,7 @@ virtual/jdk:1.7 ~amd64
 =dev-qt/qtopengl-5.3.2-r1 ~amd64
 =dev-qt/qtwebkit-5.3.2-r1 ~amd64
 =dev-qt/qtnetwork-5.3.2 ~amd64
-=dev-qt/qtcore-5.3.2 ~amd64
+=dev-qt/qtcore-5.3.2-r1 ~amd64
 =dev-qt/qtgui-5.3.2 ~amd64
 
 #HTTPie
@@ -171,15 +192,32 @@ virtual/jdk:1.7 ~amd64
 =net-p2p/pybitmessage-0.4.3 ~amd64
 
 #NeoVim
-=dev-lua/cmsgpack-0.3.0 ~amd64
-=dev-libs/msgpack-0.5.9 ~amd64
-=dev-lua/luarocks-2.0.12 ~amd64
+=dev-libs/libuv-0.11.29 ~amd64
+=dev-lua/messagepack-9999 ~amd64
+=dev-libs/msgpack-9999 ~amd64
 =app-editors/neovim-9999 **
 
 #StarDict
 =app-dicts/stardict-dictd-devils-2.4.2 ~amd64
 
 #MPV
-=media-video/ffmpeg-2.4.2 ~amd64
+=media-video/ffmpeg-2.4.3 ~amd64
 =media-video/mpv-0.6.1 ~amd64
 =media-video/vlc-2.1.5 ~amd64
+
+#mitmproxy
+=net-proxy/mitmproxy-0.10.1 ~amd64
+=dev-python/netlib-0.10.1 ~amd64
+=dev-python/urwid-1.2.2 ~amd64
+
+#TeX
+=dev-tex/bera-20040930 ~amd64
+
+#Mupen64Plus
+=games-emulation/mupen64plus-core-2.0-r1 ~amd64
+=games-emulation/mupen64plus-video-rice-2.0-r1 ~amd64
+=games-emulation/mupen64plus-audio-sdl-2.0-r1 ~amd64
+=games-emulation/mupen64plus-ui-console-2.0-r1 ~amd64
+=games-emulation/mupen64plus-rsp-hle-2.0-r1 ~amd64
+=games-emulation/mupen64plus-input-sdl-2.0-r1 ~amd64
+=games-emulation/m64py-0.2.1-r1 ~amd64

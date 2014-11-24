@@ -16,3 +16,12 @@ dev-qt/qtmultimedia
 #MPV
 media-video/ffmpeg
 media-video/mpv
+
+#Mupen64Plus
+games-emulation/mupen64plus-core
+games-emulation/mupen64plus-video-rice
+games-emulation/mupen64plus-audio-sdl
+games-emulation/mupen64plus-ui-console
+games-emulation/mupen64plus-rsp-hle
+games-emulation/mupen64plus-input-sdl
+games-emulation/m64py

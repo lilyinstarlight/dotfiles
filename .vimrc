@@ -1,5 +1,12 @@
-"Pathogen
-execute pathogen#infect()
+"Vim-Plug
+call plug#begin('~/.vim/plugged')
+
+Plug 'tpope/vim-surround'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'FredKSchott/CoVim'
+
+call plug#end()
 
 "Features
 syntax on
@@ -17,6 +24,3 @@ set mouse=a
 
 "Tabbing
 set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
-
-"Custom commands
-cmap w!! w !sudo tee > /dev/null %
