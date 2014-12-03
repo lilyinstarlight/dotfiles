@@ -48,7 +48,7 @@ dev-qt/qtwebkit:5 printsupport widgets
 dev-python/PyQt5 network printsupport webkit widgets
 
 #XBMC
-media-tv/xbmc airplay avahi css joystick webserver
+media-tv/xbmc airplay avahi cec css joystick upnp vaapi webserver
 net-libs/libmicrohttpd messages
 
 #virt-manager
@@ -123,7 +123,7 @@ media-video/mpv dvdnav lua vaapi
 media-video/ffmpeg vaapi
 
 #URXVT
-x11-terms/rxvt-unicode 256-color
+x11-terms/rxvt-unicode 256-color alt-font-width blink secondary-wheel -vanilla wcwidth xft
 
 #ELinks
 www-client/elinks javascript

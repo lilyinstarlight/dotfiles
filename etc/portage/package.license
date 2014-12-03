@@ -1,8 +1,9 @@
 #Chrome
-www-plugins/chrome-binary-plugins google-chrome
 www-client/google-chrome google-chrome
 www-client/google-chrome-beta google-chrome
 www-client/google-chrome-unstable google-chrome
+www-plugins/chrome-binary-plugins google-chrome
+www-plugins/google-talkplugin Google-TOS
 net-misc/chrome-remote-desktop google-chrome
 
 #Flash

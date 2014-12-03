@@ -76,6 +76,7 @@ games-emulation/mupen64plus-video-rice
 games-engines/frotz
 games-misc/bsd-games
 games-misc/bsod
+games-misc/cowsay
 games-misc/nyancat
 games-simulation/openttd
 games-sports/xmoto
@@ -88,6 +89,7 @@ lxde-base/lxappearance
 mail-client/mutt
 media-fonts/corefonts
 media-fonts/dejavu
+media-fonts/terminus-font
 media-gfx/gimp
 media-gfx/inkscape
 media-gfx/scrot
@@ -145,6 +147,7 @@ net-wireless/wpa_supplicant
 sys-apps/gptfdisk
 sys-apps/iproute2
 sys-apps/lm_sensors
+sys-apps/lshw
 sys-apps/mlocate
 sys-apps/systemd
 sys-apps/usbutils
@@ -167,6 +170,7 @@ www-client/elinks
 www-client/firefox
 www-client/google-chrome
 www-client/w3m
+www-plugins/google-talkplugin
 www-plugins/pipelight
 x11-apps/mesa-progs
 x11-apps/setxkbmap
@@ -187,6 +191,7 @@ x11-misc/primus
 x11-misc/read-edid
 x11-misc/slim
 x11-misc/slock
+x11-misc/urxvt-font-size
 x11-misc/vdpauinfo
 x11-misc/wmname
 x11-misc/xdotool

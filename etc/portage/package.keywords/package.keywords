@@ -1,3 +1,7 @@
+#systemd
+=sys-apps/systemd-217-r3 ~amd64
+=sys-apps/util-linux-2.25.2 ~amd64
+
 #finit
 =sys-apps/finit-1.9 ~amd64
 
@@ -5,8 +9,8 @@
 =x11-wm/qtile-0.8.0 ~amd64
 
 #Chrome
-=www-client/google-chrome-39.0.2171.65_p1 ~amd64
-=www-plugins/google-talkplugin-5.38.5.0 ~amd64
+=www-client/google-chrome-39.0.2171.71_p1 ~amd64
+=www-plugins/google-talkplugin-5.38.6.0 ~amd64
 =net-misc/chrome-remote-desktop-39.0.2171.46 ~amd64
 
 #Firefox
