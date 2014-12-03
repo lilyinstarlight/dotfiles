@@ -1,3 +1,5 @@
+import my_widget
+
 from libqtile.config import Key, Group, Drag, Click, Screen
 from libqtile.command import lazy
 from libqtile import hook, layout, bar, widget
@@ -42,9 +44,9 @@ keys = [
 	Key([mod], 'w', lazy.window.kill()),
 
 	#Special keyboard keys
-	Key([], 'XF86AudioRaiseVolume', lazy.spawn('amixer -q -c 1 sset Master 2dB+')),
-	Key([], 'XF86AudioLowerVolume', lazy.spawn('amixer -q -c 1 sset Master 2dB-')),
-	Key([], 'XF86AudioMute', lazy.spawn('amixer -q -c 1 sset Master toggle')),
+	Key([], 'XF86AudioRaiseVolume', lazy.spawn('amixer -q -D pulse sset Master 4%+')),
+	Key([], 'XF86AudioLowerVolume', lazy.spawn('amixer -q -D pulse sset Master 4%-')),
+	Key([], 'XF86AudioMute', lazy.spawn('amixer -q -D pulse sset Master toggle')),
 
 	#Command
 	Key([mod], 'r', lazy.spawncmd()),
@@ -118,7 +120,7 @@ screens = [
 				widget.WindowName(),
 				widget.CPUGraph(),
 				widget.MemoryGraph(),
-				widget.Volume(cardid=1),
+				my_widget.PAVolume(),
 				widget.Wlan(interface='wlp8s0'),
 				widget.Battery(battery_name='BAT1'),
 				widget.Systray(),
