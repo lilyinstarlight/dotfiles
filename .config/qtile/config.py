@@ -86,12 +86,13 @@ dgroups_app_rules = []
 floating = [
 	'org-spoutcraft-launcher-entrypoint-Start',
 	'Steam',
+	'display',
 ]
 
 #Set necessary windows as floating
 @hook.subscribe.client_new
 def set_floating(client):
-	if client.window.get_wm_class() in floating or client.window.get_wm_type() == 'dialog' or client.window.get_wm_transient_for():
+	if client.window.get_wm_class()[0] in floating or client.window.get_wm_type() == 'dialog' or client.window.get_wm_transient_for():
 		client.floating = True
 
 #Mouse
