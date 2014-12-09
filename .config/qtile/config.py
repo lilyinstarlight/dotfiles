@@ -27,11 +27,11 @@ keys = [
 	Key([mod, 'control'], 'space', lazy.window.toggle_floating()),
 
 	#Other layout bindings
-	Key([mod, 'shift'], 'i', lazy.layout.grow()),
-	Key([mod, 'shift'], 'm', lazy.layout.shrink()),
-	Key([mod, 'shift'], 'n', lazy.layout.normalize()),
-	Key([mod, 'shift'], 'o', lazy.layout.maximize()),
-	Key([mod, 'shift'], 'space', lazy.layout.flip()),
+	Key([mod], 'i', lazy.layout.grow()),
+	Key([mod], 'm', lazy.layout.shrink()),
+	Key([mod], 'n', lazy.layout.normalize()),
+	Key([mod], 'o', lazy.layout.maximize()),
+	Key([mod], 'p', lazy.layout.flip()),
 
 	#Screen bindings
 	Key([mod], 'Left', lazy.screen.prevgroup()),
@@ -84,16 +84,19 @@ dgroups_app_rules = []
 
 #Floating windows
 floating = [
-	'org-spoutcraft-launcher-entrypoint-Start',
-	'Steam',
-	'display',
+	('sun-awt-X11-XFramePeer', 'org-spoutcraft-launcher-entrypoint-Start'),
+	('Steam', 'Steam'),
+	('display', 'Display'),
 ]
 
 #Set necessary windows as floating
 @hook.subscribe.client_new
 def set_floating(client):
-	if client.window.get_wm_class()[0] in floating or client.window.get_wm_type() == 'dialog' or client.window.get_wm_transient_for():
-		client.floating = True
+	try:
+		if client.window.get_wm_class() and client.window.get_wm_class() in floating or client.window.get_wm_type() == 'dialog' or client.window.get_wm_transient_for():
+			client.floating = True
+	except:
+		pass
 
 #Mouse
 mouse = [
@@ -104,9 +107,8 @@ mouse = [
 
 #Layouts
 layouts = [
-	layout.Tile(),
+	layout.MonadTall(border_focus="#0000ff", border_width=1),
 	layout.Max(),
-	layout.MonadTall(),
 ]
 
 floating_layout = layout.Floating()
@@ -119,23 +121,37 @@ screens = [
 				widget.GroupBox(disable_drag=True, invert_mouse_wheel=True),
 				widget.Prompt(),
 				widget.WindowName(),
+				widget.TextBox("CPU:"),
 				widget.CPUGraph(),
+				widget.Sep(),
+				widget.TextBox("TEMP:"),
+				widget.ThermalSensor(tag_sensor='id 0'),
+				widget.Sep(),
+				widget.TextBox("MEM:"),
 				widget.MemoryGraph(),
+				widget.Sep(),
+				widget.TextBox("VOL:"),
 				my_widget.PAVolume(),
-				widget.Wlan(interface='wlp8s0'),
+				widget.Sep(),
+				widget.TextBox("WLAN:"),
+				my_widget.Wlan(interface='wlp8s0'),
+				widget.Sep(),
+				widget.TextBox("BAT:"),
 				widget.Battery(battery_name='BAT1'),
+				widget.Sep(),
 				widget.Systray(),
 				widget.Clock(),
 			],
-			size=30,
+			size=26,
 		),
 	),
 ]
 
 #Defaults
 widget_defaults = {
-	'font': 'Droid Sans',
-	'fontsize': 16,
+	'font': 'Terminus',
+	'fontsize': 14,
+	'padding': 4,
 }
 
 auto_fullscreen = True

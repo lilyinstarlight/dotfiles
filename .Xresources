@@ -1,7 +1,13 @@
+URxvt.font: xft:terminus:size=10
+URxvt.boldFont: xft:terminus:size=10
 URxvt.background: black
 URxvt.foreground: white
 URxvt.transparent: true
 URxvt.shading: 35
 URxvt.scrollBar: false
-URxvt.boldFont: fixed
-URxvt.perl-ext-common: selection-to-clipboard
+URxvt.secondaryWheel: true
+URxvt.perl-ext-common: font-size,selection-to-clipboard
+URxvt.keysym.C-Up: perl:font-size:increase
+URxvt.keysym.C-Down: perl:font-size:decrease
+URxvt.keysym.C-S-Up: perl:font-size:incglobal
+URxvt.keysym.C-S-Down: perl:font-size:decglobal
