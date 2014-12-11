@@ -53,7 +53,8 @@ keys = [
 
 	#Common shortcuts
 	Key([mod, 'shift'], 'Return', lazy.spawn('urxvt')),
-	Key([mod, 'shift'], 'j', lazy.spawn('google-chrome-stable')),
+	Key([mod, 'shift'], 'j', lazy.spawn('google-chrome-stable --profile-directory="Default"')),
+	Key([mod, 'shift'], 'k', lazy.spawn('google-chrome-stable --profile-directory="Profile 1"')),
 	Key([mod, 'shift'], 'h', lazy.spawn('thunar')),
 	Key([mod, 'shift'], 'l', lazy.spawn('slimlock')),
 
@@ -136,7 +137,7 @@ screens = [
 				widget.TextBox("WLAN:"),
 				my_widget.Wlan(interface='wlp8s0'),
 				widget.Sep(),
-				widget.TextBox("BAT:"),
+				widget.TextBox("BATT:"),
 				widget.Battery(battery_name='BAT1'),
 				widget.Sep(),
 				widget.Systray(),
