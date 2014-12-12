@@ -1,6 +1,8 @@
 "Vim-Plug
 call plug#begin('~/.vim/plugged')
 
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'ntpeters/vim-better-whitespace'
@@ -13,11 +15,9 @@ syntax on
 filetype indent on
 
 "Settings
-set showcmd
 set showmatch
 set ignorecase
 set smartcase
-set incsearch
 set autowrite
 set hidden
 set mouse=a
