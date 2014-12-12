@@ -77,7 +77,7 @@ groups = [
 for index, group in enumerate(groups, start=1):
 	keys.extend([
 		Key([mod], str(index), lazy.group[group.name].toscreen()),
-		Key([mod, 'shift'], str(index), lazy.window.togroup(group.name)),
+		Key([mod, 'control'], str(index), lazy.window.togroup(group.name)),
 	])
 
 dgroups_key_binder = None
