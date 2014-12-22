@@ -1,5 +1,6 @@
 app-admin/apg
 app-admin/keepassx
+app-admin/kpcli
 app-admin/sudo
 app-arch/makeself
 app-arch/p7zip
@@ -19,6 +20,7 @@ app-misc/gtypist
 app-misc/reptyr
 app-misc/rlwrap
 app-misc/screen
+app-misc/screenfetch
 app-misc/sl
 app-misc/tmux
 app-misc/utimer
@@ -38,7 +40,6 @@ cross-avr/avr-libc
 cross-avr/binutils
 cross-avr/gcc
 dev-embedded/arduino
-dev-java/icedtea
 dev-lang/R
 dev-lang/ghc
 dev-lang/php
@@ -61,6 +62,7 @@ dev-util/flawfinder
 dev-util/gource
 dev-util/valgrind
 dev-vcs/git
+dev-vcs/subversion
 games-action/armagetronad
 games-action/moon-buggy
 games-action/supertuxkart
@@ -92,6 +94,7 @@ media-fonts/dejavu
 media-fonts/terminus-font
 media-gfx/gimp
 media-gfx/inkscape
+media-gfx/maim
 media-gfx/scrot
 media-gfx/simple-scan
 media-gfx/viewnior
@@ -103,10 +106,12 @@ media-plugins/alsa-plugins
 media-sound/alsa-utils
 media-sound/audacity
 media-sound/frescobaldi
+media-sound/jack-audio-connection-kit
 media-sound/lilypond
 media-sound/mumble
 media-sound/pavucontrol
 media-sound/pulseaudio
+media-sound/qjackctl
 media-sound/vmpk
 media-tv/plex-home-theater
 media-tv/xbmc
@@ -196,9 +201,11 @@ x11-misc/slim
 x11-misc/slock
 x11-misc/urxvt-font-size
 x11-misc/vdpauinfo
+x11-misc/wmctrl
 x11-misc/wmname
 x11-misc/xdotool
 x11-misc/xlockmore
+x11-misc/xsel
 x11-terms/rxvt-unicode
 x11-themes/clearlooks-phenix
 x11-themes/gnome-icon-theme

@@ -9,7 +9,7 @@
 =x11-wm/qtile-0.8.0 ~amd64
 
 #Chrome
-=www-client/google-chrome-39.0.2171.71_p1 ~amd64
+=www-client/google-chrome-39.0.2171.95_p1 ~amd64
 =www-plugins/google-talkplugin-5.38.6.0 ~amd64
 =net-misc/chrome-remote-desktop-39.0.2171.46 ~amd64
 
@@ -58,8 +58,8 @@
 #IcedTea
 virtual/jre:1.7 ~amd64
 virtual/jdk:1.7 ~amd64
-=dev-java/icedtea-7.2.4.8 ~amd64
-=dev-java/icedtea-web-1.4.2-r1 ~amd64
+=dev-java/icedtea-bin-7.2.5.3 ~amd64
+=dev-java/icedtea-web-1.5.1-r1 ~amd64
 
 #Blueman
 =net-wireless/blueman-1.23_p20140717-r1 ~amd64
@@ -116,7 +116,7 @@ media-tv/plex-home-theater ~amd64
 =dev-util/gource-0.40 ~amd64
 
 #Cloudprint
-=net-print/cupscloudprint-20140814 ~amd64
+=net-print/cupscloudprint-20140814.2 ~amd64
 
 #PyQt4
 =dev-python/PyQt4-4.11.3 ~amd64
@@ -207,8 +207,8 @@ media-tv/plex-home-theater ~amd64
 =app-dicts/stardict-dictd-devils-2.4.2 ~amd64
 
 #MPV
-=media-video/ffmpeg-2.4.3 ~amd64
-=media-video/mpv-0.6.1 ~amd64
+=media-video/ffmpeg-2.5.1 ~amd64
+=media-video/mpv-0.7.1 ~amd64
 =media-video/vlc-2.1.5 ~amd64
 
 #mitmproxy
@@ -226,8 +226,18 @@ media-tv/plex-home-theater ~amd64
 =games-emulation/mupen64plus-ui-console-2.0-r1 ~amd64
 =games-emulation/mupen64plus-rsp-hle-2.0-r1 ~amd64
 =games-emulation/mupen64plus-input-sdl-2.0-r1 ~amd64
-=games-emulation/m64py-0.2.1-r1 ~amd64
+=games-emulation/m64py-0.2.2 ~amd64
 
 #Frescobaldi
 =media-sound/frescobaldi-2.0.16 ~amd64
 =dev-python/python-poppler-qt4-0.18.1 ~amd64
+
+#SuperTuxKart
+#=games-action/supertuxkart-0.8.2_beta ~amd64
+
+#kpcli
+=dev-perl/File-KeePass-2.30.0 ~amd64
+=app-admin/kpcli-2.7 ~amd64
+
+#JACK
+=media-sound/jack-audio-connection-kit-1.9.10 ~amd64
