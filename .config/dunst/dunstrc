@@ -1,5 +1,5 @@
 [global]
-    font = Monospace 8
+    font = Terminus 10
 
     # allow a small subset of html markup:
     # <b>bold</b>
@@ -59,7 +59,7 @@
     # right side of the screen.  Y is measured from the top and down respectevly.
     # The width can be negative. In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "300x5-30+20"
+    geometry = "300x5-5+34"
 
     # The transparency of the window. range: [0; 100]
     # This option will only work if a compositing windowmanager is present (e.g. xcompmgr, compiz, etc..)
@@ -121,7 +121,7 @@
     dmenu = /usr/bin/dmenu -p dunst:
 
     # browser for opening urls in context menu
-    browser = /usr/bin/chromium-browser --ignore-gpu-blacklist
+    browser = google-chrome-stable --profile-directory="Default"
 
 [frame]
     width = 3
