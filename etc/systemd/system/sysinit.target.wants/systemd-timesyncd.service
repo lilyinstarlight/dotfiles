@@ -1,1 +1,1 @@
-../../../../usr/lib/systemd/system/systemd-timesyncd.service
+/usr/lib64/systemd/system/systemd-timesyncd.service
