@@ -1,0 +1,2 @@
+#!/bin/sh
+SSH_ASKPASS=/usr/local/bin/ssh-askpass-zenity setsid ssh -ND 8000 fkmclane.net

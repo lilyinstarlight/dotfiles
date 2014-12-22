@@ -1,0 +1,2 @@
+#!/bin/sh
+google-chrome-stable --user-data-dir=".config/google-chrome-home" --proxy-server="socks://localhost:8000" --incognito
