@@ -88,6 +88,7 @@ floating = [
 	('sun-awt-X11-XFramePeer', 'org-spoutcraft-launcher-entrypoint-Start'),
 	('Steam', 'Steam'),
 	('display', 'Display'),
+	('m64py', 'M64py'),
 ]
 
 #Set necessary windows as floating
@@ -110,6 +111,7 @@ mouse = [
 layouts = [
 	layout.MonadTall(border_focus="#0000ff", border_width=1),
 	layout.Max(),
+	layout.Floating(),
 ]
 
 floating_layout = layout.Floating()
@@ -132,7 +134,7 @@ screens = [
 				widget.MemoryGraph(),
 				widget.Sep(),
 				widget.TextBox("VOL:"),
-				my_widget.PAVolume(),
+				widget.Volume(pulseaudio=True),
 				widget.Sep(),
 				widget.TextBox("WLAN:"),
 				my_widget.Wlan(interface='wlp8s0'),
@@ -143,16 +145,38 @@ screens = [
 				widget.Systray(),
 				widget.Clock(),
 			],
-			size=26,
+			size=28,
 		),
 	),
 ]
 
 #Defaults
 widget_defaults = {
+	#General
 	'font': 'Terminus',
 	'fontsize': 14,
 	'padding': 4,
+	#Highlight
+	'highlight_method': 'block',
+	'rounded': False,
+	#Colors
+	'background': '222222',
+	'active': 'ffffff',
+	'inactive': 'aaaaaa',
+	#'this_current_screen_border': 'aa2222',
+	'this_current_screen_border': '316a8d',
+	#'other_screen_border': '222222',
+	'other_screen_border': '444444',
+	'urgent_alert_method': 'border',
+	'urgent_border': 'ed4035',
+	#Graphs
+	#'graph_color': 'dd8844',
+	'graph_color': 'ed9743',
+	#'fill_color': 'dd8844',
+	'fill_color': 'ed9743',
+	'border_color': '444444',
+	#Battery
+	'low_foreground': 'ed4035',
 }
 
 auto_fullscreen = True
