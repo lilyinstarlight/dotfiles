@@ -12,6 +12,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'itchyny/lightline.vim'
 Plug 'FredKSchott/CoVim'
+Plug 'nanotech/jellybeans.vim'
 
 call plug#end()
 
@@ -28,3 +29,6 @@ set mouse=a
 
 "Tabbing
 set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+
+"Colour Scheme
+colorscheme jellybeans
