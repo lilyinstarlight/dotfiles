@@ -27,11 +27,11 @@ keys = [
 	Key([mod, 'control'], 'space', lazy.window.toggle_floating()),
 
 	#Other layout bindings
-	Key([mod], 'i', lazy.layout.grow()),
-	Key([mod], 'm', lazy.layout.shrink()),
 	Key([mod], 'n', lazy.layout.normalize()),
-	Key([mod], 'o', lazy.layout.maximize()),
-	Key([mod], 'p', lazy.layout.flip()),
+	Key([mod, 'control'], 'i', lazy.layout.grow()),
+	Key([mod, 'control'], 'm', lazy.layout.shrink()),
+	Key([mod, 'control'], 'o', lazy.layout.maximize()),
+	Key([mod, 'control'], 'p', lazy.layout.flip()),
 
 	#Screen bindings
 	Key([mod], 'Left', lazy.screen.prevgroup()),
@@ -59,8 +59,8 @@ keys = [
 	Key([mod, 'shift'], 'l', lazy.spawn('slimlock')),
 
 	#Qtile bindings
-	Key([mod, 'control'], 'r', lazy.restart()),
-	Key([mod, 'control'], 'q', lazy.shutdown()),
+	Key([mod, 'shift'], 'r', lazy.restart()),
+	Key([mod, 'shift'], 'q', lazy.shutdown()),
 ]
 
 #Groups
@@ -177,6 +177,8 @@ widget_defaults = {
 	'border_color': '444444',
 	#Battery
 	'low_foreground': 'ed4035',
+	#Thermal Sensor
+	'foreground_alert': 'ed4035',
 }
 
 auto_fullscreen = True
