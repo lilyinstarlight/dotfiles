@@ -1,5 +1,5 @@
 #systemd
-=sys-apps/systemd-217-r3 ~amd64
+=sys-apps/systemd-217-r4 ~amd64
 =sys-apps/util-linux-2.25.2 ~amd64
 
 #finit
@@ -33,8 +33,9 @@
 #Pipelight
 =app-emulation/wine-1.7.28 ~amd64
 
-#Primus
-=x11-misc/primus-9999 ~amd64
+#Bumblebee
+=x11-misc/bumblebee-9999 **
+=x11-misc/primus-9999 **
 
 #TLP
 =app-laptop/tlp-0.6-r1 ~amd64
@@ -135,7 +136,7 @@ media-tv/plex-home-theater ~amd64
 
 #PyQt5
 =dev-python/PyQt5-5.3.2 ~amd64
-=dev-python/sip-4.16.4 ~amd64
+=dev-python/sip-4.16.5 ~amd64
 =dev-qt/qtchooser-0_p20140613 ~amd64
 =dev-qt/qtsvg-5.3.2 ~amd64
 =dev-qt/qtdbus-5.3.2 ~amd64
@@ -161,8 +162,8 @@ media-tv/plex-home-theater ~amd64
 =dev-python/runsnakerun-2.0.4 ~amd64
 
 #Namecoin
-=net-dns/namecoind-0.3.76 ~amd64
-=net-dns/namecoin-qt-0.3.76 ~amd64
+=net-dns/namecoind-0.3.80 ~amd64
+=net-dns/namecoin-qt-0.3.80 ~amd64
 
 #Android Tools
 =dev-util/android-tools-0_p20130218 ~amd64
@@ -190,6 +191,9 @@ media-tv/plex-home-theater ~amd64
 
 #virt-manager
 =app-emulation/virt-manager-1.1.0 ~amd64
+=app-emulation/libvirt-1.2.11-r2 ~amd64
+=app-emulation/libvirt-glib-0.2.0 ~amd64
+=dev-python/libvirt-python-1.2.11 ~amd64
 
 #Mumble
 =media-sound/mumble-1.2.8 ~amd64

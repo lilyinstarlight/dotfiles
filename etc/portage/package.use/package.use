@@ -127,3 +127,9 @@ x11-terms/rxvt-unicode 256-color alt-font-width blink secondary-wheel -vanilla w
 
 #ELinks
 www-client/elinks javascript
+
+#Nmap
+net-analyzer/nmap zenmap
+
+#Steam
+media-libs/libtxc_dxtn abi_x86_32

@@ -4,6 +4,7 @@ app-admin/kpcli
 app-admin/sudo
 app-arch/makeself
 app-arch/p7zip
+app-arch/unrar
 app-arch/xarchiver
 app-benchmarks/siege
 app-cdr/cdrtools
@@ -62,6 +63,7 @@ dev-util/flawfinder
 dev-util/gource
 dev-util/valgrind
 dev-vcs/git
+dev-vcs/mercurial
 dev-vcs/subversion
 games-action/armagetronad
 games-action/moon-buggy
@@ -103,6 +105,7 @@ media-libs/glfw
 media-libs/libopenshot
 media-libs/libtxc_dxtn
 media-plugins/alsa-plugins
+media-sound/abcde
 media-sound/alsa-utils
 media-sound/audacity
 media-sound/frescobaldi
@@ -119,6 +122,7 @@ media-video/ffmpeg
 media-video/mpv
 media-video/pitivi
 media-video/vlc
+net-analyzer/nmap
 net-analyzer/tcpdump
 net-analyzer/traceroute
 net-analyzer/wireshark
@@ -173,6 +177,7 @@ sys-process/cronie
 sys-process/htop
 sys-process/lsof
 virtual/commonlisp
+virtual/cron
 www-client/elinks
 www-client/firefox
 www-client/google-chrome
