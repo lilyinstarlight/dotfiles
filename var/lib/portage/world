@@ -7,7 +7,9 @@ app-arch/p7zip
 app-arch/unrar
 app-arch/xarchiver
 app-benchmarks/siege
+app-cdr/cdrdao
 app-cdr/cdrtools
+app-doc/doxygen
 app-editors/bvi
 app-editors/gvim
 app-editors/neovim
@@ -18,6 +20,7 @@ app-emulation/wine
 app-laptop/tlp
 app-misc/cmatrix
 app-misc/gtypist
+app-misc/jq
 app-misc/reptyr
 app-misc/rlwrap
 app-misc/screen
@@ -29,6 +32,7 @@ app-pda/ifuse
 app-portage/eix
 app-portage/gentoolkit
 app-portage/layman
+app-shells/fish
 app-shells/gentoo-zsh-completions
 app-shells/zsh
 app-text/mupdf
@@ -130,12 +134,16 @@ net-dialup/minicom
 net-dns/namecoin-qt
 net-dns/namecoind
 net-im/gajim
+net-im/pidgin
 net-im/profanity
 net-irc/irssi
 net-libs/nodejs
+net-mail/isync
+net-mail/syncmaildir
 net-misc/bridge-utils
 net-misc/chrome-remote-desktop
 net-misc/connman
+net-misc/dhcp
 net-misc/dhcpcd
 net-misc/httpie
 net-misc/mosh
@@ -151,6 +159,8 @@ net-print/hplip
 net-proxy/mitmproxy
 net-wireless/blueman
 net-wireless/bluez
+net-wireless/hostapd
+net-wireless/iw
 net-wireless/python-wifi
 net-wireless/rfkill
 net-wireless/wireless-tools
@@ -167,12 +177,14 @@ sys-boot/efibootmgr
 sys-boot/grub
 sys-boot/winusb
 sys-devel/clang
+sys-devel/gcc
 sys-devel/gdb
 sys-fs/dosfstools
 sys-fs/mtpfs
 sys-kernel/genkernel
 sys-kernel/gentoo-sources
 sys-kernel/linux-firmware
+sys-libs/ncurses
 sys-process/cronie
 sys-process/htop
 sys-process/lsof
@@ -186,6 +198,7 @@ www-plugins/google-talkplugin
 www-plugins/pipelight
 x11-apps/mesa-progs
 x11-apps/setxkbmap
+x11-apps/xbacklight
 x11-apps/xclock
 x11-apps/xev
 x11-apps/xeyes
@@ -211,6 +224,8 @@ x11-misc/wmname
 x11-misc/xdotool
 x11-misc/xlockmore
 x11-misc/xsel
+x11-plugins/pidgin-libnotify
+x11-plugins/pidgin-otr
 x11-terms/rxvt-unicode
 x11-themes/clearlooks-phenix
 x11-themes/gnome-icon-theme
