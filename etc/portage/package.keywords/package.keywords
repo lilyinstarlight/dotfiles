@@ -1,5 +1,5 @@
 #systemd
-=sys-apps/systemd-217-r4 ~amd64
+=sys-apps/systemd-218-r1 ~amd64
 =sys-apps/util-linux-2.25.2 ~amd64
 
 #finit
@@ -22,7 +22,7 @@
 =dev-libs/nspr-4.10.7-r1 ~amd64
 
 #Steam
-=games-util/steam-launcher-1.0.0.47-r1 ~amd64
+=games-util/steam-launcher-1.0.0.49 ~amd64
 
 #KeepassX
 =app-admin/keepassx-2.0_alpha6 ~amd64
@@ -210,9 +210,14 @@ media-tv/plex-home-theater ~amd64
 #StarDict
 =app-dicts/stardict-dictd-devils-2.4.2 ~amd64
 
+#ffmpeg
+=media-video/ffmpeg-2.5.2 ~amd64
+=media-libs/x265-1.4 ~amd64
+
 #MPV
-=media-video/ffmpeg-2.5.1 ~amd64
-=media-video/mpv-0.7.1 ~amd64
+=media-video/mpv-0.7.2 ~amd64
+
+#VLC
 =media-video/vlc-2.1.5 ~amd64
 
 #mitmproxy
@@ -237,7 +242,7 @@ media-tv/plex-home-theater ~amd64
 =dev-python/python-poppler-qt4-0.18.1 ~amd64
 
 #SuperTuxKart
-#=games-action/supertuxkart-0.8.2_beta ~amd64
+=games-action/supertuxkart-0.8.2_beta ~amd64
 
 #kpcli
 =dev-perl/File-KeePass-2.30.0 ~amd64
@@ -245,3 +250,6 @@ media-tv/plex-home-theater ~amd64
 
 #JACK
 =media-sound/jack-audio-connection-kit-1.9.10 ~amd64
+
+#Sync Mail Dir
+=net-mail/syncmaildir-1.2.6 ~amd64

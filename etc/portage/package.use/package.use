@@ -82,10 +82,10 @@ net-libs/farstream python
 net-im/gajim jingle
 
 #WPA Supplicant
-net-wireless/wpa_supplicant wps
+net-wireless/wpa_supplicant ap p2p wps
 
 #Vim
-app-editors/vim python
+app-editors/vim python vim-pager
 
 #Xorg
 x11-base/xorg-server kdrive xvfb
@@ -119,8 +119,8 @@ x11-misc/nitrogen xinerama
 net-misc/openssh libedit
 
 #MPV
-media-video/mpv dvdnav lua vaapi
-media-video/ffmpeg vaapi
+media-video/mpv cdio dvdnav joystick libcaca lua vaapi
+media-video/ffmpeg cdio libass libcaca openssl rtmp ssh vaapi vpx webp x265
 
 #URXVT
 x11-terms/rxvt-unicode 256-color alt-font-width blink secondary-wheel -vanilla wcwidth xft
