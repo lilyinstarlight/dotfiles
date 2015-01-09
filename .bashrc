@@ -11,8 +11,8 @@
 # outputting anything in those cases.
 [[ $- != *i* ]] && return
 
-# Aliases
-[[ -f ~/.aliases ]] && . ~/.aliases
+# Environment and aliases
+[[ -f ~/.env ]] && . ~/.env
 
 # Put your fun stuff here.
 set -o vi

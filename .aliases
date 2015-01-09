@@ -1,5 +1,0 @@
-alias ls="ls --color=auto"
-alias grep="grep --colour=auto"
-alias sudo="sudo -E"
-
-flynn="130.127.40.75"
