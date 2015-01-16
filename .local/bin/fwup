@@ -1,2 +1,2 @@
 #!/bin/sh
-pkexec create_ap wlp8s0 enp7s0 FoosterWiFi correcthorsebatterystaple
+pkexec sh -c "systemctl stop wpa_supplicant@wlp8s0 && create_ap wlp8s0 enp7s0 FoosterWiFi correcthorsebatterystaple"
