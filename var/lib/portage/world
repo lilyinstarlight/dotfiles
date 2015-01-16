@@ -46,6 +46,7 @@ cross-avr/binutils
 cross-avr/gcc
 dev-embedded/arduino
 dev-lang/R
+dev-lang/dmd
 dev-lang/ghc
 dev-lang/php
 dev-lang/python
@@ -63,6 +64,7 @@ dev-texlive/texlive-latexextra
 dev-texlive/texlive-latexrecommended
 dev-util/android-tools
 dev-util/cloc
+dev-util/dub
 dev-util/flawfinder
 dev-util/gource
 dev-util/valgrind
@@ -105,13 +107,17 @@ media-gfx/scrot
 media-gfx/simple-scan
 media-gfx/viewnior
 media-gfx/wkhtmltopdf
+media-libs/freeimage
 media-libs/glfw
 media-libs/libopenshot
+media-libs/libpng:1.2
 media-libs/libtxc_dxtn
 media-plugins/alsa-plugins
 media-sound/abcde
 media-sound/alsa-utils
 media-sound/audacity
+media-sound/fluid-soundfont
+media-sound/fluidsynth
 media-sound/frescobaldi
 media-sound/jack-audio-connection-kit
 media-sound/lilypond
@@ -119,6 +125,7 @@ media-sound/mumble
 media-sound/pavucontrol
 media-sound/pulseaudio
 media-sound/qjackctl
+media-sound/qsynth
 media-sound/vmpk
 media-tv/plex-home-theater
 media-tv/xbmc
