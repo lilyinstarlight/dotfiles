@@ -33,6 +33,7 @@ media-libs/lcms python
 
 #Pulseaudio
 media-plugins/alsa-plugins pulseaudio
+media-sound/pulseaudio jack
 
 #Openshot
 virtual/ffmpeg theora
@@ -133,3 +134,13 @@ net-analyzer/nmap zenmap
 
 #Steam
 media-libs/libtxc_dxtn abi_x86_32
+
+#Dash
+dev-libs/libevent debug
+
+#VMPK
+media-sound/vmpk jack
+
+#FluidSynth
+media-sound/fluidsynth jack
+media-sound/qsynth jack

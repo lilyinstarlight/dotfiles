@@ -135,20 +135,21 @@ media-tv/plex-home-theater ~amd64
 =dev-qt/qttranslations-4.8.6-r1 ~amd64
 
 #PyQt5
-=dev-python/PyQt5-5.3.2 ~amd64
+=dev-python/PyQt5-5.4 ~amd64
 =dev-python/sip-4.16.5 ~amd64
-=dev-qt/qtchooser-0_p20140613 ~amd64
-=dev-qt/qtsvg-5.3.2 ~amd64
-=dev-qt/qtdbus-5.3.2 ~amd64
-=dev-qt/qtxml-5.3.2 ~amd64
-=dev-qt/qtsql-5.3.2 ~amd64
-=dev-qt/qtprintsupport-5.3.2 ~amd64
-=dev-qt/qtwidgets-5.3.2 ~amd64
-=dev-qt/qtopengl-5.3.2-r1 ~amd64
-=dev-qt/qtwebkit-5.3.2-r1 ~amd64
-=dev-qt/qtnetwork-5.3.2 ~amd64
-=dev-qt/qtcore-5.3.2-r1 ~amd64
-=dev-qt/qtgui-5.3.2 ~amd64
+=media-libs/harfbuzz-0.9.37 ~amd64
+=dev-qt/qtchooser-0_p20150102 ~amd64
+=dev-qt/qtsvg-5.4.0 ~amd64
+=dev-qt/qtdbus-5.4.0 ~amd64
+=dev-qt/qtxml-5.4.0 ~amd64
+=dev-qt/qtsql-5.4.0 ~amd64
+=dev-qt/qtprintsupport-5.4.0 ~amd64
+=dev-qt/qtwidgets-5.4.0 ~amd64
+=dev-qt/qtopengl-5.4.0 ~amd64
+=dev-qt/qtwebkit-5.4.0 ~amd64
+=dev-qt/qtnetwork-5.4.0 ~amd64
+=dev-qt/qtcore-5.4.0 ~amd64
+=dev-qt/qtgui-5.4.0 ~amd64
 
 #HTTPie
 =net-misc/httpie-0.8.0 ~amd64
@@ -253,3 +254,6 @@ media-tv/plex-home-theater ~amd64
 
 #Sync Mail Dir
 =net-mail/syncmaildir-1.2.6 ~amd64
+
+#FluidSynth
+=media-sound/fluid-soundfont-3.1 ~amd64
