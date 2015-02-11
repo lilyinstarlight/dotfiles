@@ -25,3 +25,11 @@ games-emulation/mupen64plus-ui-console
 games-emulation/mupen64plus-rsp-hle
 games-emulation/mupen64plus-input-sdl
 games-emulation/m64py
+
+#VMPK
+media-sound/drumstick
+dev-qt/linguist-tools
+dev-qt/qtx11extras
+
+#Google Earth
+sci-geosciences/googleearth

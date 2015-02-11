@@ -101,7 +101,7 @@ dev-lang/python wininst
 media-sound/lilypond vim-syntax
 
 #GTK+
-dev-qt/qtgui:4 gtkstyle
+dev-qt/qtgui gtkstyle
 
 #HPLIP
 net-print/hplip scanner
@@ -132,9 +132,6 @@ www-client/elinks javascript
 #Nmap
 net-analyzer/nmap zenmap
 
-#Steam
-media-libs/libtxc_dxtn abi_x86_32
-
 #Dash
 dev-libs/libevent debug
 
@@ -144,3 +141,25 @@ media-sound/vmpk jack
 #FluidSynth
 media-sound/fluidsynth jack
 media-sound/qsynth jack
+
+#Nvidia Drivers
+x11-drivers/nvidia-drivers gtk3
+
+#GStreamer
+media-plugins/gst-plugins-meta X a52 aac alsa cdda dts dv dvb dvd ffmpeg flac http jack lame libass libvisual mms modplug mp3 mpeg musepack ogg opus oss pulseaudio taglib theora v4l vaapi vcd vorbis vpx wavpack x264 xv xvid
+media-libs/gst-plugins-base theora
+
+#Pitivi
+media-video/pitivi python_targets_python3_4
+dev-python/setuptools python_targets_python3_4
+dev-python/gst-python python_targets_python3_4
+dev-python/numpy python_targets_python3_4
+dev-python/pyxdg python_targets_python3_4
+dev-python/pycairo python_targets_python3_4
+dev-python/dbus-python python_targets_python3_4
+dev-python/pygobject python_targets_python3_4
+
+#Blender
+media-gfx/blender python_targets_python3_4
+dev-python/requests python_targets_python3_4
+dev-python/chardet python_targets_python3_4

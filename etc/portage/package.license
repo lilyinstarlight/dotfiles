@@ -11,3 +11,6 @@ www-plugins/adobe-flash AdobeFlash-11.x
 
 #VirtualBox
 app-emulation/virtualbox-extpack-oracle PUEL
+
+#Google Earth
+sci-geosciences/googleearth googleearth

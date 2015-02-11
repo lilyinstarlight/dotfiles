@@ -1,3 +1,0 @@
-cross-avr/binutils -openmp -selinux multilib
-cross-avr/avr-libc -openmp -selinux multilib
-cross-avr/gcc -fortran -go -openmp -selinux -boundschecking -d -gcj -gtk -libffi -mudflap -objc -objc++ -objc-gc multilib

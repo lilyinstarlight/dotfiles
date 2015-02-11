@@ -9,12 +9,12 @@
 =x11-wm/qtile-0.8.0 ~amd64
 
 #Chrome
-=www-client/google-chrome-39.0.2171.95_p1 ~amd64
+=www-client/google-chrome-40.0.2214.111_p1 ~amd64
 =www-plugins/google-talkplugin-5.38.6.0 ~amd64
-=net-misc/chrome-remote-desktop-39.0.2171.46 ~amd64
+=net-misc/chrome-remote-desktop-40.0.2214.44 ~amd64
 
 #Firefox
-=www-client/firefox-34.0.5-r1 ~amd64
+=www-client/firefox-35.0 ~amd64
 =media-libs/mesa-10.3.4 ~amd64
 =dev-libs/nss-3.17.2 ~amd64
 =x11-libs/libdrm-2.4.58 ~amd64
@@ -38,7 +38,8 @@
 =x11-misc/primus-9999 **
 
 #TLP
-=app-laptop/tlp-0.6-r1 ~amd64
+=app-laptop/tlp-0.7 ~amd64
+=sys-power/linux-x86-power-tools-3.17 ~amd64
 
 #LibAV
 =media-video/libav-9.13 ~amd64
@@ -47,14 +48,16 @@
 =media-libs/libopenshot-0.0.3 ~amd64
 =media-libs/libopenshot-audio-0.0.3 ~amd64
 =x11-libs/libxkbcommon-0.4.1 ~amd64
-=dev-qt/qtmultimedia-5.3.2 ~amd64
+=dev-qt/qtmultimedia-5.4.0 ~amd64
 
 #Pitivi
-=media-video/pitivi-0.93 ~amd64
-=media-plugins/gst-plugins-libav-1.2.0 ~amd64
-=media-libs/gnonlin-1.2.0 ~amd64
-=dev-python/gst-python-1.2.0 ~amd64
-=media-libs/gstreamer-editing-services-1.2.0 ~amd64
+=media-video/pitivi-0.94 ~amd64
+=media-libs/gstreamer-1.4.5 ~amd64
+=media-plugins/gst-plugins-v4l2-1.4.5 ~amd64
+=media-libs/gst-plugins-good-1.4.5 ~amd64
+=media-libs/gnonlin-1.4.0 ~amd64
+=media-libs/gstreamer-editing-services-1.4.0 ~amd64
+=media-libs/gst-plugins-base-1.4.5 ~amd64
 
 #IcedTea
 virtual/jre:1.7 ~amd64
@@ -85,7 +88,7 @@ virtual/jdk:1.7 ~amd64
 =dev-python/pypy3-2.4.0 ~amd64
 
 #WKHTMLToPDF
-=media-gfx/wkhtmltopdf-0.11.0_rc1 ~amd64
+=media-gfx/wkhtmltopdf-0.12.2.1 ~amd64
 
 #Plex Home Theater
 media-tv/plex-home-theater ~amd64
@@ -173,7 +176,10 @@ media-tv/plex-home-theater ~amd64
 =dev-util/valgrind-3.9.0 ~amd64
 
 #VMPK
-=media-sound/vmpk-0.5.1 ~amd64
+=media-sound/vmpk-0.6.0 ~amd64
+=media-sound/drumstick-1.0.0 ~amd64
+=dev-qt/linguist-tools-5.4.0 ~amd64
+=dev-qt/qtx11extras-5.4.0 ~amd64
 
 #LilyPond
 =media-sound/lilypond-2.18.2 ~amd64
@@ -192,7 +198,7 @@ media-tv/plex-home-theater ~amd64
 
 #virt-manager
 =app-emulation/virt-manager-1.1.0 ~amd64
-=app-emulation/libvirt-1.2.11-r2 ~amd64
+=app-emulation/libvirt-1.2.11-r3 ~amd64
 =app-emulation/libvirt-glib-0.2.0 ~amd64
 =dev-python/libvirt-python-1.2.11 ~amd64
 
@@ -212,11 +218,11 @@ media-tv/plex-home-theater ~amd64
 =app-dicts/stardict-dictd-devils-2.4.2 ~amd64
 
 #ffmpeg
-=media-video/ffmpeg-2.5.2 ~amd64
+=media-video/ffmpeg-2.5.3 ~amd64
 =media-libs/x265-1.4 ~amd64
 
 #MPV
-=media-video/mpv-0.7.2 ~amd64
+=media-video/mpv-0.7.3 ~amd64
 
 #VLC
 =media-video/vlc-2.1.5 ~amd64
@@ -257,3 +263,32 @@ media-tv/plex-home-theater ~amd64
 
 #FluidSynth
 =media-sound/fluid-soundfont-3.1 ~amd64
+
+#Midori
+=www-client/midori-0.5.8-r1 ~amd64
+
+#Google Earth
+=sci-geosciences/googleearth-7.1.2.2041 ~amd64
+
+#v4l2loopback
+=media-video/v4l2loopback-0.8.0 ~amd64
+
+#WebcamStudio
+=media-video/webcamstudio-0.72 ~amd64
+=media-video/webcamstudio-module-109 ~amd64
+
+#g-pypi
+=dev-python/g-pypi-0.3 ~amd64
+=dev-python/yolk-0.4.3-r1 ~amd64
+=dev-python/sphinxcontrib-googleanalytics-0.1-r1 ~amd64
+=dev-python/yolk-portage-0.1-r1 ~amd64
+
+#LMMS
+=media-sound/lmms-1.0.3 ~amd64
+
+#SLF4J?
+=dev-java/slf4j-nop-1.6.6 ~amd64
+
+#Blender
+=media-gfx/blender-2.72b-r2 ~amd64
+=sci-libs/ldl-2.1.0 ~amd64
