@@ -87,10 +87,13 @@ dgroups_app_rules = []
 
 #Floating windows
 floating = [
-	('sun-awt-X11-XFramePeer', 'org-spoutcraft-launcher-entrypoint-Start'),
+	('sun-awt-X11-XFramePeer', 'net-technicpack-launcher-LauncherMain'),
 	('Steam', 'Steam'),
 	('display', 'Display'),
 	('m64py', 'M64py'),
+	('qsynth', 'Qsynth'),
+	('vmpk', 'VMPK-Virtual MIDI Piano Keyboard'),
+	('dosbox', 'dosbox'),
 ]
 
 #Set necessary windows as floating
