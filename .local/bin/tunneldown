@@ -1,2 +1,12 @@
 #!/bin/sh
-killall ssh
+PIDFILE=$XDG_RUNTIME_DIR/tunnel.pid
+
+if [ ! -e $PIDFILE ]; then
+	zenity --error --text="Tunnel not running"
+
+	exit 1
+fi
+
+kill $(< $PIDFILE)
+
+rm $PIDFILE

@@ -73,7 +73,7 @@ let s:plug_tab = get(s:, 'plug_tab', -1)
 let s:plug_buf = get(s:, 'plug_buf', -1)
 let s:mac_gui = has('gui_macvim') && has('gui_running')
 let s:is_win = has('win32') || has('win64')
-let s:ruby = has('ruby') && has('patch-7.2.374')
+let s:ruby = has('ruby') && (v:version >= 703 || v:version == 702 && has('patch374'))
 let s:nvim = has('nvim') && !s:is_win
 let s:me = resolve(expand('<sfile>:p'))
 let s:base_spec = { 'branch': 'master', 'frozen': 0 }
@@ -115,7 +115,7 @@ function! s:define_commands()
   command! -nargs=* -bar -bang -complete=customlist,s:names PlugInstall call s:install('<bang>' == '!', [<f-args>])
   command! -nargs=* -bar -bang -complete=customlist,s:names PlugUpdate  call s:update('<bang>' == '!', [<f-args>])
   command! -nargs=0 -bar -bang PlugClean call s:clean('<bang>' == '!')
-  command! -nargs=0 -bar PlugUpgrade if s:upgrade() | execute 'source' s:me | endif
+  command! -nargs=0 -bar PlugUpgrade if s:upgrade() | execute 'source' s:esc(s:me) | endif
   command! -nargs=0 -bar PlugStatus  call s:status()
   command! -nargs=0 -bar PlugDiff    call s:diff()
   command! -nargs=? -bar PlugSnapshot call s:snapshot(<f-args>)
@@ -132,7 +132,7 @@ endfunction
 function! s:source(from, ...)
   for pattern in a:000
     for vim in s:lines(globpath(a:from, pattern))
-      execute 'source' vim
+      execute 'source' s:esc(vim)
     endfor
   endfor
 endfunction
@@ -1562,11 +1562,12 @@ function! s:snapshot(...) abort
   endfor
 
   if a:0 > 0
-    let fn = s:esc(expand(a:1))
+    let fn = expand(a:1)
+    let fne = s:esc(fn)
     call writefile(getline(1, '$'), fn)
-    if !s:is_win | call s:system('chmod +x ' . fn) | endif
+    if !s:is_win | call s:system('chmod +x ' . fne) | endif
     echo 'Saved to '.a:1
-    silent execute 'e' fn
+    silent execute 'e' fne
   endif
 endfunction
 

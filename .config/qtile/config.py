@@ -87,13 +87,22 @@ dgroups_app_rules = []
 
 #Floating windows
 floating = [
-	('sun-awt-X11-XFramePeer', 'net-technicpack-launcher-LauncherMain'),
-	('Steam', 'Steam'),
+	#Tools
 	('display', 'Display'),
-	('m64py', 'M64py'),
+
+	#Music
+	# MIDI
 	('qsynth', 'Qsynth'),
 	('vmpk', 'VMPK-Virtual MIDI Piano Keyboard'),
+
+	#Games
+	('sun-awt-X11-XFramePeer', 'net-technicpack-launcher-LauncherMain'),
+	# Emulation
 	('dosbox', 'dosbox'),
+	('m64py', 'M64py'),
+	# Steam
+	('Steam', 'Steam'),
+	('TWTM_linux', 'TWTM_linux'),
 ]
 
 #Set necessary windows as floating

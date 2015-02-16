@@ -1,2 +1,15 @@
 #!/bin/sh
-SSH_ASKPASS=/usr/local/bin/ssh-askpass-zenity setsid ssh -ND 8000 fkmclane.net
+PIDFILE=$XDG_RUNTIME_DIR/tunnel.pid
+
+if [ -e $PIDFILE ]; then
+	if ps -p $(< $PIDFILE) >/dev/null; then
+		zenity --error --text="Tunnel already running"
+
+		exit 1
+	else
+		rm $PIDFILE
+	fi
+fi
+
+SSH_ASKPASS=/usr/local/bin/ssh-askpass-zenity setsid ssh -ND 8000 fkmclane.net &
+echo $! > $XDG_RUNTIME_DIR/tunnel.pid
