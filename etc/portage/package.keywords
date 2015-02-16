@@ -105,10 +105,6 @@ media-tv/plex-home-theater ~amd64
 =app-pda/libplist-1.11 ~amd64
 =app-pda/libusbmuxd-1.0.9 ~amd64
 
-#LLVM
-=sys-devel/llvm-3.5.0 ~amd64
-=sys-devel/clang-3.5.0-r100 ~amd64
-
 #CLisp
 =dev-lisp/clisp-2.48-r2 ~amd64
 
@@ -248,9 +244,6 @@ media-tv/plex-home-theater ~amd64
 =media-sound/frescobaldi-2.0.16 ~amd64
 =dev-python/python-poppler-qt4-0.18.1 ~amd64
 
-#SuperTuxKart
-=games-action/supertuxkart-0.8.2_beta ~amd64
-
 #kpcli
 =dev-perl/File-KeePass-2.30.0 ~amd64
 =app-admin/kpcli-2.7 ~amd64
@@ -292,3 +285,6 @@ media-tv/plex-home-theater ~amd64
 #Blender
 =media-gfx/blender-2.72b-r2 ~amd64
 =sci-libs/ldl-2.1.0 ~amd64
+
+#MPD
+=media-sound/mpd-0.19.6 ~amd64

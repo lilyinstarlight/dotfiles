@@ -20,6 +20,7 @@ app-emulation/virt-manager
 app-emulation/wine
 app-laptop/tlp
 app-misc/cmatrix
+app-misc/figlet
 app-misc/gtypist
 app-misc/jq
 app-misc/reptyr
@@ -127,7 +128,9 @@ media-sound/frescobaldi
 media-sound/jack-audio-connection-kit
 media-sound/lilypond
 media-sound/lmms
+media-sound/mpd
 media-sound/mumble
+media-sound/ncmpcpp
 media-sound/pavucontrol
 media-sound/pulseaudio
 media-sound/qjackctl
