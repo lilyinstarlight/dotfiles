@@ -4,6 +4,7 @@ app-admin/kpcli
 app-admin/sudo
 app-arch/makeself
 app-arch/p7zip
+app-arch/par2cmdline
 app-arch/unrar
 app-arch/xarchiver
 app-benchmarks/siege
@@ -38,6 +39,7 @@ app-shells/gentoo-zsh-completions
 app-shells/zsh
 app-text/mupdf
 app-text/pandoc
+app-text/rman
 app-text/sdcv
 app-text/texlive
 app-text/zathura
@@ -51,6 +53,7 @@ dev-lang/dmd
 dev-lang/ghc
 dev-lang/php
 dev-lang/python
+dev-lang/python:2.7
 dev-lua/luarocks
 dev-python/PyQt5
 dev-python/g-pypi
@@ -81,6 +84,7 @@ games-action/supertuxkart
 games-action/wordwarvi
 games-arcade/ninvaders
 games-arcade/nsnake
+games-board/cockatrice
 games-emulation/dosbox
 games-emulation/m64py
 games-emulation/mupen64plus-audio-sdl
@@ -122,6 +126,7 @@ media-plugins/gst-plugins-meta:1.0
 media-sound/abcde
 media-sound/alsa-utils
 media-sound/audacity
+media-sound/beets
 media-sound/fluid-soundfont
 media-sound/fluidsynth
 media-sound/frescobaldi
@@ -151,6 +156,8 @@ net-analyzer/wireshark
 net-dialup/minicom
 net-dns/namecoin-qt
 net-dns/namecoind
+net-firewall/nftables
+net-ftp/ftp
 net-im/gajim
 net-im/pidgin
 net-im/profanity
@@ -215,9 +222,11 @@ www-client/elinks
 www-client/firefox
 www-client/google-chrome
 www-client/midori
+www-client/vimb
 www-client/w3m
 www-plugins/google-talkplugin
 www-plugins/pipelight
+www-servers/pshs
 x11-apps/mesa-progs
 x11-apps/setxkbmap
 x11-apps/xbacklight

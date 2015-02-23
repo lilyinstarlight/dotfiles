@@ -163,3 +163,24 @@ dev-python/pygobject python_targets_python3_4
 media-gfx/blender python_targets_python3_4
 dev-python/requests python_targets_python3_4
 dev-python/chardet python_targets_python3_4
+
+#Beets
+media-sound/beets beatport chroma convert discogs echonest lastgenre replaygain
+
+#pshs
+www-servers/pshs qrcode upnp
+
+#vimb
+www-client/vimb gtk3
+
+#Qtile
+x11-wm/qtile python_targets_python3_4
+dev-python/py python_targets_python3_4
+dev-python/pytest python_targets_python3_4
+dev-python/pycparser python_targets_python3_4
+dev-python/cairocffi python_targets_python3_4
+dev-python/ply python_targets_python3_4
+dev-python/cffi python_targets_python3_4
+dev-python/six python_targets_python3_4
+dev-python/xcffib python_targets_python3_4
+net-wireless/python-wifi python_targets_python3_4

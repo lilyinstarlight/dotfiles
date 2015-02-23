@@ -1,5 +1,5 @@
 #systemd
-=sys-apps/systemd-218-r1 ~amd64
+=sys-apps/systemd-218-r3 ~amd64
 =sys-apps/util-linux-2.25.2 ~amd64
 
 #finit
@@ -7,6 +7,10 @@
 
 #Qtile
 =x11-wm/qtile-0.8.0 ~amd64
+=x11-wm/qtile-0.9.0 ~amd64
+=x11-wm/qtile-0.9.1 ~amd64
+=dev-python/xcffib-0.1.10 ~amd64
+=dev-python/cairocffi-0.6 ~amd64
 
 #Chrome
 =www-client/google-chrome-40.0.2214.111_p1 ~amd64
@@ -118,7 +122,7 @@ media-tv/plex-home-theater ~amd64
 #Cloudprint
 =net-print/cupscloudprint-20140814.2 ~amd64
 
-#PyQt4
+#Qt4
 =dev-python/PyQt4-4.11.3 ~amd64
 =dev-qt/qtsvg-4.8.6-r1 ~amd64
 =dev-qt/qtdbus-4.8.6-r1 ~amd64
@@ -132,8 +136,9 @@ media-tv/plex-home-theater ~amd64
 =dev-qt/qtsql-4.8.6-r1 ~amd64
 =dev-qt/qtgui-4.8.6-r1 ~amd64
 =dev-qt/qttranslations-4.8.6-r1 ~amd64
+=dev-qt/qtmultimedia-4.8.6-r1 ~amd64
 
-#PyQt5
+#Qt5
 =dev-python/PyQt5-5.4 ~amd64
 =dev-python/sip-4.16.5 ~amd64
 =media-libs/harfbuzz-0.9.37 ~amd64
@@ -288,3 +293,32 @@ media-tv/plex-home-theater ~amd64
 
 #MPD
 =media-sound/mpd-0.19.6 ~amd64
+
+#Cockatrice
+games-board/cockatrice ~amd64
+
+#par2cmdline
+=app-arch/par2cmdline-0.6.11 ~amd64
+
+#VDPAU?
+=x11-libs/libva-vdpau-driver-0.7.4-r2 ~amd64
+
+#Beets
+=media-sound/beets-1.3.3-r1 ~amd64
+=dev-python/munkres-1.0.5.4-r2 ~amd64
+=dev-python/python-musicbrainz-ngs-0.4 ~amd64
+=dev-python/discogs-client-2.0.2 ~amd64
+=dev-python/oauth2-1.5.211-r1 ~amd64
+=dev-python/pyacoustid-1.0.0-r1 ~amd64
+=dev-python/audioread-1.0.1 ~amd64
+=dev-python/pyechonest-7.2.1 ~amd64
+
+#pshs
+=www-servers/pshs-0.2.6 ~amd64
+
+#vimb
+=www-client/vimb-2.9 ~amd64
+
+#nftables
+=net-firewall/nftables-0.4 ~amd64
+=net-libs/libnftnl-1.0.3 ~amd64
