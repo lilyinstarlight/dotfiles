@@ -14,7 +14,7 @@ URxvt.keysym.C-S-Down: perl:font-size:decglobal
 *.foreground: #d7d7d7
 *.cursorColor: #d7d7d7
 
-*.color0: #393939
+*.color0: #121212
 *.color1: #ca674a
 *.color2: #96a967
 *.color3: #d3a94a
