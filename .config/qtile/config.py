@@ -108,11 +108,8 @@ floating = [
 #Set necessary windows as floating
 @hook.subscribe.client_new
 def set_floating(client):
-	try:
-		if client.window.get_wm_class() and client.window.get_wm_class() in floating or client.window.get_wm_type() == 'dialog' or client.window.get_wm_transient_for():
-			client.floating = True
-	except:
-		pass
+	if client.window.get_wm_class() and client.window.get_wm_class() in floating or client.window.get_wm_type() == 'dialog' or client.window.get_wm_transient_for():
+		client.floating = True
 
 #Mouse
 mouse = [
@@ -123,7 +120,7 @@ mouse = [
 
 #Layouts
 layouts = [
-	layout.MonadTall(border_focus="#0000ff", border_width=1),
+	layout.MonadTall(border_focus="#316a8d", border_normal="#222222", border_width=1),
 	layout.Max(),
 	layout.Floating(),
 ]
@@ -148,7 +145,7 @@ screens = [
 				widget.MemoryGraph(),
 				widget.Sep(),
 				widget.TextBox("VOL:"),
-				widget.Volume(pulseaudio=True),
+				my_widget.Volume(pulseaudio=True),
 				widget.Sep(),
 				widget.TextBox("WLAN:"),
 				my_widget.Wlan(interface='wlp8s0'),
@@ -177,16 +174,12 @@ widget_defaults = {
 	'background': '222222',
 	'active': 'ffffff',
 	'inactive': 'aaaaaa',
-	#'this_current_screen_border': 'aa2222',
 	'this_current_screen_border': '316a8d',
-	#'other_screen_border': '222222',
 	'other_screen_border': '444444',
 	'urgent_alert_method': 'border',
 	'urgent_border': 'ed4035',
 	#Graphs
-	#'graph_color': 'dd8844',
 	'graph_color': 'ed9743',
-	#'fill_color': 'dd8844',
 	'fill_color': 'ed9743',
 	'border_color': '444444',
 	#Battery
