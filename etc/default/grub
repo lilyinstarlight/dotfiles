@@ -27,7 +27,7 @@ GRUB_DISTRIBUTOR="Gentoo"
 # GRUB_CMDLINE_LINUX="net.ifnames=0"
 #
 # Boot with systemd instead of sysvinit (openrc)
-GRUB_CMDLINE_LINUX="init=/usr/lib/systemd/systemd"
+GRUB_CMDLINE_LINUX="init=/usr/lib/systemd/systemd quiet systemd.show_status=1"
 
 # Append parameters to the linux kernel command line for non-recovery entries
 GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3"
