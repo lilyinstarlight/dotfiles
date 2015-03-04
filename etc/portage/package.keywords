@@ -1,6 +1,9 @@
 #systemd
-=sys-apps/systemd-218-r3 ~amd64
+=sys-apps/systemd-219-r1 ~amd64
 =sys-apps/util-linux-2.25.2 ~amd64
+
+#nvidia-drivers
+=x11-drivers/nvidia-drivers-346.47 ~amd64
 
 #finit
 =sys-apps/finit-1.9 ~amd64
@@ -13,14 +16,14 @@
 =dev-python/cairocffi-0.6 ~amd64
 
 #Chrome
-=www-client/google-chrome-40.0.2214.111_p1 ~amd64
+=www-client/google-chrome-40.0.2214.115_p1 ~amd64
 =www-plugins/google-talkplugin-5.38.6.0 ~amd64
 =net-misc/chrome-remote-desktop-40.0.2214.44 ~amd64
 
 #Firefox
-=www-client/firefox-35.0 ~amd64
+=www-client/firefox-36.0 ~amd64
 =media-libs/mesa-10.3.4 ~amd64
-=dev-libs/nss-3.17.2 ~amd64
+=dev-libs/nss-3.17.4 ~amd64
 =x11-libs/libdrm-2.4.58 ~amd64
 =media-libs/libpng-1.6.15 ~amd64
 =dev-libs/nspr-4.10.7-r1 ~amd64
@@ -52,7 +55,6 @@
 =media-libs/libopenshot-0.0.3 ~amd64
 =media-libs/libopenshot-audio-0.0.3 ~amd64
 =x11-libs/libxkbcommon-0.4.1 ~amd64
-=dev-qt/qtmultimedia-5.4.0 ~amd64
 
 #Pitivi
 =media-video/pitivi-0.94 ~amd64
@@ -102,7 +104,7 @@ media-tv/plex-home-theater ~amd64
 
 #Profanity
 =dev-libs/libstrophe-0.8-r1 ~amd64
-=net-im/profanity-0.4.4 ~amd64
+=net-im/profanity-0.4.6_rc1 ~amd64
 
 #iOS
 =app-pda/libimobiledevice-1.1.6 ~amd64
@@ -139,21 +141,28 @@ media-tv/plex-home-theater ~amd64
 =dev-qt/qtmultimedia-4.8.6-r1 ~amd64
 
 #Qt5
-=dev-python/PyQt5-5.4 ~amd64
-=dev-python/sip-4.16.5 ~amd64
+=dev-python/PyQt5-5.4.1 ~amd64
+=dev-python/sip-4.16.6 ~amd64
 =media-libs/harfbuzz-0.9.37 ~amd64
 =dev-qt/qtchooser-0_p20150102 ~amd64
-=dev-qt/qtsvg-5.4.0 ~amd64
-=dev-qt/qtdbus-5.4.0 ~amd64
-=dev-qt/qtxml-5.4.0 ~amd64
-=dev-qt/qtsql-5.4.0 ~amd64
-=dev-qt/qtprintsupport-5.4.0 ~amd64
-=dev-qt/qtwidgets-5.4.0 ~amd64
-=dev-qt/qtopengl-5.4.0 ~amd64
-=dev-qt/qtwebkit-5.4.0 ~amd64
-=dev-qt/qtnetwork-5.4.0 ~amd64
-=dev-qt/qtcore-5.4.0 ~amd64
-=dev-qt/qtgui-5.4.0 ~amd64
+=dev-qt/qtsvg-5.4.1 ~amd64
+=dev-qt/qtdbus-5.4.1 ~amd64
+=dev-qt/qtxml-5.4.1 ~amd64
+=dev-qt/qtsql-5.4.1 ~amd64
+=dev-qt/qtprintsupport-5.4.1 ~amd64
+=dev-qt/qtwidgets-5.4.1 ~amd64
+=dev-qt/qtopengl-5.4.1 ~amd64
+=dev-qt/qtwebkit-5.4.1 ~amd64
+=dev-qt/qtnetwork-5.4.1 ~amd64
+=dev-qt/qtcore-5.4.1 ~amd64
+=dev-qt/qtgui-5.4.1 ~amd64
+=dev-qt/qtmultimedia-5.4.1 ~amd64
+=dev-qt/qttest-5.4.1 ~amd64
+=dev-qt/qtxmlpatterns-5.4.1 ~amd64
+=dev-qt/qtx11extras-5.4.1 ~amd64
+=dev-qt/qtdeclarative-5.4.1 ~amd64
+=dev-qt/linguist-tools-5.4.1 ~amd64
+=dev-qt/qtx11extras-5.4.1 ~amd64
 
 #HTTPie
 =net-misc/httpie-0.8.0 ~amd64
@@ -179,8 +188,6 @@ media-tv/plex-home-theater ~amd64
 #VMPK
 =media-sound/vmpk-0.6.0 ~amd64
 =media-sound/drumstick-1.0.0 ~amd64
-=dev-qt/linguist-tools-5.4.0 ~amd64
-=dev-qt/qtx11extras-5.4.0 ~amd64
 
 #LilyPond
 =media-sound/lilypond-2.18.2 ~amd64
@@ -223,7 +230,8 @@ media-tv/plex-home-theater ~amd64
 =media-libs/x265-1.4 ~amd64
 
 #MPV
-=media-video/mpv-0.7.3 ~amd64
+=media-video/mpv-0.8.0 ~amd64
+=net-misc/youtube-dl-2015.02.18 ~amd64
 
 #VLC
 =media-video/vlc-2.1.5 ~amd64
@@ -269,17 +277,11 @@ media-tv/plex-home-theater ~amd64
 =sci-geosciences/googleearth-7.1.2.2041 ~amd64
 
 #v4l2loopback
-=media-video/v4l2loopback-0.8.0 ~amd64
+=media-video/v4l2loopback-0.8.0-r1 ~amd64
 
 #WebcamStudio
 =media-video/webcamstudio-0.72 ~amd64
-=media-video/webcamstudio-module-109 ~amd64
-
-#g-pypi
-=dev-python/g-pypi-0.3 ~amd64
-=dev-python/yolk-0.4.3-r1 ~amd64
-=dev-python/sphinxcontrib-googleanalytics-0.1-r1 ~amd64
-=dev-python/yolk-portage-0.1-r1 ~amd64
+=media-video/webcamstudio-module-109-r1 ~amd64
 
 #LMMS
 =media-sound/lmms-1.0.3 ~amd64
@@ -322,3 +324,12 @@ games-board/cockatrice ~amd64
 #nftables
 =net-firewall/nftables-0.4 ~amd64
 =net-libs/libnftnl-1.0.3 ~amd64
+
+#WeeChat
+=net-irc/weechat-1.1.1 ~amd64
+
+#Ardour
+=media-sound/ardour-3.5.403 ~amd64
+
+#pyglet
+=dev-python/pyglet-1.2.0 ~amd64

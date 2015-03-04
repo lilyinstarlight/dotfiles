@@ -56,8 +56,9 @@ dev-lang/python
 dev-lang/python:2.7
 dev-lua/luarocks
 dev-python/PyQt5
-dev-python/g-pypi
+dev-python/cx_Freeze
 dev-python/pip
+dev-python/pyglet
 dev-python/pypy
 dev-python/pypy3
 dev-python/runsnakerun
@@ -125,6 +126,7 @@ media-plugins/alsa-plugins
 media-plugins/gst-plugins-meta:1.0
 media-sound/abcde
 media-sound/alsa-utils
+media-sound/ardour
 media-sound/audacity
 media-sound/beets
 media-sound/fluid-soundfont
@@ -162,6 +164,7 @@ net-im/gajim
 net-im/pidgin
 net-im/profanity
 net-irc/irssi
+net-irc/weechat
 net-libs/nodejs
 net-mail/isync
 net-mail/syncmaildir
@@ -178,7 +181,7 @@ net-misc/ntp
 net-misc/openvpn
 net-misc/telnet-bsd
 net-misc/whois
-net-misc/youtube-viewer
+net-misc/youtube-dl
 net-misc/ytalk
 net-p2p/pybitmessage
 net-print/cupscloudprint
@@ -209,6 +212,7 @@ sys-devel/gcc
 sys-devel/gdb
 sys-fs/dosfstools
 sys-fs/mtpfs
+sys-fs/sshfs-fuse
 sys-kernel/genkernel
 sys-kernel/gentoo-sources
 sys-kernel/linux-firmware

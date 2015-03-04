@@ -184,3 +184,6 @@ dev-python/cffi python_targets_python3_4
 dev-python/six python_targets_python3_4
 dev-python/xcffib python_targets_python3_4
 net-wireless/python-wifi python_targets_python3_4
+
+#pyglet
+media-libs/alsa-lib alisp
