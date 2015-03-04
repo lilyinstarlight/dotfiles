@@ -10,6 +10,7 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-speeddating'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'takac/vim-hardtime'
 Plug 'haya14busa/incsearch.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'FredKSchott/CoVim'
@@ -34,13 +35,15 @@ set history=50
 set ignorecase
 set mouse=a
 set nohlsearch
-set viminfo='20,<500
 set noshowmode
 set noruler
+set number
 set showmatch
 set smartcase
 set undodir=$HOME/.vim/undo
 set undofile
+set viminfo='20,<500
+set wildmenu
 
 "Tabbing
 set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
@@ -56,3 +59,6 @@ let g:incsearch#auto_nohlsearch = 1
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
+
+"vim-hardtime
+let g:hardtime_default_on = 1
