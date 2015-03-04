@@ -8,7 +8,7 @@ from libqtile import hook, layout, bar, widget
 wmname = 'CWM'
 
 #Mod key for key commands
-mod = 'mod1'
+mod = 'mod4'
 
 #Keys
 keys = [
@@ -69,10 +69,10 @@ keys = [
 groups = [
 	Group('term'),
 	Group('web'),
-	Group('chat'),
+	Group('chat', layout='max'),
 	Group('files'),
 	Group('work'),
-	Group('games'),
+	Group('games', layout='floating'),
 ]
 
 #Group key bindings
