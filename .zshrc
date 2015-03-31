@@ -1,29 +1,29 @@
 autoload -Uz compinit promptinit
 
-# Completion
+# completion
 compinit
 zstyle ':completion:*' completer _expand _complete _ignored
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
 zstyle :compinstall filename '/home/foster/.zshrc'
 
-# Theme
+# theme
 promptinit
 prompt gentoo
 
-# History
+# history
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
 
-# Options
+# options
 setopt beep extendedglob
 
-# Vim compatibility
+# vim compatibility
 bindkey -v
 bindkey "^?" vi-backward-delete-char
 
-# Special keys (Home, End, Insert, Delete, PageUp, PageDown)
+# special keys (Home, End, Insert, Delete, PageUp, PageDown)
 [[ -n "${terminfo[khome]}" ]]  && bindkey  "${terminfo[khome]}" vi-beginning-of-line
 [[ -n "${terminfo[kend]}"  ]]  && bindkey  "${terminfo[kend]}"  vi-end-of-line
 [[ -n "${terminfo[kich1]}" ]]  && bindkey  "${terminfo[kich1]}" vi-insert

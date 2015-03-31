@@ -5,7 +5,7 @@
 # that can't tolerate any output.  So make sure this doesn't display
 # anything or bad things will happen !
 
-# Environment and aliases
+# environment and aliases
 [[ -f ~/.env ]] && . ~/.env
 
 # Test for an interactive shell.  There is no need to set anything
@@ -13,6 +13,6 @@
 # outputting anything in those cases.
 [[ $- != *i* ]] && return
 
-# Put your fun stuff here.
+# fun stuff
 set -o vi
 shopt -s histappend
