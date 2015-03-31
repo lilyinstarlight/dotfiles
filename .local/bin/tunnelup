@@ -11,5 +11,5 @@ if [ -e $PIDFILE ]; then
 	fi
 fi
 
-SSH_ASKPASS=/usr/local/bin/ssh-askpass-zenity setsid ssh -ND 8000 fkmclane.net &
+SSH_ASKPASS=/usr/local/bin/ssh-askpass-zenity setsid ssh -ND 8000 dumont &
 echo $! > $XDG_RUNTIME_DIR/tunnel.pid
