@@ -10,23 +10,21 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-speeddating'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'takac/vim-hardtime'
 Plug 'haya14busa/incsearch.vim'
 Plug 'itchyny/lightline.vim'
-Plug 'FredKSchott/CoVim'
 Plug 'nanotech/jellybeans.vim'
 
 call plug#end()
 
-"Features
+"features
 syntax on
 filetype plugin on
 filetype indent on
 
-"Autocommands
+"autocommands
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif "Restore to last known position in file on startup
 
-"Settings
+"settings
 set nocompatible
 set ai
 set bs=2
@@ -45,10 +43,10 @@ set undofile
 set viminfo='20,<500
 set wildmenu
 
-"Tabbing
+"tabbing
 set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
 
-"Colour Scheme
+"colour scheme
 colorscheme jellybeans
 
 "lightline.vim
@@ -59,6 +57,3 @@ let g:incsearch#auto_nohlsearch = 1
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
-
-"vim-hardtime
-let g:hardtime_default_on = 1
