@@ -1,0 +1,4 @@
+#!/bin/sh
+mkdir /mnt/crypt
+cryptsetup open /dev/sdb11 crypt
+mount /dev/mapper/crypt /mnt/crypt
