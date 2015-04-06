@@ -47,6 +47,12 @@ keys = [
 	Key([], 'XF86AudioRaiseVolume', lazy.spawn('amixer -q -D pulse sset Master 4%+')),
 	Key([], 'XF86AudioLowerVolume', lazy.spawn('amixer -q -D pulse sset Master 4%-')),
 	Key([], 'XF86AudioMute', lazy.spawn('amixer -q -D pulse sset Master toggle')),
+
+	Key([], 'XF86AudioPlay', lazy.spawn('mpc toggle')),
+	Key([], 'XF86AudioStop', lazy.spawn('mpc stop')),
+	Key([], 'XF86AudioNext', lazy.spawn('mpc next')),
+	Key([], 'XF86AudioPrev', lazy.spawn('mpc prev')),
+
 	Key([], 'XF86MonBrightnessUp', lazy.spawn('xbacklight +10')),
 	Key([], 'XF86MonBrightnessDown', lazy.spawn('xbacklight -10')),
 
