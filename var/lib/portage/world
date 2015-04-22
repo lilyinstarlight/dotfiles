@@ -13,9 +13,7 @@ app-cdr/cdrtools
 app-doc/doxygen
 app-editors/bvi
 app-editors/gvim
-app-editors/neovim
 app-editors/vim
-app-emulation/emul-linux-x86-gtklibs
 app-emulation/qemu
 app-emulation/virt-manager
 app-emulation/wine
@@ -59,8 +57,12 @@ dev-lang/python
 dev-lang/python:2.7
 dev-lua/luarocks
 dev-python/PyQt5
+dev-python/aiohttp
+dev-python/appdirs
+dev-python/configargparse
 dev-python/cx_Freeze
 dev-python/pip
+dev-python/pygame
 dev-python/pyglet
 dev-python/pylint
 dev-python/pypy
@@ -158,6 +160,7 @@ media-video/pitivi
 media-video/v4l2loopback
 media-video/vlc
 media-video/webcamstudio
+net-analyzer/nikto
 net-analyzer/nmap
 net-analyzer/tcpdump
 net-analyzer/traceroute
@@ -165,6 +168,7 @@ net-analyzer/wireshark
 net-dialup/minicom
 net-dns/namecoin-qt
 net-dns/namecoind
+net-firewall/firewalld
 net-firewall/nftables
 net-ftp/ftp
 net-im/gajim
@@ -186,6 +190,7 @@ net-misc/mosh
 net-misc/netkit-fingerd
 net-misc/ntp
 net-misc/openvpn
+net-misc/remmina
 net-misc/telnet-bsd
 net-misc/whois
 net-misc/youtube-dl
@@ -197,6 +202,7 @@ net-proxy/mitmproxy
 net-proxy/sshuttle
 net-wireless/blueman
 net-wireless/bluez
+net-wireless/create_ap
 net-wireless/hostapd
 net-wireless/iw
 net-wireless/python-wifi

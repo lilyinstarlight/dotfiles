@@ -1,3 +1,6 @@
+#Layman
+app-portage/layman git mercurial subversion sync-plugin-portage
+
 #Valgrind
 sys-libs/glibc debug
 
@@ -15,9 +18,6 @@ dev-libs/elfutils static-libs
 
 #OpenVPN
 net-misc/openvpn iproute2 passwordsave
-
-#Layman
-app-portage/layman git hg
 
 #TLP
 app-laptop/tlp tlp_suggests
@@ -187,3 +187,10 @@ net-wireless/python-wifi python_targets_python3_4
 
 #pyglet
 media-libs/alsa-lib alisp
+
+#Remmina
+net-misc/remmina avahi freerdp ssh telepathy vte
+net-dns/avahi gtk3
+
+#nmap
+net-analyzer/nmap ncat
