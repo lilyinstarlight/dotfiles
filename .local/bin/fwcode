@@ -1,0 +1,2 @@
+#!/bin/sh
+qrencode -o - "WIFI:T:WPA;S:FoosterWiFi;P:correcthorsebatterystaple;;" | display -resize 450x450 -filter Point -
