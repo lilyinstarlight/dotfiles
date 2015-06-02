@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<repositories encoding="UTF-8" version="1.0">
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>jorgicio</name>
+    <description>Gentoo repository made by Jorgicio.</description>
+    <homepage>https://github.com/jorgicio/jorgicio-gentoo</homepage>
+    <owner>
+      <email>Jorge Pizarro Callejas</email>
+      <name>jpizarro@inf.utfsm.cl</name>
+    </owner>
+    <source type="git">https://github.com/jorgicio/jorgicio-gentoo.git</source>
+    <feed>https://github.com/jorgicio/jorgicio-gentoo/commits/master.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>fkmclane</name>
+    <description>Personal overlay of fkmclane containing patched ebuilds and new ebuilds</description>
+    <homepage>https://github.com/fkmclane/overlay</homepage>
+    <owner>
+      <email>fkmclane@gmail.com</email>
+      <name>Foster McLane</name>
+    </owner>
+    <source type="git">git://github.com/fkmclane/overlay.git</source>
+    <feed>https://github.com/fkmclane/overlay/commits/master.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>dlang</name>
+    <description>A collection of ebuilds related to the D programming language.</description>
+    <homepage>https://github.com/gentoo/dlang</homepage>
+    <owner>
+      <email>Marco.Leise@gmx.de</email>
+    </owner>
+    <source type="git">https://github.com/gentoo/dlang.git</source>
+    <feed>https://github.com/gentoo/dlang/commits/master.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>niftyrepo</name>
+    <description>niftyrepo's experimental overlay</description>
+    <homepage>http://www.niftiestsoftware.com</homepage>
+    <owner>
+      <email>src@niftiestsoftware.com</email>
+      <name>Simon Cadman</name>
+    </owner>
+    <source type="git">git://github.com/simoncadman/niftyrepo-layman.git</source>
+  </repo>
+  <repo priority="50" quality="testing" status="unofficial">
+    <name>obs-studio-overlay</name>
+    <description>Gentoo overlay for OBS Studio</description>
+    <homepage>https://github.com/saintdev/obs-studio-overlay</homepage>
+    <owner>
+      <email />
+    </owner>
+    <source type="git">git://github.com/saintdev/obs-studio-overlay.git</source>
+    <feed>https://github.com/saintdev/obs-studio-overlay/commits/master.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>bumblebee</name>
+    <description>Packages related to the bumblebee project</description>
+    <homepage>https://github.com/Bumblebee-Project/bumblebee-gentoo/</homepage>
+    <owner>
+      <email>mva@mva.name</email>
+      <name>Vadim A. Misbakh-Soloviov</name>
+    </owner>
+    <source type="git">git://github.com/Bumblebee-Project/bumblebee-gentoo</source>
+    <feed>https://github.com/Bumblebee-Project/bumblebee-gentoo/commits/master.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>gamerlay</name>
+    <description>Gamers overlay for all various games. Not related with games team.</description>
+    <homepage>http://git.overlays.gentoo.org/gitweb/?p=proj/gamerlay.git</homepage>
+    <owner>
+      <email>mva@mva.name</email>
+      <name>Vadim A. Misbakh-Soloviov</name>
+    </owner>
+    <source type="git">git://anongit.gentoo.org/proj/gamerlay.git</source>
+    <feed>http://git.overlays.gentoo.org/gitweb/?p=proj/gamerlay.git;a=atom</feed>
+    <feed>http://git.overlays.gentoo.org/gitweb/?p=proj/gamerlay.git;a=rss</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>ixit</name>
+    <description>iXit overlay</description>
+    <homepage>https://github.com/okias/ixit</homepage>
+    <owner>
+      <email>david.heidelberger@ixit.cz</email>
+      <name>David Heidelberger</name>
+    </owner>
+    <source type="git">git://github.com/okias/ixit.git</source>
+    <feed>https://github.com/okias/ixit/commits/master.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="official">
+    <name>lua</name>
+    <description>Lua development overlay</description>
+    <homepage>http://git.overlays.gentoo.org/gitweb/?p=proj/lua.git;a=summary</homepage>
+    <owner>
+      <email>rafaelmartins@gentoo.org</email>
+      <name>Rafael G. Martins</name>
+    </owner>
+    <source type="git">https://anongit.gentoo.org/git/proj/lua.git</source>
+    <feed>http://git.overlays.gentoo.org/gitweb/?p=proj/lua.git;a=atom</feed>
+    <feed>http://git.overlays.gentoo.org/gitweb/?p=proj/lua.git;a=rss</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>tlp</name>
+    <description>TLP Gentoo Overlay</description>
+    <homepage>https://github.com/dywisor/tlp-portage</homepage>
+    <owner>
+      <email>dywi@mailerd.de</email>
+      <name>dywisor</name>
+    </owner>
+    <source type="git">git://github.com/dywisor/tlp-portage.git</source>
+    <feed>https://github.com/dywisor/tlp-portage/commits/maint.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>init6</name>
+    <description>Andrey Ovcharov's private user overlay</description>
+    <homepage>http://github.com/init6/init_6</homepage>
+    <owner>
+      <email>sudormrfhalt@gmail.com</email>
+      <name>Andrey Ovcharov (init_6)</name>
+    </owner>
+    <source type="git">git://github.com/init6/init_6.git</source>
+    <feed>http://github.com/feeds/init6/commits/init_6/master.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>games-overlay</name>
+    <description>gentoo overlay containing games ebuilds only</description>
+    <homepage>https://github.com/hasufell/games-overlay</homepage>
+    <owner>
+      <email>hasufell@posteo.de</email>
+      <name>Julian Ospald</name>
+    </owner>
+    <source type="git">git://github.com/hasufell/games-overlay.git</source>
+    <feed>https://github.com/hasufell/games-overlay/commits/master.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>steveeJ</name>
+    <description>Personal overlay of Stefan Junker</description>
+    <homepage>https://github.com/steveeJ/personal-portage-overlay</homepage>
+    <owner>
+      <email>code@stefanjunker.de</email>
+      <name>Stefan Junker</name>
+    </owner>
+    <source type="git">https://github.com/steveeJ/personal-portage-overlay.git</source>
+    <feed>https://github.com/steveeJ/personal-portage-overlay/commits/master.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>proaudio</name>
+    <description>Evermind's overlay with ebuilds for a lot of pro-audio production software.</description>
+    <homepage>http://proaudio.tuxfamily.org/wiki</homepage>
+    <owner>
+      <email>evermind@tuxfamily.org</email>
+    </owner>
+    <source type="svn">svn://svn.tuxfamily.org/svnroot/proaudio/proaudio/trunk/overlays/proaudio</source>
+  </repo>
+</repositories>
