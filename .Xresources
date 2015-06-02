@@ -2,6 +2,9 @@
 URxvt.font: xft:terminus:size=10.5
 URxvt.boldFont: xft:terminus:size=10.5
 URxvt.scrollBar: false
+URxvt.scrollTtyOutput: false
+URxvt.scrollWithBuffer: true
+URxvt.scrollTtyKeypress: true
 URxvt.secondaryWheel: true
 URxvt.perl-ext-common: font-size,selection-to-clipboard
 URxvt.keysym.C-0x2b: perl:font-size:increase
