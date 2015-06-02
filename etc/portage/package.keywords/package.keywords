@@ -1,11 +1,11 @@
 #Linux
-=sys-kernel/gentoo-sources-4.0.0 ~amd64
+=sys-kernel/gentoo-sources-3.19.8 ~amd64
 
 #Portage
 =sys-apps/portage-2.2.18 ~amd64
 
 #systemd
-=sys-apps/systemd-219-r1 ~amd64
+=sys-apps/systemd-220 ~amd64
 =sys-apps/util-linux-2.25.2 ~amd64
 
 #finit
@@ -23,7 +23,7 @@
 
 #Chrome
 www-client/google-chrome ~amd64
-=www-plugins/google-talkplugin-5.40.2.0 ~amd64
+=www-plugins/google-talkplugin-5.41.0.0 ~amd64
 =net-misc/chrome-remote-desktop-41.0.2272.41 ~amd64
 
 #Firefox
@@ -44,14 +44,14 @@ www-client/google-chrome ~amd64
 =games-action/armagetronad-0.4 ~amd64
 
 #Pipelight
-=app-emulation/wine-1.7.28 ~amd64
+=app-emulation/wine-1.7.41 ~amd64
 
 #Bumblebee
 =x11-misc/bumblebee-9999 **
 =x11-misc/primus-9999 **
 
 #TLP
-=app-laptop/tlp-0.7 ~amd64
+=app-laptop/tlp-0.7-r3 ~amd64
 =sys-power/linux-x86-power-tools-3.17 ~amd64
 
 #LibAV
@@ -70,6 +70,8 @@ www-client/google-chrome ~amd64
 =media-libs/gnonlin-1.4.0 ~amd64
 =media-libs/gstreamer-editing-services-1.4.0 ~amd64
 =media-libs/gst-plugins-base-1.4.5 ~amd64
+=dev-python/pycanberra-0_pre20130515 ~amd64
+=dev-python/gst-python-1.4.0 ~amd64
 
 #IcedTea
 virtual/jre:1.7 ~amd64
@@ -86,8 +88,9 @@ virtual/jdk:1.7 ~amd64
 #GLFW
 =media-libs/glfw-3.1.1 ~amd64
 
-#XBMC
-=media-tv/xbmc-13.2-r1 ~amd64
+#Kodi
+=media-tv/kodi-14.1 ~amd64
+=dev-libs/libcec-2.2.0 ~amd64
 
 #WinUSB
 =sys-boot/winusb-1.0.11 ~amd64
@@ -109,8 +112,8 @@ media-tv/plex-home-theater ~amd64
 =mail-client/mutt-1.5.23-r2 ~amd64
 
 #Profanity
-=dev-libs/libstrophe-0.8-r1 ~amd64
-=net-im/profanity-0.4.6_rc1 ~amd64
+=dev-libs/libstrophe-0.8.7 ~amd64
+=net-im/profanity-0.4.6 ~amd64
 
 #iOS
 =app-pda/libimobiledevice-1.2.0 ~amd64
@@ -162,7 +165,7 @@ media-tv/plex-home-theater ~amd64
 =dev-qt/qtwebkit-5.4.1 ~amd64
 =dev-qt/qtnetwork-5.4.1 ~amd64
 =dev-qt/qtcore-5.4.1 ~amd64
-=dev-qt/qtgui-5.4.1-r1 ~amd64
+=dev-qt/qtgui-5.4.1-r2 ~amd64
 =dev-qt/qtmultimedia-5.4.1 ~amd64
 =dev-qt/qttest-5.4.1 ~amd64
 =dev-qt/qtxmlpatterns-5.4.1 ~amd64
@@ -204,7 +207,7 @@ media-tv/plex-home-theater ~amd64
 =x11-themes/clearlooks-phenix-6.0.3 ~amd64
 
 #Xarchiver
-=app-arch/xarchiver-0.5.3-r1 ~amd64
+=app-arch/xarchiver-0.5.4 ~amd64
 
 #GLFW
 =media-libs/glfw-3.0.4 ~amd64
@@ -219,7 +222,7 @@ media-tv/plex-home-theater ~amd64
 =net-p2p/pybitmessage-0.4.3 ~amd64
 
 #NeoVim
-=app-editors/neovim-0.0.0_pre20150329 ~amd64
+=app-editors/neovim-0.0.0_pre20150505 ~amd64
 =virtual/lua-5 ~amd64
 =dev-lang/lua-5.1.5-r100 ~amd64
 =dev-lang/luajit-2.0.9999 **
@@ -236,16 +239,18 @@ media-tv/plex-home-theater ~amd64
 =app-dicts/stardict-dictd-devils-2.4.2 ~amd64
 
 #ffmpeg
-=media-video/ffmpeg-2.6.1 ~amd64
+=virtual/ffmpeg-9-r2 ~amd64
+=media-video/ffmpeg-2.6.3 ~amd64
 =media-libs/x265-1.4 ~amd64
 =x11-libs/cairo-1.14.2 ~amd64
 
 #MPV
-=media-video/mpv-0.8.3 ~amd64
-=net-misc/youtube-dl-2015.03.28 ~amd64
+=media-video/mpv-0.9.2-r1 ~amd64
+=net-misc/youtube-dl-2015.05.20 ~amd64
+=media-libs/libass-0.12.2 ~amd64
 
 #VLC
-=media-video/vlc-2.2.0 ~amd64
+=media-video/vlc-2.2.1 ~amd64
 =media-libs/libdvdnav-5.0.3 ~amd64
 =media-libs/libdvdread-5.0.2 ~amd64
 =media-libs/libdvdcss-1.3.99 ~amd64
@@ -279,7 +284,7 @@ media-tv/plex-home-theater ~amd64
 =media-sound/jack-audio-connection-kit-1.9.10 ~amd64
 
 #Sync Mail Dir
-=net-mail/syncmaildir-1.2.6 ~amd64
+=net-mail/syncmaildir-1.2.6.1 ~amd64
 
 #FluidSynth
 =media-sound/fluid-soundfont-3.1 ~amd64
@@ -356,7 +361,7 @@ games-board/cockatrice ~amd64
 =app-mobilephone/heimdall-1.4.1 ~amd64
 
 #OBS
-=media-video/obs-0.9.1 ~amd64
+=media-video/obs-studio-0.9.1 ~amd64
 =dev-libs/jansson-2.7 ~amd64
 
 #create_ap
@@ -372,8 +377,21 @@ games-board/cockatrice ~amd64
 =dev-python/urwid-1.3.0 ~amd64
 
 #HomeBank
-=app-office/homebank-5.0.1 ~amd64
+=app-office/homebank-5.0.2 ~amd64
 
 #Nikto
 =net-libs/libwhisker-2.5-r1 ~amd64
 =net-analyzer/nikto-2.1.5 ~amd64
+
+#Pymunk/Chipmunk
+=dev-python/pymunk-4.0.0 ~amd64
+=sci-physics/chipmunk-7.0.0 ~amd64
+
+#firewalld
+=net-firewall/firewalld-0.3.13 ~amd64
+
+#Skype
+=net-im/skype-4.3.0.37-r5 ~amd64
+
+#OpenTTD
+=games-util/nml-0.4.1 ~amd64

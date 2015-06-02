@@ -8,3 +8,6 @@ net-misc/chrome-remote-desktop google-chrome
 
 #Flash
 www-plugins/adobe-flash AdobeFlash-11.x
+
+#Skype
+net-im/skype skype-4.0.0.7-copyright

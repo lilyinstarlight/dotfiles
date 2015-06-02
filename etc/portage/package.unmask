@@ -1,22 +1,3 @@
-#PyQt5
-dev-python/PyQt5
-dev-qt/qtxml
-dev-qt/qtdbus
-dev-qt/qtopengl
-dev-qt/qtnetwork
-dev-qt/qtsql
-dev-qt/qtcore
-dev-qt/qtgui
-dev-qt/qtwidgets
-dev-qt/qtprintsupport
-dev-qt/qtwebkit
-dev-qt/qtsvg
-dev-qt/qtmultimedia
-
-#MPV
-media-video/ffmpeg
-media-video/mpv
-
 #Mupen64Plus
 games-emulation/mupen64plus-core
 games-emulation/mupen64plus-video-rice
@@ -25,11 +6,6 @@ games-emulation/mupen64plus-ui-console
 games-emulation/mupen64plus-rsp-hle
 games-emulation/mupen64plus-input-sdl
 games-emulation/m64py
-
-#VMPK
-media-sound/drumstick
-dev-qt/linguist-tools
-dev-qt/qtx11extras
 
 #NeoVim
 =app-eselect/eselect-lua-2
