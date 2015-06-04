@@ -39,5 +39,3 @@ bindkey -a "j" down-line-or-beginning-search
 [[ -n "${terminfo[kdch1]}" ]] && bindkey "${terminfo[kdch1]}" vi-delete-char
 [[ -n "${terminfo[kpp]}"   ]] && bindkey "${terminfo[kpp]}"   up-history
 [[ -n "${terminfo[knp]}"   ]] && bindkey "${terminfo[knp]}"   down-history
-
-# fix need to quote stuff
