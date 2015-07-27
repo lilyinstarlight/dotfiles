@@ -1,3 +1,10 @@
+#Linux
+sys-kernel/gentoo-sources experimental kdbus
+
+#systemd
+sys-apps/systemd gnuefi terminal
+media-fonts/unifont utils
+
 #Layman
 app-portage/layman git mercurial subversion sync-plugin-portage
 
@@ -61,7 +68,7 @@ app-emulation/libvirt virt-network
 net-dns/dnsmasq script
 
 #PHP
-dev-lang/php gd
+dev-lang/php gd pdo sqlite
 
 #WKHTMLToPDF
 dev-qt/qtwebkit icu
@@ -89,7 +96,7 @@ net-wireless/wpa_supplicant ap p2p wps
 app-editors/vim python vim-pager
 
 #Xorg
-x11-base/xorg-server kdrive xvfb
+x11-base/xorg-server kdrive xvfb -suid
 
 #Cloudprint
 media-gfx/imagemagick postscript
@@ -150,21 +157,6 @@ x11-drivers/nvidia-drivers gtk3
 media-plugins/gst-plugins-meta X a52 aac alsa cdda dts dv dvb dvd ffmpeg flac http jack lame libass libvisual mms modplug mp3 mpeg musepack ogg opus oss pulseaudio taglib theora v4l vaapi vcd vorbis vpx wavpack x264 xv xvid
 media-libs/gst-plugins-base theora
 
-#Pitivi
-media-video/pitivi python_targets_python3_4
-dev-python/setuptools python_targets_python3_4
-dev-python/gst-python python_targets_python3_4
-dev-python/numpy python_targets_python3_4
-dev-python/pyxdg python_targets_python3_4
-dev-python/pycairo python_targets_python3_4
-dev-python/dbus-python python_targets_python3_4
-dev-python/pygobject python_targets_python3_4
-
-#Blender
-media-gfx/blender python_targets_python3_4
-dev-python/requests python_targets_python3_4
-dev-python/chardet python_targets_python3_4
-
 #Beets
 media-sound/beets beatport chroma convert discogs echonest lastgenre replaygain
 
@@ -173,18 +165,6 @@ www-servers/pshs qrcode upnp
 
 #vimb
 www-client/vimb gtk3
-
-#Qtile
-x11-wm/qtile python_targets_python3_4
-dev-python/py python_targets_python3_4
-dev-python/pytest python_targets_python3_4
-dev-python/pycparser python_targets_python3_4
-dev-python/cairocffi python_targets_python3_4
-dev-python/ply python_targets_python3_4
-dev-python/cffi python_targets_python3_4
-dev-python/six python_targets_python3_4
-dev-python/xcffib python_targets_python3_4
-net-wireless/python-wifi python_targets_python3_4
 
 #pyglet
 media-libs/alsa-lib alisp
@@ -195,3 +175,28 @@ net-dns/avahi gtk3
 
 #nmap
 net-analyzer/nmap ncat
+
+#kmscon
+media-libs/mesa gles2
+
+#Graphviz
+media-libs/gd fontconfig
+
+#KiCad
+dev-libs/boost python
+x11-libs/wxGTK:2.8 gnome
+
+#MuseScore
+app-text/texlive-core xetex
+
+#Mutt
+mail-client/mutt slang
+
+#Emacs
+app-editors/emacs -X -gif -gtk -gtk3 -jpeg -png -svg -tiff -xpm
+
+#webkit-gtk
+net-libs/webkit-gtk -geoloc
+
+#asciidoc
+app-text/asciidoc python_single_target_python2_7
