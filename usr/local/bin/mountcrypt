@@ -1,4 +1,6 @@
 #!/bin/sh
-mkdir /mnt/crypt
+if [ ! -d /mnt/crypt ]; then
+	mkdir /mnt/crypt
+fi
 cryptsetup open /dev/sdb11 crypt
 mount /dev/mapper/crypt /mnt/crypt

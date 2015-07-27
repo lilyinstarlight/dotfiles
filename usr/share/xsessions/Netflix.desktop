@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Netflix
-Comment=Desktop session for starting Google Chrome with parameters necessary for Netflix
-Exec=google-chrome-netflix
-TryExec=google-chrome-netflix
-Type=Application

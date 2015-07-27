@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Steam
-Comment=Desktop session for starting Steam in Big Picture mode
-Exec=steam-bigpicture
-Icon=steam
-Type=Application

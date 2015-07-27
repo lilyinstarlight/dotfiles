@@ -1,2 +1,2 @@
 #!/bin/sh
-exec zenity --title="SSH" --password
+exec zenity --title=SSH --entry --text="$1" --hide-text

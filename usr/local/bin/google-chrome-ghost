@@ -1,0 +1,11 @@
+#!/bin/sh
+
+BASE_TEMP_DIR=/tmp
+TEMP_DIR="$(mktemp -d "$BASE_TEMP_DIR/google-chome.XXXXXXX")"
+
+cp -r /usr/local/share/google-chrome-ghost/* "$TEMP_DIR"
+
+echo "Running Chrome with temp folder in: $TEMP_DIR"
+google-chrome-stable --user-data-dir="$TEMP_DIR" --no-first-run --incognito
+
+rm -rf "$TEMP_DIR"
