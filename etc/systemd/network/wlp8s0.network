@@ -1,0 +1,6 @@
+[Match]
+Name=wlp8s0
+
+[Network]
+DHCP=yes
+IPv6PrivacyExtensions=yes
