@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#Disable DPMS and screen blanking
+xset -dpms
+xset s off
+
+export XBMC_HOME=/opt/plexhometheater/share/XBMC
+exec /opt/plexhometheater/bin/plexhometheater --standalone
