@@ -12,7 +12,7 @@
 #
 
 #<fs>           <mountpoint>    <type>      <opts>                                                  <dump/pass>
-/dev/sdb2       /boot/efi       vfat        noauto,noatime                                          0 2
+/dev/sdb2       /boot           vfat        noauto,noatime                                          0 2
 /dev/sda1       /               btrfs       noatime,discard,ssd_spread,space_cache,compress=lzo     0 0
 /dev/sdb10      /home           ext4        noatime                                                 0 2
 /dev/sdb9       none            swap        defaults                                                0 0
