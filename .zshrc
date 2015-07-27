@@ -58,9 +58,13 @@ if [[ -z "$XDG_SESSION_DESKTOP" ]]; then
 			exec startx
 			;;
 		4)
-			;&
+			export XDG_SESSION_DESKTOP="plex"
+			exec startx
+			;;
 		5)
-			;&
+			export XDG_SESSION_DESKTOP="netflix"
+			exec startx
+			;;
 		6)
 			export XDG_SESSION_DESKTOP="systemd-console"
 			;;
