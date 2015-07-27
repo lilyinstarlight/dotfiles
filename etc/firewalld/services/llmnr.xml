@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>LLMNR</short>
+  <description>Link-Local Multicast Name Resolution (LLMNR) is a protocol based on DNS that allows hosts to perform name resolution on the same local link.</description>
+  <port protocol="tcp" port="5355"/>
+  <port protocol="udp" port="5355"/>
+</service>
