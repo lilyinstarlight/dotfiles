@@ -39,3 +39,30 @@ bindkey -a "j" down-line-or-beginning-search
 [[ -n "${terminfo[kdch1]}" ]] && bindkey "${terminfo[kdch1]}" vi-delete-char
 [[ -n "${terminfo[kpp]}"   ]] && bindkey "${terminfo[kpp]}"   up-history
 [[ -n "${terminfo[knp]}"   ]] && bindkey "${terminfo[knp]}"   down-history
+
+# start environment depending on vt
+if [[ -z "$XDG_SESSION_DESKTOP" ]]; then
+	case $XDG_VTNR in
+		1)
+			export XDG_SESSION_DESKTOP="qtile"
+			exec startx
+			;;
+
+		2)
+			export XDG_SESSION_DESKTOP="bspwm"
+			exec startx
+			;;
+
+		3)
+			export XDG_SESSION_DESKTOP="steam"
+			exec startx
+			;;
+		4)
+			;&
+		5)
+			;&
+		6)
+			export XDG_SESSION_DESKTOP="systemd-console"
+			;;
+	esac
+fi

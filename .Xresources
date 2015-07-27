@@ -7,8 +7,8 @@ URxvt.scrollWithBuffer: true
 URxvt.scrollTtyKeypress: true
 URxvt.secondaryWheel: true
 URxvt.perl-ext-common: font-size,selection-to-clipboard
-URxvt.keysym.C-0x2b: perl:font-size:increase
-URxvt.keysym.C-0x2d: perl:font-size:decrease
+URxvt.keysym.C-equal: perl:font-size:increase
+URxvt.keysym.C-minus: perl:font-size:decrease
 
 ! Jellybeans Color Scheme
 *.background: #121212
