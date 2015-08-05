@@ -1,4 +1,0 @@
-#!/bin/sh
-umount /mnt/crypt
-cryptsetup close crypt
-rmdir /mnt/crypt

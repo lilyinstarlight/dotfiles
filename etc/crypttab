@@ -1,0 +1,3 @@
+#<dm>   <dev>        <pass>         <opts>
+crypt   /dev/sdb11
+swap    /dev/sdb9    /dev/urandom   swap

@@ -11,9 +11,10 @@
 # See the manpage fstab(5) for more information.
 #
 
-#<fs>           <mountpoint>    <type>      <opts>                                                  <dump/pass>
-/dev/sdb2       /boot           vfat        noauto,noatime                                          0 2
-/dev/sda1       /               btrfs       noatime,discard,ssd_spread,space_cache,compress=lzo     0 0
-/dev/sdb10      /home           ext4        noatime                                                 0 2
-/dev/sdb9       none            swap        defaults                                                0 0
-/dev/cdrom      /mnt/cdrom      auto        noauto,ro                                               0 0
+#<fs>               <mountpoint>    <type>      <opts>                                                  <dump/pass>
+/dev/sda1           /               btrfs       noatime,discard,ssd_spread,space_cache,compress=lzo     0 0
+/dev/sdb2           /boot           vfat        noatime                                                 0 2
+/dev/sdb10          /home           ext4        noatime                                                 0 2
+/dev/mapper/crypt   /mnt/crypt      btrfs       noatime                                                 0 2
+/dev/mapper/swap    none            swap        defaults                                                0 0
+/dev/cdrom          /mnt/cdrom      auto        noauto,ro                                               0 0
