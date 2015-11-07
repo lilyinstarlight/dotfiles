@@ -1,0 +1,8 @@
+[Unit]
+Description=email logged errors and failed units from the last hour
+
+[Timer]
+OnCalendar=hourly
+
+[Install]
+WantedBy=timers.target
