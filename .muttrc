@@ -1,0 +1,23 @@
+# get rid of Gentoo config
+unset mbox_type
+unset folder
+unset spoolfile
+unset record
+unset move
+unset index_format
+
+# configuration
+set from="Foster McLane <fkmclane@fkmclane.net>"
+set sort=threads
+set index_format="%4C %Z %{%b %d} %-16.16L  %s"
+set folder=~/.mail
+
+# folders
+set spoolfile=~/.mail/inbox/
+set record=~/.mail/sent/
+
+# colours
+# TODO
+
+# subscriptions
+subscribe gentoo-announce@lists.gentoo.org
