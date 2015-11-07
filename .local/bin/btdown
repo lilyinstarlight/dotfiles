@@ -1,0 +1,2 @@
+#!/bin/sh
+killall blueman-applet; pkexec /usr/sbin/rfkill block bluetooth

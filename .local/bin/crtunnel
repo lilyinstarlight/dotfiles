@@ -1,2 +1,2 @@
 #!/bin/sh
-google-chrome-stable --user-data-dir="/home/foster/.config/google-chrome-home" --proxy-server="socks://localhost:8000" --incognito
+google-chrome-stable --user-data-dir="/home/foster/.config/google-chrome-tunnel" --proxy-server="socks://localhost:8000" --incognito

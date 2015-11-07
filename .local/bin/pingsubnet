@@ -1,0 +1,7 @@
+#!/bin/sh
+for i in $(seq -f "$1.%g" 2 254); do
+	if ping -c1 -W1 $i 2>&1 >/dev/null; then
+		echo $i:
+		curl -s -m1 $i
+	fi
+done

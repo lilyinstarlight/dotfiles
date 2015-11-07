@@ -1,0 +1,2 @@
+#!/bin/sh
+firewall-cmd --zone=public --add-service=pht

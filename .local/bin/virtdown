@@ -1,2 +1,2 @@
 #!/bin/sh
-killall virt-manager; pkexec systemctl stop libvirtd
+killall virt-manager; systemctl stop libvirtd

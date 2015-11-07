@@ -1,4 +1,5 @@
 #!/bin/sh
+HOST=dumont
 PIDFILE=$XDG_RUNTIME_DIR/tunnel.pid
 
 if [ -e $PIDFILE ]; then
@@ -11,5 +12,5 @@ if [ -e $PIDFILE ]; then
 	fi
 fi
 
-SSH_ASKPASS=/usr/local/bin/ssh-askpass-zenity setsid ssh -ND 8000 dumont &
-echo $! > $XDG_RUNTIME_DIR/tunnel.pid
+SSH_ASKPASS=/usr/local/bin/ssh-askpass-zenity setsid ssh -ND 8000 $HOST &
+echo $! > $PIDFILE

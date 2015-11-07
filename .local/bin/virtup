@@ -1,2 +1,2 @@
 #!/bin/sh
-pkexec systemctl start libvirtd && virt-manager
+systemctl start libvirtd && virt-manager
