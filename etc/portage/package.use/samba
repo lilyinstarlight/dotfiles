@@ -1,0 +1,4 @@
+sys-libs/tdb python
+sys-libs/tevent python
+app-crypt/heimdal -ssl -threads
+sys-libs/ntdb python

@@ -1,8 +1,0 @@
-#GCC::dlang
-sys-devel/gcc::dlang
-
-#Linux::steveeJ
-sys-kernel/gentoo-sources::steveeJ
-
-#Haskell
->=dev-haskell/text-0.12

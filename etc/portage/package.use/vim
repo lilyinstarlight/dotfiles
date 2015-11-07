@@ -1,0 +1,2 @@
+app-editors/vim -lua -luajit python
+app-editors/gvim -lua -luajit python

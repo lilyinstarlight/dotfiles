@@ -1,0 +1,10 @@
+virtual/ffmpeg theora
+media-video/ffmpeg theora
+media-sound/sox ffmpeg
+media-libs/mlt python frei0r ffmpeg melt
+
+dev-python/PyQt5 network printsupport webkit widgets
+dev-libs/libpcre pcre16
+dev-qt/qtcore:5 icu
+dev-qt/qtmultimedia:5 -alsa widgets
+dev-qt/qtwebkit:5 printsupport widgets

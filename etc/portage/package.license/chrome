@@ -1,13 +1,6 @@
-#Chrome
 www-client/google-chrome google-chrome
 www-client/google-chrome-beta google-chrome
 www-client/google-chrome-unstable google-chrome
 www-plugins/chrome-binary-plugins google-chrome
 www-plugins/google-talkplugin Google-TOS
 net-misc/chrome-remote-desktop google-chrome
-
-#Flash
-www-plugins/adobe-flash AdobeFlash-11.x
-
-#Skype
-net-im/skype skype-4.0.0.7-copyright

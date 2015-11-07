@@ -1,0 +1,2 @@
+media-video/mpv cdio dvdnav joystick libcaca libmpv lua vaapi
+media-video/ffmpeg cdio libass libcaca openssl rtmp ssh vaapi vpx webp x265
