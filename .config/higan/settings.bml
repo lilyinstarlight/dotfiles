@@ -1,0 +1,44 @@
+Video
+  Driver: OpenGL
+  Synchronize: true
+  Shader: Blur
+  ScaleMode: 0
+  AspectCorrection: true
+  ColorEmulation: true
+  MaskOverscan: false
+    Horizontal: 8
+    Vertical: 8
+  Saturation: 100
+  Gamma: 100
+  Luminance: 100
+  StartFullScreen: false
+
+Audio
+  Driver: ALSA
+  Synchronize: true
+  Frequency: 48000
+  Latency: 60
+  Resampler: 2
+  Volume: 100
+  Mute: false
+
+Input
+  Driver: udev
+  Focus
+    Pause: false
+    AllowInput: false
+
+Timing
+  Video: 60.0
+  Audio: 48000.0
+
+Server
+  Hostname: 
+  Username: 
+  Password: 
+
+Library
+  Selection: 3
+  MediaMode: 0
+  ShowOnStartup: true
+

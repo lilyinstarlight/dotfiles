@@ -1,0 +1,227 @@
+Famicom
+  Port1
+    Controller
+      Up: 22710a7c046dc21d/Axis/1/Lo
+      Down: 22710a7c046dc21d/Axis/1/Hi
+      Left: 22710a7c046dc21d/Axis/0/Lo
+      Right: 22710a7c046dc21d/Axis/0/Hi
+      B: 22710a7c046dc21d/Button/1
+      A: 22710a7c046dc21d/Button/0
+      Select: 22710a7c046dc21d/Button/6
+      Start: 22710a7c046dc21d/Button/7
+  Port2
+    Controller
+      Up: None
+      Down: None
+      Left: None
+      Right: None
+      B: None
+      A: None
+      Select: None
+      Start: None
+
+SuperFamicom
+  Port1
+    Controller
+      Up: 22710a7c046dc21d/Axis/1/Lo
+      Down: 22710a7c046dc21d/Axis/1/Hi
+      Left: 22710a7c046dc21d/Axis/0/Lo
+      Right: 22710a7c046dc21d/Axis/0/Hi
+      B: 22710a7c046dc21d/Button/1
+      A: 22710a7c046dc21d/Button/0
+      Y: 22710a7c046dc21d/Button/3
+      X: 22710a7c046dc21d/Button/2
+      L: 22710a7c046dc21d/Button/4
+      R: 22710a7c046dc21d/Button/5
+      Select: 22710a7c046dc21d/Button/6
+      Start: 22710a7c046dc21d/Button/7
+    Multitap
+      Port1-Up: None
+      Port1-Down: None
+      Port1-Left: None
+      Port1-Right: None
+      Port1-B: None
+      Port1-A: None
+      Port1-Y: None
+      Port1-X: None
+      Port1-L: None
+      Port1-R: None
+      Port1-Select: None
+      Port1-Start: None
+      Port2-Up: None
+      Port2-Down: None
+      Port2-Left: None
+      Port2-Right: None
+      Port2-B: None
+      Port2-A: None
+      Port2-Y: None
+      Port2-X: None
+      Port2-L: None
+      Port2-R: None
+      Port2-Select: None
+      Port2-Start: None
+      Port3-Up: None
+      Port3-Down: None
+      Port3-Left: None
+      Port3-Right: None
+      Port3-B: None
+      Port3-A: None
+      Port3-Y: None
+      Port3-X: None
+      Port3-L: None
+      Port3-R: None
+      Port3-Select: None
+      Port3-Start: None
+      Port4-Up: None
+      Port4-Down: None
+      Port4-Left: None
+      Port4-Right: None
+      Port4-B: None
+      Port4-A: None
+      Port4-Y: None
+      Port4-X: None
+      Port4-L: None
+      Port4-R: None
+      Port4-Select: None
+      Port4-Start: None
+    Mouse
+      X-axis: None
+      Y-axis: None
+      Left: None
+      Right: None
+    SerialUSART
+    None
+  Port2
+    Controller
+      Up: None
+      Down: None
+      Left: None
+      Right: None
+      B: None
+      A: None
+      Y: None
+      X: None
+      L: None
+      R: None
+      Select: None
+      Start: None
+    Multitap
+      Port1-Up: None
+      Port1-Down: None
+      Port1-Left: None
+      Port1-Right: None
+      Port1-B: None
+      Port1-A: None
+      Port1-Y: None
+      Port1-X: None
+      Port1-L: None
+      Port1-R: None
+      Port1-Select: None
+      Port1-Start: None
+      Port2-Up: None
+      Port2-Down: None
+      Port2-Left: None
+      Port2-Right: None
+      Port2-B: None
+      Port2-A: None
+      Port2-Y: None
+      Port2-X: None
+      Port2-L: None
+      Port2-R: None
+      Port2-Select: None
+      Port2-Start: None
+      Port3-Up: None
+      Port3-Down: None
+      Port3-Left: None
+      Port3-Right: None
+      Port3-B: None
+      Port3-A: None
+      Port3-Y: None
+      Port3-X: None
+      Port3-L: None
+      Port3-R: None
+      Port3-Select: None
+      Port3-Start: None
+      Port4-Up: None
+      Port4-Down: None
+      Port4-Left: None
+      Port4-Right: None
+      Port4-B: None
+      Port4-A: None
+      Port4-Y: None
+      Port4-X: None
+      Port4-L: None
+      Port4-R: None
+      Port4-Select: None
+      Port4-Start: None
+    Mouse
+      X-axis: None
+      Y-axis: None
+      Left: None
+      Right: None
+    SuperScope
+      X-axis: None
+      Y-axis: None
+      Trigger: None
+      Cursor: None
+      Turbo: None
+      Pause: None
+    Justifier
+      X-axis: None
+      Y-axis: None
+      Trigger: None
+      Start: None
+    Justifiers
+      Port1-X-axis: None
+      Port1-Y-axis: None
+      Port1-Trigger: None
+      Port1-Start: None
+      Port2-X-axis: None
+      Port2-Y-axis: None
+      Port2-Trigger: None
+      Port2-Start: None
+    None
+
+GameBoy
+  Device
+    Controller
+      Up: None
+      Down: None
+      Left: None
+      Right: None
+      B: None
+      A: None
+      Select: None
+      Start: None
+
+GameBoyAdvance
+  Device
+    Controller
+      Up: None
+      Down: None
+      Left: None
+      Right: None
+      B: None
+      A: None
+      L: None
+      R: None
+      Select: None
+      Start: None
+      Rumble: None
+
+Hotkey
+  ToggleFullscreenMode: 1/Button/F11
+  ToggleMouseCapture: 1/Button/F12
+  ShowLibrary: 1/Button/L
+  PauseEmulation: 1/Button/P
+  FastForward: 1/Button/Tilde
+  PowerCycle: None
+  SoftReset: None
+  SaveState: 1/Button/F5
+  LoadState: 1/Button/F7
+  DecrementSlot: 1/Button/F6
+  IncrementSlot: 1/Button/F8
+  CloseEmulator: None
+  ToggleTracer: None
+  ExportMemory: None
+
