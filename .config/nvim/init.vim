@@ -25,10 +25,10 @@ set noshowmode
 set noruler
 set number
 if has('nvim')
-set shada='20,<500,h
+set runtimepath+=/usr/share/vim/vimfiles
 endif
 if has('nvim')
-set runtimepath+=/usr/share/vim/vimfiles
+set shada='20,<500,h
 endif
 set showmatch
 set smartcase
