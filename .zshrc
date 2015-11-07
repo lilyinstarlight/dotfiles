@@ -65,8 +65,5 @@ if [[ -z "$XDG_SESSION_DESKTOP" ]]; then
 			export XDG_SESSION_DESKTOP="netflix"
 			exec startx
 			;;
-		6)
-			export XDG_SESSION_DESKTOP="systemd-console"
-			;;
 	esac
 fi
