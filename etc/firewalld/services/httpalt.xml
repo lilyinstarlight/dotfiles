@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>HTTP Alternative Port</short>
+  <description>HTTP alternative port at tcp 8080.</description>
+  <port protocol="tcp" port="8080"/>
+</service>
