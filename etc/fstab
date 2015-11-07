@@ -15,6 +15,6 @@
 /dev/sda1           /               btrfs       noatime,discard,ssd_spread,space_cache,compress=lzo     0 0
 /dev/sdb2           /boot           vfat        noatime                                                 0 2
 /dev/sdb10          /home           ext4        noatime                                                 0 2
-/dev/mapper/crypt   /mnt/crypt      btrfs       noatime                                                 0 2
+/dev/mapper/crypt   /mnt/crypt      btrfs       noatime,nofail                                          0 2
 /dev/mapper/swap    none            swap        defaults                                                0 0
 /dev/cdrom          /mnt/cdrom      auto        noauto,ro                                               0 0
