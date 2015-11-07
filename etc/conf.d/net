@@ -1,3 +1,0 @@
-modules="wpa_supplicant"
-
-wpa_supplicant_wlp8s0="-Dnl80211"
