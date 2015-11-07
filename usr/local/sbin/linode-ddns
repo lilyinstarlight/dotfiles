@@ -1,0 +1,34 @@
+#!/bin/sh
+source /etc/default/linode-ddns
+
+code=0
+
+if $ifip; then
+  ipv4=$(ip route get 8.8.8.8 2>/dev/null | grep -oP '(?<=src )[0-9.]+')
+else
+  ipv4=$(curl -s4 icanhazip.com)
+fi
+
+if [ "$ipv4" ]; then
+  response=$(LINODE_API_KEY="$key" linode domain record-update "$zone" A "$label" "$ipv4" 2>&1)
+  if [ $? != 0 ]; then
+    code=$((code+1))
+    echo 'IPv4 Update ('"${label}.${zone}"' -> '"$ipv4"'): '"$response" >&2
+  fi
+fi
+
+if $ifip; then
+  ipv6=$(ip route get 2001:4860:4860::8888 2>/dev/null | grep -oP '(?<=src )[a-f0-9:]+')
+else
+  ipv6=$(curl -s6 icanhazip.com)
+fi
+
+if [ "$ipv6" ]; then
+  response=$(LINODE_API_KEY="$key" linode domain record-update "$zone" AAAA "$label" "$ipv6" 2>&1)
+  if [ $? != 0 ]; then
+    code=$((code+1))
+    echo 'IPv6 Update ('"${label}.${zone}"' -> '"$ipv6"'): '"$response" >&2
+  fi
+fi
+
+exit $code

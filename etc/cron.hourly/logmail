@@ -1,3 +1,0 @@
-#!/bin/sh
-journalctl --since=-1h --priority=err --no-pager --quiet | grep -v '^-- No entries --$'
-systemctl --state=failed --no-pager --no-legend
