@@ -79,10 +79,13 @@ syntax enable
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
 "vim
-nmap <leader>l :set list!<CR>
+nmap <leader>l :set list!<cr>
 
 "matchit.vim
 runtime! macros/matchit.vim
+
+"netrw
+nmap <leader>e :Explore<cr>
 
 "incsearch.vim
 let g:incsearch#auto_nohlsearch = 1
@@ -96,3 +99,6 @@ let g:lightline = { 'colorscheme': 'jellybeans', }
 "vim-easy-align
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
+
+"vim-better-whitespace
+nmap <leader><space> :StripWhitespace<cr>
