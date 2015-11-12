@@ -45,25 +45,25 @@ if [[ -z "$XDG_SESSION_DESKTOP" ]]; then
 	case $XDG_VTNR in
 		1)
 			export XDG_SESSION_DESKTOP="qtile"
-			exec startx
+			exec xsession
 			;;
 
 		2)
 			export XDG_SESSION_DESKTOP="bspwm"
-			exec startx
+			exec xsession
 			;;
 
 		3)
 			export XDG_SESSION_DESKTOP="steam"
-			exec startx
+			exec xsession
 			;;
 		4)
 			export XDG_SESSION_DESKTOP="plex"
-			exec startx
+			exec xsession
 			;;
 		5)
 			export XDG_SESSION_DESKTOP="netflix"
-			exec startx
+			exec xsession
 			;;
 	esac
 fi
