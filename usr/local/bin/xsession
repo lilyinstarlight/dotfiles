@@ -1,0 +1,64 @@
+#!/bin/sh
+if [ -z "$DISPLAY" ]; then
+	export DISPLAY=":0"
+fi
+
+if [ "$1" ]; then
+	XINITRC="$1"
+else
+	XINITRC="/etc/X11/xinit/xinitrc"
+
+	if [ -x "$HOME/.xinitrc" ]; then
+		XINITRC="$HOME/.xinitrc"
+	fi
+fi
+
+if [ "$2" ]; then
+	XSERVERRC="$2"
+else
+	XSERVERRC="/etc/X11/xinit/xserverrc"
+
+	if [ -x "$HOME/.xserverrc" ]; then
+		XSERVERRC="$HOME/.xserverrc"
+	fi
+fi
+
+if [ -z "$XAUTHORITY" ]; then
+	if [ "$3" ]; then
+		export XAUTHORITY="$3"
+	else
+		export XAUTHORITY="$HOME/.Xauthority"
+	fi
+fi
+
+if [ -z "$XSERVER" ]; then
+	if [ "$4" ]; then
+		export XSERVER="$4"
+	else
+		export XSERVER="$HOME/.Xserver"
+	fi
+fi
+
+if [ "$5" ]; then
+	MCOOKIE="$5"
+else
+	MCOOKIE="$(mcookie)"
+fi
+
+xauth -f "$XSERVER" -q <<EOF
+add $DISPLAY . $MCOOKIE
+EOF
+
+xauth -f "$XAUTHORITY" -q <<EOF
+add $DISPLAY . $MCOOKIE
+EOF
+
+xinit "$XINITRC" -- "$XSERVERRC" "$DISPLAY"
+
+xauth -f "$XAUTHORITY" -q <<EOF
+remove $DISPLAY
+EOF
+
+xauth -f "$XSERVER" -q <<EOF
+remove $DISPLAY
+EOF
