@@ -215,7 +215,6 @@ net-misc/youtube-dl
 net-misc/ytalk
 net-p2p/pybitmessage
 net-p2p/zget
-net-print/cupscloudprint
 net-print/gutenprint
 net-print/hplip
 net-proxy/mitmproxy

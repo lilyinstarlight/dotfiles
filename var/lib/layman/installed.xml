@@ -1,77 +1,14 @@
 <repositories encoding="unicode" version="1.0">
   <repo priority="50" quality="experimental" status="unofficial">
-    <name>dlang</name>
-    <description>A collection of ebuilds related to the D programming language.</description>
-    <homepage>https://github.com/gentoo/dlang</homepage>
+    <name>steam-overlay</name>
+    <description>Gentoo overlay for Valve's Steam client and Steam-based games</description>
+    <homepage>https://github.com/anyc/steam-overlay</homepage>
     <owner>
-      <email>Marco.Leise@gmx.de</email>
+      <email>dev@kicherer.org</email>
+      <name>Mario Kicherer</name>
     </owner>
-    <source type="git">https://github.com/gentoo/dlang.git</source>
-    <feed>https://github.com/gentoo/dlang/commits/master.atom</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>tlp</name>
-    <description>TLP Gentoo Overlay</description>
-    <homepage>https://github.com/dywisor/tlp-portage</homepage>
-    <owner>
-      <email>dywi@mailerd.de</email>
-      <name>dywisor</name>
-    </owner>
-    <source type="git">git://github.com/dywisor/tlp-portage.git</source>
-    <feed>https://github.com/dywisor/tlp-portage/commits/maint.atom</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>games-overlay</name>
-    <description>gentoo overlay containing games ebuilds only</description>
-    <homepage>https://github.com/hasufell/games-overlay</homepage>
-    <owner>
-      <email>hasufell@posteo.de</email>
-      <name>Julian Ospald</name>
-    </owner>
-    <source type="git">git://github.com/hasufell/games-overlay.git</source>
-    <feed>https://github.com/hasufell/games-overlay/commits/master.atom</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>bumblebee</name>
-    <description>Packages related to the bumblebee project</description>
-    <homepage>https://github.com/Bumblebee-Project/bumblebee-gentoo/</homepage>
-    <owner>
-      <email>mva@mva.name</email>
-      <name>Vadim A. Misbakh-Soloviov</name>
-    </owner>
-    <source type="git">git://github.com/Bumblebee-Project/bumblebee-gentoo</source>
-    <feed>https://github.com/Bumblebee-Project/bumblebee-gentoo/commits/master.atom</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>proaudio</name>
-    <description>Evermind's overlay with ebuilds for a lot of pro-audio production software.</description>
-    <homepage>http://proaudio.tuxfamily.org/wiki</homepage>
-    <owner>
-      <email>evermind@tuxfamily.org</email>
-    </owner>
-    <source type="svn">svn://svn.tuxfamily.org/svnroot/proaudio/proaudio/trunk/overlays/proaudio</source>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>fkmclane</name>
-    <description>Personal overlay of fkmclane containing patched ebuilds and new ebuilds</description>
-    <homepage>https://github.com/fkmclane/overlay</homepage>
-    <owner>
-      <email>fkmclane@gmail.com</email>
-      <name>Foster McLane</name>
-    </owner>
-    <source type="git">git://github.com/fkmclane/overlay.git</source>
-    <feed>https://github.com/fkmclane/overlay/commits/master.atom</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>sinustrom</name>
-    <description>Sinustrom Gentoo Overlay</description>
-    <homepage>https://github.com/zpuskas/sinustrom-gentoo-overlay</homepage>
-    <owner>
-      <email>zoltan@sinustrom.info</email>
-      <name>Zoltan Puskas</name>
-    </owner>
-    <source type="git">https://github.com/zpuskas/sinustrom-gentoo-overlay.git</source>
-    <feed>https://github.com/zpuskas/sinustrom-gentoo-overlay/commits/master.atom</feed>
+    <source type="git">git://github.com/anyc/steam-overlay.git</source>
+    <feed>https://github.com/anyc/steam-overlay/commits/master.atom</feed>
   </repo>
   <repo priority="50" quality="experimental" status="official">
     <name>dotnet</name>
@@ -85,24 +22,77 @@
     <feed>https://cgit.gentoo.org/proj/dotnet.git/atom/</feed>
   </repo>
   <repo priority="50" quality="experimental" status="unofficial">
-    <name>niftyrepo</name>
-    <description>niftyrepo's experimental overlay</description>
-    <homepage>http://www.niftiestsoftware.com</homepage>
+    <name>sinustrom</name>
+    <description>Sinustrom Gentoo Overlay</description>
+    <homepage>https://github.com/zpuskas/sinustrom-gentoo-overlay</homepage>
     <owner>
-      <email>src@niftiestsoftware.com</email>
-      <name>Simon Cadman</name>
+      <email>zoltan@sinustrom.info</email>
+      <name>Zoltan Puskas</name>
     </owner>
-    <source type="git">git://github.com/simoncadman/niftyrepo-layman.git</source>
+    <source type="git">https://github.com/zpuskas/sinustrom-gentoo-overlay.git</source>
+    <feed>https://github.com/zpuskas/sinustrom-gentoo-overlay/commits/master.atom</feed>
   </repo>
   <repo priority="50" quality="experimental" status="unofficial">
-    <name>steam-overlay</name>
-    <description>Gentoo overlay for Valve's Steam client and Steam-based games</description>
-    <homepage>https://github.com/anyc/steam-overlay</homepage>
+    <name>tlp</name>
+    <description>TLP Gentoo Overlay</description>
+    <homepage>https://github.com/dywisor/tlp-portage</homepage>
     <owner>
-      <email>dev@kicherer.org</email>
-      <name>Mario Kicherer</name>
+      <email>dywi@mailerd.de</email>
+      <name>dywisor</name>
     </owner>
-    <source type="git">git://github.com/anyc/steam-overlay.git</source>
-    <feed>https://github.com/anyc/steam-overlay/commits/master.atom</feed>
+    <source type="git">git://github.com/dywisor/tlp-portage.git</source>
+    <feed>https://github.com/dywisor/tlp-portage/commits/maint.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>bumblebee</name>
+    <description>Packages related to the bumblebee project</description>
+    <homepage>https://github.com/Bumblebee-Project/bumblebee-gentoo/</homepage>
+    <owner>
+      <email>mva@mva.name</email>
+      <name>Vadim A. Misbakh-Soloviov</name>
+    </owner>
+    <source type="git">git://github.com/Bumblebee-Project/bumblebee-gentoo</source>
+    <feed>https://github.com/Bumblebee-Project/bumblebee-gentoo/commits/master.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>fkmclane</name>
+    <description>Personal overlay of fkmclane containing patched ebuilds and new ebuilds</description>
+    <homepage>https://github.com/fkmclane/overlay</homepage>
+    <owner>
+      <email>fkmclane@gmail.com</email>
+      <name>Foster McLane</name>
+    </owner>
+    <source type="git">git://github.com/fkmclane/overlay.git</source>
+    <feed>https://github.com/fkmclane/overlay/commits/master.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>proaudio</name>
+    <description>Evermind's overlay with ebuilds for a lot of pro-audio production software.</description>
+    <homepage>http://proaudio.tuxfamily.org/wiki</homepage>
+    <owner>
+      <email>evermind@tuxfamily.org</email>
+    </owner>
+    <source type="svn">svn://svn.tuxfamily.org/svnroot/proaudio/proaudio/trunk/overlays/proaudio</source>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>dlang</name>
+    <description>A collection of ebuilds related to the D programming language.</description>
+    <homepage>https://github.com/gentoo/dlang</homepage>
+    <owner>
+      <email>Marco.Leise@gmx.de</email>
+    </owner>
+    <source type="git">https://github.com/gentoo/dlang.git</source>
+    <feed>https://github.com/gentoo/dlang/commits/master.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>games-overlay</name>
+    <description>gentoo overlay containing games ebuilds only</description>
+    <homepage>https://github.com/hasufell/games-overlay</homepage>
+    <owner>
+      <email>hasufell@posteo.de</email>
+      <name>Julian Ospald</name>
+    </owner>
+    <source type="git">git://github.com/hasufell/games-overlay.git</source>
+    <feed>https://github.com/hasufell/games-overlay/commits/master.atom</feed>
   </repo>
 </repositories>
