@@ -132,6 +132,7 @@ media-gfx/graphviz
 media-gfx/inkscape
 media-gfx/maim
 media-gfx/optipng
+media-gfx/pinta
 media-gfx/simple-scan
 media-gfx/viewnior
 media-gfx/wkhtmltopdf
@@ -237,6 +238,7 @@ sys-apps/lm_sensors
 sys-apps/lshw
 sys-apps/mlocate
 sys-apps/portage
+sys-apps/progress
 sys-apps/systemd
 sys-apps/the_silver_searcher
 sys-apps/usbutils
