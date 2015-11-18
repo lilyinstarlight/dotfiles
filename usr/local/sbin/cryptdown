@@ -1,0 +1,2 @@
+#!/bin/sh
+systemctl stop mnt-crypt.mount; systemctl stop systemd-cryptsetup@crypt.service
