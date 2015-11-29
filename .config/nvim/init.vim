@@ -21,6 +21,7 @@ set listchars=eol:$,tab:>-,space:.,trail:#,extends:>,precedes:<,conceal:*,nbsp:+
 set mouse=a
 set nrformats=hex,alpha
 set nohlsearch
+set nojoinspaces
 set noshowmode
 set noruler
 set number
