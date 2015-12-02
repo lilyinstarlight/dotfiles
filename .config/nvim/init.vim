@@ -80,6 +80,7 @@ syntax enable
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
 "vim
+nnoremap Y y$
 nmap <leader>l :set list!<cr>
 
 "matchit.vim
