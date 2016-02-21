@@ -1,5 +1,5 @@
 #!/bin/sh
-source /etc/default/linode-ddns
+source /etc/default/ddns
 
 code=0
 
@@ -10,10 +10,10 @@ else
 fi
 
 if [ "$ipv4" ]; then
-  response=$(LINODE_API_KEY="$key" linode domain record-update "$zone" A "$label" "$ipv4" 2>&1)
+  response=$(LINODE_API_KEY="$key" linode domain record-update "$zone" A "$record" -R "$ipv4" 2>&1)
   if [ $? != 0 ]; then
     code=$((code+1))
-    echo 'IPv4 Update ('"${label}.${zone}"' -> '"$ipv4"'): '"$response" >&2
+    echo 'IPv4 Update ('"${record}.${zone}"' -> '"$ipv4"'): '"$response" >&2
   fi
 fi
 
@@ -24,10 +24,10 @@ else
 fi
 
 if [ "$ipv6" ]; then
-  response=$(LINODE_API_KEY="$key" linode domain record-update "$zone" AAAA "$label" "$ipv6" 2>&1)
+  response=$(LINODE_API_KEY="$key" linode domain record-update "$zone" AAAA "$record" -R "$ipv6" 2>&1)
   if [ $? != 0 ]; then
     code=$((code+1))
-    echo 'IPv6 Update ('"${label}.${zone}"' -> '"$ipv6"'): '"$response" >&2
+    echo 'IPv6 Update ('"${record}.${zone}"' -> '"$ipv6"'): '"$response" >&2
   fi
 fi
 

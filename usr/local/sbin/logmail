@@ -1,16 +1,25 @@
 #!/bin/sh
-if [ "$#" -ne 2 ]; then
-	echo "Usage: $0 <time> <priority>"
+if [ "$#" -ne 2 -a "$#" -ne 3 ]; then
+	echo "Usage: $0 <time> <priority> [filter]"
 	echo
 	echo "Time can be specified according to the specification in 'systemd.time(7)'."
 	echo "Priority is the log levels as specified in 'journalctl(1)'."
+	echo "Filter is a path to a file containing filtered regular expressions, one per line."
 
 	exit 1
 fi
 
+time="$1"
+priority="$2"
+filter="$3"
+
+if [ -z "$filter" ]; then
+	filter="/dev/null"
+fi
+
 source /etc/default/logmail
 
-journal=$(journalctl --since="$1" --priority="$2" --no-pager --quiet | grep -v '^-- No entries --$')
+journal=$(journalctl --since="$time" --priority="$priority" --no-pager --quiet | grep -v '^-- No entries --$' | grep -v -f "$filter")
 units=$(systemctl --state=failed --no-pager --no-legend)
 
 message=""
