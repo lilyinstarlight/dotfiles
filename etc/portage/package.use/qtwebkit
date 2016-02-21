@@ -1,1 +1,2 @@
 dev-qt/qtwebkit -qml
+dev-qt/qtwebkit:4 -exceptions

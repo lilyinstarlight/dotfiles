@@ -1,2 +1,2 @@
-sys-apps/systemd cryptsetup gnuefi terminal
+sys-apps/systemd curl cryptsetup gcrypt gnuefi importd lzma terminal
 media-fonts/unifont utils

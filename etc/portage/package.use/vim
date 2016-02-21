@@ -1,2 +1,2 @@
-app-editors/vim -lua -luajit python
-app-editors/gvim -lua -luajit python
+app-editors/vim -lua -luajit python -python_targets_* python_targets_python3_5
+app-editors/gvim -lua -luajit python -python_targets_* python_targets_python3_5
