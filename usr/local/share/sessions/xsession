@@ -1,0 +1,24 @@
+#!/bin/sh
+if [ -z "$XDG_CONFIG_HOME" ]; then
+	XDG_CONFIG_HOME="$HOME/.config"
+fi
+
+xsession="$(basename $0)"
+
+if [ -x "$XDG_CONFIG_HOME/xsessions/$xsession" ]; then
+	xsession_exec="$XDG_CONFIG_HOME/xsessions/$xsession"
+elif [ -x "/etc/xsessions/$xsession" ]; then
+	xsession_exec="/etc/xsessions/$xsession"
+elif [ -x "/usr/local/share/xsessions/$xsession" ]; then
+	xsession_exec="/usr/local/share/xsessions/$xsession"
+elif [ -x "/usr/share/xsessions/$xsession" ]; then
+	xsession_exec="/usr/share/xsessions/$xsession"
+elif [ -x "/etc/X11/Sessions/$xsession" ]; then
+	xsession_exec="/etc/X11/Sessions/$xsession"
+else
+	xsession_exec=""
+fi
+
+export DISPLAY=":$XDG_VTNR"
+
+exec xsession "$xsession_exec"

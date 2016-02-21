@@ -1,0 +1,12 @@
+# source environment stuff
+source ~/.env
+
+# default shell
+shell=zsh
+
+# sessions
+session1=qtile
+session2=bspwm
+session3=steam
+session4=plex
+session5=netflix
