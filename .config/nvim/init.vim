@@ -6,7 +6,7 @@ set autoindent
 set autoread
 set autowrite
 set backspace=indent,start
-set clipboard=unnamedplus
+set clipboard=unnamed
 set cursorcolumn
 set cursorline
 set display=lastline
@@ -48,16 +48,20 @@ set wildmenu
 "vim-plug
 call plug#begin('$HOME/.config/nvim/plugged')
 
+Plug 'chase/vim-ansible-yaml'
 Plug 'haya14busa/incsearch.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-plug'
+Plug 'lfv89/vim-interestingwords'
 Plug 'nanotech/jellybeans.vim'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'peterhoeg/vim-qml'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-speeddating'
@@ -81,6 +85,8 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 
 "vim
 nnoremap Y y$
+nmap <leader>n :ene<CR>
+nmap <leader>d :%d<CR>
 nmap <leader>l :set list!<cr>
 
 "matchit.vim

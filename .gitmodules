@@ -1,33 +1,45 @@
+[submodule ".config/nvim/plugged/vim-ansible-yaml"]
+	path = .config/nvim/plugged/vim-ansible-yaml
+	url = https://github.com/chase/vim-ansible-yaml.git
 [submodule ".config/nvim/plugged/incsearch.vim"]
 	path = .config/nvim/plugged/incsearch.vim
 	url = https://github.com/haya14busa/incsearch.vim.git
-[submodule ".config/nvim/plugged/jellybeans.vim"]
-	path = .config/nvim/plugged/jellybeans.vim
-	url = https://github.com/nanotech/jellybeans.vim.git
 [submodule ".config/nvim/plugged/lightline.vim"]
 	path = .config/nvim/plugged/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
-[submodule ".config/nvim/plugged/vim-abolish"]
-	path = .config/nvim/plugged/vim-abolish
-	url = https://github.com/tpope/vim-abolish.git
-[submodule ".config/nvim/plugged/vim-better-whitespace"]
-	path = .config/nvim/plugged/vim-better-whitespace
-	url = https://github.com/ntpeters/vim-better-whitespace.git
-[submodule ".config/nvim/plugged/vim-commentary"]
-	path = .config/nvim/plugged/vim-commentary
-	url = https://github.com/tpope/vim-commentary.git
 [submodule ".config/nvim/plugged/vim-easy-align"]
 	path = .config/nvim/plugged/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
-[submodule ".config/nvim/plugged/vim-eunuch"]
-	path = .config/nvim/plugged/vim-eunuch
-	url = https://github.com/tpope/vim-eunuch.git
-[submodule ".config/nvim/plugged/vim-multiple-cursors"]
-	path = .config/nvim/plugged/vim-multiple-cursors
-	url = https://github.com/terryma/vim-multiple-cursors.git
 [submodule ".config/nvim/plugged/vim-plug"]
 	path = .config/nvim/plugged/vim-plug
 	url = https://github.com/junegunn/vim-plug.git
+[submodule ".config/nvim/plugged/vim-interestingwords"]
+	path = .config/nvim/plugged/vim-interestingwords
+	url = https://github.com/lfv89/vim-interestingwords.git
+[submodule ".config/nvim/plugged/jellybeans.vim"]
+	path = .config/nvim/plugged/jellybeans.vim
+	url = https://github.com/nanotech/jellybeans.vim.git
+[submodule ".config/nvim/plugged/vim-better-whitespace"]
+	path = .config/nvim/plugged/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace.git
+[submodule ".config/nvim/plugged/vim-qml"]
+	path = .config/nvim/plugged/vim-qml
+	url = https://github.com/peterhoeg/vim-qml.git
+[submodule ".config/nvim/plugged/vim-multiple-cursors"]
+	path = .config/nvim/plugged/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule ".config/nvim/plugged/vim-abolish"]
+	path = .config/nvim/plugged/vim-abolish
+	url = https://github.com/tpope/vim-abolish.git
+[submodule ".config/nvim/plugged/vim-commentary"]
+	path = .config/nvim/plugged/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule ".config/nvim/plugged/vim-eunuch"]
+	path = .config/nvim/plugged/vim-eunuch
+	url = https://github.com/tpope/vim-eunuch.git
+[submodule ".config/nvim/plugged/vim-fugitive"]
+	path = .config/nvim/plugged/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule ".config/nvim/plugged/vim-repeat"]
 	path = .config/nvim/plugged/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
