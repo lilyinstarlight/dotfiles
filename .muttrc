@@ -12,6 +12,8 @@ set sort=threads
 set index_format="%4C %Z %{%b %d} %-16.16L  %s"
 set folder=~/.mail
 
+set use_envelope_from
+
 # folders
 set spoolfile=~/.mail/inbox/
 set record=~/.mail/sent/
