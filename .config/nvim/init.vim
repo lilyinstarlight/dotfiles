@@ -93,16 +93,17 @@ nmap <leader>l :set list!<cr>
 runtime! macros/matchit.vim
 
 "netrw
+let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+'
 nmap <leader>e :Explore<cr>
 
 "incsearch.vim
-let g:incsearch#auto_nohlsearch = 1
+let g:incsearch#auto_nohlsearch=1
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 
 "lightline.vim
-let g:lightline = { 'colorscheme': 'jellybeans', }
+let g:lightline={'colorscheme': 'jellybeans',}
 
 "vim-easy-align
 xmap ga <Plug>(EasyAlign)
