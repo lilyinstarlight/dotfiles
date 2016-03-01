@@ -85,8 +85,8 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 
 "vim
 nnoremap Y y$
-nmap <leader>n :ene<CR>
-nmap <leader>d :%d<CR>
+nmap <leader>n :ene<cr>
+nmap <leader>d :%d<cr>
 nmap <leader>l :set list!<cr>
 
 "matchit.vim
