@@ -1,9 +1,16 @@
-#!/bin/busybox sh
+#!/bin/sh
+source /etc/profile
+source "$HOME"/.profile
+
 if [ -z "$XDG_CONFIG_HOME" ]; then
 	XDG_CONFIG_HOME="$HOME/.config"
 fi
 
 shell="/bin/sh"
+
+if [ $# -ne 0 ]; then
+	exec "$shell" "$@"
+fi
 
 if [ -f "$XDG_CONFIG_HOME/petty/pettyrc" ]; then
 	source "$XDG_CONFIG_HOME/petty/pettyrc"
@@ -36,4 +43,4 @@ else
 	session_exec="$shell"
 fi
 
-exec $session_exec
+exec "$session_exec"

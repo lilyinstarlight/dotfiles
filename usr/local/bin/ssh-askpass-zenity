@@ -1,2 +1,0 @@
-#!/bin/sh
-exec zenity --title=SSH --entry --text="$1" --hide-text
