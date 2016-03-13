@@ -1,4 +1,4 @@
-#	$OpenBSD: sshd_config,v 1.97 2015/08/06 14:53:21 deraadt Exp $
+#	$OpenBSD: sshd_config,v 1.98 2016/02/17 05:29:04 djm Exp $
 
 # This is the sshd server system-wide configuration file.  See
 # sshd_config(5) for more information.
@@ -107,7 +107,7 @@ PrintMotd no
 PrintLastLog no
 #TCPKeepAlive yes
 #UseLogin no
-UsePrivilegeSeparation sandbox		# Default for new installations.
+#UsePrivilegeSeparation sandbox
 #PermitUserEnvironment no
 #Compression delayed
 #ClientAliveInterval 0
@@ -122,38 +122,8 @@ UsePrivilegeSeparation sandbox		# Default for new installations.
 # no default banner path
 #Banner none
 
-# here are the new patched ldap related tokens
-# entries in your LDAP must have posixAccount & ldapPublicKey objectclass
-#UseLPK yes
-#LpkLdapConf /etc/ldap.conf
-#LpkServers  ldap://10.1.7.1/ ldap://10.1.7.2/
-#LpkUserDN   ou=users,dc=phear,dc=org
-#LpkGroupDN  ou=groups,dc=phear,dc=org
-#LpkBindDN cn=Manager,dc=phear,dc=org
-#LpkBindPw secret
-#LpkServerGroup mail
-#LpkFilter (hostAccess=master.phear.org)
-#LpkForceTLS no
-#LpkSearchTimelimit 3
-#LpkBindTimelimit 3
-#LpkPubKeyAttr sshPublicKey
-
 # override default of no subsystems
 Subsystem	sftp	/usr/lib64/misc/sftp-server
-
-# the following are HPN related configuration options
-# tcp receive buffer polling. disable in non autotuning kernels
-#TcpRcvBufPoll yes
-
-# disable hpn performance boosts
-#HPNDisabled no
-
-# buffer size for hpn to non-hpn connections
-#HPNBufferSize 2048
-
-
-# allow the use of the none cipher
-#NoneEnabled no
 
 # Example of overriding settings on a per-user basis
 #Match User anoncvs
