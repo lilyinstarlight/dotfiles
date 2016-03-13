@@ -1,0 +1,12 @@
+#!/bin/sh
+# X properties
+xsetroot -cursor_name left_ptr
+xrdb -merge ~/.Xresources
+nitrogen --restore
+
+# background services
+barline | lemonbar -f terminus &
+sxhkd &
+
+# window manager
+exec bspwm
