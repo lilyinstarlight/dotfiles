@@ -1,2 +1,0 @@
-#!/bin/sh
-pkexec sh -c "rmmod xpad; xboxdrv -sc /home/foster/.xboxdrv/minecraft.conf"
