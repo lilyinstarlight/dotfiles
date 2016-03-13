@@ -1,3 +1,3 @@
-#<dm>   <dev>        <pass>         <opts>
-crypt   /dev/sdb11   none           nofail
-swap    /dev/sdb9    /dev/urandom   swap
+# <dm>   <dev>                                          <pass>           <opts>
+crypt    PARTUUID=ee1147fc-ad44-421d-90d7-3f122bf4d698  none             noauto
+swap     PARTUUID=7f172ebe-ee86-46e2-8582-1564be7fb63e  /dev/urandom     swap
