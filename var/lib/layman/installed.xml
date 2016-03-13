@@ -1,77 +1,14 @@
 <repositories encoding="unicode" version="1.0">
   <repo priority="50" quality="experimental" status="unofficial">
-    <name>steam-overlay</name>
-    <description>Gentoo overlay for Valve's Steam client and Steam-based games</description>
-    <homepage>https://github.com/anyc/steam-overlay</homepage>
+    <name>gamerlay</name>
+    <description>Gamers overlay for all various games. Not related with games team.</description>
+    <homepage>https://cgit.gentoo.org/proj/gamerlay.git</homepage>
     <owner>
-      <email>dev@kicherer.org</email>
-      <name>Mario Kicherer</name>
-    </owner>
-    <source type="git">git://github.com/anyc/steam-overlay.git</source>
-    <feed>https://github.com/anyc/steam-overlay/commits/master.atom</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="official">
-    <name>dotnet</name>
-    <description>Experimental overlay for .NET packages.</description>
-    <homepage>http://github.com/gentoo/dotnet</homepage>
-    <owner>
-      <email>cynede@gentoo.org</email>
-      <name>Heather</name>
-    </owner>
-    <source type="git">git://anongit.gentoo.org/proj/dotnet.git</source>
-    <feed>https://cgit.gentoo.org/proj/dotnet.git/atom/</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>proaudio</name>
-    <description>Evermind's overlay with ebuilds for a lot of pro-audio production software.</description>
-    <homepage>http://proaudio.tuxfamily.org/wiki</homepage>
-    <owner>
-      <email>evermind@tuxfamily.org</email>
-    </owner>
-    <source type="svn">svn://svn.tuxfamily.org/svnroot/proaudio/proaudio/trunk/overlays/proaudio</source>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>bumblebee</name>
-    <description>Packages related to the bumblebee project</description>
-    <homepage>https://github.com/Bumblebee-Project/bumblebee-gentoo/</homepage>
-    <owner>
-      <email>mva@mva.name</email>
+      <email>gentoo@mva.name</email>
       <name>Vadim A. Misbakh-Soloviov</name>
     </owner>
-    <source type="git">git://github.com/Bumblebee-Project/bumblebee-gentoo</source>
-    <feed>https://github.com/Bumblebee-Project/bumblebee-gentoo/commits/master.atom</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>tlp</name>
-    <description>TLP Gentoo Overlay</description>
-    <homepage>https://github.com/dywisor/tlp-portage</homepage>
-    <owner>
-      <email>dywi@mailerd.de</email>
-      <name>dywisor</name>
-    </owner>
-    <source type="git">git://github.com/dywisor/tlp-portage.git</source>
-    <feed>https://github.com/dywisor/tlp-portage/commits/maint.atom</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>dlang</name>
-    <description>A collection of ebuilds related to the D programming language.</description>
-    <homepage>https://github.com/gentoo/dlang</homepage>
-    <owner>
-      <email>Marco.Leise@gmx.de</email>
-    </owner>
-    <source type="git">https://github.com/gentoo/dlang.git</source>
-    <feed>https://github.com/gentoo/dlang/commits/master.atom</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>sinustrom</name>
-    <description>Sinustrom Gentoo Overlay</description>
-    <homepage>https://github.com/zpuskas/sinustrom-gentoo-overlay</homepage>
-    <owner>
-      <email>zoltan@sinustrom.info</email>
-      <name>Zoltan Puskas</name>
-    </owner>
-    <source type="git">https://github.com/zpuskas/sinustrom-gentoo-overlay.git</source>
-    <feed>https://github.com/zpuskas/sinustrom-gentoo-overlay/commits/master.atom</feed>
+    <source type="git">git://anongit.gentoo.org/proj/gamerlay.git</source>
+    <feed>https://cgit.gentoo.org/proj/gamerlay.git/atom/</feed>
   </repo>
   <repo priority="50" quality="experimental" status="unofficial">
     <name>fkmclane</name>
@@ -83,26 +20,5 @@
     </owner>
     <source type="git">git://github.com/fkmclane/overlay.git</source>
     <feed>https://github.com/fkmclane/overlay/commits/master.atom</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>go-overlay</name>
-    <description>Golang related ebuilds</description>
-    <homepage>https://github.com/Dr-Terrible/go-overlay</homepage>
-    <owner>
-      <email>toffanin.mauro@gmail.com</email>
-      <name>Mauro Toffanin</name>
-    </owner>
-    <source type="git">https://github.com/Dr-Terrible/go-overlay.git</source>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>games-overlay</name>
-    <description>gentoo overlay containing games ebuilds only</description>
-    <homepage>https://github.com/hasufell/games-overlay</homepage>
-    <owner>
-      <email>hasufell@posteo.de</email>
-      <name>Julian Ospald</name>
-    </owner>
-    <source type="git">git://github.com/hasufell/games-overlay.git</source>
-    <feed>https://github.com/hasufell/games-overlay/commits/master.atom</feed>
   </repo>
 </repositories>

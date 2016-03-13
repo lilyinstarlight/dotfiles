@@ -1,1 +1,1 @@
-dev-qt/qtmultimedia:5 gstreamer
+dev-qt/qtmultimedia gstreamer widgets

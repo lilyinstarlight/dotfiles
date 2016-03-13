@@ -1,6 +1,0 @@
-net-libs/gtk-vnc python
-app-emulation/libvirt-glib python
-net-misc/spice-gtk python gtk3 usbredir
-app-emulation/qemu spice usbredir
-app-emulation/libvirt virt-network
-net-dns/dnsmasq script
