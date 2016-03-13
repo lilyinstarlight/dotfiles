@@ -1,7 +1,4 @@
 "settings
-if ! has('nvim')
-set nocompatible
-endif
 set autoindent
 set autoread
 set autowrite
@@ -25,30 +22,22 @@ set nojoinspaces
 set noshowmode
 set noruler
 set number
-if has('nvim')
 set runtimepath+=/usr/share/vim/vimfiles
-endif
-if has('nvim')
 set shada='20,<500,h
-endif
 set showmatch
 set smartcase
 set smarttab
 set scrolloff=2
 set showcmd
-if ! has('nvim')
-set undodir=$HOME/.local/share/nvim/undo
-endif
 set undofile
-if ! has('nvim')
-set viminfo='20,<500,h
-endif
 set wildmenu
 
 "vim-plug
 call plug#begin('$HOME/.config/nvim/plugged')
 
+Plug 'baskerville/vim-sxhkdrc'
 Plug 'chase/vim-ansible-yaml'
+Plug 'dag/vim-fish'
 Plug 'haya14busa/incsearch.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/vim-easy-align'

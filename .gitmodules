@@ -55,3 +55,9 @@
 [submodule ".config/nvim/plugged/vim-visual-increment"]
 	path = .config/nvim/plugged/vim-visual-increment
 	url = https://github.com/triglav/vim-visual-increment.git
+[submodule ".config/nvim/plugged/vim-fish"]
+	path = .config/nvim/plugged/vim-fish
+	url = https://github.com/dag/vim-fish.git
+[submodule ".config/nvim/plugged/vim-sxhkdrc"]
+	path = .config/nvim/plugged/vim-sxhkdrc
+	url = https://github.com/baskerville/vim-sxhkdrc.git
