@@ -1,0 +1,8 @@
+set topbarclear
+
+set notopbarborders
+
+set topbar2.left=%ifcursong%%playstate% %time_elapsed% / %time%%endif% %muteshort%%repeatshort%%randomshort%%manualshort%
+set topbar2.center=%ifcursong%%artist% / %title% / %album% / %date%%else%no song%endif%
+set topbar2.right=%livequeuesize%
+set topbar4.left=%progressbar%
