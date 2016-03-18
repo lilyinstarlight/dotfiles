@@ -11,4 +11,4 @@ bspc config focus_by_distance true
 bspc config history_aware_focus true
 bspc config focus_follows_pointer true
 
-bspc monitor -d term www chat work school games
+bspc monitor -d term www chat work school music games
