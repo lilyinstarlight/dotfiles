@@ -1,9 +1,11 @@
 app-admin/linode-cli
 app-admin/pass
 app-admin/sudo
+app-cdr/cdrdao
 app-crypt/gnupg
 app-editors/neovim
 app-eselect/eselect-vi
+app-laptop/tlp
 app-misc/cmatrix
 app-misc/physlock
 app-misc/tmux
@@ -18,6 +20,7 @@ app-text/mupdf
 app-vim/gentoo-syntax
 dev-java/oracle-jdk-bin
 dev-python/ipython
+dev-util/android-sdk-update-manager
 dev-util/cloc
 dev-util/gource
 dev-util/strace
@@ -26,6 +29,7 @@ dev-vcs/mercurial
 games-misc/nyancat
 games-misc/pipes
 games-util/steam-launcher
+games-util/xboxdrv
 mail-client/mutt
 media-fonts/terminus-font
 media-gfx/gimp
@@ -33,7 +37,6 @@ media-gfx/inkscape
 media-gfx/maim
 media-gfx/viewnior
 media-libs/gstreamer
-media-plugins/gst-plugins-gdkpixbuf
 media-plugins/gst-plugins-meta
 media-sound/alsa-utils
 media-sound/beets
@@ -49,12 +52,16 @@ media-video/mpv
 media-video/openshot
 media-video/pitivi
 net-analyzer/netcat6
+net-analyzer/nmap
 net-dns/bind-tools
 net-firewall/firewalld
 net-irc/irssi
 net-mail/syncmaildir
 net-misc/freerdp
 net-misc/netkit-telnetd
+net-wireless/bluez
+net-wireless/iw
+net-wireless/rfkill
 net-wireless/wpa_supplicant
 sys-apps/gptfdisk
 sys-apps/lm_sensors
@@ -67,7 +74,6 @@ sys-boot/efibootmgr
 sys-devel/bc
 sys-devel/gdb
 sys-fs/btrfs-progs
-sys-fs/diskdev_cmds
 sys-fs/dosfstools
 sys-fs/ntfs3g
 sys-kernel/gentoo-sources

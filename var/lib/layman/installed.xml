@@ -11,6 +11,17 @@
     <feed>https://cgit.gentoo.org/proj/gamerlay.git/atom/</feed>
   </repo>
   <repo priority="50" quality="experimental" status="unofficial">
+    <name>tlp</name>
+    <description>TLP Gentoo Overlay</description>
+    <homepage>https://github.com/dywisor/tlp-portage</homepage>
+    <owner>
+      <email>dywi@mailerd.de</email>
+      <name>dywisor</name>
+    </owner>
+    <source type="git">git://github.com/dywisor/tlp-portage.git</source>
+    <feed>https://github.com/dywisor/tlp-portage/commits/maint.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
     <name>fkmclane</name>
     <description>Personal overlay of fkmclane containing patched ebuilds and new ebuilds</description>
     <homepage>https://github.com/fkmclane/overlay</homepage>
