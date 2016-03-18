@@ -1,2 +1,2 @@
 #!/bin/sh
-pkexec /usr/sbin/rfkill unblock bluetooth && blueman-applet
+pkexec sh -c "modprobe btusb && rfkill unblock bluetooth && systemctl start bluetooth"

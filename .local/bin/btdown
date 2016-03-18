@@ -1,2 +1,2 @@
 #!/bin/sh
-killall blueman-applet; pkexec /usr/sbin/rfkill block bluetooth
+pkexec sh -c "systemctl stop bluetooth && rfkill block bluetooth && modprobe -r btusb"
