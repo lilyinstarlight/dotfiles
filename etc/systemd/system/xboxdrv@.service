@@ -1,7 +1,5 @@
 [Unit]
 Description=Userspace Xbox 360 Controller driver (special config)
-BindsTo=sys-subsystem-usb-xbox-controller0.device
-After=sys-subsystem-usb-xbox-controller0.device
 
 [Service]
 BusName=org.seul.Xboxdrv
