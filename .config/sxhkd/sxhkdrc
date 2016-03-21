@@ -116,5 +116,8 @@ super + d
 super + Return
 	rofi -show run
 
+super + Caps_Lock
+	rofi -show window
+
 super + space
 	physlock
