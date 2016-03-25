@@ -2,7 +2,6 @@
 set autoindent
 set autoread
 set autowrite
-set backspace=indent,start
 set clipboard=unnamed
 set cursorcolumn
 set cursorline
@@ -22,6 +21,7 @@ set nojoinspaces
 set noshowmode
 set noruler
 set number
+set printoptions=number:y,paper:letter
 set runtimepath+=/usr/share/vim/vimfiles
 set shada='20,<500,h
 set showmatch
@@ -56,6 +56,7 @@ Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-surround'
 Plug 'triglav/vim-visual-increment'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
@@ -92,7 +93,7 @@ map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 
 "lightline.vim
-let g:lightline={'colorscheme': 'jellybeans',}
+let g:lightline={'colorscheme': 'jellybeans'}
 
 "vim-easy-align
 xmap ga <Plug>(EasyAlign)
@@ -100,3 +101,6 @@ nmap ga <Plug>(EasyAlign)
 
 "vim-better-whitespace
 nmap <leader><space> :StripWhitespace<cr>
+
+"vimwiki
+let g:vimwiki_list = [{'path': '$HOME/docs', 'syntax': 'markdown', 'ext': '.md'}]
