@@ -96,11 +96,13 @@ map g/ <Plug>(incsearch-stay)
 let g:lightline={'colorscheme': 'jellybeans'}
 
 "vim-easy-align
-xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
+xmap ga <Plug>(EasyAlign)
 
 "vim-better-whitespace
 nmap <leader><space> :StripWhitespace<cr>
 
 "vimwiki
-let g:vimwiki_list = [{'path': '$HOME/docs', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_global_ext=0
+let g:vimwiki_dir_link='index'
+let g:vimwiki_list=[{'path': '$HOME/docs', 'nested_syntaxes': {'python': 'python', 'c': 'c', 'cpp': 'cpp', 'cs': 'cs', 'java': 'java', 'js': 'js', 'qml': 'qml', 'html': 'html', 'css': 'css'}}]
