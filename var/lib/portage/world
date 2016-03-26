@@ -19,6 +19,7 @@ app-shells/fish
 app-text/mupdf
 app-vim/gentoo-syntax
 dev-java/oracle-jdk-bin
+dev-lang/go
 dev-python/ipython
 dev-util/android-sdk-update-manager
 dev-util/cloc
@@ -37,8 +38,11 @@ media-gfx/inkscape
 media-gfx/maim
 media-gfx/viewnior
 media-libs/gstreamer
+media-plugins/calf
 media-plugins/gst-plugins-meta
+media-plugins/midifilter-lv2
 media-sound/alsa-utils
+media-sound/ardour
 media-sound/beets
 media-sound/fluid-soundfont
 media-sound/mpc
@@ -59,13 +63,16 @@ net-irc/irssi
 net-mail/syncmaildir
 net-misc/freerdp
 net-misc/netkit-telnetd
+net-misc/youtube-dl
 net-wireless/bluez
 net-wireless/iw
 net-wireless/rfkill
 net-wireless/wpa_supplicant
 sys-apps/gptfdisk
 sys-apps/lm_sensors
+sys-apps/lshw
 sys-apps/portage
+sys-apps/progress
 sys-apps/smartmontools
 sys-apps/systemd
 sys-apps/the_silver_searcher
@@ -82,8 +89,8 @@ sys-process/htop
 sys-process/lsof
 www-client/elinks
 www-client/firefox
+www-client/google-chrome
 www-client/qutebrowser
-www-plugins/pipelight
 x11-apps/xbacklight
 x11-apps/xev
 x11-apps/xkill
@@ -91,6 +98,7 @@ x11-apps/xrandr
 x11-apps/xsetroot
 x11-base/xorg-server
 x11-misc/arandr
+x11-misc/dunst
 x11-misc/lemonbar
 x11-misc/nitrogen
 x11-misc/rofi
@@ -100,5 +108,6 @@ x11-misc/xdg-utils
 x11-misc/xdo
 x11-misc/xsel
 x11-terms/rxvt-unicode
+x11-themes/arc
 x11-wm/bspwm
-xfce-base/xfwm4
+x11-wm/openbox
