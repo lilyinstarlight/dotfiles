@@ -1,6 +1,8 @@
+
 app-arch/bzip2 abi_x86_32
 app-arch/lz4 abi_x86_32
 app-arch/lz4_p131 abi_x86_32
+app-arch/xz-utils abi_x86_32
 dev-libs/expat abi_x86_32
 dev-libs/glib abi_x86_32
 dev-libs/gmp abi_x86_32
