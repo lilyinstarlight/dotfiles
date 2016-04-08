@@ -16,5 +16,5 @@ PARTUUID=f1c9c95f-5b91-4f4e-90b0-bbbdb908fed6  /               btrfs           n
 PARTUUID=90266c67-3af3-4992-bfdf-40e5ce54ee17  /boot           vfat            noatime,discard                          0 2
 PARTUUID=f1c9c95f-5b91-4f4e-90b0-bbbdb908fed6  /home           btrfs           noatime,discard,space_cache,subvol=home  0 2
 PARTUUID=f1c9c95f-5b91-4f4e-90b0-bbbdb908fed6  /var            btrfs           noatime,discard,space_cache,subvol=var   0 2
-/dev/mapper/crypt                              /mnt/crypt      btrfs           noatime,space_cache,noauto               0 2
+/dev/mapper/crypt                              /mnt/crypt      btrfs           noatime,space_cache,noauto               0 0
 /dev/mapper/swap                               none            swap            defaults                                 0 2
