@@ -30,11 +30,6 @@ function curl
     command curl -L $argv
 end
 
-function nyancat
-    set -lx TERM=xterm
-    command nyancat
-end
-
 function cget
     curl -fJO --progress-bar --retry 10 -C - $argv
 end
@@ -48,9 +43,13 @@ function open
         if test -e $file
             run xdg-open $file
         else
-            echo "open: $file: file not found" > /dev/stderr
+            echo "open: $file: file not found" >/dev/stderr
         end
     end
+end
+
+function speedtest
+    curl -o /dev/null http://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles-multistream.xml.bz2
 end
 
 function cal
@@ -58,7 +57,7 @@ function cal
 end
 
 function mail
-    command mail $argv -- -f $EMAIL
+    command mail -r $EMAIL $argv
 end
 
 function twitch
