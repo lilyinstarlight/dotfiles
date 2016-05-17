@@ -1,0 +1,7 @@
+Stopped (with error) /dev/dm-0\.
+Failed unmounting /var\.
+watchdog: watchdog0: watchdog did not stop!
+Failed to determine block device of root file system: No such file or directory
+ip6tables\.service: Service lacks both ExecStart= and ExecStop= setting\. Refusing\.
+iptables\.service: Service lacks both ExecStart= and ExecStop= setting\. Refusing\.
+ERROR: ipset not usable, disabling ipset usage in firewall\.
