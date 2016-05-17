@@ -1,3 +1,2 @@
 #!/bin/sh
 killall virt-manager; pkexec sh -c 'systemctl stop libvirtd; systemctl stop virtlogd; modprobe -r kvm_intel'
-killall polkit-gnome-authentication-agent-1

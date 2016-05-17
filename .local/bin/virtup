@@ -1,4 +1,2 @@
 #!/bin/sh
-/usr/libexec/polkit-gnome-authentication-agent-1 &
-disown
 pkexec sh -c 'modprobe kvm_intel && systemctl start virtlogd && systemctl start libvirtd' && virt-manager
