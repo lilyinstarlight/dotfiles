@@ -38,6 +38,7 @@ call plug#begin('$HOME/.config/nvim/plugged')
 Plug 'baskerville/vim-sxhkdrc'
 Plug 'chase/vim-ansible-yaml'
 Plug 'dag/vim-fish'
+Plug 'fkmclane/vim-resolve'
 Plug 'haya14busa/incsearch.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/vim-easy-align'
@@ -63,7 +64,7 @@ call plug#end()
 "tabbing
 set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
 
-"colour scheme
+"color scheme
 colorscheme jellybeans
 
 "features
@@ -78,6 +79,10 @@ nnoremap Y y$
 nmap <leader>n :ene<cr>
 nmap <leader>d :%d<cr>
 nmap <leader>l :set list!<cr>
+nmap <leader>s :w<cr>
+nmap <leader>t :tabe<cr>
+nmap <leader>c :bd!<cr>
+nmap <leader>a :bel new<cr>:te<cr>
 
 "matchit.vim
 runtime! macros/matchit.vim
@@ -105,4 +110,4 @@ nmap <leader><space> :StripWhitespace<cr>
 "vimwiki
 let g:vimwiki_global_ext=0
 let g:vimwiki_dir_link='index'
-let g:vimwiki_list=[{'path': '$HOME/docs', 'nested_syntaxes': {'python': 'python', 'c': 'c', 'cpp': 'cpp', 'cs': 'cs', 'java': 'java', 'js': 'js', 'qml': 'qml', 'html': 'html', 'css': 'css'}}]
+let g:vimwiki_list=[{'path': '$HOME/docs'}]

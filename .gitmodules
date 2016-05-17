@@ -61,3 +61,6 @@
 [submodule ".config/nvim/plugged/vim-sxhkdrc"]
 	path = .config/nvim/plugged/vim-sxhkdrc
 	url = https://github.com/baskerville/vim-sxhkdrc.git
+[submodule ".config/nvim/plugged/vim-resolve"]
+	path = .config/nvim/plugged/vim-resolve
+	url = https://github.com/fkmclane/vim-resolve.git
