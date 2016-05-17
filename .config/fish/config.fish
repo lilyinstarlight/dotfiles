@@ -49,7 +49,7 @@ function open
 end
 
 function speedtest
-    curl -o /dev/null http://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles-multistream.xml.bz2
+    curl -o /dev/null http://speedtest.atlanta.linode.com/100MB-atlanta.bin
 end
 
 function cal
