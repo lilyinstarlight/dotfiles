@@ -5,7 +5,7 @@ import sys
 import urllib.error
 import urllib.request
 
-service = 'http://tmp.fkmclane.net'
+service = 'https://tmp.fkmclane.net'
 
 class AliasExistsError(Exception):
 	pass
