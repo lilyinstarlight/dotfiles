@@ -1,8 +1,26 @@
-set topbarclear
+set topbar=\n %ifcursong%%playstate% %time_elapsed% / %time%%endif% %muteshort%%consumeshort%%repeatshort%%randomshort%%singleshort%\t%ifcursong%%artist% / %title% / %album% / %date%%else%no song%endif%\t%livequeuesize% \n\n%progressbar%\n\n
 
-set notopbarborders
-
-set topbar2.left=%ifcursong%%playstate% %time_elapsed% / %time%%endif% %muteshort%%repeatshort%%randomshort%%manualshort%
-set topbar2.center=%ifcursong%%artist% / %title% / %album% / %date%%else%no song%endif%
-set topbar2.right=%livequeuesize%
-set topbar4.left=%progressbar%
+bind G move-end
+bind g move-home
+bind } next-of albumartist
+bind { prev-of albumartist
+bind ] next-of album
+bind [ prev-of album
+bind ^G info
+bind d remove
+bind D clear
+bind h seek -3
+bind l seek 3
+bind H seek -10
+bind L seek 10
+bind ^N next
+bind ^P prev
+bind c goto-current
+bind - toggle-select
+bind ^F move-pgdn
+bind ^B move-pgup
+bind + volume +3
+bind = volume -3
+bind ? help
+bind f filter
+bind F clear-filters
