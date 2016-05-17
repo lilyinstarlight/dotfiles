@@ -137,3 +137,6 @@ AcceptEnv LANG LC_*
 
 # require both public key and password authentication methods
 AuthenticationMethods publickey,password
+
+Match User virt
+	AuthenticationMethods publickey
