@@ -10,6 +10,9 @@ URxvt.perl-ext-common: font-size,selection-to-clipboard
 URxvt.keysym.C-equal: perl:font-size:increase
 URxvt.keysym.C-minus: perl:font-size:decrease
 
+! rofi
+rofi.font: terminus 10.5
+
 ! Jellybeans Color Scheme
 *.background: #121212
 *.foreground: #d7d7d7
