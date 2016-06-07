@@ -1,1 +1,1 @@
-/usr/lib64/systemd/system/systemd-networkd.service
+/usr/lib/systemd/system/systemd-networkd.service

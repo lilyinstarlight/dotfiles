@@ -1,1 +1,1 @@
-/usr/lib64/systemd/system/systemd-networkd.socket
+/usr/lib/systemd/system/systemd-networkd.socket
