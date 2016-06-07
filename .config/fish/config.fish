@@ -1,6 +1,6 @@
 set --erase fish_greeting
 
-fish_vi_mode
+fish_vi_key_bindings
 
 function ls
     command ls --color=auto -h $argv
