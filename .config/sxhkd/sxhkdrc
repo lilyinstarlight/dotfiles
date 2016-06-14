@@ -116,8 +116,14 @@ super + d
 super + Return
 	rofi -show run
 
-super + Caps_Lock
+super + Escape
 	rofi -show window
 
 super + space
 	physlock
+
+super + minus
+	udiskie-umount -a
+
+super + equal
+	udiskie-mount -a
