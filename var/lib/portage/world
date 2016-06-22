@@ -103,10 +103,10 @@ net-wireless/create_ap
 net-wireless/iw
 net-wireless/rfkill
 net-wireless/wpa_supplicant
-sci-electronics/kicad
 sys-apps/gptfdisk
 sys-apps/lm_sensors
 sys-apps/lshw
+sys-apps/petty
 sys-apps/portage
 sys-apps/progress
 sys-apps/smartmontools
