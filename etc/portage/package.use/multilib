@@ -9,6 +9,7 @@ dev-libs/json-c abi_x86_32
 dev-libs/libffi abi_x86_32
 dev-libs/libgcrypt abi_x86_32
 dev-libs/libgpg-error abi_x86_32
+dev-libs/libpcre abi_x86_32
 dev-libs/libpthread-stubs abi_x86_32
 dev-libs/libtasn1 abi_x86_32
 dev-libs/libxml2 abi_x86_32 python
