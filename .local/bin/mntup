@@ -1,0 +1,3 @@
+#!/bin/sh
+ln -s /run/media/"$USER"/ "$HOME"/mnt
+udiskie-mount -a
