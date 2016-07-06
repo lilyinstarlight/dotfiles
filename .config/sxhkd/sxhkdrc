@@ -123,7 +123,7 @@ super + space
 	physlock
 
 super + minus
-	udiskie-umount -a
+	mntdown
 
 super + equal
-	udiskie-mount -a
+	mntup
