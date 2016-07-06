@@ -1,7 +1,10 @@
 [user]
 	email = fkmclane@gmail.com
 	name = Foster McLane
+	signingkey = 38094AE4
 [push]
 	default = simple
-[color]
-	ui = auto
+[filter "lfs"]
+	smudge = git-lfs smudge %f
+	required = true
+	clean = git-lfs clean %f
