@@ -5,3 +5,5 @@ Failed to determine block device of root file system: No such file or directory
 ip6tables\.service: Service lacks both ExecStart= and ExecStop= setting\. Refusing\.
 iptables\.service: Service lacks both ExecStart= and ExecStop= setting\. Refusing\.
 ERROR: ipset not usable, disabling ipset usage in firewall\.
+systemd-ask-password-console.service loaded failed failed Dispatch Password Requests to Console
+systemd-ask-password-wall.service    loaded failed failed Forward Password Requests to Wall

@@ -20,7 +20,7 @@ fi
 source /etc/default/logmail
 
 journal=$(journalctl --since="$time" --priority="$priority" --no-pager --quiet | grep -v '^-- No entries --$' | grep -v -f "$filter")
-units=$(systemctl --state=failed --no-pager --no-legend)
+units=$(systemctl --state=failed --no-pager --no-legend | grep -v -f "$filter")
 
 message=""
 
