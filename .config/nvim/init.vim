@@ -81,7 +81,8 @@ nmap <leader>d :%d<cr>
 nmap <leader>l :set list!<cr>
 nmap <leader>s :w<cr>
 nmap <leader>t :tabe<cr>
-nmap <leader>c :bd!<cr>
+nmap <leader>c :clo<cr>
+nmap <leader>u :bd!<cr>
 nmap <leader>a :bel new<cr>:te<cr>
 
 "matchit.vim

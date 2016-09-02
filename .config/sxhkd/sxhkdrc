@@ -40,13 +40,16 @@ super + m
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
+super + {alt + ,alt + shift + }{h,j,k,l}
+	bspc monitor -{f,s} {west,south,north,east}
+
 super + {_,shift + }c
 	bspc node -f {next,prev}
 
 super + {comma,period}
 	bspc desktop -C {backward,forward}
 
-super + bracket{west,east}
+super + bracket{left,right}
 	bspc desktop -f {prev,next}
 
 super + ctrl + {h,j,k,l}
@@ -65,7 +68,10 @@ super + ctrl + {1-9}
 	bspc node -r 0.{1-9}
 
 super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} ^{1-9,10}
+	bspc {desktop -f,node -d} focused:^{1-9,10}
+
+super + alt + {1-9,0}
+	bspc node -m ^{1-9,10}
 
 ~button1
 	bspc pointer -g focus
@@ -127,3 +133,15 @@ super + minus
 
 super + equal
 	mntup
+
+super + backslash
+	xsel -bo | xsel -pi
+
+# temporary
+super + ctrl + a
+	bspc desktop -f HDMI1:^1; \
+	bspc desktop -f eDP1:^1
+
+super + ctrl + s
+	bspc desktop -f HDMI1:^2; \
+	bspc desktop -f eDP1:^2

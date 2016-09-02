@@ -60,6 +60,10 @@ function mail
     command mail -r $EMAIL $argv
 end
 
+function nyancat
+    env TERM=xterm nyancat
+end
+
 function twitch
     source /mnt/crypt/foster/twitch/key
 
