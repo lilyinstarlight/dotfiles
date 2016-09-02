@@ -5,5 +5,8 @@ Failed to determine block device of root file system: No such file or directory
 ip6tables\.service: Service lacks both ExecStart= and ExecStop= setting\. Refusing\.
 iptables\.service: Service lacks both ExecStart= and ExecStop= setting\. Refusing\.
 ERROR: ipset not usable, disabling ipset usage in firewall\.
+Failed to start update Linode DNS IP address\.
+Failed to start email logged errors and failed units from the last hour\.
+Failed to start Forward Password Requests to Wall\.
 systemd-ask-password-console.service loaded failed failed Dispatch Password Requests to Console
 systemd-ask-password-wall.service    loaded failed failed Forward Password Requests to Wall
