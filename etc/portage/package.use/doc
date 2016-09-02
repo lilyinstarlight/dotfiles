@@ -1,0 +1,6 @@
+dev-python/cython -doc
+media-libs/lv2 -doc
+media-libs/fontconfig -doc
+media-libs/libcaca -doc
+dev-java/rxtx -doc
+dev-python/pandas -doc

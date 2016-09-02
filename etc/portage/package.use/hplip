@@ -1,1 +1,1 @@
-net-print/hplip qt5 -qt4
+net-print/hplip qt5 scanner -qt4

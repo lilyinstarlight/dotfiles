@@ -1,16 +1,5 @@
 <repositories encoding="unicode" version="1.0">
   <repo priority="50" quality="experimental" status="unofficial">
-    <name>heather</name>
-    <description>Gentoo user overlay</description>
-    <homepage>https://github.com/Heather/gentoo-heather</homepage>
-    <owner>
-      <email>cynede@gentoo.org</email>
-      <name>Heather</name>
-    </owner>
-    <source type="git">git://github.com/Heather/gentoo-heather.git</source>
-    <feed>https://github.com/Heather/gentoo-heather/commits/master.atom</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
     <name>fkmclane</name>
     <description>Personal overlay of fkmclane containing patched ebuilds and new ebuilds</description>
     <homepage>https://github.com/fkmclane/overlay</homepage>
@@ -20,6 +9,27 @@
     </owner>
     <source type="git">git://github.com/fkmclane/overlay.git</source>
     <feed>https://github.com/fkmclane/overlay/commits/master.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>mrueg</name>
+    <description>User overlay</description>
+    <homepage>https://cgit.gentoo.org/dev/mrueg.git/</homepage>
+    <owner>
+      <email>mrueg@gentoo.org</email>
+      <name>Manuel Rüger (mrueg)</name>
+    </owner>
+    <source type="git">git://anongit.gentoo.org/dev/mrueg.git</source>
+    <feed>https://cgit.gentoo.org/dev/mrueg.git/atom/</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="official">
+    <name>haskell</name>
+    <description>The Official Gentoo Haskell overlay.</description>
+    <homepage>https://github.com/gentoo-haskell</homepage>
+    <owner>
+      <email>haskell@gentoo.org</email>
+    </owner>
+    <source type="git">git://github.com/gentoo-haskell/gentoo-haskell.git</source>
+    <feed>http://github.com/gentoo-haskell/gentoo-haskell/commits/master.atom</feed>
   </repo>
   <repo priority="50" quality="experimental" status="unofficial">
     <name>tlp</name>
@@ -43,14 +53,15 @@
     <source type="git">git://anongit.gentoo.org/proj/gamerlay.git</source>
     <feed>https://cgit.gentoo.org/proj/gamerlay.git/atom/</feed>
   </repo>
-  <repo priority="50" quality="experimental" status="official">
-    <name>haskell</name>
-    <description>The Official Gentoo Haskell overlay.</description>
-    <homepage>https://github.com/gentoo-haskell</homepage>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>heather</name>
+    <description>Gentoo user overlay</description>
+    <homepage>https://github.com/Heather/gentoo-heather</homepage>
     <owner>
-      <email>haskell@gentoo.org</email>
+      <email>cynede@gentoo.org</email>
+      <name>Heather</name>
     </owner>
-    <source type="git">git://github.com/gentoo-haskell/gentoo-haskell.git</source>
-    <feed>http://github.com/gentoo-haskell/gentoo-haskell/commits/master.atom</feed>
+    <source type="git">git://github.com/Heather/gentoo-heather.git</source>
+    <feed>https://github.com/Heather/gentoo-heather/commits/master.atom</feed>
   </repo>
 </repositories>
