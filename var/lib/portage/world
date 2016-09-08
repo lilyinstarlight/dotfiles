@@ -97,6 +97,7 @@ media-sound/beets
 media-sound/fluid-soundfont
 media-sound/mpc
 media-sound/mpd
+media-sound/mumble
 media-sound/pavucontrol
 media-sound/pms
 media-sound/pulseaudio
@@ -113,6 +114,7 @@ net-dialup/minicom
 net-dns/bind-tools
 net-firewall/firewalld
 net-fs/cifs-utils
+net-im/skype
 net-irc/irssi
 net-mail/syncmaildir
 net-misc/aria2

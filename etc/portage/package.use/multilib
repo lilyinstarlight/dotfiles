@@ -2,9 +2,12 @@ app-arch/bzip2 abi_x86_32
 app-arch/lz4 abi_x86_32
 app-arch/lz4_p131 abi_x86_32
 app-arch/xz-utils abi_x86_32
+dev-db/sqlite abi_x86_32
+dev-lang/orc abi_x86_32
 dev-libs/expat abi_x86_32
 dev-libs/glib abi_x86_32
 dev-libs/gmp abi_x86_32
+dev-libs/icu abi_x86_32
 dev-libs/json-c abi_x86_32
 dev-libs/libffi abi_x86_32
 dev-libs/libgcrypt abi_x86_32
@@ -12,15 +15,24 @@ dev-libs/libgpg-error abi_x86_32
 dev-libs/libpcre abi_x86_32
 dev-libs/libpthread-stubs abi_x86_32
 dev-libs/libtasn1 abi_x86_32
-dev-libs/libxml2 abi_x86_32 python
+dev-libs/libxml2 abi_x86_32
 dev-libs/libxslt abi_x86_32
 dev-libs/nettle abi_x86_32
+dev-libs/openssl abi_x86_32
+dev-qt/qtcore:4 abi_x86_32
+dev-qt/qtdbus:4 abi_x86_32
+dev-qt/qtgui:4 abi_x86_32
+dev-qt/qtscript:4 abi_x86_32
+dev-qt/qtwebkit:4 abi_x86_32
+dev-qt/qtxmlpatterns:4 abi_x86_32
 dev-util/pkgconfig abi_x86_32
 media-libs/alsa-lib abi_x86_32
 media-libs/flac abi_x86_32
 media-libs/fontconfig abi_x86_32
 media-libs/freetype abi_x86_32
 media-libs/glu abi_x86_32
+media-libs/gst-plugins-base:0.10 abi_x86_32
+media-libs/gstreamer:0.10 abi_x86_32
 media-libs/lcms abi_x86_32
 media-libs/libjpeg-turbo abi_x86_32
 media-libs/libogg abi_x86_32
@@ -35,6 +47,7 @@ media-sound/jack-audio-connection-kit abi_x86_32
 media-sound/pulseaudio abi_x86_32
 net-libs/gnutls abi_x86_32
 net-libs/libasyncns abi_x86_32
+net-print/cups abi_x86_32
 sys-apps/attr abi_x86_32
 sys-apps/dbus abi_x86_32
 sys-apps/systemd abi_x86_32
@@ -45,6 +58,7 @@ sys-devel/llvm abi_x86_32
 sys-libs/db abi_x86_32
 sys-libs/libcap abi_x86_32
 sys-libs/ncurses abi_x86_32
+sys-libs/readline abi_x86_32
 sys-libs/zlib abi_x86_32
 virtual/glu abi_x86_32
 virtual/jpeg:0 abi_x86_32
@@ -57,6 +71,7 @@ virtual/pkgconfig abi_x86_32
 x11-libs/libICE abi_x86_32
 x11-libs/libSM abi_x86_32
 x11-libs/libX11 abi_x86_32
+x11-libs/libXScrnSaver abi_x86_32
 x11-libs/libXau abi_x86_32
 x11-libs/libXcomposite abi_x86_32
 x11-libs/libXcursor abi_x86_32
@@ -68,6 +83,7 @@ x11-libs/libXi abi_x86_32
 x11-libs/libXrandr abi_x86_32
 x11-libs/libXrender abi_x86_32
 x11-libs/libXtst abi_x86_32
+x11-libs/libXv abi_x86_32
 x11-libs/libXxf86vm abi_x86_32
 x11-libs/libdrm abi_x86_32
 x11-libs/libpciaccess abi_x86_32
@@ -85,6 +101,8 @@ x11-proto/presentproto abi_x86_32
 x11-proto/randrproto abi_x86_32
 x11-proto/recordproto abi_x86_32
 x11-proto/renderproto abi_x86_32
+x11-proto/scrnsaverproto abi_x86_32
+x11-proto/videoproto abi_x86_32
 x11-proto/xcb-proto abi_x86_32
 x11-proto/xextproto abi_x86_32
 x11-proto/xf86bigfontproto abi_x86_32

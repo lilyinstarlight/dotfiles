@@ -1,1 +1,2 @@
 dev-qt/qtwebkit multimedia opengl printsupport
+dev-qt/qtwebkit:4 -exceptions
