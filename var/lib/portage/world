@@ -63,6 +63,7 @@ dev-util/valgrind
 dev-vcs/git
 dev-vcs/git-lfs
 dev-vcs/mercurial
+games-action/supertuxkart
 games-emulation/desmume
 games-emulation/dolphin
 games-emulation/higan

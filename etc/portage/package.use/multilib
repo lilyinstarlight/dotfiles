@@ -25,11 +25,13 @@ media-libs/lcms abi_x86_32
 media-libs/libjpeg-turbo abi_x86_32
 media-libs/libogg abi_x86_32
 media-libs/libpng abi_x86_32
+media-libs/libsamplerate abi_x86_32
 media-libs/libsndfile abi_x86_32
 media-libs/libtxc_dxtn abi_x86_32
 media-libs/libvorbis abi_x86_32
 media-libs/mesa abi_x86_32
 media-plugins/alsa-plugins abi_x86_32
+media-sound/jack-audio-connection-kit abi_x86_32
 media-sound/pulseaudio abi_x86_32
 net-libs/gnutls abi_x86_32
 net-libs/libasyncns abi_x86_32
@@ -40,6 +42,7 @@ sys-apps/tcp-wrappers abi_x86_32
 sys-apps/util-linux abi_x86_32
 sys-devel/gettext abi_x86_32
 sys-devel/llvm abi_x86_32
+sys-libs/db abi_x86_32
 sys-libs/libcap abi_x86_32
 sys-libs/ncurses abi_x86_32
 sys-libs/zlib abi_x86_32
