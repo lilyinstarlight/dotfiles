@@ -1,147 +1,180 @@
 # sxhkd
 
+## reload sxhkd
 super + r
 	pkill -USR1 -x sxhkd
 
 # bspwm
 
+## quit
 super + q
 	bspc quit
 
+## reload
+super + e
+	bspc wm -d > /tmp/bspwm_"$XDG_VTNR"_state; \
+	bspc quit 128; \
+	bspc wm -o; \
+	bspc wm -l /tmp/bspwm_"$XDG_VTNR"_state; \
+	rm /tmp/bspwm_"$XDG_VTNR"_state
+
+## adopt orphans
+super + t
+	bspc wm -o
+
+## close/kill node
 super + {_,shift + }w
 	bspc node -{c,k}
 
-super + t
-	bspc desktop -l next
-
-super + b
-	bspc desktop -B
-
-super + {s,f}
-	bspc node -t {floating,fullscreen}
-
-super + {grave,Tab}
-	bspc {node,desktop} -f last
-
-super + apostrophe
-	bspc node -s last
-
-super + {o,i}
-	bspc control --record-history off; \
-	bspc node -f {older,newer}; \
-	bspc control --record-history on
-
-super + y
-	bspc node -w last.manual
-
-super + m
-	bspc node -s biggest
-
+## focus/move node
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
-super + {alt + ,alt + shift + }{h,j,k,l}
-	bspc monitor -{f,s} {west,south,north,east}
-
-super + {_,shift + }c
+## cycle nodes
+super + {z,x}
 	bspc node -f {next,prev}
 
-super + {comma,period}
-	bspc desktop -C {backward,forward}
+## preselect node
+super + ctrl + {h,j,k,l,space}
+	bspc node -p {west,south,north,east,cancel}
 
-super + bracket{left,right}
-	bspc desktop -f {prev,next}
+## swap nodes
+super + c
+	bspc node -s last
 
-super + ctrl + {h,j,k,l}
-	bspc node -p {west,south,north,east}
+## bring node above
+super + {b,n,m}
+	bspc node -l {below,normal,above}
 
-super + ctrl + {_,shift + }space
-	bspc {node -p cancel,desktop -c}
+## balance tree
+super + y
+	bspc node /first -B
 
-super + alt + {h,j,k,l}
-	bspc node -e {west -10,south +10,north -10,east +10}
+## equalize tree
+super + u
+	bspc node /first -E
 
-super + alt + shift + {h,j,k,l}
-	bspc node -e {east -10,north +10,south -10,west +10}
+## adjust node ratio
+super + shift + ctrl + {j,k}
+	bspc node -r {-,+}40px
 
-super + ctrl + {1-9}
-	bspc node -r 0.{1-9}
+## send node to desktop
+super + shift + {1-9,0}
+	bspc node -d focused:^{1-9,10}
 
-super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} focused:^{1-9,10}
-
-super + alt + {1-9,0}
+## send node to monitor
+super + shift + ctrl + {1-9,0}
 	bspc node -m ^{1-9,10}
 
-~button1
-	bspc pointer -g focus
+## focus desktop
+super + {1-9,0}
+	bspc desktop -f focused:^{1-9,10}
 
+## cycle layout
+super + p
+	bspc desktop -l next
+
+## swap desktops
+super + ctrl + {1-9,0}
+	bspc desktop -s focused:^{1-9,10}
+
+## bubble desktop
+super + ctrl + {j,k}
+	bspc desktop -b {prev,next}
+
+## send desktop to monitor
+super + ctrl + alt + {1-9,0}
+	bspc desktop -m ^{1-9,10}
+
+## focus/move monitor
+super + alt + {_,shift + }{h,j,k,l}
+	bspc monitor -{f,s} {west,south,north,east}
+
+## swap monitors
+super + alt + c
+	bspc monitor -s last
+
+## fix monitors
+super + i
+	for mon in $(bspc query -M); do \
+		~/.config/bspwm/bspwmmon "$mon"; \
+	done
+
+## move/resize node
 super + button{1-3}
 	bspc pointer -g {move,resize_side,resize_corner}
 
+## pass pointer data
 super + !button{1-3}
 	bspc pointer -t %i %i
 
+## ungrab node
 super + @button{1-3}
 	bspc pointer -u
 
 # buttons
 
+## direct brightness buttons to xbacklight
 {_,shift + ,super + }XF86MonBrightness{Down,Up}
 	xbacklight {-10%,-1%,=0%,+10%,+1%,=100%}
 
+## direct volume buttons to ALSA
 {_,shift + ,super + }XF86Audio{Lower,Raise}Volume
 	amixer -q -D pulse sset Master {10%-,1%-,0%,10%+,1%+,100%}
 
+## direct mute button to ALSA
 XF86AudioMute
 	amixer -q -D pulse sset Master toggle
 
+## direct media control buttons to mpd
 XF86Audio{Play,Stop,Prev,Next}
 	mpc -q {toggle,stop,prev,next}
 
 # applications
 
+## open urxvt
 super + semicolon
 	urxvt
 
+## open urxvt on the "term" desktop
 super + shift + semicolon
 	bspc desktop -f term; \
 	urxvt
 
+## open qutebrowser
 super + a
 	qutebrowser
 
+## open qutebrowser on the "www" desktop
 super + shift + a
 	bspc desktop -f www; \
 	qutebrowser
 
-super + d
+## open irssi on the "chat" desktop
+super + s
 	bspc desktop -f chat; \
 	urxvt -e irssi
 
+## mount media
+super + d
+	mntup
+
+## unmount media
+super + f
+	mntdown
+
+## start application runner
 super + Return
 	rofi -show run
 
-super + Escape
+## start window switcher
+super + apostrophe
 	rofi -show window
 
+## lock all ttys
 super + space
 	physlock
 
-super + minus
-	mntdown
-
-super + equal
-	mntup
-
-super + backslash
-	xsel -bo | xsel -pi
-
-# temporary
-super + ctrl + a
-	bspc desktop -f HDMI1:^1; \
-	bspc desktop -f eDP1:^1
-
-super + ctrl + s
-	bspc desktop -f HDMI1:^2; \
-	bspc desktop -f eDP1:^2
+## swap copy buffers
+super + {_,shift + }backslash
+	xsel -{b,p}o | xsel -{p,b}i
