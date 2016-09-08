@@ -12,16 +12,18 @@ URxvt.keysym.C-minus: perl:font-size:decrease
 
 ! rofi
 rofi.font: terminus 10.5
+!                  bg       border
+rofi.color-window: #121212, #535551
+!                  bg       fg       bgalt    hlbg     hlfg
+rofi.color-active: #121212, #a9a9a9, #1a1a1a, #535551, #d7d7d7
+rofi.color-normal: #121212, #a9a9a9, #1a1a1a, #535551, #d7d7d7
+rofi.color-urgent: #121212, #ea2828, #1a1a1a, #535551, #d7d7d7
 
 ! Jellybeans Color Scheme
 *.background: #121212
 *.foreground: #d7d7d7
 *.cursorColor: #d7d7d7
 
-*.color-window: #121212, #535551
-*.color-active: #121212, #a9a9a9, #1a1a1a, #535551, #d7d7d7
-*.color-normal: #121212, #a9a9a9, #1a1a1a, #535551, #d7d7d7
-*.color-urgent: #121212, #ea2828, #1a1a1a, #535551, #d7d7d7
 
 *.color0: #121212
 *.color1: #ca674a
