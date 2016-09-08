@@ -12,11 +12,11 @@ super + q
 
 ## reload
 super + e
-	bspc wm -d > /tmp/bspwm_"$XDG_VTNR"_state; \
+	bspc wm -d > /tmp/bspwm_"$XDG_VTNR"-state; \
 	bspc quit 128; \
 	bspc wm -o; \
-	bspc wm -l /tmp/bspwm_"$XDG_VTNR"_state; \
-	rm /tmp/bspwm_"$XDG_VTNR"_state
+	bspc wm -l /tmp/bspwm_"$XDG_VTNR"-state; \
+	rm /tmp/bspwm_"$XDG_VTNR"-state
 
 ## adopt orphans
 super + t
