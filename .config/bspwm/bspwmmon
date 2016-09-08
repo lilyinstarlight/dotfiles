@@ -1,0 +1,3 @@
+#!/bin/sh
+bspc config -m "$1" top_padding 19
+bspc monitor "$1" -d term www chat work school music games
