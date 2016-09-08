@@ -42,15 +42,15 @@ super + ctrl + {h,j,k,l,space}
 super + c
 	bspc node -s last
 
-## bring node above
+## sort node
 super + {b,n,m}
 	bspc node -l {below,normal,above}
 
-## balance tree
+## balance tree from root node
 super + y
 	bspc node /first -B
 
-## equalize tree
+## equalize tree from root node
 super + u
 	bspc node /first -E
 
@@ -63,14 +63,14 @@ super + shift + {1-9,0}
 	bspc node -d focused:^{1-9,10}
 
 ## send node to monitor
-super + shift + ctrl + {1-9,0}
+super + shift + alt + {1-9,0}
 	bspc node -m ^{1-9,10}
 
 ## focus desktop
 super + {1-9,0}
 	bspc desktop -f focused:^{1-9,10}
 
-## cycle layout
+## cycle desktop layout
 super + p
 	bspc desktop -l next
 
@@ -85,6 +85,14 @@ super + ctrl + {j,k}
 ## send desktop to monitor
 super + ctrl + alt + {1-9,0}
 	bspc desktop -m ^{1-9,10}
+
+## create temporary desktop
+super + ctrl + {h,l}
+	zenity --error --text "Not implemented."
+
+## remove the current desktop
+super + ctrl + w
+	bspc monitor -r $(bspc query -D -d focused)
 
 ## focus/move monitor
 super + alt + {_,shift + }{h,j,k,l}
@@ -175,6 +183,6 @@ super + apostrophe
 super + space
 	physlock
 
-## swap copy buffers
-super + {_,shift + }backslash
-	xsel -{b,p}o | xsel -{p,b}i
+## swap X selections
+super + backslash
+	xswap
