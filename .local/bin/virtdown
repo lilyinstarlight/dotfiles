@@ -1,2 +1,2 @@
 #!/bin/sh
-killall virt-manager; pkexec sh -c 'systemctl stop libvirtd; systemctl stop virtlogd; modprobe -r kvm_intel'
+kill "$(ps ax | grep virt-manager | grep python | cut -d' ' -f2)"; pkexec sh -c 'systemctl stop libvirtd; systemctl stop virtlogd; modprobe -r kvm_intel; umount /mnt/vm'

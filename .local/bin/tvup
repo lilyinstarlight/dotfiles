@@ -1,0 +1,7 @@
+#!/bin/sh
+synclient TouchPadOff=1
+xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP1 --off
+bspc wm -r eDP1
+kill "$(ps ax | grep bspwmmon | grep eDP1 | cut -d' ' -f2)"
+~/.config/bspwm/bspwmmon HDMI1
+bspc wm -o

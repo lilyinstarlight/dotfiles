@@ -1,0 +1,20 @@
+#!/bin/sh
+killproxy() {
+	for pid in $(ps ax | grep ssh | grep proxy | cut -d' ' -f1); do
+		kill "$pid"
+	done
+}
+
+killproxy
+
+ssh -fND 8080 proxy
+
+if [ -z "$1" ]; then
+	cmd="firefox --no-remote -P proxy"
+else
+	cmd="$@"
+fi
+
+proxychains -q $cmd
+
+killproxy
