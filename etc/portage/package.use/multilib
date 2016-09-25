@@ -9,6 +9,7 @@ dev-libs/glib abi_x86_32
 dev-libs/gmp abi_x86_32
 dev-libs/icu abi_x86_32
 dev-libs/json-c abi_x86_32
+dev-libs/libedit abi_x86_32
 dev-libs/libffi abi_x86_32
 dev-libs/libgcrypt abi_x86_32
 dev-libs/libgpg-error abi_x86_32
