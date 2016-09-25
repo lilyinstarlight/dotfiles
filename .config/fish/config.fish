@@ -2,6 +2,10 @@ set --erase fish_greeting
 
 fish_vi_key_bindings
 
+function open
+    command open $argv
+end
+
 function ls
     command ls --color=auto -h $argv
 end
@@ -22,6 +26,10 @@ function bc
     command bc -l $argv
 end
 
+function info
+    command info --vi-keys $argv
+end
+
 function sudo
     command sudo -E $argv
 end
@@ -32,20 +40,6 @@ end
 
 function cget
     curl -fJO --progress-bar --retry 10 -C - $argv
-end
-
-function run
-    setsid $argv >/dev/null ^/dev/null
-end
-
-function open
-    for file in $argv
-        if test -e $file
-            run xdg-open $file
-        else
-            echo "open: $file: file not found" >/dev/stderr
-        end
-    end
 end
 
 function speedtest
