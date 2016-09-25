@@ -2,7 +2,6 @@
 export EDITOR="vi"
 export BROWSER="qutebrowser"
 export EMAIL="fkmclane@fkmclane.net"
-export SSH_AUTH_SOCK="$HOME/.gnupg/S.gpg-agent.ssh"
 export GOPATH="$HOME/.local/go"
 export PATH="$HOME/.local/bin:$GOPATH/bin:$PATH"
 
@@ -17,7 +16,3 @@ export LESS_TERMCAP_us=$'\e[01;32m'
 
 # password-store
 export PASSWORD_STORE_X_SELECTION="primary"
-
-# energia
-export ENERGIADIR="/opt/energia-bin"
-export ENERGIABOARD="MSP-EXP430FR5969LP"
