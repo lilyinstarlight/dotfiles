@@ -9,7 +9,7 @@ unset index_format
 # configuration
 set from="Foster McLane <fkmclane@fkmclane.net>"
 set sort=threads
-set index_format="%4C %Z %{%b %d} %-16.16L  %s"
+set sort_aux=last-date-received
 set folder=~/.mail
 
 set use_envelope_from
@@ -18,8 +18,56 @@ set use_envelope_from
 set spoolfile=~/.mail/inbox/
 set record=~/.mail/sent/
 
-# colours
-# TODO
-
 # subscriptions
 subscribe gentoo-announce@lists.gentoo.org
+
+# encryption
+source ~/.gpg.rc
+
+# colors
+color normal     white           default
+color error      red             default
+color tilde      brightwhite     default
+color message    cyan            default
+color markers    red             default
+color attachment brightwhite     default
+color search     brightyellow    default
+color indicator  black           white
+color tree       yellow          default
+
+# index
+set index_format='%4C %Z %{%b %d} %-15.15L %s'
+
+folder-hook   *[sS]ent* 'set index_format="%4C %Z %{%b %d} %-15.15L %s"'
+folder-hook ! *[sS]ent* 'set index_format="%4C %Z %{%b %d} %-15.15F %s"'
+
+color index           white   default     '.*'
+color index_author    default default     '.*'
+color index_flags     default red         '~F'
+color index_collapsed default brightblue
+color index_date      green   default
+color index_label     default brightgreen
+color index_number    red     default
+color index_size      cyan    default
+
+# status
+set status_format='-%r-Mutt: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?l? %l?]---(%s/%S)-%>-(%P)---'
+
+color status white       default '^.*$'
+color status brightred   default '(New|Del|Flag):[0-9]+'
+color status brightred   default '\([^)]+/[^)]+\)'
+color status default     default '\(threads/last-date-received\)'
+color status red         default '\[([^]]+)\]' 1
+color status brightwhite default 'Mutt: ([^ ]+)' 1
+
+# headers
+ignore *
+
+unignore from date subject to cc
+unignore authentication-results
+
+color hdrdefault white default
+
+color header green   default "^([fF]rom|[tT]o|[cC]{2})"
+color header blue    default "^([sS]ubject)"
+color header yellow  default "^([dD]ate|[aA]uthentication-[rR]esults)"
