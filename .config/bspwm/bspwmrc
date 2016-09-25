@@ -12,8 +12,7 @@ bspc config pointer_follows_focus true
 bspc config border_width 2
 bspc config window_gap 12
 
-# node settings
-~/.config/bspwm/bspwmmon eDP1
-
 # rules
-bspc -a qjackctl state=floating
+bspc rule -a qjackctl state=floating
+bspc rule -a qsynth state=floating
+bspc rule -a Unity state=floating

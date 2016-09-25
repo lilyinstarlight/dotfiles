@@ -8,8 +8,8 @@ nitrogen --restore
 /usr/libexec/polkit-gnome-authentication-agent-1 &
 
 # desktop services
-barline | lemonbar -f terminus:10.5 -B '#121212' -F '#d7d7d7' -U '#ea2828' &
 sxhkd &
+~/.config/bspwm/bspwmmon eDP1 &
 
 # window manager
 bspwm

@@ -42,17 +42,21 @@ super + ctrl + {h,j,k,l,space}
 super + c
 	bspc node -s last
 
+## change node state
+super + {i,o,p}
+	bspc node -t {tiled,floating,fullscreen}
+
 ## sort node
 super + {b,n,m}
 	bspc node -l {below,normal,above}
 
 ## balance tree from root node
 super + y
-	bspc node /first -B
+	bspc node @/ -B
 
 ## equalize tree from root node
 super + u
-	bspc node /first -E
+	bspc node @/ -E
 
 ## adjust node ratio
 super + shift + ctrl + {j,k}
@@ -94,19 +98,33 @@ super + ctrl + {h,l}
 super + ctrl + w
 	bspc monitor -r $(bspc query -D -d focused)
 
-## focus/move monitor
+## focus/move spatial monitor
 super + alt + {_,shift + }{h,j,k,l}
 	bspc monitor -{f,s} {west,south,north,east}
+
+## focus/move numbered monitor
+super + alt + {_,shift + }{1-9,0}
+	bspc monitor -{f,s} ^{1-9,10}
 
 ## swap monitors
 super + alt + c
 	bspc monitor -s last
 
+## remove laptop monitor
+super + bracketleft
+	kill "$(ps ax | grep lemonbar | grep eDP1 | cut -d' ' -f2)"; \
+	bspc wm -r eDP1
+
 ## fix monitors
-super + i
+super + bracketright
+	killall bspwmmon barline lemonbar; \
 	for mon in $(bspc query -M); do \
 		~/.config/bspwm/bspwmmon "$mon"; \
 	done
+
+## control tv layout
+super + {minus,equal}
+	tv{up,down}
 
 ## move/resize node
 super + button{1-3}
@@ -147,7 +165,7 @@ super + semicolon
 ## open urxvt on the "term" desktop
 super + shift + semicolon
 	bspc desktop -f term; \
-	urxvt
+	exec urxvt
 
 ## open qutebrowser
 super + a
@@ -156,12 +174,12 @@ super + a
 ## open qutebrowser on the "www" desktop
 super + shift + a
 	bspc desktop -f www; \
-	qutebrowser
+	exec qutebrowser
 
 ## open irssi on the "chat" desktop
 super + s
 	bspc desktop -f chat; \
-	urxvt -e irssi
+	exec urxvt -e irssi
 
 ## mount media
 super + d
