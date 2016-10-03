@@ -64,3 +64,9 @@
 [submodule ".config/nvim/plugged/vim-resolve"]
 	path = .config/nvim/plugged/vim-resolve
 	url = https://github.com/fkmclane/vim-resolve.git
+[submodule ".config/nvim/plugged/hexmode"]
+	path = .config/nvim/plugged/hexmode
+	url = https://github.com/fidian/hexmode.git
+[submodule ".config/nvim/plugged/vimwiki"]
+	path = .config/nvim/plugged/vimwiki
+	url = https://github.com/vimwiki/vimwiki.git

@@ -38,6 +38,7 @@ call plug#begin('$HOME/.config/nvim/plugged')
 Plug 'baskerville/vim-sxhkdrc'
 Plug 'chase/vim-ansible-yaml'
 Plug 'dag/vim-fish'
+Plug 'fidian/hexmode'
 Plug 'fkmclane/vim-resolve'
 Plug 'haya14busa/incsearch.vim'
 Plug 'itchyny/lightline.vim'
@@ -84,6 +85,7 @@ nmap <leader>t :tabe<cr>
 nmap <leader>c :clo<cr>
 nmap <leader>u :bd!<cr>
 nmap <leader>a :bel new<cr>:te<cr>
+nmap <leader>b :Hexmode<cr>
 
 "matchit.vim
 runtime! macros/matchit.vim
