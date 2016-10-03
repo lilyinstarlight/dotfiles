@@ -1,0 +1,20 @@
+#!/bin/sh
+killproxy() {
+	for pid in $(ps ax | grep ssh | grep clemson | cut -d' ' -f1); do
+		kill "$pid"
+	done
+}
+
+killproxy
+
+ssh -fND 8080 clemson &>/dev/null
+
+if [ -z "$1" ]; then
+	cmd="firefox --no-remote"
+else
+	cmd="$@"
+fi
+
+proxychains -q $cmd
+
+killproxy
