@@ -1,5 +1,48 @@
 <repositories encoding="unicode" version="1.0">
   <repo priority="50" quality="experimental" status="unofficial">
+    <name>heather</name>
+    <description>Gentoo user overlay</description>
+    <homepage>https://github.com/Heather/gentoo-heather</homepage>
+    <owner>
+      <email>cynede@gentoo.org</email>
+      <name>Heather</name>
+    </owner>
+    <source type="git">git://github.com/Heather/gentoo-heather.git</source>
+    <feed>https://github.com/Heather/gentoo-heather/commits/master.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>gamerlay</name>
+    <description>Gamers overlay for all various games. Not related with games team.</description>
+    <homepage>https://cgit.gentoo.org/proj/gamerlay.git</homepage>
+    <owner>
+      <email>gentoo@mva.name</email>
+      <name>Vadim A. Misbakh-Soloviov</name>
+    </owner>
+    <source type="git">git://anongit.gentoo.org/proj/gamerlay.git</source>
+    <feed>https://cgit.gentoo.org/proj/gamerlay.git/atom/</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="official">
+    <name>java</name>
+    <description>Java overlay</description>
+    <homepage>https://cgit.gentoo.org/proj/java.git/</homepage>
+    <owner>
+      <email>java@gentoo.org</email>
+      <name>Gentoo Java team</name>
+    </owner>
+    <source type="git">git://anongit.gentoo.org/proj/java.git</source>
+    <feed>https://cgit.gentoo.org/proj/java.git/atom/</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="official">
+    <name>haskell</name>
+    <description>The Official Gentoo Haskell overlay.</description>
+    <homepage>https://github.com/gentoo-haskell</homepage>
+    <owner>
+      <email>haskell@gentoo.org</email>
+    </owner>
+    <source type="git">git://github.com/gentoo-haskell/gentoo-haskell.git</source>
+    <feed>http://github.com/gentoo-haskell/gentoo-haskell/commits/master.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
     <name>fkmclane</name>
     <description>Personal overlay of fkmclane containing patched ebuilds and new ebuilds</description>
     <homepage>https://github.com/fkmclane/overlay</homepage>
@@ -21,16 +64,6 @@
     <source type="git">git://anongit.gentoo.org/dev/mrueg.git</source>
     <feed>https://cgit.gentoo.org/dev/mrueg.git/atom/</feed>
   </repo>
-  <repo priority="50" quality="experimental" status="official">
-    <name>haskell</name>
-    <description>The Official Gentoo Haskell overlay.</description>
-    <homepage>https://github.com/gentoo-haskell</homepage>
-    <owner>
-      <email>haskell@gentoo.org</email>
-    </owner>
-    <source type="git">git://github.com/gentoo-haskell/gentoo-haskell.git</source>
-    <feed>http://github.com/gentoo-haskell/gentoo-haskell/commits/master.atom</feed>
-  </repo>
   <repo priority="50" quality="experimental" status="unofficial">
     <name>tlp</name>
     <description>TLP Gentoo Overlay</description>
@@ -41,27 +74,5 @@
     </owner>
     <source type="git">git://github.com/dywisor/tlp-portage.git</source>
     <feed>https://github.com/dywisor/tlp-portage/commits/maint.atom</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>gamerlay</name>
-    <description>Gamers overlay for all various games. Not related with games team.</description>
-    <homepage>https://cgit.gentoo.org/proj/gamerlay.git</homepage>
-    <owner>
-      <email>gentoo@mva.name</email>
-      <name>Vadim A. Misbakh-Soloviov</name>
-    </owner>
-    <source type="git">git://anongit.gentoo.org/proj/gamerlay.git</source>
-    <feed>https://cgit.gentoo.org/proj/gamerlay.git/atom/</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>heather</name>
-    <description>Gentoo user overlay</description>
-    <homepage>https://github.com/Heather/gentoo-heather</homepage>
-    <owner>
-      <email>cynede@gentoo.org</email>
-      <name>Heather</name>
-    </owner>
-    <source type="git">git://github.com/Heather/gentoo-heather.git</source>
-    <feed>https://github.com/Heather/gentoo-heather/commits/master.atom</feed>
   </repo>
 </repositories>

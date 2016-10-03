@@ -14,6 +14,7 @@ app-emulation/libvirt
 app-emulation/virt-manager
 app-eselect/eselect-vi
 app-laptop/tlp
+app-misc/asciinema
 app-misc/cmatrix
 app-misc/figlet
 app-misc/physlock
@@ -36,6 +37,7 @@ app-vim/gentoo-syntax
 dev-embedded/energia-bin
 dev-embedded/teensyduino-bin
 dev-games/aseprite
+dev-java/gradle-bin
 dev-lang/crystal
 dev-lang/ghc
 dev-lang/go
@@ -76,6 +78,7 @@ games-misc/nyancat
 games-misc/pipes
 games-util/steam-launcher
 games-util/xboxdrv
+mail-client/mailx
 mail-client/mutt
 media-fonts/corefonts
 media-fonts/roboto
@@ -112,15 +115,19 @@ media-video/ffmpeg
 media-video/mpv
 media-video/openshot
 media-video/pitivi
+net-analyzer/dmitry
 net-analyzer/ettercap
+net-analyzer/metasploit
+net-analyzer/nikto
 net-analyzer/nmap
+net-analyzer/tcpdump
 net-analyzer/wireshark
 net-dialup/picocom
 net-dns/avahi
 net-dns/bind-tools
 net-firewall/firewalld
 net-fs/cifs-utils
-net-im/skypeforlinux
+net-im/skype
 net-irc/irssi
 net-mail/syncmaildir
 net-misc/aria2
@@ -133,6 +140,7 @@ net-misc/iperf
 net-misc/openvpn
 net-misc/proxychains
 net-misc/socat
+net-misc/whois
 net-misc/youtube-dl
 net-p2p/deluge
 net-p2p/zget
