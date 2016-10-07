@@ -1,0 +1,8 @@
+#!/bin/sh
+if [ "$1" == "-d" ]; then
+	netcmd="killall dnsmasq"
+else
+	netcmd="true"
+fi
+
+exec pkexec sh -c "brctl delif cyber ap0; killall create_ap; sleep 2; brctl delif cyber enp7s0; $netcmd; ip link set dev cyber down; brctl delbr cyber; sysctl net.ipv4.ip_forward=0"

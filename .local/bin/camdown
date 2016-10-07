@@ -1,2 +1,2 @@
 #!/bin/sh
-pkexec /sbin/modprobe -r uvcvideo
+exec pkexec /sbin/modprobe -r uvcvideo

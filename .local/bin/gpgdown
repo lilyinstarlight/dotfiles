@@ -1,2 +1,2 @@
 #!/bin/sh
-systemctl --user stop gpg-agent
+exec systemctl --user stop gpg-agent

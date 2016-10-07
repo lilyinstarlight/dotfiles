@@ -1,0 +1,9 @@
+#!/bin/sh
+if [ "$1" == "-d" ]; then
+	netcmd="dnsmasq -C \"$HOME/.local/share/dnsmasq/cyber.conf\""
+else
+	netcmd="true"
+fi
+echo "$1"
+
+exec pkexec sh -c "sysctl net.ipv4.ip_forward=1 && brctl addbr cyber && ip link set dev cyber up && $netcmd && brctl addif cyber enp7s0 && create_ap -w 2 -m bridge --ieee80211n --daemon wlp8s0 cyber 'CU Cyber' securenetwork && read && \"$HOME/.local/bin/cyberdown\" \"$1\""

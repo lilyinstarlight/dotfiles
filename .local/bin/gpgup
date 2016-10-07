@@ -1,2 +1,2 @@
 #!/bin/sh
-systemctl --user start gpg-agent
+exec systemctl --user start gpg-agent

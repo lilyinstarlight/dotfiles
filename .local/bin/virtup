@@ -1,2 +1,2 @@
 #!/bin/sh
-pkexec sh -c 'mount /mnt/vm && modprobe kvm_intel && systemctl start virtlogd && systemctl start libvirtd' && virt-manager
+exec pkexec sh -c 'mount /mnt/vm && modprobe kvm_intel && modprobe openvswitch && systemctl start ovsdb-server && systemctl start ovs-vswitchd && systemctl start virtlogd && systemctl start libvirtd'
