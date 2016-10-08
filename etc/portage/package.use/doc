@@ -4,3 +4,9 @@ media-libs/fontconfig -doc
 media-libs/libcaca -doc
 dev-java/rxtx -doc
 dev-python/pandas -doc
+dev-ruby/metasploit-concern -doc
+dev-ruby/metasploit-model -doc
+dev-ruby/metasploit_data_models -doc
+dev-ruby/em-proxy -doc
+dev-ruby/rubydns -doc
+net-analyzer/bettercap -doc

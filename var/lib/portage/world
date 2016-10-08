@@ -18,6 +18,7 @@ app-misc/asciinema
 app-misc/cmatrix
 app-misc/figlet
 app-misc/physlock
+app-misc/teleconsole-bin
 app-misc/tmux
 app-misc/tty-clock
 app-misc/utimer
@@ -115,7 +116,7 @@ media-video/ffmpeg
 media-video/mpv
 media-video/openshot
 media-video/pitivi
-net-analyzer/dmitry
+net-analyzer/bettercap
 net-analyzer/ettercap
 net-analyzer/metasploit
 net-analyzer/nikto
