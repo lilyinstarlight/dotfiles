@@ -124,6 +124,20 @@ PrintLastLog no
 # override default of no subsystems
 Subsystem	sftp	/usr/lib64/misc/sftp-server
 
+# the following are HPN related configuration options
+# tcp receive buffer polling. disable in non autotuning kernels
+#TcpRcvBufPoll yes
+
+# disable hpn performance boosts
+#HPNDisabled no
+
+# buffer size for hpn to non-hpn connections
+#HPNBufferSize 2048
+
+
+# allow the use of the none cipher
+#NoneEnabled no
+
 # Example of overriding settings on a per-user basis
 #Match User anoncvs
 #	X11Forwarding no
@@ -138,4 +152,7 @@ AcceptEnv LANG LC_*
 AuthenticationMethods publickey,password
 
 Match User virt
+	AuthenticationMethods publickey
+
+Match User other
 	AuthenticationMethods publickey
