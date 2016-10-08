@@ -1,2 +1,2 @@
 #!/bin/sh
-exec pkexec sh -c "hciconfig hci0 down && systemctl stop bluetooth && rfkill block bluetooth && modprobe -r btusb bnep ecb cmac"
+pkexec sh -c "hciconfig hci0 down && systemctl stop bluetooth && rfkill block bluetooth && modprobe -r btusb bnep ecb cmac"

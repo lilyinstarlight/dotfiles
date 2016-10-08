@@ -1,6 +1,7 @@
 #!/bin/sh
 killproxy() {
 	for pid in $(ps ax | grep ssh | grep proxy | cut -d' ' -f2); do
+		echo "$pid"
 		kill "$pid"
 	done
 }

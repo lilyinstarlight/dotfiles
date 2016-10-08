@@ -1,2 +1,2 @@
 #!/bin/sh
-exec pkexec sh -c "killall -INT create_ap; systemctl start wpa_supplicant@wlp8s0"
+pkexec sh -c "killall -INT create_ap; systemctl start wpa_supplicant@wlp8s0"

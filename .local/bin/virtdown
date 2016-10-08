@@ -1,2 +1,2 @@
 #!/bin/sh
-exec pkexec sh -c 'systemctl stop libvirtd; systemctl stop virtlogd; systemctl stop ovs-vswitchd; systemctl stop ovsdb-server; modprobe -r openvswitch; modprobe -r kvm_intel; umount /mnt/vm'
+pkexec sh -c 'systemctl stop libvirtd; systemctl stop virtlogd; systemctl stop ovs-vswitchd; systemctl stop ovsdb-server; modprobe -r openvswitch; modprobe -r kvm_intel; umount /mnt/vm'
