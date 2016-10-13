@@ -22,6 +22,7 @@ app-misc/teleconsole-bin
 app-misc/tmux
 app-misc/tty-clock
 app-misc/utimer
+app-misc/wemux
 app-office/homebank
 app-portage/eclass-manpages
 app-portage/eix
