@@ -1,6 +1,6 @@
 #!/bin/sh
 if [ "$1" == "-d" ]; then
-	netcmd="dnsmasq -C \"$HOME/.local/share/dnsmasq/cyber.conf\""
+	netcmd="dnsmasq -C \"$HOME/.config/dnsmasq/cyber.conf\""
 else
 	netcmd="true"
 fi
