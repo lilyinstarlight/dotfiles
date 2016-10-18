@@ -211,6 +211,7 @@ x11-misc/xdg-utils
 x11-misc/xdo
 x11-misc/xsel
 x11-terms/rxvt-unicode
-x11-themes/arc
+x11-themes/arc-icon-theme
+x11-themes/arc-theme
 x11-wm/bspwm
 x11-wm/openbox
