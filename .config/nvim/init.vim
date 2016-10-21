@@ -36,7 +36,6 @@ set wildmenu
 call plug#begin('$HOME/.config/nvim/plugged')
 
 Plug 'baskerville/vim-sxhkdrc'
-Plug 'chase/vim-ansible-yaml'
 Plug 'dag/vim-fish'
 Plug 'fidian/hexmode'
 Plug 'fkmclane/vim-resolve'
