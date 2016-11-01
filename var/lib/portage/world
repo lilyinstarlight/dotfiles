@@ -12,6 +12,7 @@ app-editors/neovim
 app-emulation/docker
 app-emulation/libvirt
 app-emulation/virt-manager
+app-emulation/virtio-win
 app-eselect/eselect-vi
 app-laptop/tlp
 app-misc/asciinema
@@ -36,6 +37,7 @@ app-text/mupdf
 app-text/pandoc
 app-text/texlive
 app-vim/gentoo-syntax
+dev-db/sqlmap
 dev-embedded/energia-bin
 dev-embedded/teensyduino-bin
 dev-games/aseprite
@@ -96,7 +98,6 @@ media-libs/gstreamer
 media-libs/libtxc_dxtn
 media-libs/opencv
 media-plugins/calf
-media-plugins/gimp-gmic
 media-plugins/gst-plugins-meta
 media-plugins/midifilter-lv2
 media-sound/alsa-utils
@@ -168,6 +169,7 @@ sys-apps/systemd
 sys-apps/the_silver_searcher
 sys-apps/usbutils
 sys-block/gparted
+sys-block/ms-sys
 sys-boot/efibootmgr
 sys-boot/grub
 sys-devel/bc
@@ -209,6 +211,7 @@ x11-misc/sxhkd
 x11-misc/urxvt-font-size
 x11-misc/xdg-utils
 x11-misc/xdo
+x11-misc/xdotool
 x11-misc/xsel
 x11-terms/rxvt-unicode
 x11-themes/arc-icon-theme
