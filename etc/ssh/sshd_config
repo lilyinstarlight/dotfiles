@@ -154,5 +154,5 @@ AuthenticationMethods publickey,password
 Match User virt
 	AuthenticationMethods publickey
 
-Match User other
-	AuthenticationMethods publickey
+Match User access
+	AuthenticationMethods publickey password
