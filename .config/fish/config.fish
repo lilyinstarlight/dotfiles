@@ -47,7 +47,7 @@ function speedtest
 end
 
 function cal
-    command cal $argv[-1..1]
+    command cal -m $argv[-1..1]
 end
 
 function mail
