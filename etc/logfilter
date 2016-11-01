@@ -1,6 +1,7 @@
 Stopped (with error) /dev/dm-0\.
 Failed unmounting /var\.
 watchdog: watchdog0: watchdog did not stop!
+[drm:hsw_write_dcomp] *ERROR* Failed to write to D_COMP
 Failed to determine block device of root file system: No such file or directory
 ip6tables\.service: Service lacks both ExecStart= and ExecStop= setting\. Refusing\.
 iptables\.service: Service lacks both ExecStart= and ExecStop= setting\. Refusing\.
