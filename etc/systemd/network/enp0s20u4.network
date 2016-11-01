@@ -1,0 +1,6 @@
+[Match]
+Name=enp0s20u4
+
+[Network]
+DHCP=yes
+IPv6PrivacyExtensions=yes
