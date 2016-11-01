@@ -60,7 +60,7 @@ super + u
 
 ## adjust node ratio
 super + shift + ctrl + {j,k}
-	bspc node -r {-,+}40px
+	bspc node @parent -r {-,+}40px
 
 ## send node to desktop
 super + shift + {1-9,0}
@@ -91,7 +91,7 @@ super + ctrl + alt + {1-9,0}
 	bspc desktop -m ^{1-9,10}
 
 ## create temporary desktop
-super + ctrl + {h,l}
+super + ctrl + shift + {h,l}
 	zenity --error --text "Not implemented."
 
 ## remove the current desktop
@@ -197,10 +197,10 @@ super + Return
 super + apostrophe
 	rofi -show window
 
-## lock all ttys
-super + space
-	physlock
-
 ## swap X selections
 super + backslash
 	xswap
+
+## lock all ttys
+super + space
+	physlock
