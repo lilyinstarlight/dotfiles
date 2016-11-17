@@ -53,6 +53,7 @@ dev-python/flake8
 dev-python/ipython
 dev-python/nose
 dev-python/pillow
+dev-python/pytest
 dev-python/sphinx
 dev-python/twilio
 dev-python/websocket-client
@@ -130,6 +131,7 @@ net-dns/avahi
 net-dns/bind-tools
 net-firewall/firewalld
 net-fs/cifs-utils
+net-im/qtox
 net-im/skype
 net-irc/irssi
 net-mail/syncmaildir
@@ -175,6 +177,7 @@ sys-boot/grub
 sys-devel/bc
 sys-devel/gdb
 sys-devel/llvm
+sys-firmware/edk2-ovmf
 sys-fs/btrfs-progs
 sys-fs/diskdev_cmds
 sys-fs/dosfstools
@@ -196,6 +199,7 @@ www-client/firefox
 www-client/google-chrome
 www-client/httrack
 www-client/qutebrowser
+www-plugins/freshplayerplugin
 x11-apps/xbacklight
 x11-apps/xev
 x11-apps/xkill

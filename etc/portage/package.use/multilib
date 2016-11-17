@@ -54,11 +54,14 @@ sys-apps/dbus abi_x86_32
 sys-apps/systemd abi_x86_32
 sys-apps/tcp-wrappers abi_x86_32
 sys-apps/util-linux abi_x86_32
+sys-devel/flex abi_x86_32
 sys-devel/gettext abi_x86_32
 sys-devel/llvm abi_x86_32
+sys-libs/cracklib abi_x86_32
 sys-libs/db abi_x86_32
 sys-libs/libcap abi_x86_32
 sys-libs/ncurses abi_x86_32
+sys-libs/pam abi_x86_32
 sys-libs/readline abi_x86_32
 sys-libs/zlib abi_x86_32
 virtual/glu abi_x86_32
@@ -68,6 +71,7 @@ virtual/libiconv abi_x86_32
 virtual/libintl abi_x86_32
 virtual/libudev abi_x86_32
 virtual/opengl abi_x86_32
+virtual/pam abi_x86_32
 virtual/pkgconfig abi_x86_32
 x11-libs/libICE abi_x86_32
 x11-libs/libSM abi_x86_32

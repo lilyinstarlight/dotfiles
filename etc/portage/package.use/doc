@@ -1,6 +1,7 @@
 dev-java/rxtx -doc
 dev-python/cython -doc
 dev-python/pandas -doc
+dev-python/urllib3 -doc
 dev-ruby/em-proxy -doc
 dev-ruby/metasploit-concern -doc
 dev-ruby/metasploit-model -doc
