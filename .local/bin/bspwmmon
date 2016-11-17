@@ -1,0 +1,14 @@
+#!/bin/sh
+# wait for bspwm socket
+bspc query -M --names | grep "$1"
+while [ $? -ne 0 ]; do
+	sleep 0.2
+	bspc query -M --names | grep "$1"
+done
+
+# monitor config
+bspc config -m "$1" top_padding 24
+bspc monitor "$1" -d term www chat work school music games
+
+# monitor services
+barline "$1" | lemonbar -f terminus:10.5 -u 6 -B '#121212' -F '#d7d7d7' -U '#ea2828' "$1" &

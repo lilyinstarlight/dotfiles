@@ -9,7 +9,7 @@ nitrogen --restore
 
 # desktop services
 sxhkd &
-~/.config/bspwm/bspwmmon eDP1 &
+bspwmmon eDP1 &
 
 # window manager
 bspwm

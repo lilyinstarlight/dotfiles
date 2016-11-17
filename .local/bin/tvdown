@@ -1,6 +1,6 @@
 #!/bin/sh
 xrandr --output HDMI1 --off --output eDP1 --mode 1920x1080 --pos 0x0 --rotate normal
-bspc wm -r HDMI1
-~/.config/bspwm/bspwmmon eDP1
+bspc monitor HDMI1 -r
+bspwmmon eDP1
 bspc wm -o
 synclient TouchPadOff=0

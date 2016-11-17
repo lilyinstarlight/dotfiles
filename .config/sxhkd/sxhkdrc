@@ -38,6 +38,9 @@ super + {z,x}
 super + ctrl + {h,j,k,l,space}
 	bspc node -p {west,south,north,east,cancel}
 
+## move node to preselection
+## TODO
+
 ## swap nodes
 super + c
 	bspc node -s last
@@ -46,17 +49,20 @@ super + c
 super + {i,o,p}
 	bspc node -t {tiled,floating,fullscreen}
 
+## focus tree nodes for actions
+## TODO
+
 ## sort node
 super + {b,n,m}
 	bspc node -l {below,normal,above}
 
-## balance tree from root node
+## balance tree from focused node
 super + y
-	bspc node @/ -B
+	bspc node -B
 
-## equalize tree from root node
+## equalize tree from focused node
 super + u
-	bspc node @/ -E
+	bspc node -E
 
 ## adjust node ratio
 super + shift + ctrl + {j,k}
@@ -118,8 +124,8 @@ super + bracketleft
 ## fix monitors
 super + bracketright
 	killall bspwmmon barline lemonbar; \
-	for mon in $(bspc query -M); do \
-		~/.config/bspwm/bspwmmon "$mon"; \
+	for mon in $(bspc query -M --names); do \
+		bspwmmon "$mon"; \
 	done
 
 ## control tv layout
