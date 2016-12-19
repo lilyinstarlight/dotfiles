@@ -1,1 +1,2 @@
 x11-libs/wxGTK:3.0 tiff opengl
+x11-libs/wxGTK:2.8 gstreamer opengl

@@ -51,6 +51,7 @@ dev-lang/ruby
 dev-python/django
 dev-python/flake8
 dev-python/ipython
+dev-python/markdown
 dev-python/nose
 dev-python/pillow
 dev-python/pytest
@@ -106,6 +107,7 @@ media-sound/amsynth
 media-sound/ardour
 media-sound/beets
 media-sound/fluid-soundfont
+media-sound/live-sequencer
 media-sound/mpc
 media-sound/mpd
 media-sound/mumble
@@ -199,7 +201,6 @@ www-client/firefox
 www-client/google-chrome
 www-client/httrack
 www-client/qutebrowser
-www-plugins/freshplayerplugin
 x11-apps/xbacklight
 x11-apps/xev
 x11-apps/xkill
@@ -207,6 +208,7 @@ x11-apps/xrandr
 x11-apps/xsetroot
 x11-base/xorg-server
 x11-misc/arandr
+x11-misc/barline
 x11-misc/dunst
 x11-misc/lemonbar
 x11-misc/nitrogen
