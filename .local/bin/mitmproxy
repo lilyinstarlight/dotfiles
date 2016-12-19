@@ -1,0 +1,4 @@
+#!/bin/sh
+firewall-cmd --zone=public --add-port=8080/tcp
+/usr/bin/mitmproxy "$@"
+firewall-cmd --zone=public --remove-port=8080/tcp

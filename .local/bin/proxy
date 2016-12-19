@@ -8,7 +8,7 @@ killproxy() {
 
 killproxy
 
-ssh -fND 8080 proxy &>/dev/null
+ssh -fND 1080 proxy &>/dev/null
 
 if [ -z "$1" ]; then
 	cmd="firefox --no-remote -P proxy"
