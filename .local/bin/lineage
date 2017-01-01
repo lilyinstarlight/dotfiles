@@ -1,0 +1,6 @@
+#!/bin/sh
+mounted="$([ -e "$HOME"/mnt ] && echo true || echo false)"
+
+if [ "$mounted" == false ]; then mntup; fi
+"$HOME"/mnt/FoosterHDD/LineageOS/bin/environment
+if [ "$mounted" == false ]; then mntdown; fi
