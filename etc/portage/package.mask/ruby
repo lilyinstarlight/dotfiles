@@ -1,0 +1,3 @@
+>=dev-lang/ruby-2.4
+>=dev-ruby/rake-12.0
+>=dev-ruby/nokogiri-1.7

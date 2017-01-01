@@ -1,7 +1,10 @@
 dev-java/rxtx -doc
+dev-lang/ghc -doc
 dev-python/cython -doc
+dev-python/django -doc
 dev-python/pandas -doc
 dev-python/pillow -doc
+dev-python/rdflib -doc
 dev-python/urllib3 -doc
 dev-ruby/em-proxy -doc
 dev-ruby/metasploit-concern -doc
@@ -12,4 +15,5 @@ dev-ruby/sqlite3 -doc
 media-libs/fontconfig -doc
 media-libs/libcaca -doc
 media-libs/lv2 -doc
+media-libs/mutagen -doc
 net-analyzer/bettercap -doc

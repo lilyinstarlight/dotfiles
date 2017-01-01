@@ -64,6 +64,7 @@ dev-texlive/texlive-latexextra
 dev-texlive/texlive-latexrecommended
 dev-texlive/texlive-xetex
 dev-util/android-sdk-update-manager
+dev-util/ccache
 dev-util/cloc
 dev-util/dialog
 dev-util/gource
@@ -192,15 +193,18 @@ sys-fs/udiskie
 sys-kernel/gentoo-sources
 sys-kernel/linux-firmware
 sys-kernel/pf-sources
+sys-libs/ncurses:5
 sys-power/powertop
 sys-process/htop
 sys-process/lsof
+sys-process/schedtool
 virtual/jdk:1.8
 www-client/elinks
 www-client/firefox
 www-client/google-chrome
 www-client/httrack
 www-client/qutebrowser
+www-plugins/adobe-flash
 x11-apps/xbacklight
 x11-apps/xev
 x11-apps/xkill
