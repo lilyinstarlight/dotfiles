@@ -175,12 +175,12 @@ super + shift + semicolon
 
 ## open qutebrowser
 super + a
-	qutebrowser
+	qutebrowser --backend webengine
 
 ## open qutebrowser on the "www" desktop
 super + shift + a
 	bspc desktop -f www; \
-	exec qutebrowser
+	exec qutebrowser --backend webengine
 
 ## open irssi on the "chat" desktop
 super + s
