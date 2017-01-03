@@ -38,19 +38,25 @@ super + {z,x}
 super + ctrl + {h,j,k,l,space}
 	bspc node -p {west,south,north,east,cancel}
 
-## move node to preselection
-## TODO
+## move last node to preselection
+super + ctrl + semicolon
+	bspc query -N -n focused.automatic && bspc node -n last.!automatic || bspc node last.leaf -n focused
 
 ## swap nodes
 super + c
 	bspc node -s last
 
+## swap biggest node
+super + g
+	bspc node -s biggest
+
 ## change node state
 super + {i,o,p}
 	bspc node -t {tiled,floating,fullscreen}
 
-## focus tree nodes for actions
-## TODO
+## focus tree node
+super + ctrl + alt + {h,j,k,l}
+	bspc node -f @{first,brother,parent,second}
 
 ## sort node
 super + {b,n,m}
@@ -65,7 +71,7 @@ super + u
 	bspc node -E
 
 ## adjust node ratio
-super + shift + ctrl + {j,k}
+super + ctrl + {u,i}
 	bspc node @parent -r {-,+}40px
 
 ## send node to desktop
@@ -89,7 +95,7 @@ super + ctrl + {1-9,0}
 	bspc desktop -s focused:^{1-9,10}
 
 ## bubble desktop
-super + ctrl + {j,k}
+super + ctrl + shift + {j,k}
 	bspc desktop -b {prev,next}
 
 ## send desktop to monitor
@@ -98,11 +104,17 @@ super + ctrl + alt + {1-9,0}
 
 ## create temporary desktop
 super + ctrl + shift + {h,l}
-	zenity --error --text "Not implemented."
+	bspc monitor -a temp; \
+	cycles="$(expr $(bspc query -D -m focused | wc -l) - $(bspc query -D -m focused | grep -n $(bspc query -D -d focused) | cut -d':' -f1) - {0,1})"; \
+	temp="$(bspc query -D -m focused | tail -n1)"; \
+	for _ in $(seq 1 $cycles); do \
+		bspc desktop $temp -b prev; \
+	done; \
+	bspc desktop $temp -f
 
 ## remove the current desktop
 super + ctrl + w
-	bspc monitor -r $(bspc query -D -d focused)
+	bspc desktop focused -r
 
 ## focus/move spatial monitor
 super + alt + {_,shift + }{h,j,k,l}
