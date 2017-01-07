@@ -42,6 +42,7 @@ dev-embedded/energia-bin
 dev-embedded/teensyduino-bin
 dev-games/aseprite
 dev-java/gradle-bin
+dev-java/maven-bin
 dev-lang/crystal
 dev-lang/ghc
 dev-lang/go
@@ -81,6 +82,7 @@ games-emulation/desmume
 games-emulation/dolphin
 games-emulation/higan
 games-emulation/mupen64plus
+games-misc/lolcat
 games-misc/nyancat
 games-misc/pipes
 games-util/steam-launcher
@@ -134,6 +136,7 @@ net-dns/avahi
 net-dns/bind-tools
 net-firewall/firewalld
 net-fs/cifs-utils
+net-im/hangups
 net-im/qtox
 net-im/skype
 net-irc/irssi
