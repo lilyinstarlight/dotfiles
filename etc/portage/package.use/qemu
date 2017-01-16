@@ -1,1 +1,1 @@
-app-emulation/qemu spice usb usbredir
+app-emulation/qemu opengl spice usb usbredir virgl vte

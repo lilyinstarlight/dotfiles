@@ -13,6 +13,7 @@ dev-ruby/metasploit-model -doc
 dev-ruby/metasploit_data_models -doc
 dev-ruby/rubydns -doc
 dev-ruby/sqlite3 -doc
+media-libs/aubio -doc
 media-libs/fontconfig -doc
 media-libs/libcaca -doc
 media-libs/lv2 -doc

@@ -56,10 +56,12 @@ dev-python/markdown
 dev-python/nose
 dev-python/pillow
 dev-python/pytest
+dev-python/pytest-cov
+dev-python/slixmpp
 dev-python/sphinx
 dev-python/twilio
+dev-python/virtualenv
 dev-python/websocket-client
-dev-ruby/yard
 dev-tex/latexmk
 dev-texlive/texlive-latexextra
 dev-texlive/texlive-latexrecommended
@@ -85,7 +87,7 @@ games-emulation/mupen64plus
 games-misc/lolcat
 games-misc/nyancat
 games-misc/pipes
-games-util/steam-launcher
+games-util/steam-meta
 games-util/xboxdrv
 mail-client/mailx
 mail-client/mutt
@@ -96,7 +98,9 @@ media-gfx/blender
 media-gfx/gimp
 media-gfx/gmic
 media-gfx/inkscape
+media-gfx/krita
 media-gfx/maim
+media-gfx/openscad
 media-gfx/qrencode
 media-gfx/viewnior
 media-libs/gstreamer
