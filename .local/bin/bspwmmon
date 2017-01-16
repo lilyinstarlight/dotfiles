@@ -11,4 +11,4 @@ bspc config -m "$1" top_padding 24
 bspc monitor "$1" -d term www chat work school music games
 
 # monitor services
-barline "$1" | lemonbar -f terminus:10.5 -u 6 -B '#121212' -F '#d7d7d7' -U '#ea2828' "$1" &
+barline "$1" | lemonbar -f "xos4 terminus:10.5" -u 6 -B '#121212' -F '#d7d7d7' -U '#ea2828' "$1" &
