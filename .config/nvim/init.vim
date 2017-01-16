@@ -84,6 +84,8 @@ nmap <leader>t :tabe<cr>
 nmap <leader>c :clo<cr>
 nmap <leader>u :bd!<cr>
 nmap <leader>a :bel new<cr>:te<cr>
+nmap <leader>v :set virtualedit=all<cr>
+nmap <leader>g :set virtualedit=<cr>
 nmap <leader>b :Hexmode<cr>
 
 "matchit.vim
