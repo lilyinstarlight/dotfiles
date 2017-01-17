@@ -1,7 +1,10 @@
+# remove greeting
 set --erase fish_greeting
 
+# set vi key bindings
 fish_vi_key_bindings
 
+# useful functions
 function open
     command open $argv
 end
@@ -84,4 +87,13 @@ function record
     set fps 15
 
     ffmpeg -v warning -f x11grab -s $res -r $fps -i $DISPLAY+$offset -f alsa -i pulse -pix_fmt yuv420p $argv
+end
+
+# profile
+if test -e "$HOME"/.profile
+    grep -Ev "^(#|export (PATH|ROOTPATH|LESS_TERMCAP_\w+)=)" "$HOME"/.profile | source
+
+    for path in (grep -o " PATH=['\"].*['\"]" "$HOME"/.profile | sed "s@.*['\"]\(.*\)['\"]@\1@;s@:@\n@g" | grep -v '$PATH')
+        eval set -xg PATH "$path" $PATH
+    end
 end
