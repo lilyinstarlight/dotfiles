@@ -130,8 +130,8 @@ super + alt + c
 
 ## remove laptop monitor
 super + bracketleft
-	kill "$(ps ax | grep lemonbar | grep eDP1 | cut -d' ' -f2)"; \
-	bspc wm -r eDP1
+	kill "$(ps ax | grep lemonbar | grep eDP-1 | cut -d' ' -f2)"; \
+	bspc wm -r eDP-1
 
 ## fix monitors
 super + bracketright

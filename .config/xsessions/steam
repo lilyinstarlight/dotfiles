@@ -1,0 +1,17 @@
+#!/bin/sh
+# OpenGL
+export LDPATH="/usr/lib64/opengl/nvidia/lib"
+export OPENGL_PROFILE="nvidia"
+
+# X properties
+xrdb -merge ~/.Xresources
+
+# setup xrandr
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+
+# start wm
+openbox &
+
+# start steam
+exec steam -bigpicture

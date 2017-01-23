@@ -1,0 +1,5 @@
+polkit.addRule(function(action, subject) {
+    if ((action.id == "org.freedesktop.policykit.exec") && ((action.lookup("command_line") == "/sbin/modprobe nvidia") || (action.lookup("command_line") == "/sbin/modprobe -r nvidia") || (action.lookup("command_line") == "/sbin/modprobe nvidia_modeset") || (action.lookup("command_line") == "/sbin/modprobe -r nvidia_modeset") || (action.lookup("command_line") == "/sbin/modprobe nvidia_drm") || (action.lookup("command_line") == "/sbin/modprobe -r nvidia_drm")) && subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+    }
+});
