@@ -9,6 +9,7 @@ dev-lang/orc abi_x86_32
 dev-libs/atk abi_x86_32
 dev-libs/atk- abi_x86_32
 dev-libs/dbus-glib abi_x86_32
+dev-libs/elfutils abi_x86_32
 dev-libs/expat abi_x86_32
 dev-libs/glib abi_x86_32
 dev-libs/gmp abi_x86_32
@@ -31,6 +32,7 @@ dev-libs/nettle abi_x86_32
 dev-libs/nspr abi_x86_32
 dev-libs/nss abi_x86_32
 dev-libs/openssl abi_x86_32
+dev-libs/wayland abi_x86_32
 dev-qt/qtcore:4 abi_x86_32
 dev-qt/qtdbus:4 abi_x86_32
 dev-qt/qtgui:4 abi_x86_32
@@ -59,6 +61,7 @@ media-libs/libepoxy abi_x86_32
 media-libs/libexif abi_x86_32
 media-libs/libjpeg-turbo abi_x86_32
 media-libs/libogg abi_x86_32
+media-libs/libomxil-bellagio abi_x86_32
 media-libs/libpng abi_x86_32
 media-libs/libsamplerate abi_x86_32
 media-libs/libsdl2 abi_x86_32
@@ -82,6 +85,7 @@ sys-apps/dbus abi_x86_32
 sys-apps/systemd abi_x86_32
 sys-apps/tcp-wrappers abi_x86_32
 sys-apps/util-linux abi_x86_32
+sys-devel/clang abi_x86_32
 sys-devel/flex abi_x86_32
 sys-devel/gettext abi_x86_32
 sys-devel/llvm abi_x86_32
@@ -95,6 +99,7 @@ sys-libs/readline abi_x86_32
 sys-libs/zlib abi_x86_32
 virtual/glu abi_x86_32
 virtual/jpeg:0 abi_x86_32
+virtual/libelf abi_x86_32
 virtual/libffi abi_x86_32
 virtual/libiconv abi_x86_32
 virtual/libintl abi_x86_32
@@ -119,17 +124,23 @@ x11-libs/libXext abi_x86_32
 x11-libs/libXfixes abi_x86_32
 x11-libs/libXft abi_x86_32
 x11-libs/libXi abi_x86_32
+x11-libs/libXinerama abi_x86_32
 x11-libs/libXmu abi_x86_32
 x11-libs/libXrandr abi_x86_32
 x11-libs/libXrender abi_x86_32
 x11-libs/libXt abi_x86_32
 x11-libs/libXtst abi_x86_32
 x11-libs/libXv abi_x86_32
+x11-libs/libXvMC abi_x86_32
 x11-libs/libXxf86vm abi_x86_32
 x11-libs/libdrm abi_x86_32
 x11-libs/libpciaccess abi_x86_32
+x11-libs/libva abi_x86_32
+x11-libs/libva-intel-driver abi_x86_32
+x11-libs/libva-vdpau-driver abi_x86_32
 x11-libs/libvdpau abi_x86_32
 x11-libs/libxcb abi_x86_32
+x11-libs/libxkbcommon abi_x86_32
 x11-libs/libxshmfence abi_x86_32
 x11-libs/pango abi_x86_32
 x11-libs/pixman abi_x86_32
@@ -152,4 +163,5 @@ x11-proto/xextproto abi_x86_32
 x11-proto/xf86bigfontproto abi_x86_32
 x11-proto/xf86driproto abi_x86_32
 x11-proto/xf86vidmodeproto abi_x86_32
+x11-proto/xineramaproto abi_x86_32
 x11-proto/xproto abi_x86_32

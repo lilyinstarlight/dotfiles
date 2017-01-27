@@ -1,3 +1,3 @@
 media-plugins/gst-plugins-meta X a52 aac alsa cdda dts dv dvb dvd ffmpeg flac http jack lame libass libvisual mms modplug mp3 mpeg musepack ogg opus oss pulseaudio taglib theora v4l vaapi vcd vorbis vpx wavpack x264 xv xvid
 media-libs/gst-plugins-base theora
-media-libs/gst-plugins-bad opengl
+media-libs/gst-plugins-bad -gles2

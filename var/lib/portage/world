@@ -1,13 +1,16 @@
+app-admin/apache-tools
 app-admin/eclean-kernel
 app-admin/linode-cli
 app-admin/pass
 app-admin/sudo
 app-arch/p7zip
 app-backup/btrbk
+app-backup/duply
 app-cdr/cdrdao
 app-crypt/gnupg
 app-crypt/keybase
 app-doc/doxygen
+app-editors/emacs
 app-editors/neovim
 app-emulation/docker
 app-emulation/libvirt
@@ -49,6 +52,7 @@ dev-lang/go
 dev-lang/julia
 dev-lang/php
 dev-lang/ruby
+dev-libs/beignet
 dev-python/django
 dev-python/flake8
 dev-python/ipython
@@ -65,6 +69,7 @@ dev-python/websocket-client
 dev-tex/latexmk
 dev-texlive/texlive-latexextra
 dev-texlive/texlive-latexrecommended
+dev-texlive/texlive-mathscience
 dev-texlive/texlive-xetex
 dev-util/android-sdk-update-manager
 dev-util/ccache
@@ -114,6 +119,7 @@ media-sound/amsynth
 media-sound/ardour
 media-sound/beets
 media-sound/fluid-soundfont
+media-sound/lilypond
 media-sound/live-sequencer
 media-sound/mpc
 media-sound/mpd
@@ -129,6 +135,7 @@ media-video/mpv
 media-video/openshot
 media-video/pitivi
 net-analyzer/bettercap
+net-analyzer/bmon
 net-analyzer/ettercap
 net-analyzer/metasploit
 net-analyzer/nikto
@@ -140,6 +147,7 @@ net-dns/avahi
 net-dns/bind-tools
 net-firewall/firewalld
 net-fs/cifs-utils
+net-im/discord
 net-im/hangups
 net-im/qtox
 net-im/skype
@@ -201,6 +209,7 @@ sys-kernel/gentoo-sources
 sys-kernel/linux-firmware
 sys-kernel/pf-sources
 sys-libs/ncurses:5
+sys-power/acpid
 sys-power/powertop
 sys-process/htop
 sys-process/lsof
@@ -212,6 +221,9 @@ www-client/google-chrome
 www-client/httrack
 www-client/qutebrowser
 www-plugins/adobe-flash
+www-plugins/pdfjs
+www-servers/nginx
+x11-apps/intel-gpu-tools
 x11-apps/xbacklight
 x11-apps/xev
 x11-apps/xkill
@@ -223,6 +235,7 @@ x11-misc/barline
 x11-misc/dunst
 x11-misc/lemonbar
 x11-misc/nitrogen
+x11-misc/read-edid
 x11-misc/rofi
 x11-misc/sxhkd
 x11-misc/urxvt-font-size
