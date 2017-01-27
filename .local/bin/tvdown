@@ -1,7 +1,7 @@
 #!/bin/sh
-xrandr --output HDMI1 --off --output eDP1 --mode 1920x1080 --pos 0x0 --rotate normal
-bspc monitor HDMI1 -r
-kill "$(ps ax | grep barline | grep HDMI1 | cut -d' ' -f2)"
-bspwmmon eDP1
+xrandr --output HDMI-1 --off --output eDP-1 --mode 1920x1080 --pos 0x0 --rotate normal
+bspc monitor HDMI-1 -r
+kill "$(ps ax | grep barline | grep HDMI-1 | cut -d' ' -f2)"
+bspwmmon eDP-1
 bspc wm -o
 synclient TouchPadOff=0
