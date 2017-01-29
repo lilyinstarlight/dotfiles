@@ -1,0 +1,5 @@
+polkit.addRule(function(action, subject) {
+    if ((action.id == "org.freedesktop.policykit.exec") && ((action.lookup("command_line") == "/usr/bin/eselect opengl set 1") || (action.lookup("command_line") == "/usr/bin/eselect opengl set 2")) && subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+    }
+});
