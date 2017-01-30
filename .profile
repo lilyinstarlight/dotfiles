@@ -2,8 +2,7 @@
 export EDITOR="vi"
 export BROWSER="qutebrowser"
 export EMAIL="fkmclane@fkmclane.net"
-export GOPATH="$HOME/.local/go"
-export PATH="$HOME/.local/bin:$GOPATH/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # man page highlighting
 export LESS_TERMCAP_mb=$'\e[01;31m'
