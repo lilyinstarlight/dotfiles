@@ -168,6 +168,7 @@ net-misc/youtube-dl
 net-p2p/deluge
 net-p2p/zget
 net-print/cups
+net-print/foomatic-db-ppds
 net-print/hplip
 net-proxy/mitmproxy
 net-proxy/sshuttle
@@ -215,6 +216,7 @@ sys-process/htop
 sys-process/lsof
 sys-process/schedtool
 virtual/jdk:1.8
+www-apps/hugo
 www-client/elinks
 www-client/firefox
 www-client/google-chrome
@@ -224,6 +226,7 @@ www-plugins/adobe-flash
 www-plugins/pdfjs
 www-servers/nginx
 x11-apps/intel-gpu-tools
+x11-apps/mesa-progs
 x11-apps/xbacklight
 x11-apps/xev
 x11-apps/xkill
@@ -232,10 +235,10 @@ x11-apps/xsetroot
 x11-base/xorg-server
 x11-misc/arandr
 x11-misc/barline
+x11-misc/clipster
 x11-misc/dunst
 x11-misc/lemonbar
 x11-misc/nitrogen
-x11-misc/read-edid
 x11-misc/rofi
 x11-misc/sxhkd
 x11-misc/urxvt-font-size
@@ -245,6 +248,7 @@ x11-misc/xdotool
 x11-misc/xsel
 x11-terms/rxvt-unicode
 x11-themes/arc-icon-theme
+x11-themes/arc-openbox-theme
 x11-themes/arc-theme
 x11-wm/bspwm
 x11-wm/openbox
