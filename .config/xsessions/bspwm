@@ -10,6 +10,7 @@ nitrogen --restore
 # desktop services
 sxhkd &
 bspwmmon eDP-1 &
+clipster -d &
 
 # window manager
 bspwm
