@@ -12,6 +12,3 @@ export LESS_TERMCAP_se=$'\e[0m'
 export LESS_TERMCAP_so=$'\e[01;31m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[01;32m'
-
-# password-store
-export PASSWORD_STORE_X_SELECTION="primary"
