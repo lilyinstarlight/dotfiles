@@ -1,3 +1,2 @@
 #!/bin/sh
-[ -e "$HOME"/mnt ] || ln -s /run/media/"$USER"/ "$HOME"/mnt
-udiskie-mount -a
+([ -e "$HOME"/mnt ] || ln -s /run/media/"$USER"/ "$HOME"/mnt) && udiskie-mount -a

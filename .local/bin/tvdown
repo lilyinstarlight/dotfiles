@@ -1,7 +1,18 @@
 #!/bin/sh
-xrandr --output HDMI-1 --off --output eDP-1 --mode 1920x1080 --pos 0x0 --rotate normal
-bspc monitor HDMI-1 -r
-kill "$(ps ax | grep barline | grep HDMI-1 | cut -d' ' -f2)"
-bspwmmon eDP-1
-bspc wm -o
+if xrandr | grep HDMI-1-1; then
+	DSP=eDP-1-1
+	TV=HDMI-1-1
+else
+	DSP=eDP-1
+	TV=HDMI-1
+fi
+
+xrandr --output $TV --off --output $DSP --mode 1920x1080 --pos 0x0 --rotate normal
 synclient TouchPadOff=0
+
+if [ "$XDG_SESSION_DESKTOP" == bspwm ]; then
+	bspc monitor $TV -r
+	kill "$(ps ax | grep barline | grep $TV | cut -d' ' -f2)"
+	bspwmmon $DSP
+	bspc wm -o
+fi
