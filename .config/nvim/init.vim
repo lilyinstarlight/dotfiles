@@ -72,7 +72,9 @@ filetype plugin indent on
 syntax enable
 
 "autocommands
-au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+autocmd BufNewFile,BufRead *.ly compiler lilypond
+autocmd BufNewFile,BufRead *.tex let b:tex_flavor = 'pdflatexmk' | compiler tex
 
 "vim
 nnoremap Y y$
@@ -87,6 +89,7 @@ nmap <leader>a :bel new<cr>:te<cr>
 nmap <leader>v :set virtualedit=all<cr>
 nmap <leader>g :set virtualedit=<cr>
 nmap <leader>b :Hexmode<cr>
+nmap <leader><cr> :make %<cr>
 
 "matchit.vim
 runtime! macros/matchit.vim
