@@ -76,6 +76,7 @@ media-plugins/alsa-plugins abi_x86_32
 media-sound/jack-audio-connection-kit abi_x86_32
 media-sound/pulseaudio abi_x86_32
 net-dns/libidn abi_x86_32
+net-dns/libidn2 abi_x86_32
 net-libs/gnutls abi_x86_32
 net-libs/libasyncns abi_x86_32
 net-misc/curl abi_x86_32

@@ -160,6 +160,7 @@ net-misc/freerdp
 net-misc/geoipupdate
 net-misc/httpie
 net-misc/iperf
+net-misc/openconnect
 net-misc/openvpn
 net-misc/proxychains
 net-misc/socat
@@ -194,6 +195,7 @@ sys-block/ms-sys
 sys-boot/efibootmgr
 sys-boot/grub
 sys-devel/bc
+sys-devel/bmake
 sys-devel/gdb
 sys-devel/llvm
 sys-firmware/edk2-ovmf
