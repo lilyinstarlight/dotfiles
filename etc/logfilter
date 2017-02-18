@@ -11,3 +11,6 @@ Failed to start email logged errors and failed units from the last hour\.
 Failed to start Forward Password Requests to Wall\.
 systemd-ask-password-console.service loaded failed failed Dispatch Password Requests to Console
 systemd-ask-password-wall.service    loaded failed failed Forward Password Requests to Wall
+Failed to obtain handles for "Service Changed" characteristic
+Failed to set privacy: Rejected (0x0b)
+hid-generic 0005:099A:0500.0003: unknown main item tag 0x0
