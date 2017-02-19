@@ -218,3 +218,11 @@ super + apostrophe
 ## lock all ttys
 super + space
 	physlock
+
+## take screenshot
+Print
+	maim ~/tmp/screenshot.png
+
+## select screenshot
+shift + Print
+	maim -s ~/tmp/screenshot.png
