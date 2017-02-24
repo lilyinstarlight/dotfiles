@@ -1,7 +1,7 @@
 #!/bin/sh
 # OpenGL
-export LDPATH="/usr/lib64/opengl/nvidia/lib"
-export OPENGL_PROFILE="nvidia"
+pkexec /usr/bin/eselect opengl set 1
+pkexec /usr/bin/eselect opencl set 3
 
 # X properties
 xrdb -merge ~/.Xresources
@@ -13,5 +13,14 @@ xrandr --auto
 # start wm
 openbox &
 
+# TV detection
+if xrandr | grep "HDMI-1-1 connected"; then
+	tvup
+fi
+
 # start steam
-exec steam -bigpicture
+steam -bigpicture
+
+# OpenGL
+pkexec /usr/bin/eselect opengl set 2
+pkexec /usr/bin/eselect opencl set 2

@@ -1,5 +1,27 @@
 <repositories encoding="unicode" version="1.0">
   <repo priority="50" quality="experimental" status="unofficial">
+    <name>mrueg</name>
+    <description>User overlay</description>
+    <homepage>https://cgit.gentoo.org/dev/mrueg.git/</homepage>
+    <owner>
+      <email>mrueg@gentoo.org</email>
+      <name>Manuel Rüger (mrueg)</name>
+    </owner>
+    <source type="git">git://anongit.gentoo.org/dev/mrueg.git</source>
+    <feed>https://cgit.gentoo.org/dev/mrueg.git/atom/</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>Drauthius</name>
+    <description>Ebuilds related to game dev</description>
+    <homepage>http://cgit.gentoo.org/repo/user/Drauthius.git/</homepage>
+    <owner>
+      <email>albert@diserholt.com</email>
+      <name>Albert Diserholt</name>
+    </owner>
+    <source type="git">git://anongit.gentoo.org/repo/user/Drauthius</source>
+    <feed>https://cgit.gentoo.org/repo/user/Drauthius.git/atom/</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
     <name>pentoo</name>
     <description>The overlay contains new or updated security tools.</description>
     <homepage>http://www.pentoo.ch</homepage>
@@ -8,16 +30,15 @@
     </owner>
     <source type="git">git://github.com/pentoo/pentoo-overlay.git</source>
   </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>gamerlay</name>
-    <description>Gamers overlay for all various games. Not related with games team.</description>
-    <homepage>https://cgit.gentoo.org/proj/gamerlay.git</homepage>
+  <repo priority="50" quality="experimental" status="official">
+    <name>haskell</name>
+    <description>The Official Gentoo Haskell overlay.</description>
+    <homepage>https://github.com/gentoo-haskell</homepage>
     <owner>
-      <email>gentoo@mva.name</email>
-      <name>Vadim A. Misbakh-Soloviov</name>
+      <email>haskell@gentoo.org</email>
     </owner>
-    <source type="git">git://anongit.gentoo.org/proj/gamerlay.git</source>
-    <feed>https://cgit.gentoo.org/proj/gamerlay.git/atom/</feed>
+    <source type="git">git://github.com/gentoo-haskell/gentoo-haskell.git</source>
+    <feed>http://github.com/gentoo-haskell/gentoo-haskell/commits/master.atom</feed>
   </repo>
   <repo priority="50" quality="experimental" status="official">
     <name>java</name>
@@ -29,6 +50,28 @@
     </owner>
     <source type="git">git://anongit.gentoo.org/proj/java.git</source>
     <feed>https://cgit.gentoo.org/proj/java.git/atom/</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>steam-overlay</name>
+    <description>Gentoo overlay for Valve's Steam client and Steam-based games</description>
+    <homepage>https://github.com/anyc/steam-overlay</homepage>
+    <owner>
+      <email>dev@kicherer.org</email>
+      <name>Mario Kicherer</name>
+    </owner>
+    <source type="git">git://github.com/anyc/steam-overlay.git</source>
+    <feed>https://github.com/anyc/steam-overlay/commits/master.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>gamerlay</name>
+    <description>Gamers overlay for all various games. Not related with games team.</description>
+    <homepage>https://cgit.gentoo.org/proj/gamerlay.git</homepage>
+    <owner>
+      <email>gentoo@mva.name</email>
+      <name>Vadim A. Misbakh-Soloviov</name>
+    </owner>
+    <source type="git">git://anongit.gentoo.org/proj/gamerlay.git</source>
+    <feed>https://cgit.gentoo.org/proj/gamerlay.git/atom/</feed>
   </repo>
   <repo priority="50" quality="experimental" status="unofficial">
     <name>tlp</name>
@@ -51,37 +94,5 @@
     </owner>
     <source type="git">git://github.com/fkmclane/overlay.git</source>
     <feed>https://github.com/fkmclane/overlay/commits/master.atom</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="official">
-    <name>haskell</name>
-    <description>The Official Gentoo Haskell overlay.</description>
-    <homepage>https://github.com/gentoo-haskell</homepage>
-    <owner>
-      <email>haskell@gentoo.org</email>
-    </owner>
-    <source type="git">git://github.com/gentoo-haskell/gentoo-haskell.git</source>
-    <feed>http://github.com/gentoo-haskell/gentoo-haskell/commits/master.atom</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>steam-overlay</name>
-    <description>Gentoo overlay for Valve's Steam client and Steam-based games</description>
-    <homepage>https://github.com/anyc/steam-overlay</homepage>
-    <owner>
-      <email>dev@kicherer.org</email>
-      <name>Mario Kicherer</name>
-    </owner>
-    <source type="git">git://github.com/anyc/steam-overlay.git</source>
-    <feed>https://github.com/anyc/steam-overlay/commits/master.atom</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>mrueg</name>
-    <description>User overlay</description>
-    <homepage>https://cgit.gentoo.org/dev/mrueg.git/</homepage>
-    <owner>
-      <email>mrueg@gentoo.org</email>
-      <name>Manuel Rüger (mrueg)</name>
-    </owner>
-    <source type="git">git://anongit.gentoo.org/dev/mrueg.git</source>
-    <feed>https://cgit.gentoo.org/dev/mrueg.git/atom/</feed>
   </repo>
 </repositories>

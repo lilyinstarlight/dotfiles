@@ -1,5 +1,5 @@
 polkit.addRule(function(action, subject) {
-    if ((action.id == "org.libvirt.unix.manage") && (subject.user == "virt")) {
+    if ((action.id == "org.libvirt.unix.manage") && subject.isInGroup("virt")) {
         return polkit.Result.YES;
     }
 });

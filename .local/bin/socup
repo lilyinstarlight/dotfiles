@@ -1,0 +1,3 @@
+#!/bin/sh
+systemctl --user start chrome-remote-desktop
+run systemd-inhibit --what=handle-lid-switch sleep infinity

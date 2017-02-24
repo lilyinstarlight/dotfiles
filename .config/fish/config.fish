@@ -57,6 +57,10 @@ function mail
     command mail -r $EMAIL $argv
 end
 
+function geoiplookup
+    command geoiplookup -f /usr/share/GeoIP/GeoLiteCity.dat $argv
+end
+
 function nyancat
     env TERM=xterm nyancat
 end

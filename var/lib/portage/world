@@ -28,6 +28,7 @@ app-misc/tty-clock
 app-misc/utimer
 app-misc/wemux
 app-office/homebank
+app-office/scribus
 app-portage/eclass-manpages
 app-portage/eix
 app-portage/gentoolkit
@@ -117,6 +118,7 @@ media-plugins/midifilter-lv2
 media-sound/alsa-utils
 media-sound/amsynth
 media-sound/ardour
+media-sound/audacity
 media-sound/beets
 media-sound/fluid-soundfont
 media-sound/lilypond
@@ -151,10 +153,12 @@ net-im/discord
 net-im/hangups
 net-im/qtox
 net-im/skype
+net-im/slack-bin
 net-irc/irssi
 net-mail/syncmaildir
 net-misc/aria2
 net-misc/bridge-utils
+net-misc/chrome-remote-desktop
 net-misc/dhcpcd
 net-misc/freerdp
 net-misc/geoipupdate
@@ -240,7 +244,6 @@ x11-misc/barline
 x11-misc/clipster
 x11-misc/dunst
 x11-misc/lemonbar
-x11-misc/nitrogen
 x11-misc/rofi
 x11-misc/sxhkd
 x11-misc/urxvt-font-size

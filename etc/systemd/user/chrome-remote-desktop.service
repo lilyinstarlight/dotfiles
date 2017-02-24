@@ -1,0 +1,13 @@
+[Unit]
+Description=Chrome Remote Desktop Listener
+IgnoreOnIsolate=true
+
+[Service]
+Type=forking
+ExecStart=/opt/google/chrome-remote-desktop/chrome-remote-desktop --start
+ExecStop=/opt/google/chrome-remote-desktop/chrome-remote-desktop --stop
+EnvironmentFile=/etc/chrome-remote-desktop
+Restart=on-abort
+
+[Install]
+WantedBy=default.target
