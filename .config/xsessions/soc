@@ -10,7 +10,7 @@ display -window root "$HOME"/.background/symphony-impossible-to-play-1440.png
 # desktop services
 sxhkd &
 bspwmmon screen &
-clipster -d &
+clipster -f "$HOME"/.config/clipster/clipster-soc.ini -d &
 
 # window manager
 bspwm
