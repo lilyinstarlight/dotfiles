@@ -112,6 +112,7 @@ media-gfx/viewnior
 media-libs/gstreamer
 media-libs/libtxc_dxtn
 media-libs/opencv
+media-libs/vulkan-loader
 media-plugins/calf
 media-plugins/gst-plugins-meta
 media-plugins/midifilter-lv2
@@ -125,7 +126,6 @@ media-sound/lilypond
 media-sound/live-sequencer
 media-sound/mpc
 media-sound/mpd
-media-sound/mumble
 media-sound/musescore
 media-sound/pavucontrol
 media-sound/pms
@@ -210,6 +210,7 @@ sys-fs/exfat-nofuse
 sys-fs/exfat-utils
 sys-fs/f2fs-tools
 sys-fs/hfsutils
+sys-fs/inotify-tools
 sys-fs/ntfs3g
 sys-fs/udiskie
 sys-kernel/gentoo-sources

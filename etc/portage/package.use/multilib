@@ -60,6 +60,8 @@ media-libs/lcms abi_x86_32
 media-libs/libepoxy abi_x86_32
 media-libs/libexif abi_x86_32
 media-libs/libjpeg-turbo abi_x86_32
+media-libs/libmad abi_x86_32
+media-libs/libmodplug abi_x86_32
 media-libs/libogg abi_x86_32
 media-libs/libomxil-bellagio abi_x86_32
 media-libs/libpng abi_x86_32
@@ -73,6 +75,7 @@ media-libs/openal abi_x86_32
 media-libs/sdl2-image abi_x86_32
 media-libs/sdl2-mixer abi_x86_32
 media-plugins/alsa-plugins abi_x86_32
+media-sound/fluidsynth abi_x86_32
 media-sound/jack-audio-connection-kit abi_x86_32
 media-sound/pulseaudio abi_x86_32
 net-dns/libidn abi_x86_32
