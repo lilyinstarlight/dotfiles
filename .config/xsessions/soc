@@ -2,7 +2,7 @@
 # X properties
 xsetroot -cursor_name left_ptr
 xrdb -merge "$HOME"/.Xresources
-display -window root "$HOME"/.background/symphony-impossible-to-play-1440.png
+display -window root "$HOME"/.background/1440/dogtier.png
 
 # background services
 /usr/libexec/polkit-gnome-authentication-agent-1 &
