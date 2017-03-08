@@ -114,6 +114,7 @@ media-libs/libtxc_dxtn
 media-libs/opencv
 media-libs/vulkan-loader
 media-plugins/calf
+media-plugins/gimp-lqr
 media-plugins/gst-plugins-meta
 media-plugins/midifilter-lv2
 media-sound/alsa-utils
@@ -187,6 +188,7 @@ sci-electronics/kicad
 sys-apps/gptfdisk
 sys-apps/lm_sensors
 sys-apps/lshw
+sys-apps/miscfiles
 sys-apps/petty
 sys-apps/portage
 sys-apps/progress

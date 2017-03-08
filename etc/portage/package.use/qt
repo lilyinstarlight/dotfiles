@@ -5,6 +5,7 @@ dev-qt/qtwebkit multimedia opengl printsupport
 dev-qt/qtwebkit:4 -exceptions
 dev-qt/qtmultimedia gstreamer widgets -gles2
 dev-qt/qtgui -gles2
+dev-qt/qtgui:4 gtkstyle
 dev-qt/qtdeclarative -gles2
 dev-qt/qtwidgets -gles2
 dev-qt/qtopengl -gles2
