@@ -1,0 +1,2 @@
+#!/bin/sh
+([ -e "$HOME"/cloud ] || ln -s /mnt/cloud/ "$HOME"/cloud) && mount /mnt/cloud

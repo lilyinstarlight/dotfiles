@@ -2,18 +2,21 @@
 # X properties
 xsetroot -cursor_name left_ptr
 xrdb -merge "$HOME"/.Xresources
-display -window root "$HOME"/.background/1440/dogtier.png
+
+# background
+display -window root "$(find "$HOME"/.background/1440 | shuf -n1)"
 
 # background services
 /usr/libexec/polkit-gnome-authentication-agent-1 &
 
 # desktop services
 sxhkd &
-bspwmmon screen &
 clipster -f "$HOME"/.config/clipster/clipster-soc.ini -d &
 
 # window manager
+bspwmmon screen &
 bspwm
 while [ $? -eq 128 ]; do
+	bspwmmon screen &
 	bspwm
 done

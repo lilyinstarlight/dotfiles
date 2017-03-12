@@ -14,8 +14,8 @@ super + q
 super + e
 	bspc wm -d > /tmp/bspwm_"$XDG_VTNR"-state; \
 	bspc quit 128; \
-	bspc wm -o; \
 	bspc wm -l /tmp/bspwm_"$XDG_VTNR"-state; \
+	bspc wm -o; \
 	rm /tmp/bspwm_"$XDG_VTNR"-state
 
 ## adopt orphans
