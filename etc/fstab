@@ -11,10 +11,14 @@
 # See the manpage fstab(5) for more information.
 #
 
-# <fs>                                         <mountpoint>    <type>          <opts>                                          <dump/pass>
-PARTUUID=f1c9c95f-5b91-4f4e-90b0-bbbdb908fed6  /               btrfs           noatime,discard,space_cache,subvol=root         0 0
-PARTUUID=90266c67-3af3-4992-bfdf-40e5ce54ee17  /boot           vfat            noatime,discard                                 0 2
-PARTUUID=f1c9c95f-5b91-4f4e-90b0-bbbdb908fed6  /home           btrfs           noatime,discard,space_cache,subvol=home         0 0
-PARTUUID=f1c9c95f-5b91-4f4e-90b0-bbbdb908fed6  /var            btrfs           noatime,discard,space_cache,subvol=var          0 0
-/dev/mapper/crypt                              /mnt/crypt      btrfs           noatime,space_cache,noauto                      0 0
-/dev/mapper/swap                               none            swap            defaults                                        0 0
+# <fs>                                         <mountpoint>    <type>          <opts>                                   <dump/pass>
+PARTUUID=f1c9c95f-5b91-4f4e-90b0-bbbdb908fed6  /               btrfs           noatime,discard,space_cache,subvol=root  0 0
+PARTUUID=90266c67-3af3-4992-bfdf-40e5ce54ee17  /boot           vfat            noatime,discard                          0 2
+PARTUUID=f1c9c95f-5b91-4f4e-90b0-bbbdb908fed6  /home           btrfs           noatime,discard,space_cache,subvol=home  0 0
+PARTUUID=f1c9c95f-5b91-4f4e-90b0-bbbdb908fed6  /var            btrfs           noatime,discard,space_cache,subvol=var   0 0
+
+/dev/mapper/crypt                              /mnt/crypt      btrfs           noatime,space_cache,noauto               0 0
+/dev/mapper/swap                               none            swap            defaults                                 0 0
+
+https://cloud.fooster.io/remote.php/webdav/    /mnt/cloud      davfs           user,rw,noauto                           0 0
+LABEL=FoosterVM                                /mnt/vm         btrfs           noatime,space_cache,noauto               0 0
