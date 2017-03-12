@@ -42,8 +42,6 @@ app-text/pandoc
 app-text/texlive
 app-vim/gentoo-syntax
 dev-db/sqlmap
-dev-embedded/energia-bin
-dev-embedded/teensyduino-bin
 dev-games/aseprite
 dev-java/gradle-bin
 dev-java/maven-bin
@@ -72,7 +70,6 @@ dev-texlive/texlive-latexextra
 dev-texlive/texlive-latexrecommended
 dev-texlive/texlive-mathscience
 dev-texlive/texlive-xetex
-dev-util/android-sdk-update-manager
 dev-util/ccache
 dev-util/cloc
 dev-util/dialog
@@ -133,6 +130,7 @@ media-sound/pms
 media-sound/pulseaudio
 media-sound/qjackctl
 media-sound/qsynth
+media-tv/plex-media-player
 media-video/ffmpeg
 media-video/mpv
 media-video/openshot
@@ -150,6 +148,7 @@ net-dns/avahi
 net-dns/bind-tools
 net-firewall/firewalld
 net-fs/cifs-utils
+net-fs/davfs2
 net-im/discord
 net-im/hangups
 net-im/qtox
