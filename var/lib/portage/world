@@ -21,6 +21,7 @@ app-laptop/tlp
 app-misc/asciinema
 app-misc/cmatrix
 app-misc/figlet
+app-misc/neofetch
 app-misc/physlock
 app-misc/teleconsole-bin
 app-misc/tmux
