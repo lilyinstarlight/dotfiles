@@ -14,9 +14,9 @@ sxhkd &
 clipster -f "$HOME"/.config/clipster/clipster-soc.ini -d &
 
 # window manager
-bspwmmon screen &
+bspwmmon VNC-0 &
 bspwm
 while [ $? -eq 128 ]; do
-	bspwmmon screen &
+	bspwmmon VNC-0 &
 	bspwm
 done
