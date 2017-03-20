@@ -1,7 +1,6 @@
 #!/bin/sh
 # OpenGL
 pkexec /usr/bin/eselect opengl set 1
-pkexec /usr/bin/eselect opencl set 3
 
 # X properties
 xrdb -merge ~/.Xresources
@@ -23,4 +22,3 @@ steam -bigpicture
 
 # OpenGL
 pkexec /usr/bin/eselect opengl set 2
-pkexec /usr/bin/eselect opencl set 2
