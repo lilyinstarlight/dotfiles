@@ -1,2 +1,2 @@
 #!/bin/sh
-pkexec sh -c "modprobe btusb && rfkill unblock bluetooth && systemctl start bluetooth && hciconfig hci0 up"
+pkexec /sbin/modprobe btusb && pkexec /usr/sbin/rfkill unblock bluetooth && systemctl start bluetooth

@@ -1,2 +1,4 @@
 #!/bin/sh
-pkexec sh -c "hciconfig hci0 down; systemctl stop bluetooth; rfkill block bluetooth; modprobe -r btusb bnep ecb hidp cmac"
+systemctl stop bluetooth
+pkexec /usr/sbin/rfkill block bluetooth
+pkexec /sbin/modprobe -r btusb bnep hidp cmac
