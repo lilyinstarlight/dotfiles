@@ -95,3 +95,6 @@ root ALL=(ALL) ALL
 ## Read drop-in files from /etc/sudoers.d
 ## (the '#' here does not indicate a comment)
 #includedir /etc/sudoers.d
+
+## Use a global timestamp per user
+Defaults !tty_tickets
