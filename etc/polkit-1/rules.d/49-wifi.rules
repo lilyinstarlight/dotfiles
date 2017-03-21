@@ -1,0 +1,5 @@
+polkit.addRule(function(action, subject) {
+    if (((action.id == "org.freedesktop.policykit.exec") && ((action.lookup("command_line") == "/usr/sbin/rfkill unblock wifi") || (action.lookup("command_line") == "/usr/sbin/rfkill block wifi"))) && subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+    }
+});

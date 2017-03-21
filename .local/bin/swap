@@ -4,3 +4,5 @@ tmp="$(mktemp -u)"
 cp -a "$1" "$tmp"
 cp -a "$2" "$1"
 cp -a "$tmp" "$2"
+
+rm "$tmp"
