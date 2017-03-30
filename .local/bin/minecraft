@@ -1,0 +1,2 @@
+#!/bin/sh
+exec java -jar "$HOME"/.minecraft/Minecraft.jar

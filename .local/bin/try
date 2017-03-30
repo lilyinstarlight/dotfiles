@@ -1,0 +1,4 @@
+#!/bin/sh
+while not "$@"; do
+	sleep 1
+done
