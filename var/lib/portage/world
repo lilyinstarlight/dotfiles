@@ -19,6 +19,7 @@ app-emulation/virtio-win
 app-eselect/eselect-vi
 app-laptop/tlp
 app-misc/asciinema
+app-misc/binwalk
 app-misc/cmatrix
 app-misc/figlet
 app-misc/neofetch
@@ -114,6 +115,7 @@ media-libs/vulkan-loader
 media-plugins/calf
 media-plugins/gimp-lqr
 media-plugins/gst-plugins-meta
+media-plugins/gxplugins-lv2
 media-plugins/midifilter-lv2
 media-sound/alsa-utils
 media-sound/amsynth
@@ -122,6 +124,7 @@ media-sound/audacity
 media-sound/beets
 media-sound/fluid-soundfont
 media-sound/lilypond
+media-sound/lingot
 media-sound/live-sequencer
 media-sound/mpc
 media-sound/mpd
@@ -138,8 +141,8 @@ media-video/openshot
 media-video/pitivi
 net-analyzer/bettercap
 net-analyzer/bmon
-net-analyzer/ettercap
 net-analyzer/metasploit
+net-analyzer/nettop
 net-analyzer/nikto
 net-analyzer/nmap
 net-analyzer/tcpdump
@@ -159,16 +162,14 @@ net-irc/irssi
 net-mail/syncmaildir
 net-misc/aria2
 net-misc/bridge-utils
-net-misc/chrome-remote-desktop
 net-misc/dhcpcd
 net-misc/freerdp
 net-misc/geoipupdate
 net-misc/httpie
 net-misc/iperf
-net-misc/openconnect
-net-misc/openvpn
 net-misc/proxychains
 net-misc/socat
+net-misc/tigervnc
 net-misc/whois
 net-misc/youtube-dl
 net-p2p/deluge
@@ -178,6 +179,8 @@ net-print/foomatic-db-ppds
 net-print/hplip
 net-proxy/mitmproxy
 net-proxy/sshuttle
+net-vpn/openconnect
+net-vpn/openvpn
 net-wireless/bluez
 net-wireless/create_ap
 net-wireless/iw
@@ -247,6 +250,7 @@ x11-misc/barline
 x11-misc/clipster
 x11-misc/dunst
 x11-misc/lemonbar
+x11-misc/obconf
 x11-misc/rofi
 x11-misc/sxhkd
 x11-misc/urxvt-font-size

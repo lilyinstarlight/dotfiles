@@ -1,0 +1,32 @@
+From 24ac70c94391548487103f8832cb4d93eeed68e6 Mon Sep 17 00:00:00 2001
+From: Marta Lofstedt <marta.lofstedt@intel.com>
+Date: Fri, 9 Dec 2016 10:27:09 +0200
+Subject: i915: remove backlight initialization
+
+The backlight initialization value is set by drm backlight.
+
+Signed-off-by: Marta Lofstedt <marta.lofstedt@intel.com>
+
+diff --git a/drivers/gpu/drm/i915/intel_panel.c b/drivers/gpu/drm/i915/intel_panel.c
+index 02c08ab..a859c24 100644
+--- a/drivers/gpu/drm/i915/intel_panel.c
++++ b/drivers/gpu/drm/i915/intel_panel.c
+@@ -1100,15 +1100,6 @@ void intel_panel_enable_backlight(struct intel_connector *connector)
+ 
+ 	WARN_ON(panel->backlight.max == 0);
+ 
+-	if (panel->backlight.level <= panel->backlight.min) {
+-		panel->backlight.level = panel->backlight.max;
+-		if (panel->backlight.device)
+-			panel->backlight.device->props.brightness =
+-				scale_hw_to_user(connector,
+-						 panel->backlight.level,
+-						 panel->backlight.device->props.max_brightness);
+-	}
+-
+ 	panel->backlight.enable(connector);
+ 	panel->backlight.enabled = true;
+ 	if (panel->backlight.device)
+-- 
+cgit v0.10.2
+

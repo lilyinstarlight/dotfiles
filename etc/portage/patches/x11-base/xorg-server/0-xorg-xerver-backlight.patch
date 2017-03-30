@@ -1,0 +1,116 @@
+From 9de4b962a1bc718be949f2df2a1643f7597f79ab Mon Sep 17 00:00:00 2001
+From: Marta Lofstedt <marta.lofstedt@intel.com>
+Date: Wed, 9 Nov 2016 09:39:35 +0200
+Subject: modesetting: implement the backlight atom with the drm backlight
+ property
+
+With the drm backlight property, backlight interaction will
+work automatically if applications use an "BRIGHTNESS" atom.
+For backward compatibility, this patch maps the drm backlight property
+values to the "Backlight" atom, allowing existing applications
+to use the backlight.
+
+Bugzilla: https://bugs.freedesktop.org/show_bug.cgi?id=96572
+
+Signed-off-by: Marta Lofstedt <marta.lofstedt@intel.com>
+
+diff --git a/hw/xfree86/drivers/modesetting/drmmode_display.c b/hw/xfree86/drivers/modesetting/drmmode_display.c
+index 6e755e9..41fc680 100644
+--- a/hw/xfree86/drivers/modesetting/drmmode_display.c
++++ b/hw/xfree86/drivers/modesetting/drmmode_display.c
+@@ -54,6 +54,10 @@ static Bool drmmode_xf86crtc_resize(ScrnInfoPtr scrn, int width, int height);
+ static PixmapPtr drmmode_create_pixmap_header(ScreenPtr pScreen, int width, int height,
+                                               int depth, int bitsPerPixel, int devKind,
+                                               void *pPixData);
++
++#define BACKLIGHT_NAME             "Backlight"
++static Atom backlight_atom;
++
+ static Bool
+ drmmode_zaphod_string_matches(ScrnInfoPtr scrn, const char *s, char *output_name)
+ {
+@@ -1493,6 +1497,22 @@ drmmode_output_create_resources(xf86OutputPtr output)
+                 xf86DrvMsg(output->scrn->scrnIndex, X_ERROR,
+                            "RRChangeOutputProperty error, %d\n", err);
+             }
++            /* associate the backlight atom with the BRIGHTNESS property */
++            if (!strcmp(drmmode_prop->name, "BRIGHTNESS")) {
++                backlight_atom = MakeAtom(BACKLIGHT_NAME, strlen(BACKLIGHT_NAME), TRUE);
++                err = RRConfigureOutputProperty(output->randr_output, backlight_atom, FALSE,
++                                                TRUE, FALSE, 2, prop_range);
++                if (err != 0)
++                    xf86DrvMsg(output->scrn->scrnIndex, X_WARNING,
++                               "RRConfigureOutputProperty error, %d\n", err);
++
++                err = RRChangeOutputProperty(output->randr_output, backlight_atom, XA_INTEGER,
++                                             32, PropModeReplace, 1, &value,
++                                             FALSE, FALSE);
++                if (err != 0)
++                    xf86DrvMsg(output->scrn->scrnIndex, X_WARNING,
++                               "RRConfigureOutputProperty error, %d\n", err);
++            }
+         }
+         else if (drmmode_prop->flags & DRM_MODE_PROP_ENUM) {
+             p->num_atoms = drmmode_prop->count_enums + 1;
+@@ -1542,6 +1562,20 @@ drmmode_output_set_property(xf86OutputPtr output, Atom property,
+     for (i = 0; i < drmmode_output->num_props; i++) {
+         drmmode_prop_ptr p = &drmmode_output->props[i];
+ 
++        if (property == backlight_atom &&
++            !strcmp(p->mode_prop->name, "BRIGHTNESS")) {
++            uint32_t val;
++
++            if (value->type != XA_INTEGER || value->format != 32 ||
++                value->size != 1)
++	        return FALSE;
++
++            val = *(uint32_t *) value->data;
++	    drmModeConnectorSetProperty(drmmode->fd, drmmode_output->output_id,
++					p->mode_prop->prop_id, (uint64_t) val);
++            return TRUE;
++        }
++
+         if (p->atoms[0] != property)
+             continue;
+ 
+@@ -1587,6 +1621,37 @@ drmmode_output_set_property(xf86OutputPtr output, Atom property,
+ static Bool
+ drmmode_output_get_property(xf86OutputPtr output, Atom property)
+ {
++    if (property == backlight_atom ) {
++        drmmode_output_private_ptr drmmode_output = output->driver_private;
++        drmModeConnectorPtr koutput = drmmode_output->mode_output;
++        drmmode_ptr drmmode = drmmode_output->drmmode;
++        int err, i;
++
++        for (i = 0; i < koutput->count_props; i++) {
++            uint32_t id = koutput-> connector_id;
++            drmModePropertyPtr prop = drmModeGetProperty(drmmode->fd, koutput->props[i]);
++            drmModeObjectPropertiesPtr props = drmModeObjectGetProperties(drmmode->fd, id, DRM_MODE_OBJECT_CONNECTOR);
++
++            if (!prop)
++                continue;
++            if (!strcmp(prop->name, "BRIGHTNESS"))
++                {
++                    INT32 value = props->prop_values[i];
++                    err = RRChangeOutputProperty(output->randr_output, property,
++                                                 XA_INTEGER, 32, PropModeReplace, 1, &value,
++                                                 FALSE, FALSE);
++                    drmModeFreeProperty(prop);
++                    if (err != 0) {
++                        xf86DrvMsg(output->scrn->scrnIndex, X_ERROR,
++                                   "RRChangeOutputProperty error, %d\n", err);
++                        return FALSE;
++                    }
++                    return TRUE;
++                }
++            drmModeFreeProperty(prop);
++        }
++        return FALSE;
++    }
+     return TRUE;
+ }
+ 
+-- 
+cgit v0.10.2
+

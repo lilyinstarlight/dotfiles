@@ -1,0 +1,90 @@
+From 851e33e5687986e9def164f619b1c8fbc70e6b12 Mon Sep 17 00:00:00 2001
+From: Marta Lofstedt <marta.lofstedt@intel.com>
+Date: Tue, 13 Dec 2016 15:50:31 +0200
+Subject: drm: handle dpms for drm backlight
+
+When entering into dpms mode the brightness value will be set
+to 0. While coming out off dpms mode, the cached value from
+the brightness property will be used to re-store the original
+brightness value.
+
+Signed-off-by: Marta Lofstedt <marta.lofstedt@intel.com>
+
+diff --git a/drivers/gpu/drm/drm_connector.c b/drivers/gpu/drm/drm_connector.c
+index f94be9a..9ff394d 100644
+--- a/drivers/gpu/drm/drm_connector.c
++++ b/drivers/gpu/drm/drm_connector.c
+@@ -1105,7 +1105,7 @@ int drm_mode_connector_set_obj_prop(struct drm_mode_object *obj,
+ 	if (property == connector->dev->mode_config.dpms_property) {
+ 		ret = (*connector->funcs->dpms)(connector, (int)value);
+ 	} else if (property == config->brightness_property) {
+-		if (connector->backlight)
++		if (connector->backlight && connector->dpms == DRM_MODE_DPMS_ON)
+ 			drm_backlight_set_brightness(connector->backlight,
+ 						     value);
+ 		ret = 0;
+diff --git a/drivers/gpu/drm/drm_mode_object.c b/drivers/gpu/drm/drm_mode_object.c
+index fedeca5..5d4fbcf 100644
+--- a/drivers/gpu/drm/drm_mode_object.c
++++ b/drivers/gpu/drm/drm_mode_object.c
+@@ -23,6 +23,7 @@
+ #include <linux/export.h>
+ #include <drm/drmP.h>
+ #include <drm/drm_mode_object.h>
++#include <drm/drm_backlight.h>
+ 
+ #include "drm_crtc_internal.h"
+ 
+@@ -241,9 +242,49 @@ int drm_object_property_set_value(struct drm_mode_object *obj,
+ 				  struct drm_property *property, uint64_t val)
+ {
+ 	int i;
++	struct drm_connector *connector = obj_to_connector(obj);
++	struct drm_property *dpms_property =
++		connector->dev->mode_config.dpms_property;
++	struct drm_property *brightness_property =
++		connector->dev->mode_config.brightness_property;
+ 
+ 	for (i = 0; i < obj->properties->count; i++) {
++		/* If properties depends on each other
++		 * this is where to resolve that issue
++		 */
+ 		if (obj->properties->properties[i] == property) {
++			if (property == dpms_property) {
++				/* When DPMS goes from ON -> OFF,
++				 * set the brightness to the minimum possible
++				 * to save power.
++				 */
++				if (obj->properties->values[i] !=
++				    DRM_MODE_DPMS_OFF &&
++				    val == DRM_MODE_DPMS_OFF)
++					drm_backlight_set_brightness(
++						connector->backlight, 0);
++				/* When DPMS OFF -> ON, reset the brightness
++				 * to the original level
++				 */
++				else if (obj->properties->values[i] ==
++					 DRM_MODE_DPMS_OFF &&
++					 val != DRM_MODE_DPMS_OFF) {
++					uint64_t value;
++
++					_drm_object_property_get_value(
++						obj, brightness_property,
++						&value, false);
++					drm_backlight_set_brightness(
++						connector->backlight, value);
++				}
++			} else if (property == brightness_property) {
++				/* only allow setting the brightness property
++				 * value, when dpms mode is on.
++				 */
++				if (connector->dpms == DRM_MODE_DPMS_ON)
++					obj->properties->values[i] = val;
++				return 0;
++			}
+ 			obj->properties->values[i] = val;
+ 			return 0;
+ 		}
+-- 
+cgit v0.10.2
+

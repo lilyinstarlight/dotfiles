@@ -1,0 +1,44 @@
+From 1b60f6367b4b22a73064fcbee8ac2e946653424e Mon Sep 17 00:00:00 2001
+From: David Herrmann <dh.herrmann at gmail.com>
+Date: Wed, 10 Sep 2014 08:54:20 -0700
+Subject: backlight: use static initializers
+
+Use static initializers instead of setting up global variables during
+runtime. This reduces code size and execution time.
+
+V2: Marta Lofstedt <marta.lofstedt@intel.com>
+- rebase
+
+Signed-off-by: David Herrmann <dh.herrmann@gmail.com>
+Signed-off-by: Marta Lofstedt <marta.lofstedt@intel.com>
+
+diff --git a/drivers/video/backlight/backlight.c b/drivers/video/backlight/backlight.c
+index 288318a..37f6173 100644
+--- a/drivers/video/backlight/backlight.c
++++ b/drivers/video/backlight/backlight.c
+@@ -21,9 +21,9 @@
+ #include <asm/backlight.h>
+ #endif
+ 
+-static struct list_head backlight_dev_list;
+-static struct mutex backlight_dev_list_mutex;
+-static struct blocking_notifier_head backlight_notifier;
++static LIST_HEAD(backlight_dev_list);
++static DEFINE_MUTEX(backlight_dev_list_mutex);
++static BLOCKING_NOTIFIER_HEAD(backlight_notifier);
+ 
+ static const char *const backlight_types[] = {
+ 	[BACKLIGHT_RAW] = "raw",
+@@ -591,9 +591,6 @@ static int __init backlight_class_init(void)
+ 
+ 	backlight_class->dev_groups = bl_device_groups;
+ 	backlight_class->pm = &backlight_class_dev_pm_ops;
+-	INIT_LIST_HEAD(&backlight_dev_list);
+-	mutex_init(&backlight_dev_list_mutex);
+-	BLOCKING_INIT_NOTIFIER_HEAD(&backlight_notifier);
+ 
+ 	return 0;
+ }
+-- 
+cgit v0.10.2
+
