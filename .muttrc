@@ -11,15 +11,21 @@ set from="Foster McLane <fkmclane@fkmclane.net>"
 set sort=threads
 set sort_aux=last-date-received
 set folder=~/.mail
+set move=yes
 
 set use_envelope_from
 
 # folders
 set spoolfile=~/.mail/inbox/
+set mbox=~/.mail/archive/
 set record=~/.mail/sent/
+set postponed=~/.mail/draft/
 
 # subscriptions
-subscribe gentoo-announce@lists.gentoo.org
+subscribe '^gentoo-(announce|user|dev|devhelp|security|mirrors)@lists\.gentoo\.org$'
+
+# alternates
+alternates '^fkmclane@gmail\.com$'
 
 # encryption
 source ~/.gpg.rc
