@@ -2,7 +2,7 @@
 Description=update Linode DNS IP address
 
 [Timer]
-OnCalendar=hourly
+OnCalendar=*:00/5
 
 [Install]
 WantedBy=timers.target
