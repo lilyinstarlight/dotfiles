@@ -203,6 +203,10 @@ super + Return
 super + apostrophe
 	rofi -show window
 
+## start rofi pass
+super + backslash
+	rofi-pass
+
 ## lock all ttys
 super + space
 	physlock
