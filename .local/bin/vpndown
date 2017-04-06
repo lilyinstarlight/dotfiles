@@ -1,2 +1,2 @@
 #!/bin/sh
-systemctl stop openvpn-client@airvpn
+systemctl stop openvpn-client@airvpn; pkexec /sbin/modprobe -r tun

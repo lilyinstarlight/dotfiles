@@ -1,2 +1,2 @@
 #!/bin/sh
-systemctl start openvpn-client@airvpn
+pkexec /sbin/modprobe tun && systemctl start openvpn-client@airvpn

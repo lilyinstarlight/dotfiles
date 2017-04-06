@@ -14,3 +14,12 @@ systemd-ask-password-wall.service    loaded failed failed Forward Password Reque
 Failed to obtain handles for "Service Changed" characteristic
 Failed to set privacy: Rejected (0x0b)
 hid-generic 0005:099A:0500.0003: unknown main item tag 0x0
+mce: \[Hardware Error\]: CPU 0: Machine Check: 0 Bank 5: ae000000004011
+mce: \[Hardware Error\]: TSC 0 ADDR ffa81e80 MISC 38a0000086
+mce: \[Hardware Error\]: CPU 0: Machine Check: 0 Bank 6: ae000000004011
+mce: \[Hardware Error\]: TSC 0 ADDR ffa81cc0 MISC 38a0000086
+mce: \[Hardware Error\]: CPU 0: Machine Check: 0 Bank 7: ae000000004011
+mce: \[Hardware Error\]: TSC 0 ADDR ffa81e00 MISC b8a0000086
+mce: \[Hardware Error\]: CPU 0: Machine Check: 0 Bank 8: ae000000004011
+mce: \[Hardware Error\]: TSC 0 ADDR ffa81e40 MISC 38a0000086
+mce: \[Hardware Error\]: PROCESSOR 0:306c3 TIME [[:digit:]]* SOCKET 0 API
