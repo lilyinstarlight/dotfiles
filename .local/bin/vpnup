@@ -1,2 +1,2 @@
 #!/bin/sh
-[ -e /mnt/crypt/foster ] && pass sso/clemson | pkexec /usr/sbin/openconnect -qbu fmclane https://cuvpn.clemson.edu/ || zenity --error --text="Crypt not mounted."
+systemctl start openvpn-client@airvpn

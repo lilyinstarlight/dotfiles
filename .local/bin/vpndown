@@ -1,2 +1,2 @@
 #!/bin/sh
-pkexec killall openconnect
+systemctl stop openvpn-client@airvpn
