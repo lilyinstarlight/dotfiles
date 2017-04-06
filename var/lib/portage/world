@@ -15,6 +15,7 @@ app-editors/neovim
 app-emulation/docker
 app-emulation/libvirt
 app-emulation/virt-manager
+app-emulation/virt-viewer
 app-emulation/virtio-win
 app-eselect/eselect-vi
 app-laptop/tlp
@@ -22,9 +23,9 @@ app-misc/asciinema
 app-misc/binwalk
 app-misc/cmatrix
 app-misc/figlet
+app-misc/gotty-bin
 app-misc/neofetch
 app-misc/physlock
-app-misc/teleconsole-bin
 app-misc/tmux
 app-misc/tty-clock
 app-misc/utimer
@@ -45,6 +46,7 @@ app-text/texlive
 app-vim/gentoo-syntax
 dev-db/sqlmap
 dev-games/aseprite
+dev-games/mcedit
 dev-java/gradle-bin
 dev-java/maven-bin
 dev-lang/crystal
@@ -187,6 +189,7 @@ net-wireless/iw
 net-wireless/rfkill
 net-wireless/wpa_supplicant
 sci-electronics/eagle
+sci-electronics/freeroute
 sci-electronics/kicad
 sys-apps/gptfdisk
 sys-apps/lm_sensors
@@ -264,3 +267,4 @@ x11-themes/arc-openbox-theme
 x11-themes/arc-theme
 x11-wm/bspwm
 x11-wm/openbox
+x11-wm/xpra
