@@ -94,13 +94,13 @@
 [urgency_low]
     background = "#121212"
     foreground = "#a9a9a9"
-    timeout = 10
+    timeout = 0
     #icon = /path/to/icon
 
 [urgency_normal]
     background = "#121212"
     foreground = "#a9a9a9"
-    timeout = 10
+    timeout = 0
     #icon = /path/to/icon
 
 [urgency_critical]
