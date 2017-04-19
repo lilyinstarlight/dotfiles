@@ -22,3 +22,4 @@ PARTUUID=f1c9c95f-5b91-4f4e-90b0-bbbdb908fed6  /var            btrfs           n
 
 https://cloud.fooster.io/remote.php/webdav/    /mnt/cloud      davfs           user,rw,noauto                           0 0
 LABEL=FoosterVM                                /mnt/vm         btrfs           noatime,space_cache,noauto               0 0
+LABEL=FoosterIMG                               /mnt/img        exfat           noauto                                   0 0
