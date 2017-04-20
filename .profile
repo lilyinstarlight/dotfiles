@@ -15,3 +15,6 @@ export LESS_TERMCAP_us=$'\e[01;32m'
 
 # fix java issues
 export _JAVA_AWT_WM_NONREPARENTING=1
+
+# fix fish<->tmux issues
+export VTE_VERSION=04601

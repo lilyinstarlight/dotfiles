@@ -67,3 +67,12 @@
 [submodule ".config/nvim/plugged/vimwiki"]
 	path = .config/nvim/plugged/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
+[submodule ".tmux/plugins/tpm"]
+	path = .tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm.git
+[submodule ".tmux/plugins/tmux-sensible"]
+	path = .tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible.git
+[submodule ".tmux/plugins/tmux-logging"]
+	path = .tmux/plugins/tmux-logging
+	url = https://github.com/tmux-plugins/tmux-logging.git
