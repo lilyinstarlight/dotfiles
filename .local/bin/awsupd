@@ -1,5 +1,5 @@
 #!/bin/sh
-access="$(pass api/aws/cloud/access)"
-secret="$(pass api/aws/cloud/secret)"
-s3put -a "$access" -s "'$secret'" -b fkmclane -p "$HOME" "$HOME"/data
-s3put -a "$access" -s "'$secret'" -b fkmclane -p "$HOME" "$HOME"/music
+export AWS_ACCESS_KEY_ID="$(pass api/aws/cloud/access)"
+export AWS_SECRET_ACCESS_KEY="$(pass api/aws/cloud/secret)"
+s3put -b fkmclane -p "$HOME" "$HOME"/data
+s3put -b fkmclane -p "$HOME" "$HOME"/music
