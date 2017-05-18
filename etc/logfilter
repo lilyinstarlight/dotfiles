@@ -17,3 +17,4 @@ hid-generic 0005:099A:0500.0003: unknown main item tag 0x0
 mce: \[Hardware Error\]: CPU 0: Machine Check: 0 Bank [[:digit:]]*: [[:xdigit:]]*
 mce: \[Hardware Error\]: TSC 0 ADDR [[:xdigit:]]* MISC [[:xdigit:]]*
 mce: \[Hardware Error\]: PROCESSOR [[:xdigit:]]*:[[:xdigit:]]* TIME [[:digit:]]* SOCKET 0 API
+kernel: hid-generic [[:xdigit:]:]*: unknown main item tag 0x0
