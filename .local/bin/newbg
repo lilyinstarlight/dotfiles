@@ -1,0 +1,2 @@
+#!/bin/sh
+exec display -window root "$(find "$HOME"/.background/"$(xrandr | head -n1 | grep -o '[[:digit:]]* x [[:digit:]]*' | sed '2q;d' | cut -dx -f2 | tr -d ' ')" | shuf -n1)"
