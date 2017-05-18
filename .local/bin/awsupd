@@ -1,3 +1,5 @@
 #!/bin/sh
-s3put -a AKIAJ3RLUPUQ7MK44I5A -s 'mvoscA+SlRP//i/hh8hRV9fum3MjHsroxF1r+yt7' -b fkmclane -p "$HOME" "$HOME"/data
-s3put -a AKIAJ3RLUPUQ7MK44I5A -s 'mvoscA+SlRP//i/hh8hRV9fum3MjHsroxF1r+yt7' -b fkmclane -p "$HOME" "$HOME"/music
+access="$(pass api/aws/cloud/access)"
+secret="$(pass api/aws/cloud/secret)"
+s3put -a "$access" -s "'$secret'" -b fkmclane -p "$HOME" "$HOME"/data
+s3put -a "$access" -s "'$secret'" -b fkmclane -p "$HOME" "$HOME"/music
