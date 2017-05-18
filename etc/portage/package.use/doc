@@ -1,5 +1,6 @@
 dev-java/rxtx -doc
 dev-lang/ghc -doc
+dev-python/backports-functools-lru-cache -doc
 dev-python/cython -doc
 dev-python/django -doc
 dev-python/hpack -doc
@@ -11,6 +12,7 @@ dev-ruby/em-proxy -doc
 dev-ruby/metasploit-concern -doc
 dev-ruby/metasploit-model -doc
 dev-ruby/metasploit_data_models -doc
+dev-ruby/pg -doc
 dev-ruby/rubydns -doc
 dev-ruby/sqlite3 -doc
 media-libs/aubio -doc

@@ -481,10 +481,10 @@ diff --git a/drivers/gpu/drm/drm_connector.c b/drivers/gpu/drm/drm_connector.c
 index 799edd0..f94be9a 100644
 --- a/drivers/gpu/drm/drm_connector.c
 +++ b/drivers/gpu/drm/drm_connector.c
-@@ -23,6 +23,7 @@
- #include <drm/drmP.h>
+@@ -24,6 +24,7 @@
  #include <drm/drm_connector.h>
  #include <drm/drm_edid.h>
+ #include <drm/drm_encoder.h>
 +#include <drm/drm_backlight.h>
  
  #include "drm_crtc_internal.h"
