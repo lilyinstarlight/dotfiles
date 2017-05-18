@@ -2,7 +2,8 @@
 export EDITOR="vi"
 export BROWSER="qutebrowser"
 export EMAIL="fkmclane@fkmclane.net"
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.local/go/bin:$PATH"
+export GOPATH="$HOME/.local/go"
 
 # man page highlighting
 export LESS_TERMCAP_mb=$'\e[01;31m'
@@ -16,5 +17,5 @@ export LESS_TERMCAP_us=$'\e[01;32m'
 # fix java issues
 export _JAVA_AWT_WM_NONREPARENTING=1
 
-# fix fish<->tmux issues
-export VTE_VERSION=04601
+# arduino
+export ARDUINODIR=/opt/arduino-bin
