@@ -1,6 +1,6 @@
 ! URxvt
-URxvt.font: xft:terminus:size=10.5
-URxvt.boldFont: xft:terminus:size=10.5
+URxvt.font: xft:xos4 terminus:size=10.5
+URxvt.boldFont: xft:xos4 terminus:size=10.5
 URxvt.scrollBar: false
 URxvt.scrollTtyOutput: false
 URxvt.scrollWithBuffer: true
@@ -11,7 +11,7 @@ URxvt.keysym.C-equal: perl:font-size:increase
 URxvt.keysym.C-minus: perl:font-size:decrease
 
 ! rofi
-rofi.font: terminus 10.5
+rofi.font: xos4 terminus 10.5
 !                  bg       border
 rofi.color-window: #121212, #535551
 !                  bg       fg       bgalt    hlbg     hlfg
