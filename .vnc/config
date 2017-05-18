@@ -1,4 +1,6 @@
-securitytypes=tlsvnc
+securitytypes=x509auth
+x509cert=/home/foster/.ssl/flynn.fkmclane.net.chain.cert.pem
+x509key=/home/foster/.ssl/flynn.fkmclane.net.key.pem
 desktop=soc
-geometry=1440x2560
+geometry=2560x1440
 dpi=96
