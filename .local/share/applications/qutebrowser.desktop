@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Qutebrowser
+Comment=Qutebrowser is a keyboard-focused browser with a minimal GUI
+Exec=qutebrowser --backend webengine
+Icon=qutebrowser
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml_xml;image/webp;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;
