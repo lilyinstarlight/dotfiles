@@ -1,4 +1,4 @@
 #!/bin/sh
 systemctl stop bluetooth
 pkexec /usr/sbin/rfkill block bluetooth
-pkexec /sbin/modprobe -r btusb bnep hidp cmac
+pkexec /sbin/modprobe -r btusb bnep hidp
