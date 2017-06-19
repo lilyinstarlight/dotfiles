@@ -1,7 +1,7 @@
 dev-qt/qtcore icu
 dev-qt/qtwebchannel qml
 dev-qt/qtwebengine widgets
-dev-qt/qtwebkit multimedia opengl printsupport
+dev-qt/qtwebkit opengl printsupport
 dev-qt/qtwebkit:4 -exceptions
 dev-qt/qtmultimedia gstreamer widgets -gles2
 dev-qt/qtgui -gles2

@@ -2,6 +2,7 @@ app-admin/apache-tools
 app-admin/eclean-kernel
 app-admin/linode-cli
 app-admin/pass
+app-admin/pass-otp
 app-admin/sudo
 app-arch/p7zip
 app-backup/btrbk
@@ -73,6 +74,7 @@ dev-python/pytest-cov
 dev-python/slixmpp
 dev-python/sphinx
 dev-python/twilio
+dev-python/vex
 dev-python/virtualenv
 dev-python/websocket-client
 dev-tex/latexmk
@@ -89,6 +91,7 @@ dev-util/radare2
 dev-util/strace
 dev-util/unity-editor
 dev-util/valgrind
+dev-vcs/bzr
 dev-vcs/git
 dev-vcs/git-lfs
 dev-vcs/mercurial
@@ -106,6 +109,8 @@ gnome-extra/zenity
 mail-client/mailx
 mail-client/mutt
 media-fonts/corefonts
+media-fonts/droid
+media-fonts/noto
 media-fonts/roboto
 media-fonts/terminus-font
 media-gfx/blender
@@ -132,6 +137,7 @@ media-sound/ardour
 media-sound/audacity
 media-sound/beets
 media-sound/fluid-soundfont
+media-sound/frescobaldi
 media-sound/lilypond
 media-sound/lingot
 media-sound/live-sequencer
@@ -145,6 +151,7 @@ media-sound/qsynth
 media-tv/plex-media-player
 media-video/ffmpeg
 media-video/mpv
+media-video/obs-studio
 media-video/openshot
 media-video/pitivi
 net-analyzer/bettercap
@@ -165,7 +172,6 @@ net-fs/davfs2
 net-im/discord
 net-im/hangups
 net-im/qtox
-net-im/skype
 net-im/slack-bin
 net-irc/irssi
 net-mail/syncmaildir
@@ -198,6 +204,7 @@ net-wireless/rfkill
 net-wireless/wpa_supplicant
 sci-electronics/eagle
 sci-electronics/freeroute
+sci-electronics/fritzing-bin
 sci-electronics/kicad
 sys-apps/flatpak
 sys-apps/gptfdisk
@@ -237,6 +244,7 @@ sys-power/acpid
 sys-power/powertop
 sys-process/htop
 sys-process/lsof
+sys-process/parallel
 sys-process/schedtool
 virtual/jdk:1.8
 www-apps/beef

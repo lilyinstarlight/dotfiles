@@ -1,0 +1,17 @@
+diff --git a/rofi-pass b/rofi-pass
+index 5e9efbe..4cea89b 100755
+--- a/rofi-pass
++++ b/rofi-pass
+@@ -287,7 +287,11 @@ Run ${default_do} with <span color='$help_color'>Enter</span>. For more help hit
+ #    password="${password_temp%%$'\n'*}"
+ #    fields="$(echo "${password_temp}" | tail -n +2)"
+ #    pass_key_value=$(echo "${fields}" | awk '$1 ~ /:$/{$1=$1;print}')
+-    mapfile -t password_temp < <(PASSWORD_STORE_DIR="${root}" pass "$selected_password")
++    if [[ $selected_password == otp* ]]; then
++      mapfile -t password_temp < <(PASSWORD_STORE_DIR="${root}" pass otp "$selected_password")
++    else
++      mapfile -t password_temp < <(PASSWORD_STORE_DIR="${root}" pass "$selected_password")
++    fi
+     password=${password_temp[0]}
+     if [[ ${password} == "#FILE="* ]]; then
+       pass_file="${password#*=}"
