@@ -1,0 +1,2 @@
+format %{l}%{W}%{c}%{N}%{r}cpu: %{C} • temp: %{Pthermal_zone1:60} • mem: %{M} • vol: %{V} • wlan: %{Lwlp8s0} • batt: %{EBAT1} • %{D}
+poll 1
