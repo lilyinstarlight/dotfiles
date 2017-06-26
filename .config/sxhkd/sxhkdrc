@@ -209,7 +209,7 @@ super + backslash
 
 ## lock all ttys
 super + space
-	physlock
+	physlock -m
 
 ## take screenshot
 Print
