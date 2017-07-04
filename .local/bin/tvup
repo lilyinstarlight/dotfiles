@@ -8,7 +8,7 @@ else
 fi
 
 synclient TouchPadOff=1
-xrandr --output $TV --mode 1920x1080 --pos 0x0 --rotate normal --output $DSP --off
+xrandr --output $TV --primary --mode 1920x1080 --pos 0x0 --rotate normal --output $DSP --off
 
 if [ "$XDG_SESSION_DESKTOP" == bspwm ]; then
 	bspc monitor $DSP -r

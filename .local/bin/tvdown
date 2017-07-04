@@ -7,7 +7,7 @@ else
 	TV=HDMI-1
 fi
 
-xrandr --output $TV --off --output $DSP --mode 1920x1080 --pos 0x0 --rotate normal
+xrandr --output $TV --off --output $DSP --primary --mode 1920x1080 --pos 0x0 --rotate normal
 synclient TouchPadOff=0
 
 if [ "$XDG_SESSION_DESKTOP" == bspwm ]; then
