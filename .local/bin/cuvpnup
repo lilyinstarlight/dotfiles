@@ -4,4 +4,4 @@ if [ ! -e /mnt/crypt/foster ]; then
 	exit 1
 fi
 
-exec echo -e "$(pass sso/clemson)\npush" | pkexec /usr/sbin/openconnect -qbu fmclane https://cuvpn.clemson.edu/
+exec echo -e "$(pass sso/clemson)\npush" | pkexec sh -c "rm /etc/resolv.conf && /usr/sbin/openconnect -qbu fmclane https://cuvpn.clemson.edu/"
