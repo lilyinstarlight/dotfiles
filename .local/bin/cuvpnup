@@ -1,6 +1,7 @@
 #!/bin/sh
-if [!  -e /mnt/crypt/foster ]; then
+if [ ! -e /mnt/crypt/foster ]; then
 	zenity --error --text="Crypt not mounted."
+	exit 1
 fi
 
 exec echo -e "$(pass sso/clemson)\npush" | pkexec /usr/sbin/openconnect -qbu fmclane https://cuvpn.clemson.edu/
