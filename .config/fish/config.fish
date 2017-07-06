@@ -1,6 +1,3 @@
-# remove greeting
-set --erase fish_greeting
-
 # set vi key bindings
 fish_vi_key_bindings
 
