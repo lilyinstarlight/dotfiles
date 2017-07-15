@@ -1,0 +1,13 @@
+diff --git a/Python-3.6.1/Objects/unicodectype.c b/Python-3.6.1-emoji/Objects/unicodectype.c
+index d8c95c8..47a41ab 100644
+--- a/Python-3.6.1/Objects/unicodectype.c
++++ b/Python-3.6.1-emoji/Objects/unicodectype.c
+@@ -18,7 +18,7 @@
+ #define SPACE_MASK 0x20
+ #define TITLE_MASK 0x40
+ #define UPPER_MASK 0x80
+-#define XID_START_MASK 0x100
++#define XID_START_MASK 0x500
+ #define XID_CONTINUE_MASK 0x200
+ #define PRINTABLE_MASK 0x400
+ #define NUMERIC_MASK 0x800

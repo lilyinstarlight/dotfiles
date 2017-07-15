@@ -42,6 +42,7 @@ app-portage/layman
 app-portage/repoman
 app-portage/smart-live-rebuild
 app-shells/fish
+app-shells/tcsh
 app-text/ansifilter
 app-text/dos2unix
 app-text/lesspipe
@@ -69,6 +70,7 @@ dev-python/ipython
 dev-python/markdown
 dev-python/nose
 dev-python/pillow
+dev-python/pyserial
 dev-python/pytest
 dev-python/pytest-cov
 dev-python/slixmpp
@@ -85,6 +87,7 @@ dev-texlive/texlive-xetex
 dev-util/ccache
 dev-util/cloc
 dev-util/dialog
+dev-util/ffdec
 dev-util/gource
 dev-util/ltrace
 dev-util/radare2
@@ -100,6 +103,7 @@ games-emulation/desmume
 games-emulation/dolphin
 games-emulation/higan
 games-emulation/mupen64plus
+games-misc/git-fire
 games-misc/lolcat
 games-misc/nyancat
 games-misc/pipes
@@ -197,6 +201,7 @@ net-proxy/mitmproxy
 net-proxy/sshuttle
 net-vpn/openconnect
 net-vpn/openvpn
+net-wireless/aircrack-ng
 net-wireless/bluez
 net-wireless/create_ap
 net-wireless/iw
@@ -254,6 +259,7 @@ www-client/firefox
 www-client/google-chrome
 www-client/httrack
 www-client/qutebrowser
+www-misc/weevely
 www-plugins/adobe-flash
 www-plugins/pdfjs
 www-servers/nginx
