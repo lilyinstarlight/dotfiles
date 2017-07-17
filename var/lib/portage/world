@@ -1,6 +1,7 @@
 app-admin/apache-tools
 app-admin/eclean-kernel
 app-admin/linode-cli
+app-admin/linode-cli:4
 app-admin/pass
 app-admin/pass-otp
 app-admin/sudo
@@ -41,6 +42,7 @@ app-portage/gentoolkit
 app-portage/layman
 app-portage/repoman
 app-portage/smart-live-rebuild
+app-shells/elvish
 app-shells/fish
 app-shells/tcsh
 app-text/ansifilter
@@ -69,6 +71,9 @@ dev-python/flake8
 dev-python/ipython
 dev-python/markdown
 dev-python/nose
+dev-python/numpy
+dev-python/pandas
+dev-python/pandocfilters
 dev-python/pillow
 dev-python/pyserial
 dev-python/pytest
@@ -135,6 +140,7 @@ media-plugins/gimp-lqr
 media-plugins/gst-plugins-meta
 media-plugins/gxplugins-lv2
 media-plugins/midifilter-lv2
+media-plugins/swh-lv2
 media-sound/alsa-utils
 media-sound/amsynth
 media-sound/ardour
@@ -152,6 +158,7 @@ media-sound/pavucontrol
 media-sound/pulseaudio
 media-sound/qjackctl
 media-sound/qsynth
+media-sound/vmpk
 media-tv/plex-media-player
 media-video/ffmpeg
 media-video/mpv
@@ -211,6 +218,7 @@ sci-electronics/eagle
 sci-electronics/freeroute
 sci-electronics/fritzing-bin
 sci-electronics/kicad
+sci-libs/scipy
 sys-apps/flatpak
 sys-apps/gptfdisk
 sys-apps/lm_sensors
@@ -259,6 +267,7 @@ www-client/firefox
 www-client/google-chrome
 www-client/httrack
 www-client/qutebrowser
+www-misc/Brosec
 www-misc/weevely
 www-plugins/adobe-flash
 www-plugins/pdfjs
