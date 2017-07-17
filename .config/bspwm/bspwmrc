@@ -12,4 +12,6 @@ bspc config window_gap 12
 # rules
 bspc rule -a qjackctl state=floating
 bspc rule -a qsynth state=floating
+bspc rule -a vmpk state=floating
+bspc rule -a Unity state=floating
 bspc rule -a Google-chrome:crx_gaedmjdfmmahhbjefcbgaolhhanlaolb state=floating
