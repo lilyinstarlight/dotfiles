@@ -1,4 +1,7 @@
 #!/bin/sh
+# disable power management
+pkexec /usr/sbin/tlp ac
+
 # OpenGL
 pkexec /usr/bin/eselect opengl set 1
 
@@ -22,3 +25,6 @@ steam -bigpicture
 
 # OpenGL
 pkexec /usr/bin/eselect opengl set 2
+
+# enable power management
+pkexec /usr/sbin/tlp start
