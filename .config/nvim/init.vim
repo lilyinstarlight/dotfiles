@@ -36,7 +36,6 @@ set wildmenu
 call plug#begin('$HOME/.config/nvim/plugged')
 
 Plug 'baskerville/vim-sxhkdrc'
-Plug 'dag/vim-fish'
 Plug 'fidian/hexmode'
 Plug 'fkmclane/vim-resolve'
 Plug 'glts/vim-magnum'
@@ -60,6 +59,7 @@ Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-surround'
 Plug 'triglav/vim-visual-increment'
 Plug 'vimwiki/vimwiki', {'branch': 'dev'}
+Plug 'wilriker/vim-fish'
 
 call plug#end()
 
