@@ -10,11 +10,9 @@ killproxy
 ssh -fND 1080 proxy &>/dev/null
 
 if [ -z "$1" ]; then
-	cmd="firefox --no-remote -P proxy"
+	fproxy
 else
-	cmd="$@"
+	proxychains -q "$@"
 fi
-
-proxychains -q $cmd
 
 killproxy
