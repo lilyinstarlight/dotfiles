@@ -1,0 +1,3 @@
+sys-devel/llvm clang libedit lldb xml
+sys-libs/libcxx -libunwind
+sys-libs/libcxxabi -libunwind

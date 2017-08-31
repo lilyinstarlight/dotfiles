@@ -1,0 +1,15 @@
+dev-qt/qtcore icu
+dev-qt/qtwebchannel qml
+dev-qt/qtwebengine widgets
+dev-qt/qtwebkit opengl printsupport
+dev-qt/qtwebkit:4 -exceptions
+dev-qt/qtmultimedia gstreamer widgets -gles2
+dev-qt/qtgui -gles2
+dev-qt/qtgui:4 gtkstyle
+dev-qt/qtdeclarative -gles2
+dev-qt/qtwidgets -gles2
+dev-qt/qtopengl -gles2
+dev-qt/qtprintsupport -gles2
+dev-python/PyQt5 -gles2
+dev-qt/qtgui:4 -egl
+dev-qt/qtopengl:4 -egl

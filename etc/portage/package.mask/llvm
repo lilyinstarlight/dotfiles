@@ -1,3 +1,0 @@
-sys-devel/llvm:4
-sys-devel/clang:4
->=dev-libs/libclc-0.2.0_pre20170118

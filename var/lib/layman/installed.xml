@@ -1,14 +1,36 @@
 <repositories encoding="unicode" version="1.0">
-  <repo priority="50" quality="experimental" status="official">
-    <name>qt</name>
-    <description>Official testing overlay for Qt and related packages, provided by Gentoo's Qt team. Contains ebuilds for Qt4 and Qt5 prereleases and live ebuilds, plus various (non-KDE) applications and utilities that use Qt.</description>
-    <homepage>https://github.com/gentoo/qt</homepage>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>tlp</name>
+    <description>TLP Gentoo Overlay</description>
+    <homepage>https://github.com/dywisor/tlp-portage</homepage>
     <owner>
-      <email>qt@gentoo.org</email>
-      <name>Qt Team</name>
+      <email>dywi@mailerd.de</email>
+      <name>dywisor</name>
     </owner>
-    <source type="git">https://anongit.gentoo.org/git/proj/qt.git</source>
-    <feed>https://cgit.gentoo.org/proj/qt.git/atom/</feed>
+    <source type="git">git://github.com/dywisor/tlp-portage.git</source>
+    <feed>https://github.com/dywisor/tlp-portage/commits/maint.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>mrueg</name>
+    <description>User overlay</description>
+    <homepage>https://cgit.gentoo.org/dev/mrueg.git/</homepage>
+    <owner>
+      <email>mrueg@gentoo.org</email>
+      <name>Manuel Rüger (mrueg)</name>
+    </owner>
+    <source type="git">git://anongit.gentoo.org/dev/mrueg.git</source>
+    <feed>https://cgit.gentoo.org/dev/mrueg.git/atom/</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="official">
+    <name>java</name>
+    <description>Java overlay</description>
+    <homepage>https://cgit.gentoo.org/proj/java.git/</homepage>
+    <owner>
+      <email>java@gentoo.org</email>
+      <name>Gentoo Java team</name>
+    </owner>
+    <source type="git">git://anongit.gentoo.org/proj/java.git</source>
+    <feed>https://cgit.gentoo.org/proj/java.git/atom/</feed>
   </repo>
   <repo priority="50" quality="experimental" status="unofficial">
     <name>flatpak-overlay</name>
@@ -22,24 +44,15 @@
     <feed>https://github.com/fosero/flatpak-overlay/commits/master.atom</feed>
   </repo>
   <repo priority="50" quality="experimental" status="unofficial">
-    <name>mrueg</name>
-    <description>User overlay</description>
-    <homepage>https://cgit.gentoo.org/dev/mrueg.git/</homepage>
+    <name>fkmclane</name>
+    <description>Personal overlay of fkmclane containing patched ebuilds and new ebuilds</description>
+    <homepage>https://github.com/fkmclane/overlay</homepage>
     <owner>
-      <email>mrueg@gentoo.org</email>
-      <name>Manuel Rüger (mrueg)</name>
+      <email>fkmclane@gmail.com</email>
+      <name>Foster McLane</name>
     </owner>
-    <source type="git">git://anongit.gentoo.org/dev/mrueg.git</source>
-    <feed>https://cgit.gentoo.org/dev/mrueg.git/atom/</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>pentoo</name>
-    <description>The overlay contains new or updated security tools.</description>
-    <homepage>http://www.pentoo.ch</homepage>
-    <owner>
-      <email>zerochaos@gentoo.org</email>
-    </owner>
-    <source type="git">https://github.com/pentoo/pentoo-overlay.git</source>
+    <source type="git">git://github.com/fkmclane/overlay.git</source>
+    <feed>https://github.com/fkmclane/overlay/commits/master.atom</feed>
   </repo>
   <repo priority="50" quality="experimental" status="unofficial">
     <name>Drauthius</name>
@@ -53,48 +66,13 @@
     <feed>https://cgit.gentoo.org/repo/user/Drauthius.git/atom/</feed>
   </repo>
   <repo priority="50" quality="experimental" status="unofficial">
-    <name>tlp</name>
-    <description>TLP Gentoo Overlay</description>
-    <homepage>https://github.com/dywisor/tlp-portage</homepage>
+    <name>pentoo</name>
+    <description>The overlay contains new or updated security tools.</description>
+    <homepage>http://www.pentoo.ch</homepage>
     <owner>
-      <email>dywi@mailerd.de</email>
-      <name>dywisor</name>
+      <email>zerochaos@gentoo.org</email>
     </owner>
-    <source type="git">git://github.com/dywisor/tlp-portage.git</source>
-    <feed>https://github.com/dywisor/tlp-portage/commits/maint.atom</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>fkmclane</name>
-    <description>Personal overlay of fkmclane containing patched ebuilds and new ebuilds</description>
-    <homepage>https://github.com/fkmclane/overlay</homepage>
-    <owner>
-      <email>fkmclane@gmail.com</email>
-      <name>Foster McLane</name>
-    </owner>
-    <source type="git">git://github.com/fkmclane/overlay.git</source>
-    <feed>https://github.com/fkmclane/overlay/commits/master.atom</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="unofficial">
-    <name>gamerlay</name>
-    <description>Gamers overlay for all various games. Not related with games team.</description>
-    <homepage>https://cgit.gentoo.org/proj/gamerlay.git</homepage>
-    <owner>
-      <email>gentoo@mva.name</email>
-      <name>Vadim A. Misbakh-Soloviov</name>
-    </owner>
-    <source type="git">git://anongit.gentoo.org/proj/gamerlay.git</source>
-    <feed>https://cgit.gentoo.org/proj/gamerlay.git/atom/</feed>
-  </repo>
-  <repo priority="50" quality="experimental" status="official">
-    <name>java</name>
-    <description>Java overlay</description>
-    <homepage>https://cgit.gentoo.org/proj/java.git/</homepage>
-    <owner>
-      <email>java@gentoo.org</email>
-      <name>Gentoo Java team</name>
-    </owner>
-    <source type="git">git://anongit.gentoo.org/proj/java.git</source>
-    <feed>https://cgit.gentoo.org/proj/java.git/atom/</feed>
+    <source type="git">https://github.com/pentoo/pentoo-overlay.git</source>
   </repo>
   <repo priority="50" quality="experimental" status="official">
     <name>haskell</name>
@@ -116,5 +94,39 @@
     </owner>
     <source type="git">git://github.com/anyc/steam-overlay.git</source>
     <feed>https://github.com/anyc/steam-overlay/commits/master.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="official">
+    <name>qt</name>
+    <description>Official testing overlay for Qt and related packages, provided by Gentoo's Qt team. Contains ebuilds for Qt4 and Qt5 prereleases and live ebuilds, plus various (non-KDE) applications and utilities that use Qt.</description>
+    <homepage>https://github.com/gentoo/qt</homepage>
+    <owner>
+      <email>qt@gentoo.org</email>
+      <name>Qt Team</name>
+    </owner>
+    <source type="git">https://anongit.gentoo.org/git/proj/qt.git</source>
+    <feed>https://cgit.gentoo.org/proj/qt.git/atom/</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="official">
+    <name>science</name>
+    <description>The Gentoo Science Overlay is intended as a place to work outside of the main portage tree on experimental ebuilds. Our aim is to increase the rate of development of scientific packages for Gentoo, but ebuilds in this repository are by their very nature more experimental. If you wish to use them you should be willing to help test and report bugs. For contribution read http://wiki.gentoo.org/wiki/Project:Science/Contributing</description>
+    <homepage>http://wiki.gentoo.org/wiki/Project:Science</homepage>
+    <owner>
+      <email>sci@gentoo.org</email>
+      <name>sci</name>
+    </owner>
+    <source type="git">https://anongit.gentoo.org/git/proj/sci.git</source>
+    <feed>https://cgit.gentoo.org/proj/sci.git/atom/</feed>
+    <feed>https://github.com/gentoo-science/sci/commits/master.atom</feed>
+  </repo>
+  <repo priority="50" quality="experimental" status="unofficial">
+    <name>gamerlay</name>
+    <description>Gamers overlay for all various games. Not related with games team.</description>
+    <homepage>https://cgit.gentoo.org/proj/gamerlay.git</homepage>
+    <owner>
+      <email>gentoo@mva.name</email>
+      <name>Vadim A. Misbakh-Soloviov</name>
+    </owner>
+    <source type="git">git://anongit.gentoo.org/proj/gamerlay.git</source>
+    <feed>https://cgit.gentoo.org/proj/gamerlay.git/atom/</feed>
   </repo>
 </repositories>

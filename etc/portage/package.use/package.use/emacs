@@ -1,0 +1,2 @@
+app-editors/emacs games -X -alsa -gtk -gtk3 -jpeg -png -svg -xft -xpm
+app-emacs/emacs-common-gentoo games

@@ -1,0 +1,2 @@
+app-emulation/spice gstreamer lz4 sasl
+net-misc/spice-gtk -pulseaudio gstaudio gstvideo lz4 mjpeg sasl webdav

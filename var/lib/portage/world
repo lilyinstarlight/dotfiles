@@ -2,6 +2,7 @@ app-admin/apache-tools
 app-admin/eclean-kernel
 app-admin/linode-cli
 app-admin/linode-cli:4
+app-admin/mcelog
 app-admin/pass
 app-admin/pass-otp
 app-admin/sudo
@@ -16,11 +17,13 @@ app-editors/emacs
 app-editors/neovim
 app-emulation/docker
 app-emulation/libvirt
+app-emulation/playonlinux
 app-emulation/qemu
 app-emulation/virt-manager
 app-emulation/virt-viewer
 app-emulation/virtio-win
 app-emulation/wine
+app-emulation/winetricks
 app-eselect/eselect-vi
 app-laptop/tlp
 app-misc/asciinema
@@ -30,6 +33,7 @@ app-misc/figlet
 app-misc/gotty-bin
 app-misc/neofetch
 app-misc/physlock
+app-misc/reptyr
 app-misc/tmux
 app-misc/tty-clock
 app-misc/utimer
@@ -51,11 +55,10 @@ app-text/dos2unix
 app-text/lesspipe
 app-text/mupdf
 app-text/pandoc
+app-text/tesseract
 app-text/texlive
 app-vim/gentoo-syntax
-cross-arm-unknown-linux-uclibc/binutils
-cross-arm-unknown-linux-uclibc/linux-headers
-cross-arm-unknown-linux-uclibc/uclibc
+app-vim/neovim-remote
 dev-db/sqlmap
 dev-embedded/arduino-bin
 dev-games/aseprite
@@ -97,6 +100,7 @@ dev-texlive/texlive-xetex
 dev-util/bokken
 dev-util/ccache
 dev-util/cloc
+dev-util/cwdiff
 dev-util/dialog
 dev-util/ffdec
 dev-util/gource
@@ -114,6 +118,8 @@ games-emulation/desmume
 games-emulation/dolphin
 games-emulation/higan
 games-emulation/mupen64plus
+games-engines/frotz
+games-engines/love
 games-misc/doge
 games-misc/git-fire
 games-misc/lolcat
@@ -181,6 +187,7 @@ net-analyzer/nettop
 net-analyzer/nikto
 net-analyzer/nmap
 net-analyzer/tcpdump
+net-analyzer/traceroute-nanog
 net-analyzer/wireshark
 net-analyzer/wpscan
 net-dialup/picocom
@@ -189,7 +196,7 @@ net-dns/bind-tools
 net-firewall/firewalld
 net-fs/cifs-utils
 net-fs/davfs2
-net-im/discord
+net-im/discord-bin
 net-im/hangups
 net-im/qtox
 net-im/slack-bin
@@ -248,7 +255,6 @@ sys-boot/grub
 sys-devel/bc
 sys-devel/bmake
 sys-devel/crossdev
-sys-devel/distcc
 sys-devel/gdb
 sys-devel/llvm
 sys-fs/btrfs-progs
@@ -266,6 +272,7 @@ sys-kernel/linux-firmware
 sys-kernel/pf-sources
 sys-libs/ncurses:5
 sys-power/acpid
+sys-power/acpilight
 sys-power/powertop
 sys-process/htop
 sys-process/lsof
@@ -288,8 +295,8 @@ www-servers/nginx
 x11-apps/intel-gpu-tools
 x11-apps/mesa-progs
 x11-apps/setxkbmap
-x11-apps/xbacklight
 x11-apps/xev
+x11-apps/xinput
 x11-apps/xkill
 x11-apps/xrandr
 x11-apps/xsetroot
@@ -297,11 +304,14 @@ x11-base/xorg-server
 x11-misc/arandr
 x11-misc/barline
 x11-misc/clipster
+x11-misc/compton
 x11-misc/dunst
+x11-misc/hsetroot
 x11-misc/lemonbar
 x11-misc/obconf
 x11-misc/rofi
 x11-misc/rofi-pass
+x11-misc/stalonetray
 x11-misc/sxhkd
 x11-misc/urxvt-font-size
 x11-misc/xdg-utils
