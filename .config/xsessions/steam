@@ -15,6 +15,9 @@ xrandr --auto
 # start wm
 openbox &
 
+# desktop services
+compton -b
+
 # TV detection
 if xrandr | grep "HDMI-1-1 connected"; then
 	tvup

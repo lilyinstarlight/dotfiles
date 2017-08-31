@@ -87,7 +87,7 @@ super + {1-9,0}
 	bspc desktop -f focused:^{1-9,10}
 
 ## cycle desktop layout
-super + p
+super + slash
 	bspc desktop -l next
 
 ## swap desktops
@@ -135,7 +135,9 @@ super + bracketleft
 
 ## fix monitors
 super + bracketright
-	killall bspwmmon barline lemonbar; \
+	for pid in $(ps xe -o pid,cmd | grep -E "^[[:space:][:digit:]]*(barline|bspwmmon|lemonbar).*\<DISPLAY=$DISPLAY\>" | sed -e 's/^[[:space:]]*//' | cut -d' ' -f1); do \
+		kill "$pid"; \
+	done; \
 	for mon in $(bspc query -M --names); do \
 		bspwmmon "$mon"; \
 	done
@@ -148,7 +150,7 @@ super + {minus,equal}
 
 ## direct brightness buttons to xbacklight
 {_,shift + ,super + }XF86MonBrightness{Down,Up}
-	xbacklight {-10%,-1%,=0%,+10%,+1%,=100%}
+	xbacklight {-10,-1,=0,+10,+1,=100}
 
 ## direct volume buttons to ALSA
 {_,shift + ,super + }XF86Audio{Lower,Raise}Volume
@@ -202,6 +204,10 @@ super + Return
 ## start window switcher
 super + apostrophe
 	rofi -show window
+
+## open systray
+super + period
+	stalonetray --window-type utility --geometry 1x1-400+39
 
 ## start rofi pass
 super + backslash

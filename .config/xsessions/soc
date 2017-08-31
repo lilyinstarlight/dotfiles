@@ -8,11 +8,12 @@ setxkbmap
 newbg
 
 # background services
-/usr/libexec/polkit-gnome-authentication-agent-1 &
+pgrep polkit-gnome || /usr/libexec/polkit-gnome-authentication-agent-1 &
 
 # desktop services
 sxhkd &
 clipster -f "$HOME"/.config/clipster/clipster-soc.ini -d &
+compton -b
 
 # window manager
 bspwmmon VNC-0 &

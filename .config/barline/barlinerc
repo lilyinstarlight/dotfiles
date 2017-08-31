@@ -1,2 +1,2 @@
-format %{l}%{W}%{c}%{N}%{r}cpu: %{C} • temp: %{Pthermal_zone1:60} • mem: %{M} • vol: %{V} • wlan: %{Lwlp8s0} • batt: %{EBAT1} • %{D}
+format %{l}%{W}%{c}%{N}%{r}%{F#96a967}cpu: %{C}%{F-} %{F#535551}•%{F-} %{F#96a967}temp: %{Pthermal_zone1:60}%{F-} %{F#535551}•%{F-} %{F#96a967}mem: %{M}%{F-} %{F#535551}•%{F-} %{F#d3a94a}vol: %{V}%{F-} %{F#535551}•%{F-} %{F#5778c1}wlan: %{Lwlp8s0}%{F-} %{F#535551}•%{F-} %{F#ca674a}batt: %{EBAT1}%{F-} %{F#535551}•%{F-} %{D}
 poll 1
