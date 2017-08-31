@@ -1,9 +1,9 @@
 #!/bin/sh
 # wait for bspwm socket
-bspc query -M --names | grep "$1"
+bspc query -M --names | grep "$1" &>/dev/null
 while [ $? -ne 0 ]; do
 	sleep 0.2
-	bspc query -M --names | grep "$1"
+	bspc query -M --names | grep "$1" &>/dev/null
 done
 
 # monitor config

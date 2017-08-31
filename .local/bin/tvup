@@ -7,7 +7,7 @@ else
 	TV=HDMI-1
 fi
 
-synclient TouchPadOff=1
+xinput --disable 'ETPS/2 Elantech Touchpad'
 xrandr --output $TV --primary --mode 1920x1080 --pos 0x0 --rotate normal --output $DSP --off
 
 if [ "$XDG_SESSION_DESKTOP" == bspwm ]; then

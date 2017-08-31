@@ -8,7 +8,7 @@ else
 fi
 
 xrandr --output $TV --off --output $DSP --primary --mode 1920x1080 --pos 0x0 --rotate normal
-synclient TouchPadOff=0
+xinput --enable 'ETPS/2 Elantech Touchpad'
 
 if [ "$XDG_SESSION_DESKTOP" == bspwm ]; then
 	bspc monitor $TV -r
