@@ -10,11 +10,10 @@ bspc config border_width 2
 bspc config window_gap 12
 
 # rules
+bspc rule -a stalonetray state=floating
 bspc rule -a qjackctl state=floating
 bspc rule -a qsynth state=floating
 bspc rule -a vmpk state=floating
 bspc rule -a Unity state=floating
 bspc rule -a Google-chrome:crx_gaedmjdfmmahhbjefcbgaolhhanlaolb state=floating
-bspc rule -a pinentry state=floating
-bspc rule -a stalonetray state=floating
 bspc rule -a airtame-application state=floating
