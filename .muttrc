@@ -44,8 +44,8 @@ color tree       yellow          default
 # index
 set index_format='%4C %Z %{%b %d} %-15.15L %s'
 
-folder-hook   *[sS]ent* 'set index_format="%4C %Z %{%b %d} %-15.15L %s"'
-folder-hook ! *[sS]ent* 'set index_format="%4C %Z %{%b %d} %-15.15F %s"'
+folder-hook   sent 'set index_format="%4C %Z %{%b %d} %-15.15L %s"'
+folder-hook ! sent 'set index_format="%4C %Z %{%b %d} %-15.15F %s"'
 
 color index           white   default     '.*'
 color index_author    default default     '.*'

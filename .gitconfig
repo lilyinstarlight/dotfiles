@@ -5,6 +5,12 @@
 [push]
 	default = simple
 [filter "lfs"]
-	smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 	required = true
-	clean = git-lfs clean %f
+[color]
+	ui = auto
+[alias]
+	out = fire
+	all = "!find . -name .git -type d -exec sh -c \"echo '{}' | sed -e 's#^\\./\\(.*\\)\\.git#\\1:#' && git -C '{}/..' pull --all --rebase && git -C '{}/..' submodule update --init --recursive && echo\" ';'"
+	kill = "!sh -c 'git reset HEAD --hard && git clean -xdf'"
