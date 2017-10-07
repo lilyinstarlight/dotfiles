@@ -2,12 +2,10 @@ app-accessibility/at-spi2-atk abi_x86_32
 app-accessibility/at-spi2-core abi_x86_32
 app-arch/bzip2 abi_x86_32
 app-arch/lz4 abi_x86_32
-app-arch/lz4_p131 abi_x86_32
 app-arch/xz-utils abi_x86_32
 dev-db/sqlite abi_x86_32
 dev-lang/orc abi_x86_32
 dev-libs/atk abi_x86_32
-dev-libs/atk- abi_x86_32
 dev-libs/dbus-glib abi_x86_32
 dev-libs/elfutils abi_x86_32
 dev-libs/expat abi_x86_32
@@ -64,7 +62,6 @@ media-libs/gst-plugins-good abi_x86_32
 media-libs/gst-plugins-ugly abi_x86_32
 media-libs/gstreamer abi_x86_32
 media-libs/gstreamer:0.10 abi_x86_32
-media-libs/hal-flash abi_x86_32
 media-libs/harfbuzz abi_x86_32
 media-libs/jasper abi_x86_32
 media-libs/jpeg abi_x86_32
@@ -104,6 +101,7 @@ media-libs/opus abi_x86_32
 media-libs/sdl2-image abi_x86_32
 media-libs/sdl2-mixer abi_x86_32
 media-libs/taglib abi_x86_32
+media-libs/tiff abi_x86_32
 media-libs/x264 abi_x86_32
 media-libs/x265 abi_x86_32
 media-libs/xvid abi_x86_32

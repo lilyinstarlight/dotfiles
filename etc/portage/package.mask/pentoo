@@ -1,3 +1,4 @@
 net-analyzer/metasploit::pentoo
 net-analyzer/bettercap::pentoo
+net-proxy/mitmproxy::pentoo
 dev-ruby/*::pentoo
