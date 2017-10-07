@@ -60,6 +60,7 @@ Plug 'tpope/vim-surround'
 Plug 'triglav/vim-visual-increment'
 Plug 'vimwiki/vimwiki', {'branch': 'dev'}
 Plug 'wilriker/vim-fish'
+Plug 'yorokobi/vim-splunk'
 
 call plug#end()
 
@@ -91,6 +92,10 @@ nmap <leader>a :bel new<cr>:te<cr>
 nmap <leader>v :set virtualedit=all<cr>
 nmap <leader>g :set virtualedit=<cr>
 nmap <leader>b :Hexmode<cr>
+nmap <leader>p :.!xargs 
+vmap <leader>p :!xargs 
+nmap <leader>q :.!bc<cr>
+vmap <leader>q :!bc<cr>
 nmap <leader><cr> :make %<cr>
 
 "matchit.vim
