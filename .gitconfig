@@ -14,3 +14,5 @@
 	out = fire
 	all = "!find . -name .git -type d -exec sh -c \"echo '{}' | sed -e 's#^\\./\\(.*\\)\\.git#\\1:#' && git -C '{}/..' pull --all --rebase && git -C '{}/..' submodule update --init --recursive && echo\" ';'"
 	kill = "!sh -c 'git reset HEAD --hard && git clean -xdf'"
+	subpull = submodule foreach git pull
+	uppull = pull upstream master
