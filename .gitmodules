@@ -76,3 +76,6 @@
 [submodule ".tmux/plugins/tmux-logging"]
 	path = .tmux/plugins/tmux-logging
 	url = https://github.com/tmux-plugins/tmux-logging.git
+[submodule ".config/fisherman/docker-completion"]
+	path = .config/fisherman/docker-completion
+	url = https://github.com/fisherman/docker-completion.git
