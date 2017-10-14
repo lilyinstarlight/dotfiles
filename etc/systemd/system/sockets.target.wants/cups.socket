@@ -1,1 +1,1 @@
-/usr/lib64/systemd/system/cups.socket
+/lib/systemd/system/cups.socket
