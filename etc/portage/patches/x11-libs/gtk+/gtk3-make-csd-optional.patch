@@ -1,0 +1,41 @@
+--- a/gtk/gtkwindow.c
++++ b/gtk/gtkwindow.c
+@@ -6025,9 +6025,6 @@
+   GtkWindowPrivate *priv = window->priv;
+   const gchar *csd_env;
+
+-  if (priv->csd_requested)
+-    return TRUE;
+-
+   if (!priv->decorated)
+     return FALSE;
+
+@@ -6035,28 +6032,6 @@
+     return FALSE;
+
+   csd_env = g_getenv ("GTK_CSD");
+-
+-#ifdef GDK_WINDOWING_BROADWAY
+-  if (GDK_IS_BROADWAY_DISPLAY (gtk_widget_get_display (GTK_WIDGET (window))))
+-    return TRUE;
+-#endif
+-
+-#ifdef GDK_WINDOWING_WAYLAND
+-  if (GDK_IS_WAYLAND_DISPLAY (gtk_widget_get_display (GTK_WIDGET (window))))
+-    return TRUE;
+-#endif
+-
+-#ifdef GDK_WINDOWING_MIR
+-  if (GDK_IS_MIR_DISPLAY (gtk_widget_get_display (GTK_WIDGET (window))))
+-    return TRUE;
+-#endif
+-
+-#ifdef GDK_WINDOWING_WIN32
+-  if (g_strcmp0 (csd_env, "0") != 0 &&
+-      GDK_IS_WIN32_DISPLAY (gtk_widget_get_display (GTK_WIDGET (window))))
+-    return TRUE;
+-#endif
+-
+   return (g_strcmp0 (csd_env, "1") == 0);
+ }
+

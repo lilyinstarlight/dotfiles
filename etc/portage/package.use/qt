@@ -1,15 +1,13 @@
+dev-python/PyQt5 -gles2
+dev-qt/qt3d -gles2
 dev-qt/qtcore icu
-dev-qt/qtwebchannel qml
-dev-qt/qtwebengine widgets
-dev-qt/qtwebkit opengl printsupport
-dev-qt/qtwebkit:4 -exceptions
-dev-qt/qtmultimedia gstreamer widgets -gles2
-dev-qt/qtgui -gles2
-dev-qt/qtgui:4 gtkstyle
+dev-qt/qtdatavis3d -gles2
 dev-qt/qtdeclarative -gles2
-dev-qt/qtwidgets -gles2
+dev-qt/qtgui -gles2
+dev-qt/qtmultimedia widgets -gles2
 dev-qt/qtopengl -gles2
 dev-qt/qtprintsupport -gles2
-dev-python/PyQt5 -gles2
-dev-qt/qtgui:4 -egl
-dev-qt/qtopengl:4 -egl
+dev-qt/qtwebchannel qml
+dev-qt/qtwebengine widgets
+dev-qt/qtwebkit printsupport -gles2
+dev-qt/qtwidgets -gles2

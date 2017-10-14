@@ -1,1 +1,1 @@
-dev-libs/boehm-gc static-libs threads
+dev-libs/boehm-gc threads
