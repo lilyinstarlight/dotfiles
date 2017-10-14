@@ -1,4 +1,4 @@
 shell=fish
 
-session1=bspwm
+session1=sway
 session2=steam

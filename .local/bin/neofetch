@@ -1,0 +1,17 @@
+#!/bin/sh
+if [ "$SHELL" == "/usr/bin/petty" ]; then
+	source "$HOME"/.config/petty/pettyrc
+	export SHELL=fish
+fi
+
+if [ -n "$SWAYSOCK" ]; then
+	scrot_cmd=swaygrab
+else
+	scrot_cmd=maim
+fi
+
+export DISTRIB_DESCRIPTION=FoosterOS
+
+clear
+
+exec /usr/bin/neofetch --ascii_distro gentoo --scrot_cmd "$scrot_cmd" -s "$HOME"/tmp/screenshot.png "$@"

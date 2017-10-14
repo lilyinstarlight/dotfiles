@@ -1,3 +1,0 @@
-#!/bin/sh
-systemctl --user stop vncserver@:0
-firewall-cmd --zone=public --remove-port=5900/tcp

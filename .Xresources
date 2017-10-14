@@ -1,23 +1,25 @@
 ! URxvt
-URxvt.font: xft:Monofur:size=14
-URxvt.boldFont: xft:Monofur:size=14
+URxvt.font: xft:Monofur:size=13
+URxvt.boldFont: xft:Monofur:size=13
 URxvt.scrollBar: false
 URxvt.scrollTtyOutput: false
 URxvt.scrollWithBuffer: true
 URxvt.scrollTtyKeypress: true
 URxvt.secondaryWheel: true
-URxvt.perl-ext-common: font-size
+URxvt.perl-ext-common: keyboard-select,font-size
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 URxvt.keysym.C-equal: perl:font-size:increase
 URxvt.keysym.C-minus: perl:font-size:decrease
 
 ! rofi
-rofi.font: Monofur 14
+rofi.font: Monofur 13
 !                  bg       border
 rofi.color-window: #121212, #aa4444
 !                  bg       fg       bgalt    hlbg     hlfg
-rofi.color-active: #121212, #a9a9a9, #1a1a1a, #535551, #d7d7d7
-rofi.color-normal: #121212, #a9a9a9, #1a1a1a, #535551, #d7d7d7
-rofi.color-urgent: #121212, #ea2828, #1a1a1a, #535551, #d7d7d7
+rofi.color-active: #222222, #aa4444, #444444, #aa4444, #222222
+rofi.color-normal: #222222, #aa4444, #121212, #aa4444, #222222
+rofi.color-urgent: #222222, #aa4444, #121212, #aa4444, #222222
 
 ! Jellybeans Color Scheme
 *.background: #121212

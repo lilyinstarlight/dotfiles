@@ -1,18 +1,25 @@
 #!/bin/sh
-if xrandr | grep HDMI-1-1; then
-	DSP=eDP-1-1
-	TV=HDMI-1-1
+if [ -n "$SWAYSOCK" ]; then
+	swaymsg output eDP-1 resolution 1920x1080 position 0,0
+	swaymsg output HDMI-1 disable
+
+	swaymsg input '2:14:ETPS/2_Elantech_Touchpad' events enabled
 else
-	DSP=eDP-1
-	TV=HDMI-1
-fi
+	if xrandr | grep HDMI-1-1; then
+		DSP=eDP-1-1
+		TV=HDMI-1-1
+	else
+		DSP=eDP-1
+		TV=HDMI-1
+	fi
 
-xrandr --output $TV --off --output $DSP --primary --mode 1920x1080 --pos 0x0 --rotate normal
-xinput --enable 'ETPS/2 Elantech Touchpad'
+	xrandr --output $TV --off --output $DSP --primary --mode 1920x1080 --pos 0x0 --rotate normal
+	xinput --enable 'ETPS/2 Elantech Touchpad'
 
-if [ "$XDG_SESSION_DESKTOP" == bspwm ]; then
-	bspc monitor $TV -r
-	kill "$(ps ax | grep barline | grep $TV | cut -d' ' -f2)"
-	bspwmmon $DSP
-	bspc wm -o
+	if [ "$XDG_SESSION_DESKTOP" == bspwm ]; then
+		bspc monitor $TV -r
+		kill "$(ps ax | grep barline | grep $TV | cut -d' ' -f2)"
+		bspwmmon $DSP
+		bspc wm -o
+	fi
 fi

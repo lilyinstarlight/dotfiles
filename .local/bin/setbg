@@ -1,0 +1,2 @@
+#!/bin/sh
+exec swaymsg output '*' background "$(find "$HOME"/.background/"$(swaymsg -t get_outputs | jq '.[0].rect.height')" -type f | shuf -n1)" fill

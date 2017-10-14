@@ -14,8 +14,8 @@ export LESS_TERMCAP_so=$'\e[01;31m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[01;32m'
 
-# fix java issues
-export _JAVA_AWT_WM_NONREPARENTING=1
-
 # arduino
 export ARDUINODIR=/opt/arduino-bin
+
+# eix
+export EIX_LIMIT=0

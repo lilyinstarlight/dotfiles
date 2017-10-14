@@ -21,6 +21,9 @@ global:
   fonts.messages.error: 10pt Monofur
   fonts.messages.info: 10pt Monofur
   fonts.messages.warning: 10pt Monofur
+  fonts.monospace: Monofur, "xos4 Terminus", Terminus, Monospace, "DejaVu Sans Mono",
+    Monaco, "Bitstream Vera Sans Mono", "Andale Mono", "Courier New", Courier, "Liberation
+    Mono", monospace, Fixed, Consolas, Terminal
   fonts.statusbar: 10pt Monofur
   fonts.tabs: 10pt Monofur
   fonts.web.family.fixed: Monofur

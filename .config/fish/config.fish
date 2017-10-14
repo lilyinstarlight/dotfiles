@@ -30,10 +30,6 @@ function info
     command info --vi-keys $argv
 end
 
-function sudo
-    command sudo -E $argv
-end
-
 function curl
     command curl -L $argv
 end

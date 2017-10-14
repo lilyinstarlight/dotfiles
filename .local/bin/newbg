@@ -1,8 +1,0 @@
-#!/bin/sh
-size="$(xrandr | head -n1 | grep -o '[[:digit:]]* x [[:digit:]]*' | sed '2q;d' | cut -dx -f2 | tr -d ' ')"
-
-if [ -e "$HOME"/.background/"$size" ]; then
-	exec hsetroot -center "$(find "$HOME"/.background/"$size" -type f | shuf -n1)"
-else
-	exec hsetroot -solid '#777777'
-fi

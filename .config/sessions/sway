@@ -1,0 +1,13 @@
+#!/bin/sh
+# set keyboard layout
+export XKB_DEFAULT_LAYOUT='us(altgr-intl)'
+export XKB_DEFAULT_OPTIONS='terminate:ctrl_alt_bkspc,lv3:ralt_switch,compose:rctrl,nbsp:level3n,caps:escape,grp:alt_caps_toggle,grp_led:caps'
+
+# set keyboard repeat
+export WLC_REPEAT_DELAY=200
+export WLC_REPEAT_RATE=50
+
+# fix java
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+exec /usr/local/share/sessions/sway
