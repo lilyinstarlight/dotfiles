@@ -6,6 +6,9 @@
 
 # Load environment settings from profile.env, which is created by
 # env-update from the files in /etc/env.d
+
+# Load environment settings from profile.env, which is created by
+# env-update from the files in /etc/env.d
 if [ -e /etc/profile.env ] ; then
 	pathsave="$PATH"
 	manpathsave="$MANPATH"
@@ -20,7 +23,7 @@ fi
 
 # You should override these in your ~/.bashrc (or equivalent) for per-user
 # settings.  For system defaults, you can add a new file in /etc/profile.d/.
-export EDITOR=${EDITOR:-/bin/nano}
+export EDITOR=${EDITOR:-/usr/bin/vi}
 export PAGER=${PAGER:-/usr/bin/less}
 
 # 077 would be more secure, but 022 is generally quite realistic

@@ -1,8 +1,4 @@
-Stopped (with error) /dev/dm-0\.
-Failed unmounting /var\.
 watchdog: watchdog0: watchdog did not stop!
-\[drm:hsw_write_dcomp\] \*ERROR\* Failed to write to D_COMP
-Failed to determine block device of root file system: No such file or directory
 ip6tables\.service: Service lacks both ExecStart= and ExecStop= setting\. Refusing\.
 iptables\.service: Service lacks both ExecStart= and ExecStop= setting\. Refusing\.
 ERROR: ipset not usable, disabling ipset usage in firewall\.
@@ -13,9 +9,7 @@ systemd-ask-password-console.service loaded failed failed Dispatch Password Requ
 systemd-ask-password-wall.service    loaded failed failed Forward Password Requests to Wall
 Failed to obtain handles for "Service Changed" characteristic
 Failed to set privacy: Rejected (0x0b)
-hid-generic 0005:099A:0500.0003: unknown main item tag 0x0
 mce: \[Hardware Error\]: CPU 0: Machine Check: 0 Bank [[:digit:]]*: [[:xdigit:]]*
 mce: \[Hardware Error\]: TSC 0 ADDR [[:xdigit:]]* MISC [[:xdigit:]]*
 mce: \[Hardware Error\]: PROCESSOR [[:xdigit:]]*:[[:xdigit:]]* TIME [[:digit:]]* SOCKET 0 API
-kernel: hid-generic [[:xdigit:]:]*: unknown main item tag 0x0
-\[pulseaudio\] bluez5-util.c: GetManagedObjects() failed: org\.freedesktop\.systemd1\.NoSuchUnit: Unit dbus-org\.bluez\.service not found.\
+hid-generic [[:xdigit:]:]*: unknown main item tag 0x0
