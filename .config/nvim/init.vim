@@ -2,7 +2,7 @@
 set autoindent
 set autoread
 set autowrite
-set clipboard=unnamed
+set clipboard=unnamedplus
 set cursorcolumn
 set cursorline
 set display=lastline
