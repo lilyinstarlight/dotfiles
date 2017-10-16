@@ -1,5 +1,5 @@
 polkit.addRule(function(action, subject) {
-    if ((action.id == "org.freedesktop.systemd1.manage-units") && (action.lookup("unit") == "postgresql-9.6.service") && subject.isInGroup("wheel")) {
+    if ((action.id == "org.freedesktop.systemd1.manage-units") && (action.lookup("unit") == "postgresql-10.service") && subject.isInGroup("wheel")) {
         return polkit.Result.YES;
     }
 });
