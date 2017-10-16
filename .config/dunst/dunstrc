@@ -1,7 +1,7 @@
 [global]
     font = Monofur 14
 
-    allow_markup = yes
+    markup = yes
     plain_text = no
 
     # %a  appname
@@ -81,9 +81,8 @@
 
     always_run_script = true
 
-[frame]
-    width = 1
-    color = "#535551"
+    frame_width = 1
+    frame_color = "#535551"
 
 [shortcuts]
     close = mod4+ctrl+backslash

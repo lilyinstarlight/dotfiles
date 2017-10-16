@@ -4,7 +4,7 @@ include /etc/sway/config.d/*
 set $mod mod4
 set $term urxvt
 set $run rofi -show run
-set $lock physlock -m
+set $lock swaylock
 set $pass rofi-pass
 set $browser qutebrowser
 
@@ -34,6 +34,8 @@ gaps edge_gaps off
 gaps 12
 
 ### color settings
+set $lock $lock -c 000000 --bshlcolor 222222 --insidecolor 121212 --insidevercolor 222222 --insidewrongcolor 121212 --keyhlcolor aa4444 --linecolor 121212 --ringcolor 121212 --ringvercolor 222222 --ringwrongcolor ff0000 --separatorcolor 121212 --textcolor aa4444
+
 client.background #aa4444
 client.focused #222222 #222222 #aa4444 #aa4444 #aa4444
 client.focused_inactive #222222 #222222 #aa4444 #aa4444 #884444
@@ -41,7 +43,11 @@ client.unfocused #222222 #222222 #884444 #aa4444 #444444
 client.urgent #aa4444 #aa4444 #222222 #aa4444 #444444
 
 ### rules
+for_window [class="rofi"] focus
 for_window [class="crx_gaedmjdfmmahhbjefcbgaolhhanlaolb"] floating enable
+for_window [class="qsynth"] floating enable
+for_window [class="qjackctl"] floating enable
+for_window [class="vmpk"] floating enable
 
 ### key bindings
 floating_modifier $mod normal
@@ -123,6 +129,9 @@ bindsym $mod+i floating disable
 bindsym $mod+o floating enable
 bindsym $mod+p fullscreen
 
+bindsym $mod+shift+i sticky disable
+bindsym $mod+shift+o sticky enable
+
 bindsym $mod+apostrophe focus mode_toggle
 
 #### modes
@@ -176,7 +185,8 @@ bindsym $mod+minus exec tvup
 bindsym $mod+equal exec tvdown
 bindsym $mod+d exec mntup
 bindsym $mod+f exec mntdown
-bindsym $mod+print exec swaygrab
+bindsym $mod+print exec swaygrab "$HOME"/tmp/screenshot.png
+bindsym $mod+shift+print exec swaygrab -f "$HOME"/tmp/screenshot.png
 
 ### desktop elements
 bar {
@@ -201,6 +211,6 @@ bar {
 }
 
 ### desktop services
-exec_always xrdb -m "$HOME"/.Xresources
+exec_always xrdb -merge "$HOME"/.Xresources
 exec_always pgrep polkit-gnome || /usr/libexec/polkit-gnome-authentication-agent-1 &
 exec_always setbg

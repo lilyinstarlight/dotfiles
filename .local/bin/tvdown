@@ -1,7 +1,8 @@
 #!/bin/sh
 if [ -n "$SWAYSOCK" ]; then
-	swaymsg output eDP-1 resolution 1920x1080 position 0,0
-	swaymsg output HDMI-1 disable
+	swaymsg output eDP-1 resolution 1920 1080 position 0 0
+	swaymsg focus output eDP-1
+	swaymsg output HDMI-A-1 disable
 
 	swaymsg input '2:14:ETPS/2_Elantech_Touchpad' events enabled
 else
