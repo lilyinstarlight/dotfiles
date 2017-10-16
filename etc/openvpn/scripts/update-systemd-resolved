@@ -21,8 +21,8 @@
 # install, set as the 'up' and 'down' script in your OpenVPN configuration file
 # or via the command-line arguments, alongside setting the 'down-pre' option to
 # run the 'down' script before the device is closed. For example:
-#   up /etc/openvpn/update-systemd-resolved
-#   down /etc/openvpn/update-systemd-resolved
+#   up /etc/openvpn/scripts/update-systemd-resolved
+#   down /etc/openvpn/scripts/update-systemd-resolved
 #   down-pre
 
 # Define what needs to be called via DBus
@@ -32,7 +32,7 @@ DBUS_NODE="/org/freedesktop/resolve1"
 SCRIPT_NAME="${BASH_SOURCE[0]##*/}"
 
 log() {
-  logger -s --id="$$" -t "$SCRIPT_NAME" "$@"
+  logger -s -t "$SCRIPT_NAME" "$@"
 }
 
 for level in emerg err warning info debug; do
