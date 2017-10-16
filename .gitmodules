@@ -79,3 +79,33 @@
 [submodule ".config/fisherman/docker-completion"]
 	path = .config/fisherman/docker-completion
 	url = https://github.com/fisherman/docker-completion.git
+[submodule ".config/fisherman/await"]
+	path = .config/fisherman/await
+	url = https://github.com/fisherman/await.git
+[submodule ".config/fisherman/done"]
+	path = .config/fisherman/done
+	url = https://github.com/fisherman/done.git
+[submodule ".config/fisherman/fnm"]
+	path = .config/fisherman/fnm
+	url = https://github.com/fisherman/fnm.git
+[submodule ".config/fisherman/get_file_age"]
+	path = .config/fisherman/get_file_age
+	url = https://github.com/fisherman/get_file_age.git
+[submodule ".config/fisherman/getopts"]
+	path = .config/fisherman/getopts
+	url = https://github.com/fisherman/getopts.git
+[submodule ".config/fisherman/humanize_duration"]
+	path = .config/fisherman/humanize_duration
+	url = https://github.com/fisherman/humanize_duration.git
+[submodule ".config/fisherman/last_job_id"]
+	path = .config/fisherman/last_job_id
+	url = https://github.com/fisherman/last_job_id.git
+[submodule ".config/fisherman/menu"]
+	path = .config/fisherman/menu
+	url = https://github.com/fisherman/menu.git
+[submodule ".config/fisherman/spin"]
+	path = .config/fisherman/spin
+	url = https://github.com/fisherman/spin.git
+[submodule ".config/fisherman/plugin-thefuck"]
+	path = .config/fisherman/plugin-thefuck
+	url = https://github.com/oh-my-fish/plugin-thefuck.git

@@ -21,6 +21,7 @@ app-portage/layman
 app-portage/repoman
 app-portage/smart-live-rebuild
 app-shells/fish
+app-shells/thefuck
 app-text/mupdf
 app-vim/neovim-remote
 dev-embedded/arduino-bin
