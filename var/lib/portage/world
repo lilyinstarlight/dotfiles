@@ -82,6 +82,7 @@ net-analyzer/wpscan
 net-dns/bind-tools
 net-firewall/firewalld
 net-fs/davfs2
+net-fs/pingfs
 net-im/discord-bin
 net-im/slack-bin
 net-libs/nodejs
@@ -105,6 +106,7 @@ sys-fs/btrfs-progs
 sys-fs/dosfstools
 sys-fs/exfat-nofuse
 sys-fs/exfat-utils
+sys-fs/pifs
 sys-fs/udiskie
 sys-kernel/genkernel
 sys-kernel/linux-firmware
