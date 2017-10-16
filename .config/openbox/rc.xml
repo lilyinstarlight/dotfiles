@@ -123,7 +123,7 @@
     <number>1</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>Steam</name>
+      <name>Openbox</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -315,7 +315,7 @@
     <!-- Keybindings for running applications -->
     <keybind key="W-Return">
       <action name="Execute">
-        <command>urxvt -geometry 319x30+0+0</command>
+        <command>urxvt -geometry 213x30+0+0</command>
       </action>
     </keybind>
     <keybind key="W-j">
@@ -798,5 +798,17 @@
 
   # end of the example
 -->
+    <application name="RootURxvt">
+      <decor>no</decor>
+      <skip_taskbar>yes</skip_taskbar>
+      <skip_pager>yes</skip_pager>
+      <layer>below</layer>
+      <position>
+        <x>center</x>
+        <y>center</y>
+      </position>
+      <focus>no</focus>
+      <desktop>all</desktop>
+    </application>
   </applications>
 </openbox_config>

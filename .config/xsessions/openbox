@@ -1,0 +1,18 @@
+#!/bin/sh
+# X properties
+xrdb -merge ~/.Xresources
+
+# start wm
+openbox &
+pid=$!
+
+# desktop services
+compton -b
+
+# TV detection
+if xrandr | grep "HDMI-1 connected"; then
+	tvup
+fi
+
+# start root terminal
+urxvt -name RootURxvt -geometry 212x56
