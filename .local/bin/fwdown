@@ -1,2 +1,14 @@
 #!/bin/sh
-pkexec sh -c "killall -INT create_ap; systemctl start wpa_supplicant@wlp8s0"
+if [ -n "$1" ]; then
+	iface=$1
+else
+	iface=wlp8s0
+fi
+
+if [ -n "$2" ]; then
+	oface=$2
+else
+	oface=enp7s0
+fi
+
+pkexec sh -c "create_ap --stop $iface; systemctl start wpa_supplicant@$iface"

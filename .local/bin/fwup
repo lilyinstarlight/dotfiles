@@ -1,2 +1,14 @@
 #!/bin/sh
-pkexec sh -c "systemctl stop wpa_supplicant@wlp8s0 && create_ap --ieee80211n wlp8s0 enp7s0 FoosterWiFi correcthorsebatterystaple"
+if [ -n "$1" ]; then
+	iface=$1
+else
+	iface=wlp8s0
+fi
+
+if [ -n "$2" ]; then
+	oface=$2
+else
+	oface=enp7s0
+fi
+
+pkexec sh -c "systemctl stop wpa_supplicant@$iface; create_ap --daemon --ieee80211n $iface $oface FoosterWiFi correcthorsebatterystaple"
