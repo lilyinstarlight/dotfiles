@@ -1,4 +1,5 @@
-#!/bin/sh -e
+#!/bin/sh
+exec pkexec sh -ec '
 iface=wlp8s0
 oface=enp7s0
 
@@ -48,3 +49,4 @@ EOF
 
 hostapd -B -P /tmp/mitm-hostapd.pid /tmp/mitm-hostapd.conf
 dnsmasq -C /tmp/mitm-dnsmasq.conf -x /tmp/mitm-dnsmasq.pid
+'
