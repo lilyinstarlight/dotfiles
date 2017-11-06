@@ -40,10 +40,12 @@ Plug 'fidian/hexmode'
 Plug 'fkmclane/vim-resolve'
 Plug 'glts/vim-magnum'
 Plug 'glts/vim-radical'
-Plug 'haya14busa/incsearch.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/vim-journal'
+Plug 'junegunn/vim-peekaboo'
 Plug 'junegunn/vim-plug'
+Plug 'junegunn/vim-slash'
 Plug 'lfv89/vim-interestingwords'
 Plug 'nanotech/jellybeans.vim'
 Plug 'ntpeters/vim-better-whitespace'
@@ -104,12 +106,6 @@ runtime! macros/matchit.vim
 "netrw
 let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+'
 nmap <leader>e :Explore<cr>
-
-"incsearch.vim
-let g:incsearch#auto_nohlsearch=1
-map /  <Plug>(incsearch-forward)
-map ?  <Plug>(incsearch-backward)
-map g/ <Plug>(incsearch-stay)
 
 "lightline.vim
 let g:lightline={'colorscheme': 'jellybeans'}
