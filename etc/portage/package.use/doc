@@ -6,3 +6,4 @@ dev-tex/latex-beamer -doc
 media-libs/libcaca -doc
 media-libs/lv2 -doc
 media-libs/opencolorio -doc
+net-proxy/mitmproxy -doc

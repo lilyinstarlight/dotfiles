@@ -1,1 +1,1 @@
-www-servers/nginx nginx_modules_http_realip
+www-servers/nginx rtmp nginx_modules_http_realip

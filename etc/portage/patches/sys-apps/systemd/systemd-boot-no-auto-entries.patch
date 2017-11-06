@@ -1,5 +1,4 @@
 diff --git a/src/boot/efi/boot.c b/src/boot/efi/boot.c
-index 4ac193e..8beaf1d 100644
 --- a/src/boot/efi/boot.c
 +++ b/src/boot/efi/boot.c
 @@ -1747,24 +1747,12 @@ EFI_STATUS efi_main(EFI_HANDLE image, EFI_SYSTEM_TABLE *sys_table) {

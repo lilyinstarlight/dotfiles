@@ -1,3 +1,4 @@
+diff --git a/gtk/gtkwindow.c b/gtk/gtkwindow.c
 --- a/gtk/gtkwindow.c
 +++ b/gtk/gtkwindow.c
 @@ -6025,9 +6025,6 @@

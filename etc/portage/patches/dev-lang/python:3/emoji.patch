@@ -1,7 +1,6 @@
-diff --git a/Python-3.6.1/Objects/unicodectype.c b/Python-3.6.1-emoji/Objects/unicodectype.c
-index d8c95c8..47a41ab 100644
---- a/Python-3.6.1/Objects/unicodectype.c
-+++ b/Python-3.6.1-emoji/Objects/unicodectype.c
+diff --git a/Objects/unicodectype.c b/Objects/unicodectype.c
+--- a/Objects/unicodectype.c
++++ b/Objects/unicodectype.c
 @@ -18,7 +18,7 @@
  #define SPACE_MASK 0x20
  #define TITLE_MASK 0x40

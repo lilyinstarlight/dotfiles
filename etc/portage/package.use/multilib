@@ -121,6 +121,7 @@ media-plugins/gst-plugins-mad abi_x86_32
 media-plugins/gst-plugins-meta abi_x86_32
 media-plugins/gst-plugins-modplug abi_x86_32
 media-plugins/gst-plugins-mpeg2dec abi_x86_32
+media-plugins/gst-plugins-mpg123 abi_x86_32
 media-plugins/gst-plugins-mplex abi_x86_32
 media-plugins/gst-plugins-opus abi_x86_32
 media-plugins/gst-plugins-oss abi_x86_32
