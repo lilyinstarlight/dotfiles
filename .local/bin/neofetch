@@ -1,7 +1,7 @@
 #!/bin/sh
 if [ "$SHELL" == "/usr/bin/petty" ]; then
 	source "$HOME"/.config/petty/pettyrc
-	export SHELL=fish
+	export SHELL=$shell
 fi
 
 if [ -n "$SWAYSOCK" ]; then

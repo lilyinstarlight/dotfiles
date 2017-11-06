@@ -7,7 +7,7 @@ killproxy() {
 
 killproxy
 
-ssh -fND 1080 proxy &>/dev/null
+ssh -fN proxy &>/dev/null
 
 if [ -z "$1" ]; then
 	fproxy
