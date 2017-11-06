@@ -3,8 +3,8 @@
 
 config_version: 1
 global:
+  content.host_blocking.enabled: false
   content.host_blocking.whitelist:
-  - piwik.org
   - www.projectwonderful.com
   downloads.location.prompt: false
   editor.command:
