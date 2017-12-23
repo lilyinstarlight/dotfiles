@@ -14,4 +14,4 @@ export DISTRIB_DESCRIPTION=FoosterOS
 
 clear
 
-exec /usr/bin/neofetch --ascii_distro gentoo --scrot_cmd "$scrot_cmd" -s "$HOME"/tmp/screenshot.png "$@"
+exec /usr/bin/neofetch --colors 124 52 52 124 52 249 --ascii_distro gentoo --ascii_colors 52 88 --scrot_cmd "$scrot_cmd" -s "$HOME"/tmp/screenshot.png "$@"
