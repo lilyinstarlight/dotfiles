@@ -1,4 +1,4 @@
-dev-db/*::pentoo
-dev-ruby/*::pentoo
-net-analyzer/bettercap::pentoo
-net-analyzer/metasploit::pentoo
+dev-db/*::fkmclane
+dev-ruby/*::fkmclane
+net-analyzer/bettercap::fkmclane
+net-analyzer/metasploit::fkmclane
