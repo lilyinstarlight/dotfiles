@@ -47,6 +47,7 @@ for_window [class="rofi"] focus
 for_window [class="crx_gaedmjdfmmahhbjefcbgaolhhanlaolb"] floating enable
 for_window [class="qsynth"] floating enable
 for_window [class="qjackctl"] floating enable
+for_window [class="mode"] floating enable
 for_window [title="Virtual MIDI Piano Keyboard"] floating enable
 for_window [title="Starting Unity..."] floating enable
 for_window [title="Unity Package Manager"] floating enable
@@ -55,6 +56,7 @@ for_window [title="Hold On"] floating enable
 for_window [title="Hold on!"] floating enable
 for_window [title="Float"] floating enable
 for_window [title="Authenticate"] floating enable
+for_window [title="SC Controller"] floating enable
 
 ### key bindings
 floating_modifier $mod normal
@@ -219,5 +221,5 @@ bar {
 
 ### desktop services
 exec_always xrdb -merge "$HOME"/.Xresources
-exec_always pgrep polkit-gnome || /usr/libexec/polkit-gnome-authentication-agent-1 &
+exec_always pgrep polkit-gnome || run /usr/libexec/polkit-gnome-authentication-agent-1
 exec_always setbg
