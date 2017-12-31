@@ -1,2 +1,2 @@
 #!/bin/sh
-pkexec sh -c 'for if in `ip link | grep -- "-nic" | cut -d":" -f2 | cut -d" " -f2`; do ip tuntap del dev "$if" mode tap; done; for if in `ip link | grep "virbr" | cut -d":" -f2 | cut -d" " -f2`; do ip link set dev "$if" down; brctl delbr "$if"; done;'
+pkexec sh -c 'for if in `ip link | grep -- "-nic" | cut -d":" -f2 | cut -d" " -f2`; do ip tuntap del dev "$if" mode tap; done; for if in `ip link | grep "virbr" | cut -d":" -f2 | cut -d" " -f2`; do ip link set dev "$if" down; brctl delbr "$if"; done; for if in `ip link | grep "docker" | cut -d":" -f2 | cut -d" " -f2`; do ip link set dev "$if" down; brctl delbr "$if"; done'
