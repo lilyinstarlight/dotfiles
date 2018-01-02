@@ -1,0 +1,2 @@
+#!/bin/sh
+exec curl -s -X POST -d body="$*" https://alert.fooster.io/ >/dev/null
