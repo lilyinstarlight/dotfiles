@@ -90,7 +90,7 @@ end
 if test -e "$HOME"/.profile
     grep -Ev "^(#|export (PATH|ROOTPATH|LESS_TERMCAP_\w+)=)" "$HOME"/.profile | source
 
-    for path in (grep -o " PATH=['\"].*['\"]" "$HOME"/.profile | sed "s@.*['\"]\(.*\)['\"]@\1@;s@:@\n@g" | grep -v '$PATH')
-        eval set -xg PATH "$path" $PATH
+    for path in (grep -o " PATH=['\"].*['\"]" "$HOME"/.profile | sed -e "s@.*['\"]\(.*\)['\"]@\1@" | tr ':' '\n' | grep -v '$PATH')
+        eval set -xg PATH "$path" '$PATH'
     end
 end
