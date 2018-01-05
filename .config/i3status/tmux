@@ -1,0 +1,47 @@
+general {
+	colors = true
+
+	color_good = "#d7d7d7"
+	color_degraded = "#ea2828"
+	color_bad = "#ea2828"
+
+	interval = 1
+
+	output_format = "none"
+	separator = " • "
+}
+
+order += "load"
+order += "cpu_temperature 1"
+order += "battery 1"
+order += "disk /"
+order += "tztime local"
+
+load {
+	format = "cpu: %1min"
+}
+
+cpu_temperature 1 {
+	format = "temp: %degrees °C"
+}
+
+battery 1 {
+	integer_battery_capacity = true
+	low_threshold = 12
+
+	status_chr = "^"
+	status_bat = ""
+	status_unk = "?"
+	status_full = ""
+
+	format = "batt: %status%percentage"
+	format_down = "batt: none"
+}
+
+disk / {
+	format = "disk: %avail"
+}
+
+tztime local {
+	format = "%H:%M"
+}
