@@ -35,7 +35,6 @@ set wildmenu
 "vim-plug
 call plug#begin('$HOME/.config/nvim/plugged')
 
-Plug 'baskerville/vim-sxhkdrc'
 Plug 'fidian/hexmode'
 Plug 'fkmclane/vim-resolve'
 Plug 'glts/vim-magnum'
