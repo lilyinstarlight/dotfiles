@@ -1,2 +1,3 @@
 #!/bin/sh
 pkexec /sbin/modprobe uinput joydev
+exec sc-controller

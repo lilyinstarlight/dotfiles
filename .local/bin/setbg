@@ -1,2 +1,7 @@
 #!/bin/sh
-exec swaymsg output '*' background "$(find "$HOME"/.background/"$(swaymsg -t get_outputs | jq '.[0].rect.height')" -type f | shuf -n1)" fill
+socks="$(ls $XDG_RUNTIME_DIR/sway-ipc.*.sock)"
+for sock in $socks; do
+	env SWAYSOCK=$sock swaymsg output '*' background "$(find "$HOME"/.background/"$(swaymsg -t get_outputs | jq '.[0].rect.height')" -type f | shuf -n1)" fill
+done
+
+exit 0
