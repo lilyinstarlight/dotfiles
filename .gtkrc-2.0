@@ -1,3 +1,4 @@
-gtk-theme-name = "Arc-Darker"
-gtk-icon-theme-name = "Arc"
-gtk-font-name = "Monofur 13"
+gtk-theme-name="Arc-Darker"
+gtk-icon-theme-name="Arc"
+gtk-font-name="Monofur 13"
+gtk-cursor-theme-name="Bibata_Oil"
