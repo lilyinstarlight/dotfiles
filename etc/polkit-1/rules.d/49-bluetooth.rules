@@ -1,5 +1,5 @@
 polkit.addRule(function(action, subject) {
-    if (((action.id == "org.freedesktop.systemd1.manage-units") && (action.lookup("unit") == "bluetooth.service")) || ((action.id == "org.freedesktop.policykit.exec") && ((action.lookup("command_line") == "/sbin/modprobe btusb") || (action.lookup("command_line") == "/sbin/modprobe -r btusb bnep hidp") || (action.lookup("command_line") == "/usr/bin/rfkill unblock bluetooth") || (action.lookup("command_line") == "/usr/bin/rfkill block bluetooth"))) && subject.isInGroup("wheel")) {
+    if (((action.id == "org.freedesktop.systemd1.manage-units") && (action.lookup("unit") == "bluetooth.service")) || ((action.id == "org.freedesktop.policykit.exec") && ((action.lookup("command_line") == "/sbin/modprobe btusb") || (action.lookup("command_line") == "/sbin/modprobe -r btusb bnep hidp") || (action.lookup("command_line") == "/usr/sbin/rfkill unblock bluetooth") || (action.lookup("command_line") == "/usr/sbin/rfkill block bluetooth"))) && subject.isInGroup("wheel")) {
         return polkit.Result.YES;
     }
 });
