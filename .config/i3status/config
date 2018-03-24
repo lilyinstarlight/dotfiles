@@ -5,7 +5,7 @@ general {
 	color_degraded = "#ea2828"
 	color_bad = "#ea2828"
 
-	interval = 5
+	interval = 1
 }
 
 order += "load"
