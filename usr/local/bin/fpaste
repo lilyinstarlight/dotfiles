@@ -3,6 +3,7 @@ import http.client
 import io
 import json
 import mimetypes
+import os
 import sys
 import time
 
@@ -54,7 +55,7 @@ def upload(stream, alias=None, name=None, language=None):
 
 	if payload['filename'] is None:
 		if stream is not sys.stdin:
-			payload['filename'] = stream.name
+			payload['filename'] = os.path.basename(stream.name)
 		else:
 			payload['filename'] = 'Unnamed'
 
