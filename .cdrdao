@@ -1,2 +1,0 @@
-write_driver: "generic-mmc-raw"
-write_speed: 8

@@ -1,0 +1,202 @@
+### variableg
+set $mod Mod4
+set $term urxvt
+set $run rofi -show run
+set $lock i3lock -c 121212
+set $pass rofi-pass
+set $browser qutebrowser
+
+### global settings
+font pango:Monofur 13
+focus_follows_mouse yes
+mouse_warping output
+
+### desktop settings
+default_border normal 2
+default_floating_border normal 2
+gaps inner 12
+
+### color settings
+set $lock $lock -c 000000 --bshlcolor 222222 --insidecolor 121212 --insidevercolor 222222 --insidewrongcolor 121212 --keyhlcolor aa4444 --linecolor 121212 --ringcolor 121212 --ringvercolor 222222 --ringwrongcolor ff0000 --separatorcolor 121212 --textcolor aa4444
+
+client.background #aa4444
+client.focused #222222 #222222 #aa4444 #aa4444 #aa4444
+client.focused_inactive #222222 #222222 #aa4444 #aa4444 #884444
+client.unfocused #222222 #222222 #884444 #aa4444 #444444
+client.urgent #aa4444 #aa4444 #222222 #aa4444 #444444
+
+### key bindings
+floating_modifier $mod
+
+#### i3
+bindsym $mod+q exit
+bindsym $mod+r reload
+
+#### windows
+bindsym $mod+Shift+w kill
+
+#### containers
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+bindsym $mod+g focus parent
+
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+#### workspaces
+bindsym $mod+1 workspace 1:term
+bindsym $mod+2 workspace 2:www
+bindsym $mod+3 workspace 3:chat
+bindsym $mod+4 workspace 4:work
+bindsym $mod+5 workspace 5:school
+bindsym $mod+6 workspace 6:music
+bindsym $mod+7 workspace 7:games
+
+bindsym $mod+Shift+1 move container to workspace 1:term
+bindsym $mod+Shift+2 move container to workspace 2:www
+bindsym $mod+Shift+3 move container to workspace 3:chat
+bindsym $mod+Shift+4 move container to workspace 4:work
+bindsym $mod+Shift+5 move container to workspace 5:school
+bindsym $mod+Shift+6 move container to workspace 6:music
+bindsym $mod+Shift+7 move container to workspace 7:games
+
+#### outputs
+bindsym $mod+Mod1+h focus output left
+bindsym $mod+Mod1+j focus output down
+bindsym $mod+Mod1+k focus output up
+bindsym $mod+Mod1+l focus output right
+bindsym $mod+Mod1+Left focus output left
+bindsym $mod+Mod1+Down focus output down
+bindsym $mod+Mod1+Up focus output up
+bindsym $mod+Mod1+Right focus output right
+
+bindsym $mod+Shift+Mod1+h move container to output left
+bindsym $mod+Shift+Mod1+j move container to output down
+bindsym $mod+Shift+Mod1+k move container to output up
+bindsym $mod+Shift+Mod1+l move container to output right
+bindsym $mod+Shift+Mod1+Left move container to output left
+bindsym $mod+Shift+Mod1+Down move container to output down
+bindsym $mod+Shift+Mod1+Up move container to output up
+bindsym $mod+Shift+Mod1+Right move container to output right
+
+#### layout
+bindsym $mod+Control+l splith
+bindsym $mod+Control+j splitv
+
+bindsym $mod+comma layout stacking
+bindsym $mod+period layout tabbed
+bindsym $mod+slash layout toggle split
+
+#### states
+bindsym $mod+i floating disable
+bindsym $mod+o floating enable
+bindsym $mod+p fullscreen
+
+bindsym $mod+Shift+i sticky disable
+bindsym $mod+Shift+o sticky enable
+
+bindsym $mod+apostrophe focus mode_toggle
+
+#### modes
+mode "resize" {
+    bindsym h resize grow width 20 px or 20 ppt
+    bindsym j resize shrink height 20 px or 20 ppt
+    bindsym k resize grow height 20 px or 20 ppt
+    bindsym l resize shrink width 20 px or 20 ppt
+
+    bindsym Down resize shrink height 20 px or 20 ppt
+    bindsym Left resize grow width 20 px or 20 ppt
+    bindsym Right resize shrink width 20 px or 20 ppt
+    bindsym Up resize grow height 20 px or 20 ppt
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+t mode "resize"
+
+#### buttons
+bindsym XF86MonBrightnessDown exec xbacklight -10
+bindsym XF86MonBrightnessUp exec xbacklight +10
+bindsym Shift+XF86MonBrightnessDown exec xbacklight -1
+bindsym Shift+XF86MonBrightnessUp exec xbacklight +1
+bindsym $mod+XF86MonBrightnessDown exec xbacklight 0
+bindsym $mod+XF86MonBrightnessUp exec xbacklight 100
+
+bindsym XF86KbdBrightnessDown exec kbdbacklight -10
+bindsym XF86KbdBrightnessUp exec kbdbacklight +10
+bindsym Shift+XF86KbdBrightnessDown exec kbdbacklight -1
+bindsym Shift+XF86KbdBrightnessUp exec kbdbacklight +1
+bindsym $mod+XF86KbdBrightnessDown exec kbdbacklight 0
+bindsym $mod+XF86KbdBrightnessUp exec kbdbacklight 100
+
+bindsym XF86AudioLowerVolume exec amixer -q -D pulse sset Master 10%-
+bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 10%+
+bindsym Shift+XF86AudioLowerVolume exec amixer -q -D pulse sset Master 1%-
+bindsym Shift+XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 1%+
+bindsym $mod+XF86AudioLowerVolume exec amixer -q -D pulse sset Master 0%
+bindsym $mod+XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 100%
+bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle
+
+bindsym XF86AudioPlay exec mpc -q toggle
+bindsym XF86AudioStop exec mpc -q stop
+bindsym XF86AudioPrev exec mpc -q prev
+bindsym XF86AudioNext exec mpc -q next
+
+#### applications
+bindsym $mod+semicolon exec $term
+bindsym $mod+Return exec $run
+bindsym $mod+space exec $lock
+bindsym $mod+backslash exec $pass
+bindsym $mod+a exec $browser
+
+#### shortcuts
+bindsym $mod+minus exec tvup
+bindsym $mod+equal exec tvdown
+bindsym $mod+d exec mntup
+bindsym $mod+f exec mntdown
+bindsym $mod+Print exec maim > "$HOME"/tmp/screenshot.png
+bindsym $mod+Shift+Print exec maim -s > "$HOME"/tmp/screenshot.png
+
+### desktop elements
+bar {
+    position top
+
+    font pango:Monofur 13
+    colors {
+        background #121212
+        statusline #d7d7d7
+        separator #aa4444
+
+        focused_workspace #aa4444 #aa4444 #222222
+        active_workspace #884444 #aa4444 #222222
+        inactive_workspace #222222 #222222 #aa4444
+        urgent_workspace #222222 #ea2828 #222222
+    }
+
+    strip_workspace_numbers yes
+    separator_symbol " • "
+
+    status_command i3status
+
+    tray_output none
+}
+
+### desktop services
+exec_always xrdb -merge "$HOME"/.Xresources
+exec_always pgrep polkit-gnome || run /usr/libexec/polkit-gnome-authentication-agent-1
+exec_always setbg
+exec_always xsetroot -cursor_name left_ptr

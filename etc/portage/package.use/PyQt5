@@ -1,1 +1,1 @@
-dev-python/PyQt5 dbus declarative printsupport multimedia opengl network sql webchannel webengine webkit gui websockets widgets
+dev-python/PyQt5 network gui sql printsupport declarative webengine widgets webchannel

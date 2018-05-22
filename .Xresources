@@ -1,3 +1,6 @@
+! DPI
+Xft.dpi: 220
+
 ! URxvt
 URxvt.font: xft:Monofur:size=13
 URxvt.boldFont: xft:Monofur:size=13
@@ -13,7 +16,7 @@ URxvt.keysym.C-equal: perl:font-size:increase
 URxvt.keysym.C-minus: perl:font-size:decrease
 
 ! rofi
-rofi.font: Monofur 13
+rofi.font: Monofur 24
 !                  bg       border
 rofi.color-window: #121212, #aa4444
 !                  bg       fg       bgalt    hlbg     hlfg

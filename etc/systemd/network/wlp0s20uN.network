@@ -1,9 +1,0 @@
-[Match]
-Name=wlp0s20u*
-
-[Network]
-DHCP=yes
-IPv6PrivacyExtensions=yes
-
-[DHCP]
-RouteMetric=128

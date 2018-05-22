@@ -11,15 +11,17 @@
 # See the manpage fstab(5) for more information.
 #
 
-# <fs>                                         <mountpoint>    <type>          <opts>                       <dump/pass>
-PARTUUID=f1c9c95f-5b91-4f4e-90b0-bbbdb908fed6  /               btrfs           noatime,discard,space_cache  0 0
-PARTUUID=90266c67-3af3-4992-bfdf-40e5ce54ee17  /boot           vfat            noatime,discard              0 2
+# <fs>			<mountpoint>	<type>		<opts>		<dump/pass>
 
-/dev/mapper/crypt                              /mnt/crypt      btrfs           noatime,space_cache,noauto   0 0
-/dev/mapper/swap                               none            swap            defaults                     0 0
+# NOTE: If your BOOT partition is ReiserFS, add the notail option to opts.
+#
+# NOTE: Even though we list ext4 as the type here, it will work with ext2/ext3
+#       filesystems.  This just tells the kernel to use the ext4 driver.
+#
+# NOTE: You can use full paths to devices like /dev/sda3, but it is often
+#       more reliable to use filesystem labels or UUIDs. See your filesystem
+#       documentation for details on setting a label. To obtain the UUID, use
+#       the blkid(8) command.
 
-https://cloud.fooster.io/remote.php/webdav/    /mnt/cloud      davfs           user,rw,noauto               0 0
-https://dav.box.com/dav                        /mnt/box        davfs           user,rw,noauto               0 0
-
-LABEL=FoosterVM                                /mnt/vm         btrfs           noatime,space_cache,noauto   0 0
-LABEL=FoosterIMG                               /mnt/img        exfat           noauto                       0 0
+UUID=5F66-17ED                                   /boot           vfat            noatime,discard                 0 2
+UUID=ce6f4d7b-e8e6-4585-a687-988d7b5bf8ac        /               btrfs           noatime,discard,space_cache     0 0

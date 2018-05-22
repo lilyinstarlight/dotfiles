@@ -2,8 +2,8 @@
 <zone>
   <short>Public</short>
   <description>For use in public areas. You do not trust the other computers on networks to not harm your computer. Only selected incoming connections are accepted.</description>
-  <interface name="enp7s0"/>
-  <interface name="wlp8s0"/>
+  <interface name="enp7s0u2u2u1"/>
+  <interface name="wlp3s0"/>
   <service name="llmnr"/>
   <service name="dhcpv6-client"/>
   <service name="dhcp-client"/>

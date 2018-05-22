@@ -1,9 +1,0 @@
-[Match]
-Name=enp7s0
-
-[Network]
-DHCP=yes
-IPv6PrivacyExtensions=yes
-
-[DHCP]
-RouteMetric=32

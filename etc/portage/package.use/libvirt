@@ -1,4 +1,0 @@
-app-emulation/libvirt firewalld virt-network
-app-emulation/libvirt-glib python
-net-misc/spice-gtk gtk3 python usbredir python_single_target_python2_7 -python_single_target_python3_4
-net-libs/gtk-vnc python

@@ -1,2 +1,0 @@
-#!/bin/sh
-systemctl start systemd-cryptsetup@crypt.service && systemctl start mnt-crypt.mount

@@ -1,9 +1,0 @@
-dev-python/jupyter_core -doc
-dev-python/matplotlib -doc
-dev-python/pyzmq -doc
-dev-ruby/msgpack -doc
-dev-ruby/pg -doc
-dev-tex/latex-beamer -doc
-media-libs/libcaca -doc
-media-libs/lv2 -doc
-media-libs/opencolorio -doc

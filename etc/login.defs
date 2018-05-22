@@ -163,8 +163,8 @@ HUSHLOGIN_FILE	.hushlogin
 # *REQUIRED*  The default PATH settings, for superuser and normal users.
 #
 # (they are minimal, add the rest in the shell startup files)
-ENV_SUPATH	PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin
-ENV_PATH	PATH=/bin:/usr/bin:/usr/local/bin
+ENV_SUPATH	PATH=/sbin:/bin:/usr/sbin:/usr/bin
+ENV_PATH	PATH=/bin:/usr/bin
 
 #
 # Terminal permissions
@@ -203,7 +203,7 @@ KILLCHAR	025
 # home directories.
 # 022 is the default value, but 027, or even 077, could be considered
 # for increased privacy. There is no One True Answer here: each sysadmin
-# must make up his/her mind.
+# must make up their mind.
 UMASK		022
 
 #

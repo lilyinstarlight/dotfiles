@@ -1,3 +1,1 @@
-# <dm>   <dev>                                          <pass>           <opts>
-crypt    PARTUUID=ee1147fc-ad44-421d-90d7-3f122bf4d698  none             noauto,nofail
-swap     PARTUUID=7f172ebe-ee86-46e2-8582-1564be7fb63e  /dev/urandom     swap
+root     UUID=1d815ab8-5c0b-4eb3-89e1-4d16b69bfd29     none

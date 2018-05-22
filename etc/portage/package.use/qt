@@ -1,13 +1,2 @@
-dev-python/PyQt5 -gles2
-dev-qt/qt3d -gles2
-dev-qt/qtcore icu
-dev-qt/qtdatavis3d -gles2
-dev-qt/qtdeclarative -gles2
-dev-qt/qtgui -gles2
-dev-qt/qtmultimedia widgets -gles2
-dev-qt/qtopengl -gles2
-dev-qt/qtprintsupport -gles2
 dev-qt/qtwebchannel qml
 dev-qt/qtwebengine widgets
-dev-qt/qtwebkit printsupport -gles2
-dev-qt/qtwidgets -gles2

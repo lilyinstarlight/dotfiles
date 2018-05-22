@@ -1,1 +1,1 @@
-mail-client/neomutt gpg slang
+mail-client/neomutt gpgme sasl slang
