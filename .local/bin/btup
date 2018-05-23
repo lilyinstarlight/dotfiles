@@ -1,2 +1,0 @@
-#!/bin/sh
-pkexec /sbin/modprobe btusb && pkexec /usr/bin/rfkill unblock bluetooth && systemctl start bluetooth

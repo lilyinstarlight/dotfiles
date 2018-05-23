@@ -1,2 +1,0 @@
-#!/bin/sh
-umount /mnt/box && ([ -e "$HOME"/box ] && rm "$HOME"/box)

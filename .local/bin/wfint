@@ -1,3 +1,0 @@
-#!/bin/sh
-systemctl stop wpa_supplicant@wlp0s20u2
-systemctl start wpa_supplicant@wlp8s0

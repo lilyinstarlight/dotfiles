@@ -1,4 +1,0 @@
-#!/bin/sh
-firewall-cmd --zone=public --add-port=8765/tcp
-/usr/bin/zput -p 8765 "$@"
-firewall-cmd --zone=public --remove-port=8765/tcp

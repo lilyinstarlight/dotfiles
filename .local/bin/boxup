@@ -1,2 +1,0 @@
-#!/bin/sh
-([ -e "$HOME"/box ] || ln -s /mnt/box/ "$HOME"/box) && mount /mnt/box

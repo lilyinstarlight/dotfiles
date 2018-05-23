@@ -1,4 +1,0 @@
-#!/bin/sh
-systemctl stop bluetooth
-pkexec /usr/bin/rfkill block bluetooth
-pkexec /sbin/modprobe -r btusb bnep hidp

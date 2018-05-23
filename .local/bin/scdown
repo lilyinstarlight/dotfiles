@@ -1,3 +1,0 @@
-#!/bin/sh
-killall sc-controller scc-daemon
-pkexec /sbin/modprobe -r uinput joydev
