@@ -26,7 +26,7 @@
 
     ignore_newline = no
 
-    geometry = "300x5-30+39"
+    geometry = "300x5-30+60"
 
     title = Dunst
     class = Dunst
