@@ -12,8 +12,8 @@ general {
 }
 
 order += "load"
-order += "cpu_temperature 1"
-order += "battery 1"
+order += "cpu_temperature 0"
+order += "battery 0"
 order += "disk /"
 order += "tztime local"
 
@@ -21,11 +21,11 @@ load {
 	format = "cpu: %1min"
 }
 
-cpu_temperature 1 {
+cpu_temperature 0 {
 	format = "temp: %degrees °C"
 }
 
-battery 1 {
+battery 0 {
 	integer_battery_capacity = true
 	low_threshold = 12
 

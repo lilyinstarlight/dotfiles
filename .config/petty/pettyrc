@@ -1,5 +1,6 @@
 shell=fish
 
-session1=sway
+session1=i3
 session2=steam
 session3=openbox
+session4=sway

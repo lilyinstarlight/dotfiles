@@ -9,10 +9,10 @@ general {
 }
 
 order += "load"
-order += "cpu_temperature 1"
+order += "cpu_temperature 0"
 order += "volume master"
-order += "wireless wlp8s0"
-order += "battery 1"
+order += "wireless wlp3s0"
+order += "battery 0"
 order += "disk /"
 order += "tztime local"
 
@@ -20,7 +20,7 @@ load {
 	format = "cpu: %1min"
 }
 
-cpu_temperature 1 {
+cpu_temperature 0 {
 	format = "temp: %degrees °C"
 }
 
@@ -29,12 +29,12 @@ volume master {
 	format_muted = "vol: mute"
 }
 
-wireless wlp8s0 {
+wireless wlp3s0 {
 	format_up = "wlan: %essid"
 	format_down = "wlan: off"
 }
 
-battery 1 {
+battery 0 {
 	integer_battery_capacity = true
 	low_threshold = 12
 

@@ -1,6 +1,6 @@
 include /etc/sway/config.d/*
 
-### variables
+### variableg
 set $mod mod4
 set $term urxvt
 set $run rofi -show run
@@ -9,29 +9,30 @@ set $pass rofi-pass
 set $browser qutebrowser
 
 ### ouputs
-output eDP-1 resolution 1920x1080 position 0,0
+output eDP-1 resolution 2880x1800 position 0,0 scale 4
 
 ### inputs
-input "2:14:ETPS/2_Elantech_Touchpad" {
+input "0:0:Apple_SPI_Touchpad" {
     click_method clickfinger
     dwt enabled
     middle_emulation enabled
     natural_scroll enabled
     scroll_method two_finger
     tap enabled
+    pointer_accel 0.8
 }
 
 ### global settings
-font Monofur 14
+font Monofur 24
 focus_follows_mouse yes
 mouse_warping output
 seamless_mouse on
 
 ### desktop settings
-default_border normal 2
-default_floating_border normal 2
+default_border normal 4
+default_floating_border normal 4
 gaps edge_gaps off
-gaps 12
+gaps 24
 
 ### color settings
 set $lock $lock -c 000000 --bshlcolor 222222 --insidecolor 121212 --insidevercolor 222222 --insidewrongcolor 121212 --keyhlcolor aa4444 --linecolor 121212 --ringcolor 121212 --ringvercolor 222222 --ringwrongcolor ff0000 --separatorcolor 121212 --textcolor aa4444
@@ -145,15 +146,15 @@ bindsym $mod+apostrophe focus mode_toggle
 
 #### modes
 mode "resize" {
-    bindsym h resize grow width 10 px or 10 ppt
-    bindsym j resize shrink height 10 px or 10 ppt
-    bindsym k resize grow height 10 px or 10 ppt
-    bindsym l resize shrink width 10 px or 10 ppt
+    bindsym h resize grow width 20 px or 20 ppt
+    bindsym j resize shrink height 20 px or 20 ppt
+    bindsym k resize grow height 20 px or 20 ppt
+    bindsym l resize shrink width 20 px or 20 ppt
 
-    bindsym down resize shrink height 10 px or 10 ppt
-    bindsym left resize grow width 10 px or 10 ppt
-    bindsym right resize shrink width 10 px or 10 ppt
-    bindsym up resize grow height 10 px or 10 ppt
+    bindsym down resize shrink height 20 px or 20 ppt
+    bindsym left resize grow width 20 px or 20 ppt
+    bindsym right resize shrink width 20 px or 20 ppt
+    bindsym up resize grow height 20 px or 20 ppt
 
     bindsym return mode "default"
     bindsym escape mode "default"
@@ -169,13 +170,20 @@ bindsym shift+xf86monbrightnessup exec xbacklight +1
 bindsym $mod+xf86monbrightnessdown exec xbacklight 0
 bindsym $mod+xf86monbrightnessup exec xbacklight 100
 
+bindsym xf86kbdbrightnessdown exec kbdbacklight -10
+bindsym xf86kbdbrightnessup exec kbdbacklight +10
+bindsym shift+xf86kbdbrightnessdown exec kbdbacklight -1
+bindsym shift+xf86kbdbrightnessup exec kbdbacklight +1
+bindsym $mod+xf86kbdbrightnessdown exec kbdbacklight 0
+bindsym $mod+xf86kbdbrightnessup exec kbdbacklight 100
+
 bindsym xf86audiolowervolume exec amixer -q -D pulse sset Master 10%-
 bindsym xf86audioraisevolume exec amixer -q -D pulse sset Master 10%+
 bindsym shift+xf86audiolowervolume exec amixer -q -D pulse sset Master 1%-
 bindsym shift+xf86audioraisevolume exec amixer -q -D pulse sset Master 1%+
 bindsym $mod+xf86audiolowervolume exec amixer -q -D pulse sset Master 0%
 bindsym $mod+xf86audioraisevolume exec amixer -q -D pulse sset Master 100%
-bindsym $mod+xf86audiomute exec amixer -q -D pulse sset Master toggle
+bindsym xf86audiomute exec amixer -q -D pulse sset Master toggle
 
 bindsym xf86audioplay exec mpc -q toggle
 bindsym xf86audiostop exec mpc -q stop
@@ -201,7 +209,7 @@ bindsym $mod+shift+print exec swaygrab -f "$HOME"/tmp/screenshot.png
 bar {
     position top
 
-    font Monofur 14
+    font Monofur 24
     colors {
         background #121212
         statusline #d7d7d7

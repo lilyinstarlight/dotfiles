@@ -10,4 +10,7 @@ export WLC_REPEAT_RATE=50
 # fix java
 export _JAVA_AWT_WM_NONREPARENTING=1
 
+# scale display
+export GDK_SCALE=2
+
 exec /usr/local/share/sessions/sway

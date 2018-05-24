@@ -7,7 +7,7 @@ openbox &
 pid=$!
 
 # desktop services
-compton -b
+compton &
 
 # TV detection
 if xrandr | grep "HDMI-1 connected"; then
@@ -15,4 +15,4 @@ if xrandr | grep "HDMI-1 connected"; then
 fi
 
 # start root terminal
-urxvt -name RootURxvt -geometry 212x56
+urxvt -name RootURxvt -geometry 144x43

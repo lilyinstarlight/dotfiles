@@ -1,16 +1,6 @@
 #!/bin/sh
-# disable power management
-pkexec /usr/sbin/tlp ac
-
-# OpenGL
-pkexec /usr/bin/eselect opengl set 1
-
 # X properties
 xrdb -merge ~/.Xresources
-
-# setup xrandr
-xrandr --setprovideroutputsource modesetting NVIDIA-0
-xrandr --auto
 
 # start wm
 openbox &
@@ -18,16 +8,5 @@ openbox &
 # desktop services
 compton -b
 
-# TV detection
-if xrandr | grep "HDMI-1-1 connected"; then
-	tvup
-fi
-
 # start steam
 steam -bigpicture
-
-# OpenGL
-pkexec /usr/bin/eselect opengl set 2
-
-# enable power management
-pkexec /usr/sbin/tlp start

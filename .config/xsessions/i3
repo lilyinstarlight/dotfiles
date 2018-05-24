@@ -1,0 +1,11 @@
+#!/bin/sh
+# desktop services
+compton &
+
+# TV detection
+if xrandr | grep "HDMI-1 connected"; then
+	tvup
+fi
+
+mkdir -p "$HOME"/.local/share/i3
+exec i3 -d all &>"$HOME"/.local/share/i3/i3.log

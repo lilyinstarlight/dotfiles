@@ -2,7 +2,7 @@
 set $mod Mod4
 set $term urxvt
 set $run rofi -show run
-set $lock i3lock -c 121212
+set $lock i3lock -c 000000
 set $pass rofi-pass
 set $browser qutebrowser
 
@@ -17,7 +17,7 @@ default_floating_border normal 2
 gaps inner 12
 
 ### color settings
-set $lock $lock -c 000000 --bshlcolor 222222 --insidecolor 121212 --insidevercolor 222222 --insidewrongcolor 121212 --keyhlcolor aa4444 --linecolor 121212 --ringcolor 121212 --ringvercolor 222222 --ringwrongcolor ff0000 --separatorcolor 121212 --textcolor aa4444
+#set $lock $lock -c 000000 --bshlcolor 222222 --insidecolor 121212 --insidevercolor 222222 --insidewrongcolor 121212 --keyhlcolor aa4444 --linecolor 121212 --ringcolor 121212 --ringvercolor 222222 --ringwrongcolor ff0000 --separatorcolor 121212 --textcolor aa4444
 
 client.background #aa4444
 client.focused #222222 #222222 #aa4444 #aa4444 #aa4444
@@ -199,4 +199,3 @@ bar {
 exec_always xrdb -merge "$HOME"/.Xresources
 exec_always pgrep polkit-gnome || run /usr/libexec/polkit-gnome-authentication-agent-1
 exec_always setbg
-exec_always xsetroot -cursor_name left_ptr

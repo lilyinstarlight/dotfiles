@@ -79,9 +79,6 @@
 [submodule ".config/fisherman/done"]
 	path = .config/fisherman/done
 	url = https://github.com/fisherman/done.git
-[submodule ".config/fisherman/fnm"]
-	path = .config/fisherman/fnm
-	url = https://github.com/fisherman/fnm.git
 [submodule ".config/fisherman/get_file_age"]
 	path = .config/fisherman/get_file_age
 	url = https://github.com/fisherman/get_file_age.git
