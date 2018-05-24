@@ -1,0 +1,6 @@
+[Unit]
+Description=update DNS IP address
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/ddns

@@ -1,0 +1,6 @@
+[Unit]
+Description=email logged errors and failed units from the last hour
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/logmail -1h err /etc/logfilter

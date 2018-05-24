@@ -1,0 +1,8 @@
+[Unit]
+Description=update DNS IP address
+
+[Timer]
+OnCalendar=*:00/5
+
+[Install]
+WantedBy=timers.target
