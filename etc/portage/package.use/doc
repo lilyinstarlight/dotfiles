@@ -1,0 +1,8 @@
+dev-ruby/ruby-macho -doc
+dev-ruby/mqtt -doc
+dev-ruby/faker -doc
+dev-ruby/rbnacl-libsodium -doc
+dev-ruby/metasploit-concern -doc
+dev-ruby/pg -doc
+dev-ruby/metasploit-model -doc
+dev-ruby/metasploit_data_models -doc
