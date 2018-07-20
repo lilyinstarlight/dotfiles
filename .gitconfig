@@ -4,10 +4,6 @@
 	signingkey = 38094AE4
 [push]
 	default = simple
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	required = true
 [color]
 	ui = auto
 [alias]
@@ -17,3 +13,5 @@
 	subupd = submodule update --init
 	subpull = submodule foreach git pull
 	uppull = pull upstream master
+	fa = fetch --all
+	md = merge origin/dev
