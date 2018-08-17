@@ -112,3 +112,6 @@
 [submodule ".tmux/plugins/tmux-yank"]
 	path = .tmux/plugins/tmux-yank
 	url = https://github.com/tmux-plugins/tmux-yank.git
+[submodule ".config/nvim/plugged/vim-spl"]
+	path = .config/nvim/plugged/vim-spl
+	url = https://github.com/fkmclane/vim-spl.git

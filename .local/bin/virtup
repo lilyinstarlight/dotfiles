@@ -1,2 +1,2 @@
 #!/bin/sh
-pkexec sh -c "mount /mnt/vm && sysctl net.ipv4.ip_forward=1 && modprobe kvm_intel && systemctl start virtlogd && systemctl start libvirtd"
+pkexec sh -c "sysctl net.ipv4.ip_forward=1 && modprobe kvm_intel && systemctl start virtlogd && systemctl start libvirtd"

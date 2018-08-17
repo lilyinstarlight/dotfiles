@@ -1,2 +1,2 @@
 #!/bin/sh
-pkexec sh -c "systemctl stop libvirtd; systemctl stop virtlogd; modprobe -r kvm_intel; sysctl net.ipv4.ip_forward=0; umount /mnt/vm; killall dnsmasq; firewall-cmd --reload; modprobe -r ipt_MASQUERADE xt_CHECKSUM; \"$HOME\"/.local/bin/netclean; modprobe -r vhost_net tun"
+pkexec sh -c "systemctl stop libvirtd; systemctl stop virtlogd; modprobe -r kvm_intel; sysctl net.ipv4.ip_forward=0; killall dnsmasq; firewall-cmd --reload; modprobe -r ipt_MASQUERADE xt_CHECKSUM; \"$HOME\"/.local/bin/netclean; modprobe -r vhost_net tun"
