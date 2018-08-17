@@ -70,9 +70,6 @@
 [submodule ".tmux/plugins/tmux-logging"]
 	path = .tmux/plugins/tmux-logging
 	url = https://github.com/tmux-plugins/tmux-logging.git
-[submodule ".config/fisherman/docker-completion"]
-	path = .config/fisherman/docker-completion
-	url = https://github.com/fisherman/docker-completion.git
 [submodule ".config/fisherman/await"]
 	path = .config/fisherman/await
 	url = https://github.com/fisherman/await.git
@@ -97,9 +94,6 @@
 [submodule ".config/fisherman/spin"]
 	path = .config/fisherman/spin
 	url = https://github.com/fisherman/spin.git
-[submodule ".config/fisherman/plugin-thefuck"]
-	path = .config/fisherman/plugin-thefuck
-	url = https://github.com/oh-my-fish/plugin-thefuck.git
 [submodule ".config/nvim/plugged/vim-journal"]
 	path = .config/nvim/plugged/vim-journal
 	url = https://github.com/junegunn/vim-journal.git
@@ -115,3 +109,6 @@
 [submodule ".config/nvim/plugged/vim-spl"]
 	path = .config/nvim/plugged/vim-spl
 	url = https://github.com/fkmclane/vim-spl.git
+[submodule ".config/fisherman/thefuck"]
+	path = .config/fisherman/thefuck
+	url = https://github.com/oh-my-fish/plugin-thefuck.git
