@@ -1,33 +1,20 @@
-From a3febd1a49f259049d0d9650e297590b56d71ae4 Mon Sep 17 00:00:00 2001
-From: "Peter Y. Chuang" <peteryuchuang@gmail.com>
-Date: Fri, 4 Aug 2017 00:24:36 +0200
-Subject: [PATCH libinput] udev: Add Apple SPI Keyboard and Touchpad
-
-This enables touch-size-based palm rejection and disable-while-typing
-touchpad feature for the SPI keyboards and touchpads inside the 12-inch
-MacBooks and 2016 or later MacBook Pros.
----
- udev/90-libinput-model-quirks.hwdb | 8 ++++++++
- 1 file changed, 8 insertions(+)
-
-diff --git a/udev/90-libinput-model-quirks.hwdb b/udev/90-libinput-model-quirks.hwdb
-index 2754c5d5..936cb67f 100644
---- a/udev/90-libinput-model-quirks.hwdb
-+++ b/udev/90-libinput-model-quirks.hwdb
-@@ -56,6 +56,14 @@ libinput:touchpad:input:b0005v05ACp*
- libinput:name:*Apple Inc. Apple Internal Keyboard*:dmi:*
-  LIBINPUT_ATTR_KEYBOARD_INTEGRATION=internal
+diff --git a/quirks/50-system-apple.quirks b/quirks/50-system-apple.quirks
+--- a/quirks/50-system-apple.quirks
++++ b/quirks/50-system-apple.quirks
+@@ -19,6 +19,16 @@ ModelAppleTouchpad=1
+ MatchName=*Apple Inc. Apple Internal Keyboard*
+ AttrKeyboardIntegration=internal
  
-+libinput:name:*Apple SPI Touchpad*:dmi:*
-+ LIBINPUT_MODEL_APPLE_TOUCHPAD=1
-+ LIBINPUT_ATTR_TOUCH_SIZE_RANGE=50:30
-+ LIBINPUT_ATTR_PALM_SIZE_THRESHOLD=800
++[Apple SPI Touchpad]
++MatchName=*Apple SPI Touchpad*
++ModelAppleTouchpad=1
++AttrTouchSizeRange=50:30
++AttrPalmSizeThreshold=800
 +
-+libinput:name:*Apple SPI Keyboard*:dmi:*
-+ LIBINPUT_ATTR_KEYBOARD_INTEGRATION=internal
++[Apple SPI Keyboard]
++MatchName=*Apple SPI Keyboard*
++AttrKeyboardIntegration=internal
 +
- libinput:mouse:input:b0005v05ACp030D*
-  LIBINPUT_MODEL_APPLE_MAGICMOUSE=1
- 
--- 
-2.13.4
+ [Apple MagicMouse]
+ MatchUdevType=mouse
+ MatchBus=bluetooth
