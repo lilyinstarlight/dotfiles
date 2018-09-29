@@ -73,15 +73,6 @@
 [submodule ".config/fisherman/await"]
 	path = .config/fisherman/await
 	url = https://github.com/fisherman/await.git
-[submodule ".config/fisherman/done"]
-	path = .config/fisherman/done
-	url = https://github.com/fisherman/done.git
-[submodule ".config/fisherman/get_file_age"]
-	path = .config/fisherman/get_file_age
-	url = https://github.com/fisherman/get_file_age.git
-[submodule ".config/fisherman/getopts"]
-	path = .config/fisherman/getopts
-	url = https://github.com/fisherman/getopts.git
 [submodule ".config/fisherman/humanize_duration"]
 	path = .config/fisherman/humanize_duration
 	url = https://github.com/fisherman/humanize_duration.git
