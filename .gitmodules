@@ -112,3 +112,12 @@
 [submodule ".config/fisherman/thefuck"]
 	path = .config/fisherman/thefuck
 	url = https://github.com/oh-my-fish/plugin-thefuck.git
+[submodule ".config/nvim/plugged/vim-magnum"]
+	path = .config/nvim/plugged/vim-magnum
+	url = https://github.com/glts/vim-magnum.git
+[submodule ".config/nvim/plugged/vim-radical"]
+	path = .config/nvim/plugged/vim-radical
+	url = https://github.com/glts/vim-radical.git
+[submodule ".config/nvim/plugged/bro.vim"]
+	path = .config/nvim/plugged/bro.vim
+	url = https://github.com/mephux/bro.vim.git
