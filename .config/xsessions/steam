@@ -4,9 +4,15 @@ xrdb -merge ~/.Xresources
 
 # start wm
 openbox &
+pid=$!
 
 # desktop services
 compton -b
+
+# TV detection
+if xrandr | grep "DisplayPort-0 connected"; then
+	tvup
+fi
 
 # start steam
 steam -bigpicture

@@ -7,10 +7,10 @@ openbox &
 pid=$!
 
 # desktop services
-compton &
+compton -b
 
 # TV detection
-if xrandr | grep "HDMI-1 connected"; then
+if xrandr | grep "DisplayPort-0 connected"; then
 	tvup
 fi
 
