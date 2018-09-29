@@ -1,0 +1,4 @@
+#!/bin/sh
+btup
+xrandr --output eDP --off --output DisplayPort-0 --mode 1920x1080 --pos 0x0
+setbg
