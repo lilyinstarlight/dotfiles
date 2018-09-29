@@ -1,6 +1,3 @@
-! DPI
-Xft.dpi: 220
-
 ! URxvt
 URxvt.font: xft:Monofur:size=13
 URxvt.boldFont: xft:Monofur:size=13
