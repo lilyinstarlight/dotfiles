@@ -1,0 +1,8 @@
+[Unit]
+Description=low battery alert service
+
+[Service]
+ExecStart=$HOME/.local/bin/batt-check
+
+[Install]
+WantedBy=default.target

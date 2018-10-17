@@ -1,0 +1,7 @@
+#!/bin/bash
+batt="$(acpi -b | grep 'Battery 0: Discharging' | sed -e 's/.*, \([0-9]*\)\%.*/\1/')"
+if [ -n "$batt" ] && [ "$batt" -lt 15 ]; then
+	for i in $(ls /tmp/.X11-unix/); do
+		DISPLAY=":$(echo $i | tr -d 'X')" zenity --warning --text='Battery below 15%'
+	done
+fi
