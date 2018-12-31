@@ -4,7 +4,9 @@ mount -t sysfs none /sys
 mount -t devtmpfs none /dev
 
 modprobe applespi
-modprobe appletb
+modprobe apple-ibridge
+modprobe apple-ib-tb
+modprobe apple-ib-als
 
 cryptsetup open $(findfs UUID=1d815ab8-5c0b-4eb3-89e1-4d16b69bfd29) root || exec sh
 mount -o ro $(findfs UUID=ce6f4d7b-e8e6-4585-a687-988d7b5bf8ac) /mnt/root || exec sh
