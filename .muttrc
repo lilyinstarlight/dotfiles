@@ -7,13 +7,16 @@ unset move
 unset index_format
 
 # configuration
-set from="Foster McLane <fkmclane@fkmclane.net>"
+set from="Foster McLane <foster@fkmclane.net>"
 set sort=threads
 set sort_aux=last-date-received
 set folder=~/.mail
 set move=yes
 
 set use_envelope_from
+
+# outgoing mail
+source ~/.smtprc
 
 # folders
 set spoolfile=~/.mail/inbox/
