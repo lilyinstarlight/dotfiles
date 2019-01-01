@@ -20,7 +20,7 @@ SERVERNAME=smtp
 # client id for any of them, thus a pair localhostname-remotehostname
 # should be used
 #
-CLIENTNAME=flynn
+CLIENTNAME=lora.fkmclane.net-smtp
 
 # The mailbox to sync, in case the path is the same on both hosts.
 # The path MUST be relative to the home directory, use a symlink if
@@ -84,3 +84,6 @@ MAILBOX=".mail/"
 # is dumped, including transmitted mails.
 #
 # DEBUG=true
+
+REMOTESMDSERVER=/usr/local/bin/smd-server
+REMOTESMDCLIENT=/usr/local/bin/smd-client
