@@ -2,6 +2,6 @@
 name="FoosterMOUSE"
 mouse="$(xinput | grep "$name" | grep -o 'id=[[:digit:]]*' | cut -d= -f2)"
 if [ -n "$mouse" ]; then
-	xinput set-prop "$mouse" 295 0 0 1
-	xinput set-prop "$mouse" 290 1
+	xinput set-prop "$mouse" 296 0 0 1
+	xinput set-prop "$mouse" 291 1
 fi
