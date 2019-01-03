@@ -1,5 +1,11 @@
 #!/bin/sh
 btup
 wfdown
-xrandr --output eDP --off --output DisplayPort-0 --mode 3440x1440 --pos 0x0 --output DisplayPort-2 --mode 3440x1440 --pos 3440x0
+if [ -n "$SWAYSOCK" ]; then
+	swaymsg output eDP-1 disable
+	swaymsg output DP-1 resolution 3440x1440 position 0 0
+	swaymsg output DP-3 resolution 3440x1440 position 3440 0
+else
+	xrandr --output eDP --off --output DisplayPort-0 --mode 3440x1440 --pos 0x0 --output DisplayPort-2 --mode 3440x1440 --pos 3440x0
+fi
 setbg
