@@ -2,13 +2,13 @@
 if [ -n "$1" ]; then
 	iface=$1
 else
-	iface=wlp8s0
+	iface=wlp3s0
 fi
 
 if [ -n "$2" ]; then
 	oface=$2
 else
-	oface=enp7s0
+	oface=enp0s1u1u1
 fi
 
 pkexec sh -c "create_ap --stop $iface; systemctl start wpa_supplicant@$iface"

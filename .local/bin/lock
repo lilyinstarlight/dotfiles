@@ -1,0 +1,8 @@
+#!/bin/sh
+if [ -n "$SWAYSOCK" ]; then
+	swaylock -c 000000 --bs-hl-color 222222 --inside-color 121212 --inside-color 121212 --inside-clear-color 121212 --inside-ver-color 222222 --inside-wrong-color 121212 --key-hl-color aa4444 --line-color 121212 --ring-color 121212 --ring-clear-color 121212 --ring-ver-color 222222 --ring-wrong-color ff0000 --separator-color 121212 --text-color aa4444
+elif [ -n "$DISPLAY" ]; then
+	i3lock -c 000000
+else
+	physlock
+fi

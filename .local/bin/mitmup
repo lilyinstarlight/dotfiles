@@ -1,0 +1,52 @@
+#!/bin/sh
+exec pkexec sh -ec '
+iface=wlp3s0
+oface=enp0s1u1u1
+
+systemctl stop wpa_supplicant@$iface
+systemctl stop firewalld
+
+ip link set dev $iface down
+ip addr flush $iface
+ip link set dev $iface up
+ip addr add 10.13.37.1/24 dev $iface
+
+sysctl net.ipv4.ip_forward=1
+
+iptables --flush
+iptables --delete-chain
+iptables --table nat --flush
+iptables --table nat --delete-chain
+
+iptables --table nat --append PREROUTING --in-interface $iface --protocol tcp --dport 80 --jump REDIRECT --to-port 8080
+iptables --table nat --append PREROUTING --in-interface $iface --protocol tcp --dport 443 --jump REDIRECT --to-port 8080
+iptables --table nat --append POSTROUTING --out-interface $oface --jump MASQUERADE
+iptables --append FORWARD --in-interface $iface --jump ACCEPT
+
+cat >/tmp/mitm-dnsmasq.conf <<EOF
+interface=$iface
+bind-interfaces
+domain-needed
+dhcp-range=10.13.37.100,10.13.37.250,255.255.255.0,24h
+EOF
+cat >/tmp/mitm-hostapd.conf <<EOF
+interface=$iface
+driver=nl80211
+ssid=FoosterMiTM
+beacon_int=100
+channel=1
+hw_mode=g
+ieee80211n=1
+ht_capab=[HT40][SHORT-GI-20][DSSS_CCK-40]
+macaddr_acl=0
+ignore_broadcast_ssid=0
+auth_algs=1
+wpa=2
+wpa_key_mgmt=WPA-PSK
+wpa_passphrase=wearenumberone
+rsn_pairwise=CCMP
+EOF
+
+hostapd -B -P /tmp/mitm-hostapd.pid /tmp/mitm-hostapd.conf
+dnsmasq -C /tmp/mitm-dnsmasq.conf -x /tmp/mitm-dnsmasq.pid
+'

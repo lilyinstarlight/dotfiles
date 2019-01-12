@@ -1,0 +1,22 @@
+#!/bin/sh
+if [ -n "$SWAYSOCK" ]; then
+	if swaymsg -t get_outputs | jq '.[].name' | grep -F '"DP-1"' >/dev/null; then
+		if swaymsg -t get_outputs | jq '.[].name' | grep -F '"DP-3"' >/dev/null; then
+			socup
+		else
+			tvup
+		fi
+	else
+		monup
+	fi
+else
+	if xrandr | grep "DisplayPort-0 connected" >/dev/null; then
+		if xrandr | grep "DisplayPort-2 connected" >/dev/null; then
+			socup
+		else
+			tvup
+		fi
+	else
+		monup
+	fi
+fi

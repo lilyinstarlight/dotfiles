@@ -1,6 +1,6 @@
 #!/bin/sh
 if [ -n "$SWAYSOCK" ]; then
-	swaymsg output '*' background "$(find "$HOME"/.background/"$(swaymsg -t get_outputs | jq '.[0].rect.height')" -type f | shuf -n1)" fill
+	swaymsg output '*' background "$(find "$HOME"/.background/"$(swaymsg -t get_outputs | jq '.[0].current_mode.height')" -type f | shuf -n1)" fill
 else
 	nitrogen --set-zoom-fill --random
 fi

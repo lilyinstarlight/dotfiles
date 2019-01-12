@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 path="/sys/class/leds/spi::kbd_backlight"
 
 if [ $# -ne 0 ] && [ $# -ne 1 ]; then
@@ -10,7 +10,11 @@ max="$(cat "$path"/max_brightness)"
 cur="$(cat "$path"/brightness)"
 
 if [ $# -eq 0 ]; then
-	echo $cur
+	uncalc() {
+		echo $(expr $(expr $1 '*' 100) / $max)
+	}
+
+	echo $(uncalc $cur)
 else
 	first="${1::1}"
 	last="${1:1}"
@@ -29,15 +33,16 @@ else
 		cur="$(calc $1)"
 	fi
 
-	echo $cur
-
 	if [ $cur -gt $max ]; then
 		cur=$max
 	elif [ $cur -lt 0 ]; then
 		cur=0
 	fi
 
-	echo $cur
+	if [ $(stat -c %a "$path"/brightness) -ne 664 ]; then
+		pkexec /bin/chown root:input "$path"/brightness
+		pkexec /bin/chmod 664 "$path"/brightness
+	fi
 
 	echo $cur >"$path"/brightness
 fi
