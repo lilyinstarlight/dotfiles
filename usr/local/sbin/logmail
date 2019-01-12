@@ -35,5 +35,11 @@ fi
 if [ "${#message}" -ne 0 ]; then
 	message="$(printf "Details for $(hostname):\n$message")"
 
-	echo "$message" | mail -r "$mailfrom" -s "$subject" "$mailto"
+	sendmail -f "$mailfrom" "$mailto" <<EOF
+From: $mailfrom
+To: $mailto
+Subject: $subject
+
+$message
+EOF
 fi
