@@ -1,0 +1,4 @@
+#!/bin/bash
+echo -n "Key: " >&2
+read key
+exec openssl enc -aes-256-cbc -a -k "$key" | ncat "$@"
