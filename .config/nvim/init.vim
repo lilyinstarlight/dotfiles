@@ -38,6 +38,7 @@ call plug#begin('$HOME/.config/nvim/plugged')
 Plug 'fidian/hexmode'
 Plug 'fkmclane/vim-resolve'
 Plug 'fkmclane/vim-spl'
+Plug 'gisraptor/vim-lilypond-integrator'
 Plug 'glts/vim-magnum'
 Plug 'glts/vim-radical'
 Plug 'itchyny/lightline.vim'
@@ -47,7 +48,6 @@ Plug 'junegunn/vim-peekaboo'
 Plug 'junegunn/vim-plug'
 Plug 'junegunn/vim-slash'
 Plug 'lfv89/vim-interestingwords'
-Plug 'mephux/bro.vim'
 Plug 'nanotech/jellybeans.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'peterhoeg/vim-qml'
@@ -63,6 +63,7 @@ Plug 'tpope/vim-surround'
 Plug 'triglav/vim-visual-increment'
 Plug 'vimwiki/vimwiki', {'branch': 'dev'}
 Plug 'wilriker/vim-fish'
+Plug 'zeek/vim-zeek'
 
 call plug#end()
 
