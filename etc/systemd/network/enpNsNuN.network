@@ -1,9 +1,0 @@
-[Match]
-Name=enp*s*u*
-
-[Network]
-DHCP=yes
-IPv6PrivacyExtensions=yes
-
-[DHCP]
-RouteMetric=32

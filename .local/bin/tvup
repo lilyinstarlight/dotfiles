@@ -1,9 +1,0 @@
-#!/bin/sh
-btup
-if [ -n "$SWAYSOCK" ]; then
-	swaymsg output eDP-1 disable
-	swaymsg output DP-1 resolution 1920x1080 position 0 0
-else
-	xrandr --output eDP --off --output DisplayPort-0 --mode 1920x1080 --pos 0x0
-fi
-setbg

@@ -1,5 +1,0 @@
-polkit.addRule(function(action, subject) {
-    if ((action.id == "org.freedesktop.policykit.exec") && ((action.lookup("command_line") == "/usr/sbin/tlp ac") || (action.lookup("command_line") == "/usr/sbin/tlp bat") || (action.lookup("command_line") == "/usr/sbin/tlp start")) && subject.isInGroup("wheel")) {
-        return polkit.Result.YES;
-    }
-});

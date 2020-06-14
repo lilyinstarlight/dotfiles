@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Neovim
-Comment=vim, out of the box
-Exec=urxvt -e vi
-Icon=nvim
-Terminal=false
-Type=Application
-Categories=Development;Utility;
-MimeType=application/javascript;application/x-perl;application/x-php;application/x-ruby;application/x-shellscript;application/xml;text/css;text/html;text/markdown;text/plain;text/x-c++src;text/x-csharp;text/x-csrc;text/x-java;text/x-makefile;text/x-python;

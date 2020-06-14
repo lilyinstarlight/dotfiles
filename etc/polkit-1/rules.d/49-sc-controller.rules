@@ -1,5 +1,0 @@
-polkit.addRule(function(action, subject) {
-    if (((action.id == "org.freedesktop.policykit.exec") && ((action.lookup("command_line") == "/sbin/modprobe uinput joydev") || (action.lookup("command_line") == "/sbin/modprobe -r uinput joydev"))) && subject.isInGroup("wheel")) {
-        return polkit.Result.YES;
-    }
-});

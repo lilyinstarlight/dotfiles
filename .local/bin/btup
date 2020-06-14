@@ -1,2 +1,0 @@
-#!/bin/sh
-pkexec /sbin/modprobe hci_uart && pkexec /sbin/modprobe bnep && pkexec /sbin/modprobe hidp && pkexec /usr/sbin/rfkill unblock bluetooth && systemctl start bluetooth

@@ -1,4 +1,0 @@
-#!/bin/sh
-eix-update
-eix-diff
-cp -p /var/cache/eix/portage.eix /var/cache/eix/previous.eix

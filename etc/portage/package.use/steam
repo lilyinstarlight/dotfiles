@@ -1,3 +1,0 @@
-games-util/steam-meta -steamruntime
-games-util/steam-client-meta -steamruntime flash steamfonts streaming trayicon
-games-util/steam-launcher -steamruntime

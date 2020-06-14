@@ -1,7 +1,0 @@
-NAME=FoosterOS
-ID=gentoo
-PRETTY_NAME="FoosterOS"
-ANSI_COLOR="1;31"
-HOME_URL="https://www.gentoo.org/"
-SUPPORT_URL="https://www.gentoo.org/support/"
-BUG_REPORT_URL="https://bugs.gentoo.org/"

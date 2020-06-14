@@ -1,5 +1,0 @@
-#!/bin/sh
-echo -n 'Password: ' >&2
-read -s pass
-echo
-echo -n "$pass" | iconv -f utf-8 -t utf-16le | openssl dgst -md4 | cut -d' ' -f2

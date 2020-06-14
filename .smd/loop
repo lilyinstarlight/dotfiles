@@ -1,7 +1,0 @@
-# smd-loop configuration file
-#
-# Line starting with '#' are comments.
-# Frequences are in minutes.
-#
-# pull-frequency push-frequency endpoint-name
-  1              1              lora

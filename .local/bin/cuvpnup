@@ -1,2 +1,0 @@
-#!/bin/sh
-exec echo -e "$(pass sso/clemson)\npush" | pkexec sh -c "/usr/sbin/openconnect -qbu fmclane https://cuvpn.clemson.edu/ && rm /etc/resolv.conf && echo search clemson.edu >/etc/resolv.conf && echo nameserver 130.127.255.250 >>/etc/resolv.conf && echo nameserver 130.127.255.251 >>/etc/resolv.conf"

@@ -1,6 +1,0 @@
-#!/bin/sh
-if [ -n "$NVIM_LISTEN_ADDRESS" ]; then
-  exec nvr -cc 'rightbelow vsplit' --remote-wait +'set bufhidden=delete' "$@"
-else
-  exec nvim "$@"
-fi

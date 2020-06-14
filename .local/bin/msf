@@ -1,4 +1,0 @@
-#!/bin/sh
-systemctl start postgresql-10.service
-msfconsole "$@"
-systemctl stop postgresql-10.service

@@ -1,5 +1,0 @@
-polkit.addRule(function(action, subject) {
-    if (((action.id == "org.freedesktop.policykit.exec") && ((action.lookup("command_line") == "/bin/chown root:input /sys/class/leds/spi::kbd_backlight/brightness") || (action.lookup("command_line") == "/bin/chmod 664 /sys/class/leds/spi::kbd_backlight/brightness"))) && subject.isInGroup("wheel")) {
-        return polkit.Result.YES;
-    }
-});

@@ -1,3 +1,0 @@
-#!/bin/sh
-udiskie-umount -a
-[ -e "$HOME"/mnt ] && rm "$HOME"/mnt

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<service>
-  <short>DHCP Client</short>
-  <description>This option allows a DHCP client to obtain addresses and other settings from DHCP server.</description>
-  <port protocol="udp" port="68"/>
-</service>

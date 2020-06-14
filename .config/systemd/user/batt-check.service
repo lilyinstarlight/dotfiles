@@ -1,8 +1,0 @@
-[Unit]
-Description=low battery alert service
-
-[Service]
-ExecStart=/home/foster/.local/bin/batt-check
-
-[Install]
-WantedBy=default.target

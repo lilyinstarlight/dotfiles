@@ -1,2 +1,0 @@
-#!/bin/sh
-exec pkexec sh -c "rm /etc/resolv.conf && ln -s /lib/systemd/resolv.conf /etc/resolv.conf && killall openconnect"

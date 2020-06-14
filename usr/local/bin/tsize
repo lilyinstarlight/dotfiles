@@ -1,2 +1,0 @@
-#!/bin/sh
-du -khx --max-depth=1 "$@" | sort -hr

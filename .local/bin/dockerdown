@@ -1,2 +1,0 @@
-#!/bin/sh
-pkexec sh -c "systemctl stop docker; modprobe -r kvm_intel; sysctl net.ipv4.ip_forward=0; firewall-cmd --reload; modprobe -r ipt_MASQUERADE xt_addrtype br_netfilter; \"$HOME\"/.local/bin/netclean; modprobe -r veth"

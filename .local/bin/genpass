@@ -1,2 +1,0 @@
-#!/bin/sh
-grep -E '^\w{4}$' /usr/share/dict/cracklib-small | sort -R | head -n4 | paste -sd ''

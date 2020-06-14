@@ -1,3 +1,0 @@
-#!/bin/sh
-mkdir -p "$HOME"/.local/share/sway
-exec sway -d &>"$HOME"/.local/share/sway/sway.log

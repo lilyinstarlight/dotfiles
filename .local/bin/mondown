@@ -1,6 +1,0 @@
-#!/bin/sh
-if [ -z "$SWAYSOCK" ]; then
-	xrandr --dpi 144/eDP
-fi
-
-setbg
