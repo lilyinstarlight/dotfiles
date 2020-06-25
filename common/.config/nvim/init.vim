@@ -3,6 +3,7 @@ call plug#begin(stdpath('data') . '/plugged')
 
 Plug 'LnL7/vim-nix'
 Plug 'NovaDev94/vim-fish'
+Plug 'PProvost/vim-ps1'
 Plug 'fidian/hexmode'
 Plug 'fkmclane/vim-resolve'
 Plug 'fkmclane/vim-sonicpi'
