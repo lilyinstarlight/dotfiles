@@ -1,3 +1,23 @@
+"os detection
+if !exists('s:os')
+    if has('win32')
+        let s:uname = 'Windows'
+        let s:os = 'windows'
+    elseif filereadable('/proc/version') && readfile('/proc/version')[0] =~ 'Microsoft\|WSL'
+        let s:uname = 'Linux'
+        let s:os = 'wsl'
+    else
+        let s:uname = substitute(system('uname -s'), '\n', '', '')
+        if s:uname == 'Darwin'
+            let s:os = 'macos'
+        elseif s:uname == 'Linux'
+            let s:os = 'linux'
+        else
+            let s:os = 'unknown'
+        endif
+    endif
+endif
+
 "vim-plug
 call plug#begin(stdpath('data') . '/plugged')
 
@@ -123,4 +143,8 @@ nmap <leader><space> :StripWhitespace<cr>
 "vimwiki
 let g:vimwiki_global_ext=0
 let g:vimwiki_dir_link='index'
-let g:vimwiki_list=[{'path': '$HOME/docs/wiki'}]
+if s:os == 'macos'
+    let g:vimwiki_list=[{'path': '$HOME/Wiki'}]
+else
+    let g:vimwiki_list=[{'path': '$HOME/docs/wiki'}]
+endif
