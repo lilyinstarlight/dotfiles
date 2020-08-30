@@ -1,15 +1,18 @@
 #!/bin/sh -e
-if uname -s | grep -qi 'Linux' &>/dev/null; then
-	os="linux"
+if grep -qi 'Microsoft\|WSL' /proc/version &>/dev/null; then
+	os="wsl"
 elif uname -s | grep -qi 'Darwin' &>/dev/null; then
 	os="macos"
-elif grep -qi 'Microsoft\|WSL' /proc/version &>/dev/null; then
-	os="wsl"
+elif uname -s | grep -qi 'Linux' &>/dev/null; then
+	os="linux"
 else
-	os="common"
+	os="unknown"
 fi
 
-# TODO: commmon overlay
+echo "Detected OS: $os"
+
+rsync -avv common/ "$HOME"/
 
 if [ "$os" == "linux" ]; then
+	true
 fi
