@@ -24,6 +24,7 @@ call plug#begin(stdpath('data') . '/plugged')
 Plug 'LnL7/vim-nix'
 Plug 'NovaDev94/vim-fish'
 Plug 'PProvost/vim-ps1'
+Plug 'elixir-editors/vim-elixir'
 Plug 'fidian/hexmode'
 Plug 'gisraptor/vim-lilypond-integrator'
 Plug 'glts/vim-magnum'
