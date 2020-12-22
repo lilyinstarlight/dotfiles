@@ -11,26 +11,26 @@ else
 	os="unknown"
 fi
 
-echo "Detected OS: $os"
+printf 'Detected OS: %s\n' "$os"
 
-echo -n "Copying common files..."
+printf 'Copying common files...'
 
 rsync -avv common/ "$HOME"/
 
-echo
-echo -n "Copying backgrounds files..."
+printf '\n'
+printf 'Copying backgrounds files...'
 
-if [ "$os" = "linux" ]; then
-	echo
+if [ "$os" = 'linux' ]; then
+	printf '\n'
 	mkdir -p "$HOME"/.backgrounds
 	rsync -avv backgrounds/ "$HOME"/.backgrounds/
-elif [ "$os" = "macos" ]; then
-	echo
+elif [ "$os" = 'macos' ]; then
+	printf '\n'
 	mkdir -p "$HOME"/Pictures/Backgrounds
 	rsync -avv backgrounds/1080/ "$HOME"/Pictures/Backgrounds
-elif [ "$os" = "wsl" ]; then
-	echo "skipped"
+elif [ "$os" = 'wsl' ]; then
+	printf 'skipped\n'
 	true
 fi
 
-echo "Done"
+printf 'Done\n'
