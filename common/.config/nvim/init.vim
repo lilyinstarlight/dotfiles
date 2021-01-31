@@ -1,4 +1,4 @@
-"os detection
+" os detection
 if !exists('s:os')
     if has('win32')
         let s:uname = 'Windows'
@@ -18,7 +18,7 @@ if !exists('s:os')
     endif
 endif
 
-"vim-plug
+" vim-plug
 call plug#begin(stdpath('data') . '/plugged')
 
 Plug 'LnL7/vim-nix'
@@ -57,7 +57,7 @@ Plug 'zeek/vim-zeek'
 
 call plug#end()
 
-"settings
+" settings
 set autoindent
 set autoread
 set autowrite
@@ -90,22 +90,22 @@ set showcmd
 set undofile
 set wildmenu
 
-"tabbing
+" tabbing
 set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
 
-"color scheme
+" color scheme
 colorscheme jellybeans
 
-"features
+" features
 filetype plugin indent on
 syntax enable
 
-"autocommands
+" autocommands
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 autocmd BufNewFile,BufRead *.ly compiler lilypond
 autocmd BufNewFile,BufRead *.tex let b:tex_flavor = 'pdflatexmk' | compiler tex
 
-"vim
+" vim
 nnoremap Y y$
 nmap <leader>n :ene<cr>
 nmap <leader>d :%d<cr>
@@ -124,24 +124,24 @@ nmap <leader>q :.!bc<cr>
 vmap <leader>q :!bc<cr>
 nmap <leader><cr> :make %<cr>
 
-"matchit.vim
+" matchit.vim
 runtime! macros/matchit.vim
 
-"netrw
+" netrw
 let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+'
 nmap <leader>e :Explore<cr>
 
-"lightline.vim
+" lightline.vim
 let g:lightline={'colorscheme': 'jellybeans'}
 
-"vim-easy-align
+" vim-easy-align
 nmap ga <Plug>(EasyAlign)
 xmap ga <Plug>(EasyAlign)
 
-"vim-better-whitespace
+" vim-better-whitespace
 nmap <leader><space> :StripWhitespace<cr>
 
-"vimwiki
+" vimwiki
 let g:vimwiki_global_ext=0
 let g:vimwiki_dir_link='index'
 if s:os == 'macos'
