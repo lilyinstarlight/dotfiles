@@ -15,7 +15,7 @@ fi
 
 printf 'Detected OS: %s\n' "$os"
 
-printf 'Copying common files...'
+printf 'Copying common files...\n'
 
 rsync -avv common/ "$HOME"/
 
