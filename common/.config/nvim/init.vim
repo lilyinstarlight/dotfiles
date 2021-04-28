@@ -149,3 +149,6 @@ if s:os == 'macos'
 else
     let g:vimwiki_list=[{'path': '$HOME/docs/wiki'}]
 endif
+
+" vim-sonic-pi
+let g:sonic_pi_run_args = ['--cue-server', 'external']
