@@ -15,6 +15,7 @@ fi
 
 printf 'Detected OS: %s\n' "$os"
 
+printf '\n'
 printf 'Copying common files...\n'
 
 rsync -avv common/ "$HOME"/
@@ -52,4 +53,5 @@ elif [ "$os" = 'android' ]; then
 	printf 'skipped\n'
 fi
 
+printf '\n'
 printf 'Done\n'
