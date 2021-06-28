@@ -20,6 +20,20 @@ printf 'Copying common files...\n'
 rsync -avv common/ "$HOME"/
 
 printf '\n'
+printf 'Bootstrapping Neovim...'
+
+if [ ! -e "$HOME"/.local/share/nvim/site/autoload/plug.vim ]; then
+	printf '\n'
+	mkdir -p "$HOME"/.local/share/nvim/plugged
+	git clone https://github.com/junegunn/vim-plug.git "$HOME"/.local/share/nvim/plugged/vim-plug
+
+	mkdir -p "$HOME"/.local/share/nvim/site/autoload
+	ln -s ../../plugged/vim-plug/plug.vim "$HOME"/.local/share/nvim/site/autoload/plug.vim
+else
+	printf 'skipped\n'
+fi
+
+printf '\n'
 printf 'Copying backgrounds files...'
 
 if [ "$os" = 'linux' ]; then
@@ -32,10 +46,8 @@ elif [ "$os" = 'macos' ]; then
 	rsync -avv backgrounds/1080/ "$HOME"/Pictures/Backgrounds
 elif [ "$os" = 'wsl' ]; then
 	printf 'skipped\n'
-	true
 elif [ "$os" = 'android' ]; then
 	printf 'skipped\n'
-	true
 fi
 
 printf 'Done\n'
