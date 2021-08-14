@@ -21,6 +21,13 @@ printf 'Copying common files...\n'
 rsync -avv common/ "$HOME"/
 
 printf '\n'
+printf 'Copying OS-specific files...\n'
+
+if [ "$os" != "unknown" ] && [ -d "$os" ]; then
+	rsync -avv "$os"/ "$HOME"/
+fi
+
+printf '\n'
 printf 'Bootstrapping Neovim...'
 
 if [ ! -e "$HOME"/.local/share/nvim/site/autoload/plug.vim ]; then
