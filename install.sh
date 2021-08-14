@@ -30,11 +30,14 @@ if [ ! -e "$HOME"/.local/share/nvim/site/autoload/plug.vim ]; then
 
 	mkdir -p "$HOME"/.local/share/nvim/site/autoload
 	ln -s ../../plugged/vim-plug/plug.vim "$HOME"/.local/share/nvim/site/autoload/plug.vim
-
-	nvim -c ':PlugUpdate | qall'
 else
 	printf 'skipped\n'
 fi
+
+printf '\n'
+printf 'Updating Neovim plugins...\n'
+
+nvim -c ':PlugUpdate | qall'
 
 printf '\n'
 printf 'Copying backgrounds files...'
