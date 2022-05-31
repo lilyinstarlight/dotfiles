@@ -58,6 +58,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
 Plug 'triglav/vim-visual-increment'
 Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
+Plug 'williamboman/nvim-lsp-installer'
 Plug 'zeek/vim-zeek'
 
 call plug#end()
@@ -176,6 +177,15 @@ local servers = {
   rnix = {},
   bashls = {},
 }
+
+local lsp_servers = {}
+for server, _ in pairs(servers) do
+  table.insert(lsp_servers, server)
+end
+
+vim.api.nvim_set_var('lsp_servers', lsp_servers)
+
+require("nvim-lsp-installer").setup {}
 
 local nvim_lsp = require('lspconfig')
 
