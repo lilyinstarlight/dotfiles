@@ -1,0 +1,7 @@
+[user]
+	email = lily@lily.flowers
+	name = Lily Foster
+[init]
+	defaultBranch = main
+[pull]
+	ff = only
