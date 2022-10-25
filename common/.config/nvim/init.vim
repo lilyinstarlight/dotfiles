@@ -115,7 +115,7 @@ autocmd BufNewFile,BufRead *.tex let b:tex_flavor = 'pdflatexmk' | compiler tex
 nnoremap Y y$
 nmap <leader>n :ene<cr>
 nmap <leader>d :%d<cr>
-nmap <leader>l :set list!<cr>
+nmap <leader><tab> :set list!<cr>
 nmap <leader>s :w<cr>
 nmap <leader>t :tabe<cr>
 nmap <leader>c :clo<cr>
@@ -126,8 +126,8 @@ nmap <leader>g :set virtualedit=<cr>
 nmap <leader>b :Hexmode<cr>
 nmap <leader>p :.!xargs 
 vmap <leader>p :!xargs 
-nmap <leader>q :.!bc<cr>
-vmap <leader>q :!bc<cr>
+nmap <leader>q :.!qalc<cr>
+vmap <leader>q :!qalc<cr>
 nmap <leader><cr> :make %<cr>
 
 " matchit.vim
@@ -135,7 +135,6 @@ runtime! macros/matchit.vim
 
 " netrw
 let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+'
-nmap <leader>e :Explore<cr>
 
 " lightline.vim
 let g:lightline={'colorscheme': 'jellybeans'}
@@ -174,7 +173,7 @@ local servers = {
     }
   },
   rust_analyzer = {},
-  rnix = {},
+  nil_ls = {},
   bashls = {},
 }
 
