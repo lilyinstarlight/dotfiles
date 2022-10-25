@@ -45,7 +45,7 @@ printf '\n'
 printf 'Updating Neovim plugins...\n'
 
 nvim --headless -c ':PlugUpdate | qall' >/dev/null
-nvim --headless -c ':execute "LspInstall --sync " . join(g:lsp_servers) | qall' >/dev/null
+nvim --headless -c ':execute "LspInstall " . join(g:lsp_servers) | qall' >/dev/null
 
 printf '\n'
 printf 'Copying backgrounds files...'
