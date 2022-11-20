@@ -45,7 +45,7 @@ printf '\n'
 printf 'Updating Neovim plugins...\n'
 
 nvim --headless -c ':PlugUpdate | qall' >/dev/null
-nvim --headless -c ':execute "LspInstall " . join(g:lsp_servers) | qall' >/dev/null
+nvim --headless -c ':lua local server_mapping = require "mason-lspconfig.mappings.server" local lsp_packages = {} for _, server in pairs(vim.g.lsp_servers) do print(server) table.insert(lsp_packages, server_mapping.lspconfig_to_package[server]) end print(table.concat(lsp_packages, " ")) vim.api.nvim_command("MasonInstall " .. table.concat(lsp_packages, " ")) vim.api.nvim_command("qall")' >/dev/null
 
 printf '\n'
 printf 'Copying backgrounds files...'
